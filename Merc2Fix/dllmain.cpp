@@ -577,7 +577,16 @@ struct FixedTString {
     uint8_t  _pad;
     uint32_t hash;
     uint32_t len;
-    char     data[4096];
+    // 1 MB. The original 4 KB sized for the early `return 1+1` probes,
+    // but as the engine API got mapped out, real modder scripts (whole
+    // gamemode scaffolds, the recursive globals walker, multi-thousand-
+    // line probes) started bumping the cap. 1 MB is plenty for any
+    // hand-written Lua a human is going to push through this bridge —
+    // larger than anything in tools/ today by ~3 orders of magnitude.
+    // Costs are one-time: the buffer is a static global in .bss, so it
+    // doesn't grow the DLL on disk; at runtime it's a single 1 MB page
+    // group reserved at process start.
+    char     data[1048576];
 };
 #pragma pack(pop)
 static FixedTString g_chunkSource;
