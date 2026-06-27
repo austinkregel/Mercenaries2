@@ -60,3 +60,6 @@ desktop.ini
 
 # --- Local scratch under tools/ (Python __pycache__ etc.) ---
 tools/__pycache__/
+
+# --- Release packaging output (artifacts go to GitHub Releases, not git) ---
+release-staging/

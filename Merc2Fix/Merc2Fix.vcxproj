@@ -63,6 +63,14 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <!-- Release|Win32 output name is parameterised so the dual-build
+       script can produce Merc2Fix.dll (full) and Merc2Fix_MPOnly.dll
+       (no Lua bridge) from the same configuration. Pass
+       /p:NameSuffix=_MPOnly on the MSBuild command line for the
+       multiplayer-only build; default empty for the full build. -->
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>Merc2Fix$(NameSuffix)</TargetName>
+  </PropertyGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -95,7 +103,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;MERC2FIX_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;MERC2FIX_EXPORTS;_WINDOWS;_USRDLL;$(ExtraDefines);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -110,8 +118,14 @@
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
+    <!-- The interactive dev workflow deploys the freshly-built ASI
+         straight into the game folder. The release-build script
+         passes /p:SkipDeploy=true to suppress this so the
+         multiplayer-only build doesn't leave a second ASI in the
+         game folder (dxwrapper would load both and cause duplicate
+         hooks). -->
     <PostBuildEvent>
-      <Command>xcopy /Y "$(TargetPath)" "C:\Games\Mercenaries 2 World in Flames\$(TargetName).asi*"</Command>
+      <Command Condition="'$(SkipDeploy)'!='true'">xcopy /Y "$(TargetPath)" "C:\Games\Mercenaries 2 World in Flames\$(TargetName).asi*"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

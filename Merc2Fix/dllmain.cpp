@@ -1572,7 +1572,19 @@ DWORD WINAPI MainThread(LPVOID lpReserved) {
     // Lua bridge: capture the engine lua_State via three race-to-fire detours
     // and serve a localhost REPL on 127.0.0.1:27050. Runs in its own thread
     // so it can wait for .text unpack without holding up the network hooks.
+    //
+    // Gated behind DISABLE_LUA_BRIDGE so we can ship a multiplayer-only
+    // build for users on exe versions the bridge wasn't derived from
+    // (the RVA sanity-check in LuaBridgeInitThread also catches that,
+    // but compiling the init out entirely is a stronger guarantee and
+    // removes any chance of regressions affecting MP-only users).
+    // Defined on the MSBuild command line as
+    // `/p:ExtraDefines=DISABLE_LUA_BRIDGE`.
+#ifndef DISABLE_LUA_BRIDGE
     CreateThread(nullptr, 0, LuaBridgeInitThread, nullptr, 0, nullptr);
+#else
+    Log("[*] LuaBridge: COMPILED OUT (multiplayer-only build).");
+#endif
 
     return 0;
 }
