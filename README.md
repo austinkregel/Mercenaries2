@@ -14,7 +14,7 @@ opening the dev cheat menu the original developers left in the binary.
 
 | Phase | Status |
 |------|--------|
-| **Phase 1 — Multiplayer revival** (FESL emulation) | ✅ Working |
+| **Phase 1 — Multiplayer revival** (FESL emulation) | ✅ Working (host needs UDP 10000 forwarded; relay update planned — see [Multiplayer hosting](#multiplayer-hosting-current-state--planned-relay)) |
 | **Phase 2 — Lua bridge / cheat menu** | ✅ Working |
 | **Phase 3 — Engine API mapping & mod tooling** | 🚧 In progress |
 
@@ -119,6 +119,26 @@ python2 server.py
 Hosts FESL on `:18710` (SSLv3 + RC4), Theater on `:18715` (plaintext
 TCP), GameSpy availability on UDP `:27900`.
 
+### Multiplayer hosting (current state + planned relay)
+
+The original game used direct P2P for the actual game traffic — Theater
+just tells each client what IP/port to connect to, then players talk to
+each other directly on UDP `10000`. Right now:
+
+- **Hosts** must forward **UDP 10000** on their network. Without it,
+  joining clients can reach the matchmaking server but their game
+  packets never arrive.
+- **Joining clients** need to do nothing — their NAT handles the
+  outbound connection.
+
+**Planned (target: weekend after 2026-06-27)**: turn the server into a
+UDP relay that proxies player↔player traffic on its own IP. Each match
+gets a port from a 100-port pool (UDP `10000`–`10099`), Theater hands
+out the relay IP+port to all clients, and nobody has to touch their
+router. Eliminates the unreliable NAT-punching path entirely.
+
+Until that ships, the port-forward requirement above stands.
+
 ## Modding entry points
 
 Once the bridge is up, useful starting calls:
@@ -149,11 +169,11 @@ and Localization.
 
 ## Acknowledgements
 
-- **u/Kunster_** on r/MercenariesGames for the
-  [post](https://www.reddit.com/r/MercenariesGames/) describing the
-  Lua registration-table patch technique — pointing this project at
-  hooking `luaL_register` to intercept `print` is what made Phase 2
-  possible.
+- **u/Kunster_** on r/MercenariesGames for [Mercenaries 2 PC Cheat
+  Menu](https://www.reddit.com/r/MercenariesGames/comments/1ufm2d1/mercenaries_2_pc_cheat_menu/),
+  describing the Lua registration-table patch technique — pointing
+  this project at hooking `luaL_register` to intercept `print` is
+  what made Phase 2 possible.
 - **MinHook** by Tsuda Kageyu (BSD 2-Clause) — bundled in
   [Merc2Fix/include](Merc2Fix/include) and
   [Merc2Fix/src](Merc2Fix/src).
