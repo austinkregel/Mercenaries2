@@ -63,3 +63,6 @@ tools/__pycache__/
 
 # --- Release packaging output (artifacts go to GitHub Releases, not git) ---
 release-staging/
+
+# --- Per-user runtime settings for lua_console.py ---
+tools/lua_console.json

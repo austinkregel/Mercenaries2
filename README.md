@@ -10,6 +10,11 @@ emulation) so the multiplayer mode works again, and adds an ASI bridge
 that lets you execute arbitrary Lua against the live engine — including
 opening the dev cheat menu the original developers left in the binary.
 
+<p align="center">
+  <img src="img/cheat_menu_in_game.png" alt="The dev cheat menu rendered in-game via Cheat.DisplayOptions()" width="380"><br>
+  <em>The dev cheat menu, opened in-game via a single Lua call to <code>Cheat.DisplayOptions()</code>.</em>
+</p>
+
 ## Heads-up: this is iterative reverse-engineering, not polished code
 
 A lot of what's here is leftover from earlier attempts and experiments.
@@ -191,7 +196,27 @@ rather than anything client-side.
 
 ## Modding entry points
 
-Once the bridge is up, useful starting calls:
+### The Lua console
+
+The friendliest way to drive the bridge is [`tools/lua_console.py`](tools/lua_console.py)
+— a single-file tkinter IDE (stdlib only, no `pip install` needed)
+with tabs, Lua syntax highlighting, line numbers, persistent output
+history, save/open `.lua` files, and a bridge-status indicator that
+turns green when the game is running with the ASI loaded.
+
+<p align="center">
+  <img src="img/lua_console.png" alt="lua_console.py — tabbed editor with Lua syntax highlighting, output panel, bridge status indicator" width="780"><br>
+  <em>Editor on top, output panel below, bridge status (green dot, bottom right) shows the ASI is listening. The script shown is the default starter, not the cheat-menu opener.</em>
+</p>
+
+Run with `py tools/lua_console.py`. `Ctrl+Enter` or `F5` to execute,
+`Ctrl+T` for a new tab, `Ctrl+S` to save. For one-shot piping or
+headless use the bare-bones [`tools/lua_repl.py`](tools/lua_repl.py)
+is still there.
+
+### Useful starting calls
+
+Once the bridge is up:
 
 ```lua
 -- Open the dev cheat menu
