@@ -1371,6 +1371,50 @@ static DWORD WINAPI BridgeServerThread(LPVOID) {
     }
 }
 
+// What kind of byte pattern a hook target should look like. Used by
+// ValidateHookTarget below to skip hooks when the user's exe is a
+// different build than the one our RVAs were derived from. Without
+// this check, MinHook patches arbitrary bytes at the wrong address
+// and the game CTDs the first time the engine executes nearby.
+enum HookKind {
+    HOOK_NOOP_STUB,   // expect exactly: xor eax, eax; ret  (33 C0 C3)
+    HOOK_NORMAL_FUNC, // expect a plausible x86 function prologue
+};
+
+// Verify that `p` looks like the kind of code we expect to hook at
+// that RVA. Returns true on a recognisable pattern, false otherwise.
+// On false we skip the hook entirely rather than letting MinHook
+// corrupt unrelated bytes — multiplayer keeps working, Lua bridge
+// simply stays disabled for that user.
+static bool ValidateHookTarget(const void* p, HookKind kind) {
+    if (!SafeProbe(p, 8)) return false;
+    const uint8_t* b = static_cast<const uint8_t*>(p);
+
+    if (kind == HOOK_NOOP_STUB) {
+        // xor eax, eax; ret — the stripped-stub signature. If it's
+        // anything else, we're not looking at print/SendEvent_*/etc.
+        return b[0] == 0x33 && b[1] == 0xC0 && b[2] == 0xC3;
+    }
+
+    // HOOK_NORMAL_FUNC: accept any of the common x86 function-entry
+    // patterns that MinHook can safely save into a trampoline. Not
+    // exhaustive but covers everything the verified binary uses;
+    // false negatives (skipping a real but oddly-prologued function)
+    // are strictly preferable to false positives (corrupting random
+    // bytes mid-function).
+    if (b[0] == 0x55 && b[1] == 0x8B && b[2] == 0xEC) return true;  // push ebp; mov ebp, esp
+    if (b[0] == 0x53) return true;                                  // push ebx
+    if (b[0] == 0x56) return true;                                  // push esi
+    if (b[0] == 0x57) return true;                                  // push edi
+    if (b[0] == 0x83 && b[1] == 0xEC) return true;                  // sub esp, imm8
+    if (b[0] == 0x81 && b[1] == 0xEC) return true;                  // sub esp, imm32
+    if (b[0] == 0x6A) return true;                                  // push imm8
+    if (b[0] == 0x68) return true;                                  // push imm32
+    if (b[0] == 0x8B && b[1] == 0xFF) return true;                  // mov edi, edi (hot-patchable)
+    if (b[0] == 0x8B && (b[1] & 0xC0) == 0xC0) return true;         // mov reg, reg (canonical luaL_register start)
+    return false;
+}
+
 static DWORD WINAPI LuaBridgeInitThread(LPVOID) {
     HMODULE mod = GetModuleHandleA("Mercenaries2.exe");
     if (!mod) {
@@ -1400,19 +1444,36 @@ static DWORD WINAPI LuaBridgeInitThread(LPVOID) {
     Log("[*] LuaBridge: Phase 3 executor armed (loadstring=%p, pcall=%p, chunkbuf=%p)",
         p_luaB_loadstring, p_luaB_pcall, &g_chunkSource);
 
-    struct HookSpec { DWORD rva; LPVOID detour; LPVOID* orig; const char* name; };
+    struct HookSpec { DWORD rva; LPVOID detour; LPVOID* orig; const char* name; HookKind kind; };
     HookSpec specs[] = {
-            { kRVA_NoopStub,          &DetourNoopStub,         (LPVOID*)&fpOriginal_NoopStub,         "noop-stub (print/SendEvent_*/...)" },
-            { kRVA_luaB_type,         &DetourLuaType,          (LPVOID*)&fpOriginal_luaB_type,        "luaB_type" },
-            { kRVA_CreateTextWidget,  &DetourCreateTextWidget, (LPVOID*)&fpOriginal_CreateTextWidget, "CreateTextWidget" },
+            { kRVA_NoopStub,          &DetourNoopStub,         (LPVOID*)&fpOriginal_NoopStub,         "noop-stub (print/SendEvent_*/...)", HOOK_NOOP_STUB },
+            { kRVA_luaB_type,         &DetourLuaType,          (LPVOID*)&fpOriginal_luaB_type,        "luaB_type",                         HOOK_NORMAL_FUNC },
+            { kRVA_CreateTextWidget,  &DetourCreateTextWidget, (LPVOID*)&fpOriginal_CreateTextWidget, "CreateTextWidget",                  HOOK_NORMAL_FUNC },
             // luaL_register: authoritative L capture + dump of every Lua
             // C function the engine exposes. The naked detour preserves
             // the custom ECX/EAX register-arg ABI; the C handler reads
             // the cdecl args we push and walks the luaL_Reg table.
-            { kRVA_luaL_register,     &DetourLuaLRegister,     (LPVOID*)&fpOriginal_luaL_register,    "luaL_register" },
+            { kRVA_luaL_register,     &DetourLuaLRegister,     (LPVOID*)&fpOriginal_luaL_register,    "luaL_register",                     HOOK_NORMAL_FUNC },
     };
+    int hooks_armed = 0;
     for (const auto& s : specs) {
         LPVOID target = (LPVOID)(base + s.rva);
+        // Sanity-check the bytes at the target address BEFORE asking
+        // MinHook to patch them. If our RVA points somewhere
+        // unexpected (because the user has a different exe build —
+        // 1.0 Origin, 1.1 patched, EU/RU localizations, etc.) MinHook
+        // will happily overwrite random bytes and the game will crash
+        // the moment execution reaches them. Skipping instead means
+        // the Lua bridge silently stays disabled and the user still
+        // has working multiplayer.
+        if (!ValidateHookTarget(target, s.kind)) {
+            Log("[!] LuaBridge: RVA 0x%X (%s) at %p doesn't look like the expected code — "
+                "skipping hook. This usually means a different Mercenaries2.exe build than "
+                "the one this bridge was derived from (archive.org English release). "
+                "Multiplayer is unaffected; the Lua REPL will be disabled.",
+                s.rva, s.name, target);
+            continue;
+        }
         if (MH_CreateHook(target, s.detour, s.orig) != MH_OK) {
             Log("[!] LuaBridge: MH_CreateHook(%s) failed", s.name);
             continue;
@@ -1422,6 +1483,20 @@ static DWORD WINAPI LuaBridgeInitThread(LPVOID) {
             continue;
         }
         Log("[*] LuaBridge: hook armed on %s (RVA 0x%X -> %p)", s.name, s.rva, target);
+        hooks_armed++;
+    }
+
+    // Fail closed: if not a single hook validated, the user's binary
+    // is something we don't know how to drive. Don't even open the
+    // REPL socket — that way a connecting client gets a clean
+    // "connection refused" instead of "connected but chunks never
+    // execute," which is much easier to diagnose.
+    if (hooks_armed == 0) {
+        Log("[!] LuaBridge: 0/%d hooks armed — bridge fully disabled for this binary. "
+            "The REPL on 127.0.0.1:27050 will NOT be started. To enable, re-derive RVAs "
+            "for your exe via tools/find_lua_print.py and tools/resolve_lua_api.py.",
+            (int)(sizeof(specs)/sizeof(specs[0])));
+        return 0;
     }
 
     CreateThread(nullptr, 0, BridgeServerThread, nullptr, 0, nullptr);
