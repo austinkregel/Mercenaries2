@@ -1,0 +1,192 @@
+loaded C:\Games\Mercenaries 2 World in Flames\Mercenaries2.exe.bak, image_base=0x00400000
+
+=== luaB_print @ RVA 0x002aef90   (5 insns, stopped on int3-padding)
+
+=== luaB_pcall @ RVA 0x00461810   (183 insns, stopped on int3-padding)
+    call @ 0x0086183a  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x00861873  -> 0x00868cf0  (RVA 0x00468cf0, in .text)
+    call @ 0x00861912  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x008619b3  -> 0x00868cf0  (RVA 0x00468cf0, in .text)
+    jmp  @ 0x00861925  -> 0x00861930  (RVA 0x00461930, in .text)
+
+=== luaB_xpcall @ RVA 0x004618e0   (108 insns, stopped on int3-padding)
+    call @ 0x00861912  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x008619b3  -> 0x00868cf0  (RVA 0x00468cf0, in .text)
+    jmp  @ 0x00861925  -> 0x00861930  (RVA 0x00461930, in .text)
+
+=== luaB_loadstring @ RVA 0x004611e0   (70 insns, stopped on int3-padding)
+    call @ 0x008611f1  -> 0x0085da80  (RVA 0x0045da80, in .text)
+    call @ 0x0086120b  -> 0x0085f270  (RVA 0x0045f270, in .text)
+    call @ 0x00861236  -> 0x0085da80  (RVA 0x0045da80, in .text)
+    call @ 0x00861250  -> 0x0085f270  (RVA 0x0045f270, in .text)
+    call @ 0x00861263  -> 0x00860460  (RVA 0x00460460, in .text)
+    jmp  @ 0x0086122d  -> 0x0086125b  (RVA 0x0046125b, in .text)
+    jmp  @ 0x00861281  -> 0x00861190  (RVA 0x00461190, in .text)
+
+=== luaB_tostring @ RVA 0x00461a10   (249 insns, stopped on int3-padding)
+    call @ 0x00861a32  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x00861a3c  -> 0x0085f6c0  (RVA 0x0045f6c0, in .text)
+    call @ 0x00861a88  -> 0x00865d50  (RVA 0x00465d50, in .text)
+    call @ 0x00861a97  -> 0x0085dc10  (RVA 0x0045dc10, in .text)
+    call @ 0x00861ab3  -> 0x0086b480  (RVA 0x0046b480, in .text)
+    call @ 0x00861ad0  -> 0x0085dc10  (RVA 0x0045dc10, in .text)
+    call @ 0x00861b06  -> 0x0085da60  (RVA 0x0045da60, in .text)
+    call @ 0x00861b1c  -> 0x0085dc10  (RVA 0x0045dc10, in .text)
+    call @ 0x00861b35  -> 0x0085dbd0  (RVA 0x0045dbd0, in .text)
+    call @ 0x00861b69  -> 0x0085db70  (RVA 0x0045db70, in .text)
+    call @ 0x00861b75  -> 0x0085dc80  (RVA 0x0045dc80, in .text)
+    call @ 0x00861be3  -> 0x0085e320  (RVA 0x0045e320, in .text)
+    call @ 0x00861c2e  -> 0x0085de00  (RVA 0x0045de00, in .text)
+    call @ 0x00861c59  -> 0x0085df50  (RVA 0x0045df50, in .text)
+    call @ 0x00861c63  -> 0x0085e010  (RVA 0x0045e010, in .text)
+    call @ 0x00861c77  -> 0x0085de40  (RVA 0x0045de40, in .text)
+    call @ 0x00861c87  -> 0x0085dda0  (RVA 0x0045dda0, in .text)
+    call @ 0x00861cbb  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x00861cc8  -> 0x0085de40  (RVA 0x0045de40, in .text)
+    call @ 0x00861cd2  -> 0x0085e010  (RVA 0x0045e010, in .text)
+    jmp  @ 0x00861b5e  -> 0x00861b67  (RVA 0x00461b67, in .text)
+    jmp  @ 0x00861bb7  -> 0x00861bc0  (RVA 0x00461bc0, in .text)
+    jmp  @ 0x00861ca8  -> 0x00861cac  (RVA 0x00461cac, in .text)
+
+=== luaB_unpack @ RVA 0x00461630   (181 insns, stopped on int3-padding)
+    call @ 0x0086165d  -> 0x0085f270  (RVA 0x0045f270, in .text)
+    call @ 0x00861687  -> 0x0085f5c0  (RVA 0x0045f5c0, in .text)
+    call @ 0x008616ab  -> 0x0085fb10  (RVA 0x0045fb10, in .text)
+    call @ 0x008616b5  -> 0x0085f5c0  (RVA 0x0045f5c0, in .text)
+    call @ 0x008616de  -> 0x0085d7f0  (RVA 0x0045d7f0, in .text)
+    call @ 0x008616f3  -> 0x0085f350  (RVA 0x0045f350, in .text)
+    call @ 0x00861714  -> 0x00869a00  (RVA 0x00469a00, in .text)
+    call @ 0x00861779  -> 0x00865d50  (RVA 0x00465d50, in .text)
+    call @ 0x00861791  -> 0x0086b480  (RVA 0x0046b480, in .text)
+    call @ 0x008617d5  -> 0x0085f5c0  (RVA 0x0045f5c0, in .text)
+    call @ 0x008617fa  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    jmp  @ 0x00861682  -> 0x00861691  (RVA 0x00461691, in .text)
+    jmp  @ 0x008616b0  -> 0x008616bd  (RVA 0x004616bd, in .text)
+    jmp  @ 0x008617e5  -> 0x008617ed  (RVA 0x004617ed, in .text)
+
+=== luaB_select @ RVA 0x00461740   (81 insns, stopped on int3-padding)
+    call @ 0x00861779  -> 0x00865d50  (RVA 0x00465d50, in .text)
+    call @ 0x00861791  -> 0x0086b480  (RVA 0x0046b480, in .text)
+    call @ 0x008617d5  -> 0x0085f5c0  (RVA 0x0045f5c0, in .text)
+    call @ 0x008617fa  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    jmp  @ 0x008617e5  -> 0x008617ed  (RVA 0x004617ed, in .text)
+
+=== luaB_assert @ RVA 0x00461570   (75 insns, stopped on int3-padding)
+    call @ 0x00861593  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x008615de  -> 0x0085f350  (RVA 0x0045f350, in .text)
+    call @ 0x008615f0  -> 0x0085da80  (RVA 0x0045da80, in .text)
+    call @ 0x00861609  -> 0x0085f270  (RVA 0x0045f270, in .text)
+    call @ 0x00861617  -> 0x0085f350  (RVA 0x0045f350, in .text)
+
+=== luaB_error @ RVA 0x004606a0   (84 insns, stopped on int3-padding)
+    call @ 0x008606c8  -> 0x0085f5c0  (RVA 0x0045f5c0, in .text)
+    call @ 0x00860726  -> 0x0085f2c0  (RVA 0x0045f2c0, in .text)
+    call @ 0x00860754  -> 0x0086b480  (RVA 0x0046b480, in .text)
+    call @ 0x0086076c  -> 0x00866650  (RVA 0x00466650, in .text)
+    call @ 0x0086077a  -> 0x0085f0c0  (RVA 0x0045f0c0, in .text)
+    jmp  @ 0x008606c3  -> 0x008606d0  (RVA 0x004606d0, in .text)
+    jmp  @ 0x008606db  -> 0x008606e0  (RVA 0x004606e0, in .text)
+
+=== luaB_tonumber @ RVA 0x004604c0   (166 insns, stopped on int3-padding)
+    call @ 0x008604ea  -> 0x0085f5c0  (RVA 0x0045f5c0, in .text)
+    call @ 0x0086051e  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x0086054d  -> 0x00869d60  (RVA 0x00469d60, in .text)
+    call @ 0x00860561  -> 0x0085d9a0  (RVA 0x0045d9a0, in .text)
+    call @ 0x00860598  -> 0x00865d50  (RVA 0x00465d50, in .text)
+    call @ 0x008605b4  -> 0x0086b480  (RVA 0x0046b480, in .text)
+    call @ 0x008605de  -> 0x0085f270  (RVA 0x0045f270, in .text)
+    call @ 0x008605fc  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x0086060b  -> 0x009ee9bc  (RVA 0x005ee9bc, in .text)
+    call @ 0x00860621  -> 0x009ee4ce  (RVA 0x005ee4ce, in .text)
+    call @ 0x0086063f  -> 0x009ee4ce  (RVA 0x005ee4ce, in .text)
+    jmp  @ 0x008605a6  -> 0x008605d0  (RVA 0x004605d0, in .text)
+
+=== luaB_rawequal @ RVA 0x00460b20   (58 insns, stopped on int3-padding)
+    call @ 0x00860b43  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x00860b6b  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x00860b9f  -> 0x00869d10  (RVA 0x00469d10, in .text)
+    jmp  @ 0x00860ba4  -> 0x00860ba8  (RVA 0x00460ba8, in .text)
+
+=== luaB_rawget @ RVA 0x00460bd0   (64 insns, stopped on int3-padding)
+    call @ 0x00860bf8  -> 0x0085f270  (RVA 0x0045f270, in .text)
+    call @ 0x00860c24  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x00860c6d  -> 0x00869ac0  (RVA 0x00469ac0, in .text)
+
+=== luaB_rawset @ RVA 0x00460c90   (68 insns, stopped on int3-padding)
+    call @ 0x00860cb8  -> 0x0085f270  (RVA 0x0045f270, in .text)
+    call @ 0x00860ce4  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x00860d0c  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x00860d45  -> 0x0085df50  (RVA 0x0045df50, in .text)
+
+=== luaB_next @ RVA 0x00460f00   (63 insns, stopped on int3-padding)
+    call @ 0x00860f2a  -> 0x0085f270  (RVA 0x0045f270, in .text)
+    call @ 0x00860f75  -> 0x00869150  (RVA 0x00469150, in .text)
+
+=== luaB_type @ RVA 0x00460e90   (39 insns, stopped on int3-padding)
+    call @ 0x00860eb2  -> 0x0085f190  (RVA 0x0045f190, in .text)
+    call @ 0x00860ed7  -> 0x0085dc10  (RVA 0x0045dc10, in .text)
+    call @ 0x00860eee  -> 0x0085dc10  (RVA 0x0045dc10, in .text)
+
+=== shared call targets (called from 2+ wrappers) ===
+  0x0085f190  (RVA 0x0045f190)  x16   called by: luaB_pcall, luaB_xpcall, luaB_tostring, luaB_unpack, luaB_select, luaB_assert, luaB_tonumber, luaB_rawequal, luaB_rawget, luaB_rawset, luaB_type
+  0x0085f270  (RVA 0x0045f270)  x8   called by: luaB_loadstring, luaB_unpack, luaB_assert, luaB_tonumber, luaB_rawget, luaB_rawset, luaB_next
+  0x0085f5c0  (RVA 0x0045f5c0)  x6   called by: luaB_unpack, luaB_select, luaB_error, luaB_tonumber
+  0x0085dc10  (RVA 0x0045dc10)  x5   called by: luaB_tostring, luaB_type
+  0x0086b480  (RVA 0x0046b480)  x5   called by: luaB_tostring, luaB_unpack, luaB_select, luaB_error, luaB_tonumber
+  0x00865d50  (RVA 0x00465d50)  x4   called by: luaB_tostring, luaB_unpack, luaB_select, luaB_tonumber
+  0x00868cf0  (RVA 0x00468cf0)  x3   called by: luaB_pcall, luaB_xpcall
+  0x0085da80  (RVA 0x0045da80)  x3   called by: luaB_loadstring, luaB_assert
+  0x0085f350  (RVA 0x0045f350)  x3   called by: luaB_unpack, luaB_assert
+  0x0085df50  (RVA 0x0045df50)  x2   called by: luaB_tostring, luaB_rawset
+  0x0085e010  (RVA 0x0045e010)  x2   called by: luaB_tostring
+  0x0085de40  (RVA 0x0045de40)  x2   called by: luaB_tostring
+  0x009ee4ce  (RVA 0x005ee4ce)  x2   called by: luaB_tonumber
+
+=== luaB_print raw bytes (first 64) ===
+  33 c0 c3 cc cc cc cc cc cc cc cc cc cc cc cc cc 85 c9 74 05 8d 41 14 eb 02 33 c0 85 c9 c7 00 78 86 b5 00 74 05 8d 41 10 eb 02 33 c0 85 c9 c7 00 98 86 b5 00 74 05 8d 41 0c eb 02 33 c0 85 c9 c7
+  -- disassembly:
+  006aef90  33c0            xor eax, eax
+  006aef92  c3              ret 
+  006aef93  cc              int3 
+  006aef94  cc              int3 
+  006aef95  cc              int3 
+  006aef96  cc              int3 
+  006aef97  cc              int3 
+  006aef98  cc              int3 
+  006aef99  cc              int3 
+  006aef9a  cc              int3 
+  006aef9b  cc              int3 
+  006aef9c  cc              int3 
+  006aef9d  cc              int3 
+  006aef9e  cc              int3 
+  006aef9f  cc              int3 
+  006aefa0  85c9            test ecx, ecx
+  006aefa2  7405            je 0x6aefa9
+  006aefa4  8d4114          lea eax, [ecx + 0x14]
+  006aefa7  eb02            jmp 0x6aefab
+  006aefa9  33c0            xor eax, eax
+  006aefab  85c9            test ecx, ecx
+  006aefad  c7007886b500    mov dword ptr [eax], 0xb58678
+  006aefb3  7405            je 0x6aefba
+  006aefb5  8d4110          lea eax, [ecx + 0x10]
+  006aefb8  eb02            jmp 0x6aefbc
+  006aefba  33c0            xor eax, eax
+  006aefbc  85c9            test ecx, ecx
+  006aefbe  c7009886b500    mov dword ptr [eax], 0xb58698
+
+=== identification cheat-sheet (Lua 5.1.2 source) ===
+  luaL_checkany       -> shared by luaB_pcall, luaB_xpcall,
+                          luaB_tostring, luaB_assert
+  lua_pcall           -> luaB_pcall AND luaB_xpcall (their
+                          dominant non-checkany call)
+  lua_settop          -> luaB_xpcall has an explicit `lua_settop(L,2)`,
+                          look for `push 2; push <L>; call ...`
+  lua_gettop          -> first call in luaB_print and luaB_select
+  lua_tolstring       -> luaB_print uses it via `lua_tostring` macro
+                          (3-arg call with last arg = 0/NULL); also
+                          last call of luaB_tostring
+  luaL_loadbuffer     -> luaB_loadstring (use this directly; the
+                          public 'luaL_loadstring' is just
+                          `luaL_loadbuffer(L, s, strlen(s), s)`)
+  luaL_checklstring   -> luaB_loadstring (called right before
+                          luaL_loadbuffer)

@@ -1,0 +1,113 @@
+loaded C:\Games\Mercenaries 2 World in Flames\Mercenaries2.bypassed.exe, image_base=0x00400000
+
+=== luaB_print @ RVA 0x002aef90   (47 insns, stopped on int3-padding)
+    jmp  @ 0x006aefb8  -> 0x006aefbc  (RVA 0x002aefbc, in .text)
+    jmp  @ 0x006af007  -> 0x006af00b  (RVA 0x002af00b, in .text)
+
+=== luaB_pcall @ RVA 0x00461810   (3 insns, stopped on max_bytes)
+
+=== luaB_xpcall @ RVA 0x004618e0   (59 insns, stopped on int3-padding)
+    call @ 0x008618e6  -> 0x0085d840  (RVA 0x0045d840, in .text)
+    call @ 0x008618fc  -> 0x0085d9f0  (RVA 0x0045d9f0, in .text)
+    call @ 0x00861915  -> 0x0085d9b0  (RVA 0x0045d9b0, in .text)
+    call @ 0x00861949  -> 0x0085d950  (RVA 0x0045d950, in .text)
+    call @ 0x00861955  -> 0x0085da60  (RVA 0x0045da60, in .text)
+    jmp  @ 0x0086193e  -> 0x00861947  (RVA 0x00461947, in .text)
+
+=== luaB_loadstring @ RVA 0x004611e0   (72 insns, stopped on int3-padding)
+    call @ 0x008611e0  -> 0x0085d860  (RVA 0x0045d860, in .text)
+    call @ 0x008611fb  -> 0x0085f050  (RVA 0x0045f050, in .text)
+    call @ 0x00861226  -> 0x0085f050  (RVA 0x0045f050, in .text)
+    call @ 0x00861285  -> 0x00868cc0  (RVA 0x00468cc0, in .text)
+    jmp  @ 0x008612a7  -> 0x00860f70  (RVA 0x00460f70, in .text)
+
+=== luaB_tostring @ RVA 0x00461a10   (63 insns, stopped on int3-padding)
+    call @ 0x00861a39  -> 0x0085dd30  (RVA 0x0045dd30, in .text)
+    call @ 0x00861a43  -> 0x0085ddf0  (RVA 0x0045ddf0, in .text)
+    call @ 0x00861a57  -> 0x0085dc20  (RVA 0x0045dc20, in .text)
+    call @ 0x00861a67  -> 0x0085db80  (RVA 0x0045db80, in .text)
+    call @ 0x00861a9b  -> 0x0085ef70  (RVA 0x0045ef70, in .text)
+    call @ 0x00861aa8  -> 0x0085dc20  (RVA 0x0045dc20, in .text)
+    call @ 0x00861ab2  -> 0x0085ddf0  (RVA 0x0045ddf0, in .text)
+    jmp  @ 0x00861a88  -> 0x00861a8c  (RVA 0x00461a8c, in .text)
+
+=== luaB_unpack @ RVA 0x00461630   (161 insns, stopped on int3-padding)
+    call @ 0x00861653  -> 0x00868ad0  (RVA 0x00468ad0, in .text)
+    call @ 0x008616f2  -> 0x0085ef70  (RVA 0x0045ef70, in .text)
+    call @ 0x00861793  -> 0x00868ad0  (RVA 0x00468ad0, in .text)
+    jmp  @ 0x00861705  -> 0x00861710  (RVA 0x00461710, in .text)
+
+=== luaB_select @ RVA 0x00461740   (64 insns, stopped on int3-padding)
+    call @ 0x00861793  -> 0x00868ad0  (RVA 0x00468ad0, in .text)
+
+=== luaB_assert @ RVA 0x00461570   (50 insns, stopped on int3-padding)
+    call @ 0x00861571  -> 0x0086b260  (RVA 0x0046b260, in .text)
+    call @ 0x008615b5  -> 0x0085f3a0  (RVA 0x0045f3a0, in .text)
+    call @ 0x008615da  -> 0x0085ef70  (RVA 0x0045ef70, in .text)
+    jmp  @ 0x008615c5  -> 0x008615cd  (RVA 0x004615cd, in .text)
+
+=== luaB_error @ RVA 0x004606a0   (4 insns, stopped on max_bytes)
+
+=== luaB_tonumber @ RVA 0x004604c0   (61 insns, stopped on int3-padding)
+    call @ 0x00860506  -> 0x0085f0a0  (RVA 0x0045f0a0, in .text)
+    call @ 0x00860534  -> 0x0086b260  (RVA 0x0046b260, in .text)
+    call @ 0x0086054c  -> 0x00866430  (RVA 0x00466430, in .text)
+    call @ 0x0086055a  -> 0x0085eea0  (RVA 0x0045eea0, in .text)
+
+=== luaB_rawequal @ RVA 0x00460b20   (10 insns, stopped on int3-padding)
+    call @ 0x00860b25  -> 0x0085dd30  (RVA 0x0045dd30, in .text)
+
+=== luaB_rawget @ RVA 0x00460bd0   (57 insns, stopped on int3-padding)
+    call @ 0x00860c33  -> 0x0085dfc0  (RVA 0x0045dfc0, in .text)
+    jmp  @ 0x00860bd4  -> 0x00860bd9  (RVA 0x00460bd9, in .text)
+
+=== luaB_rawset @ RVA 0x00460c90   (1 insns, stopped on max_bytes)
+
+=== luaB_next @ RVA 0x00460f00   (36 insns, stopped on int3-padding)
+
+=== luaB_type @ RVA 0x00460e90   (31 insns, stopped on int3-padding)
+
+=== shared call targets (called from 2+ wrappers) ===
+  0x0085ef70  (RVA 0x0045ef70)  x3   called by: luaB_tostring, luaB_unpack, luaB_assert
+  0x00868ad0  (RVA 0x00468ad0)  x3   called by: luaB_unpack, luaB_select
+  0x0085f050  (RVA 0x0045f050)  x2   called by: luaB_loadstring
+  0x0085dd30  (RVA 0x0045dd30)  x2   called by: luaB_tostring, luaB_rawequal
+  0x0085ddf0  (RVA 0x0045ddf0)  x2   called by: luaB_tostring
+  0x0085dc20  (RVA 0x0045dc20)  x2   called by: luaB_tostring
+  0x0086b260  (RVA 0x0046b260)  x2   called by: luaB_assert, luaB_tonumber
+
+=== luaB_print raw bytes (first 64) ===
+  74 28 b8 c5 9d 1c 81 0f be c9 83 c9 20 33 c1 8a 4a 01 69 c0 93 01 00 01 83 c2 01 84 c9 75 e8 83 f0 2a 69 c0 93 01 00 01 eb 02 33 c0 8d 15 f3 f3 4e 02 ff 8a a4 48 00 00 0f 84 97 64 f6 ff 8d 56
+  -- disassembly:
+  006aef90  7428            je 0x6aefba
+  006aef92  b8c59d1c81      mov eax, 0x811c9dc5
+  006aef97  0fbec9          movsx ecx, cl
+  006aef9a  83c920          or ecx, 0x20
+  006aef9d  33c1            xor eax, ecx
+  006aef9f  8a4a01          mov cl, byte ptr [edx + 1]
+  006aefa2  69c093010001    imul eax, eax, 0x1000193
+  006aefa8  83c201          add edx, 1
+  006aefab  84c9            test cl, cl
+  006aefad  75e8            jne 0x6aef97
+  006aefaf  83f02a          xor eax, 0x2a
+  006aefb2  69c093010001    imul eax, eax, 0x1000193
+  006aefb8  eb02            jmp 0x6aefbc
+  006aefba  33c0            xor eax, eax
+  006aefbc  8d15f3f34e02    lea edx, [0x24ef3f3]
+
+=== identification cheat-sheet (Lua 5.1.2 source) ===
+  luaL_checkany       -> shared by luaB_pcall, luaB_xpcall,
+                          luaB_tostring, luaB_assert
+  lua_pcall           -> luaB_pcall AND luaB_xpcall (their
+                          dominant non-checkany call)
+  lua_settop          -> luaB_xpcall has an explicit `lua_settop(L,2)`,
+                          look for `push 2; push <L>; call ...`
+  lua_gettop          -> first call in luaB_print and luaB_select
+  lua_tolstring       -> luaB_print uses it via `lua_tostring` macro
+                          (3-arg call with last arg = 0/NULL); also
+                          last call of luaB_tostring
+  luaL_loadbuffer     -> luaB_loadstring (use this directly; the
+                          public 'luaL_loadstring' is just
+                          `luaL_loadbuffer(L, s, strlen(s), s)`)
+  luaL_checklstring   -> luaB_loadstring (called right before
+                          luaL_loadbuffer)

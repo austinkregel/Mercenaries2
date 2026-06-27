@@ -1,0 +1,315 @@
+loaded C:\Games\Mercenaries 2 World in Flames\Mercenaries2.bypassed.exe, image_base=0x00400000
+
+scanning for luaL_Reg arrays ...
+  found 976 candidate arrays
+  976 unique table starting VAs
+
+scanning .text for cross-references to those table VAs ...
+  78 total xrefs across 40 candidate functions
+
+=== top-15 candidate registration functions ===
+
+  fn @ 0x007d2220  (RVA 0x003d2220)  loads 4 table references, 1 distinct tables
+      xref @ 0x007d2233  ->  table @ 0x00b93328
+      xref @ 0x007d224a  ->  table @ 0x00b93328
+      xref @ 0x007d2390  ->  table @ 0x00b93328
+      xref @ 0x007d2398  ->  table @ 0x00b93328
+      prologue / first instructions:
+        007d2220  55              push ebp
+        007d2221  8bec            mov ebp, esp
+        007d2223  83e4f8          and esp, 0xfffffff8
+        007d2226  83ec2c          sub esp, 0x2c
+        007d2229  53              push ebx
+        007d222a  8b5d08          mov ebx, dword ptr [ebp + 8]
+        007d222d  56              push esi
+        007d222e  57              push edi
+        007d222f  33ff            xor edi, edi
+        007d2231  393d2833b900    cmp dword ptr [0xb93328], edi
+        007d2237  897c241c        mov dword ptr [esp + 0x1c], edi
+        007d223b  0f8465010000    je 0x7d23a6
+        007d2241  83c010          add eax, 0x10
+        007d2244  c644241301      mov byte ptr [esp + 0x13], 1
+
+  fn @ 0x007ba830  (RVA 0x003ba830)  loads 4 table references, 1 distinct tables
+      xref @ 0x007ba843  ->  table @ 0x00b93400
+      xref @ 0x007ba85a  ->  table @ 0x00b93400
+      xref @ 0x007ba9a0  ->  table @ 0x00b93400
+      xref @ 0x007ba9a8  ->  table @ 0x00b93400
+      prologue / first instructions:
+        007ba830  55              push ebp
+        007ba831  8bec            mov ebp, esp
+        007ba833  83e4f8          and esp, 0xfffffff8
+        007ba836  83ec2c          sub esp, 0x2c
+        007ba839  53              push ebx
+        007ba83a  8b5d08          mov ebx, dword ptr [ebp + 8]
+        007ba83d  56              push esi
+        007ba83e  57              push edi
+        007ba83f  33ff            xor edi, edi
+        007ba841  393d0034b900    cmp dword ptr [0xb93400], edi
+        007ba847  897c241c        mov dword ptr [esp + 0x1c], edi
+        007ba84b  0f8465010000    je 0x7ba9b6
+        007ba851  83c010          add eax, 0x10
+        007ba854  c644241301      mov byte ptr [esp + 0x13], 1
+
+  fn @ 0x007ab7fe  (RVA 0x003ab7fe)  loads 4 table references, 1 distinct tables
+      xref @ 0x007ab802  ->  table @ 0x00b93688
+      xref @ 0x007ab816  ->  table @ 0x00b93688
+      xref @ 0x007ab97c  ->  table @ 0x00b93688
+      xref @ 0x007ab987  ->  table @ 0x00b93688
+      prologue / first instructions:
+        007ab7fe  bd00393d88      mov ebp, 0x883d3900
+        007ab803  36b900897c24    mov ecx, 0x247c8900
+        007ab809  140f            adc al, 0xf
+        007ab80b  8485010000c6    test byte ptr [ebp - 0x39ffffff], al
+        007ab811  44              inc esp
+        007ab812  240d            and al, 0xd
+        007ab814  06              push es
+        007ab815  bb8836b900      mov ebx, 0xb93688
+        007ab81a  eb08            jmp 0x7ab824
+        007ab81c  8d642400        lea esp, [esp]
+        007ab820  8b5c242c        mov ebx, dword ptr [esp + 0x2c]
+        007ab824  8b0d5cb2cf00    mov ecx, dword ptr [0xcfb25c]
+        007ab82a  8b11            mov edx, dword ptr [ecx]
+        007ab82c  8b4204          mov eax, dword ptr [edx + 4]
+
+  fn @ 0x007aa750  (RVA 0x003aa750)  loads 4 table references, 1 distinct tables
+      xref @ 0x007aa763  ->  table @ 0x00b93708
+      xref @ 0x007aa77a  ->  table @ 0x00b93708
+      xref @ 0x007aa8c0  ->  table @ 0x00b93708
+      xref @ 0x007aa8c8  ->  table @ 0x00b93708
+      prologue / first instructions:
+        007aa750  55              push ebp
+        007aa751  8bec            mov ebp, esp
+        007aa753  83e4f8          and esp, 0xfffffff8
+        007aa756  83ec2c          sub esp, 0x2c
+        007aa759  53              push ebx
+        007aa75a  8b5d08          mov ebx, dword ptr [ebp + 8]
+        007aa75d  56              push esi
+        007aa75e  57              push edi
+        007aa75f  33ff            xor edi, edi
+        007aa761  393d0837b900    cmp dword ptr [0xb93708], edi
+        007aa767  897c241c        mov dword ptr [esp + 0x1c], edi
+        007aa76b  0f8465010000    je 0x7aa8d6
+        007aa771  83c010          add eax, 0x10
+        007aa774  c644241301      mov byte ptr [esp + 0x13], 1
+
+  fn @ 0x007a0b40  (RVA 0x003a0b40)  loads 4 table references, 1 distinct tables
+      xref @ 0x007a0b53  ->  table @ 0x00b93830
+      xref @ 0x007a0b6a  ->  table @ 0x00b93830
+      xref @ 0x007a0cb0  ->  table @ 0x00b93830
+      xref @ 0x007a0cb8  ->  table @ 0x00b93830
+      prologue / first instructions:
+        007a0b40  55              push ebp
+        007a0b41  8bec            mov ebp, esp
+        007a0b43  83e4f8          and esp, 0xfffffff8
+        007a0b46  83ec2c          sub esp, 0x2c
+        007a0b49  53              push ebx
+        007a0b4a  8b5d08          mov ebx, dword ptr [ebp + 8]
+        007a0b4d  56              push esi
+        007a0b4e  57              push edi
+        007a0b4f  33ff            xor edi, edi
+        007a0b51  393d3038b900    cmp dword ptr [0xb93830], edi
+        007a0b57  897c241c        mov dword ptr [esp + 0x1c], edi
+        007a0b5b  0f8465010000    je 0x7a0cc6
+        007a0b61  83c010          add eax, 0x10
+        007a0b64  c644241301      mov byte ptr [esp + 0x13], 1
+
+  fn @ 0x00798840  (RVA 0x00398840)  loads 4 table references, 1 distinct tables
+      xref @ 0x00798853  ->  table @ 0x00b938d8
+      xref @ 0x0079886a  ->  table @ 0x00b938d8
+      xref @ 0x007989b0  ->  table @ 0x00b938d8
+      xref @ 0x007989b8  ->  table @ 0x00b938d8
+      prologue / first instructions:
+        00798840  55              push ebp
+        00798841  8bec            mov ebp, esp
+        00798843  83e4f8          and esp, 0xfffffff8
+        00798846  83ec2c          sub esp, 0x2c
+        00798849  53              push ebx
+        0079884a  8b5d08          mov ebx, dword ptr [ebp + 8]
+        0079884d  56              push esi
+        0079884e  57              push edi
+        0079884f  33ff            xor edi, edi
+        00798851  393dd838b900    cmp dword ptr [0xb938d8], edi
+        00798857  897c241c        mov dword ptr [esp + 0x1c], edi
+        0079885b  0f8465010000    je 0x7989c6
+        00798861  83c010          add eax, 0x10
+        00798864  c644241301      mov byte ptr [esp + 0x13], 1
+
+  fn @ 0x0078e310  (RVA 0x0038e310)  loads 4 table references, 1 distinct tables
+      xref @ 0x0078e323  ->  table @ 0x00b93a48
+      xref @ 0x0078e33a  ->  table @ 0x00b93a48
+      xref @ 0x0078e480  ->  table @ 0x00b93a48
+      xref @ 0x0078e488  ->  table @ 0x00b93a48
+      prologue / first instructions:
+        0078e310  55              push ebp
+        0078e311  8bec            mov ebp, esp
+        0078e313  83e4f8          and esp, 0xfffffff8
+        0078e316  83ec2c          sub esp, 0x2c
+        0078e319  53              push ebx
+        0078e31a  8b5d08          mov ebx, dword ptr [ebp + 8]
+        0078e31d  56              push esi
+        0078e31e  57              push edi
+        0078e31f  33ff            xor edi, edi
+        0078e321  393d483ab900    cmp dword ptr [0xb93a48], edi
+        0078e327  897c241c        mov dword ptr [esp + 0x1c], edi
+        0078e32b  0f8465010000    je 0x78e496
+        0078e331  83c010          add eax, 0x10
+        0078e334  c644241301      mov byte ptr [esp + 0x13], 1
+
+  fn @ 0x00787880  (RVA 0x00387880)  loads 4 table references, 1 distinct tables
+      xref @ 0x0078788b  ->  table @ 0x00b93b20
+      xref @ 0x007878aa  ->  table @ 0x00b93b20
+      xref @ 0x00787a06  ->  table @ 0x00b93b20
+      xref @ 0x00787a0e  ->  table @ 0x00b93b20
+      prologue / first instructions:
+        00787880  55              push ebp
+        00787881  8bec            mov ebp, esp
+        00787883  83e4f8          and esp, 0xfffffff8
+        00787886  83ec24          sub esp, 0x24
+        00787889  833d203bb90000  cmp dword ptr [0xb93b20], 0
+        00787890  53              push ebx
+        00787891  56              push esi
+        00787892  57              push edi
+        00787893  c744241400000000  mov dword ptr [esp + 0x14], 0
+        0078789b  0f847b010000    je 0x787a1c
+        007878a1  83c010          add eax, 0x10
+        007878a4  c644240f01      mov byte ptr [esp + 0xf], 1
+        007878a9  bf203bb900      mov edi, 0xb93b20
+        007878ae  89442418        mov dword ptr [esp + 0x18], eax
+
+  fn @ 0x007b0af0  (RVA 0x003b0af0)  loads 4 table references, 1 distinct tables
+      xref @ 0x007b0b03  ->  table @ 0x00dfda70
+      xref @ 0x007b0b1a  ->  table @ 0x00dfda70
+      xref @ 0x007b0c60  ->  table @ 0x00dfda70
+      xref @ 0x007b0c68  ->  table @ 0x00dfda70
+      prologue / first instructions:
+        007b0af0  55              push ebp
+        007b0af1  8bec            mov ebp, esp
+        007b0af3  83e4f8          and esp, 0xfffffff8
+        007b0af6  83ec2c          sub esp, 0x2c
+        007b0af9  53              push ebx
+        007b0afa  8b5d08          mov ebx, dword ptr [ebp + 8]
+        007b0afd  56              push esi
+        007b0afe  57              push edi
+        007b0aff  33ff            xor edi, edi
+        007b0b01  393d70dadf00    cmp dword ptr [0xdfda70], edi
+        007b0b07  897c241c        mov dword ptr [esp + 0x1c], edi
+        007b0b0b  0f8465010000    je 0x7b0c76
+        007b0b11  83c010          add eax, 0x10
+        007b0b14  c644241301      mov byte ptr [esp + 0x13], 1
+
+  fn @ 0x0238a4ad  (RVA 0x01f8a4ad)  loads 3 table references, 3 distinct tables
+      xref @ 0x0238a50f  ->  table @ 0x00b98c00
+      xref @ 0x0238a513  ->  table @ 0x00b99800
+      xref @ 0x0238a517  ->  table @ 0x00b9a800
+      prologue / first instructions:
+        0238a4ad  b700            mov bh, 0
+        0238a4af  00e2            add dl, ah
+        0238a4b1  b700            mov bh, 0
+        0238a4b3  00ee            add dh, ch
+        0238a4b5  b700            mov bh, 0
+        0238a4b7  0002            add byte ptr [edx], al
+        0238a4b9  b8000012b8      mov eax, 0xb8120000
+        0238a4be  0000            add byte ptr [eax], al
+        0238a4c0  2ab800003eb8    sub bh, byte ptr [eax - 0x47c20000]
+        0238a4c6  0000            add byte ptr [eax], al
+        0238a4c8  4c              dec esp
+        0238a4c9  b8000062b8      mov eax, 0xb8620000
+        0238a4ce  0000            add byte ptr [eax], al
+        0238a4d0  78b8            js 0x238a48a
+
+  fn @ 0x0238ba05  (RVA 0x01f8ba05)  loads 3 table references, 3 distinct tables
+      xref @ 0x0238ba67  ->  table @ 0x00b98c00
+      xref @ 0x0238ba6b  ->  table @ 0x00b99800
+      xref @ 0x0238ba6f  ->  table @ 0x00b9a800
+      prologue / first instructions:
+        0238ba05  b700            mov bh, 0
+        0238ba07  00e2            add dl, ah
+        0238ba09  b700            mov bh, 0
+        0238ba0b  00ee            add dh, ch
+        0238ba0d  b700            mov bh, 0
+        0238ba0f  0002            add byte ptr [edx], al
+        0238ba11  b8000012b8      mov eax, 0xb8120000
+        0238ba16  0000            add byte ptr [eax], al
+        0238ba18  2ab800003eb8    sub bh, byte ptr [eax - 0x47c20000]
+        0238ba1e  0000            add byte ptr [eax], al
+        0238ba20  4c              dec esp
+        0238ba21  b8000062b8      mov eax, 0xb8620000
+        0238ba26  0000            add byte ptr [eax], al
+        0238ba28  78b8            js 0x238b9e2
+
+  fn @ 0x007d2a20  (RVA 0x003d2a20)  loads 2 table references, 1 distinct tables
+      xref @ 0x007d2a4f  ->  table @ 0x00b932c8
+      xref @ 0x007d2a63  ->  table @ 0x00b932c8
+      prologue / first instructions:
+        007d2a20  55              push ebp
+        007d2a21  8bec            mov ebp, esp
+        007d2a23  83e4f8          and esp, 0xfffffff8
+        007d2a26  83ec44          sub esp, 0x44
+        007d2a29  53              push ebx
+        007d2a2a  8b5d08          mov ebx, dword ptr [ebp + 8]
+        007d2a2d  56              push esi
+        007d2a2e  57              push edi
+        007d2a2f  8b7d0c          mov edi, dword ptr [ebp + 0xc]
+        007d2a32  50              push eax
+        007d2a33  51              push ecx
+        007d2a34  57              push edi
+        007d2a35  8bc3            mov eax, ebx
+        007d2a37  e884100000      call 0x7d3ac0
+
+  fn @ 0x007d2a98  (RVA 0x003d2a98)  loads 2 table references, 1 distinct tables
+      xref @ 0x007d2bca  ->  table @ 0x00b932c8
+      xref @ 0x007d2bd5  ->  table @ 0x00b932c8
+      prologue / first instructions:
+        007d2a98  32b9005157e8    xor bh, byte ptr [ecx - 0x17a8af00]
+        007d2a9e  2e0dfbffeb02    or eax, 0x2ebfffb
+        007d2aa4  33c0            xor eax, eax
+        007d2aa6  85c0            test eax, eax
+        007d2aa8  89442418        mov dword ptr [esp + 0x18], eax
+        007d2aac  c644243007      mov byte ptr [esp + 0x30], 7
+        007d2ab1  c644243c00      mov byte ptr [esp + 0x3c], 0
+        007d2ab6  89442434        mov dword ptr [esp + 0x34], eax
+        007d2aba  7409            je 0x7d2ac5
+        007d2abc  8b5008          mov edx, dword ptr [eax + 8]
+        007d2abf  8bc8            mov ecx, eax
+        007d2ac1  8b02            mov eax, dword ptr [edx]
+        007d2ac3  ffd0            call eax
+        007d2ac5  8b33            mov esi, dword ptr [ebx]
+
+  fn @ 0x022c2b9d  (RVA 0x01ec2b9d)  loads 2 table references, 2 distinct tables
+      xref @ 0x022c2bf7  ->  table @ 0x00b99200
+      xref @ 0x022c2bff  ->  table @ 0x00b9a000
+      prologue / first instructions:
+        022c2b9d  2c02            sub al, 2
+        022c2b9f  0000            add byte ptr [eax], al
+        022c2ba1  b500            mov ch, 0
+        022c2ba3  002f            add byte ptr [edi], ch
+        022c2ba5  b500            mov ch, 0
+        022c2ba7  00d4            add ah, dl
+        022c2ba9  2c02            sub al, 2
+        022c2bab  0030            add byte ptr [eax], dh
+        022c2bad  b500            mov ch, 0
+        022c2baf  0048b5          add byte ptr [eax - 0x4b], cl
+        022c2bb2  0000            add byte ptr [eax], al
+        022c2bb4  dc2c02          fsubr qword ptr [edx + eax]
+        022c2bb7  0050b5          add byte ptr [eax - 0x4b], dl
+        022c2bba  0000            add byte ptr [eax], al
+
+  fn @ 0x02319cd1  (RVA 0x01f19cd1)  loads 2 table references, 2 distinct tables
+      xref @ 0x02319d2b  ->  table @ 0x00b99200
+      xref @ 0x02319d33  ->  table @ 0x00b9a000
+      prologue / first instructions:
+        02319cd1  2c02            sub al, 2
+        02319cd3  0000            add byte ptr [eax], al
+        02319cd5  b500            mov ch, 0
+        02319cd7  002f            add byte ptr [edi], ch
+        02319cd9  b500            mov ch, 0
+        02319cdb  00d4            add ah, dl
+        02319cdd  2c02            sub al, 2
+        02319cdf  0030            add byte ptr [eax], dh
+        02319ce1  b500            mov ch, 0
+        02319ce3  0048b5          add byte ptr [eax - 0x4b], cl
+        02319ce6  0000            add byte ptr [eax], al
+        02319ce8  dc2c02          fsubr qword ptr [edx + eax]
+        02319ceb  0050b5          add byte ptr [eax - 0x4b], dl
+        02319cee  0000            add byte ptr [eax], al

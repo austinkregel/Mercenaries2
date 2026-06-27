@@ -380,31 +380,141 @@ typedef int(__fastcall* pandemic_CFunction_t)(lua_State* L, void* edx);
 
 // RVAs in Mercenaries2.exe (PE image base 0x00400000). At runtime:
 //   target = GetModuleHandleA("Mercenaries2.exe") + RVA
-// Same convention as kFeslCAKeyRVA = 0x768378.
-static const DWORD kRVA_NoopStub          = 0x002aef90;  // VA 0x006AEF90  (shared no-op stub: print, SendEvent_*, music stubs, ...)
-static const DWORD kRVA_luaB_type         = 0x00460e90;  // VA 0x00860E90  (real luaB_type, scripts call type() constantly)
-static const DWORD kRVA_CreateTextWidget  = 0x001b7d30;  // VA 0x005B7D30  (Pandemic engine binding -> __fastcall)
+//
+// Per-binary tables: the same source-level Lua code lands at different
+// absolute addresses depending on the build of Mercenaries2.exe in
+// use. We support two known builds and fall through to the prologue
+// validator (= bridge stays disabled) on anything else.
+//
+// To add a new binary:
+//   1) run tools/find_lua_print.py and tools/resolve_lua_api.py
+//      against that exe to get the new RVAs;
+//   2) compute a fingerprint with the same FNV-1a-of-4KB-at-RVA-0x11000
+//      formula SelectRvas() uses (one-liner in Python — see comment
+//      on SelectRvas);
+//   3) add another entry to the switch in SelectRvas.
+//
+// CA key RVA stays in .rdata and is identical across both known builds
+// (byte-for-byte verified), so it's not in the per-binary struct. If a
+// future binary moves it, add it.
+struct LuaRvaSet {
+    const char* label;
+    DWORD noop_stub;         // shared no-op stub (print/SendEvent_*/...)
+    DWORD luaB_type;
+    DWORD luaB_loadstring;
+    DWORD luaB_pcall;
+    DWORD CreateTextWidget;
+    DWORD luaL_register;
+};
 
-// luaL_register at VA 0x0085F720. Custom register ABI determined by
-// inspecting both call sites (base lib registration at 0x008621B2 and
-// string lib registration at 0x0086579C):
-//   ECX = lua_State* L
-//   EAX = const char* libname (NULL for global registration)
-//   [ebp+8] / [esp+4] = const luaL_Reg* table
-// Caller cleans the stack arg with `add esp, 4`.
-// The function's prologue (`mov edi,eax; test edi,edi; mov esi,ecx; je
-// no_libname_path`) is canonical Lua 5.1 luaL_register source.
-static const DWORD kRVA_luaL_register     = 0x0045f720;  // VA 0x0085F720
+// v1.1 — the canonical archive.org English retail build. This was the
+// first one the bridge was developed against; all the comments below
+// referring to "the engine" originally meant this binary.
+//
+// luaL_register's custom register ABI (ECX = lua_State* L, EAX =
+// libname, [esp+4] = table; caller cleans 4 bytes) was determined by
+// inspecting its base-lib registration call site at 0x008621B2 and
+// string-lib call site at 0x0086579C in this build. Its prologue
+// `mov edi,eax; test edi,edi; mov esi,ecx; je no_libname_path` is the
+// canonical Lua 5.1 luaL_register source pattern.
+static const LuaRvaSet kRvas_v1_1 = {
+    "v1.1 (archive.org English retail)",
+    0x002AEF90,  // noop_stub        VA 0x006AEF90
+    0x00460E90,  // luaB_type        VA 0x00860E90
+    0x004611E0,  // luaB_loadstring  VA 0x008611E0  (real __cdecl)
+    0x00461810,  // luaB_pcall       VA 0x00861810  (real __cdecl)
+    0x001B7D30,  // CreateTextWidget VA 0x005B7D30  (__fastcall engine binding)
+    0x0045F720,  // luaL_register    VA 0x0085F720  (custom register ABI)
+};
 
-// Phase 3 executor — real callable lua_CFunctions:
-static const DWORD kRVA_luaB_loadstring   = 0x004611e0;  // VA 0x008611E0  (real __cdecl)
-static const DWORD kRVA_luaB_pcall        = 0x00461810;  // VA 0x00861810  (real __cdecl)
+// v1.1 + mercs2-securom-bypass — the cracked retail exe that the
+// Mercenaries-Fan-Build framework targets. Same source code, but the
+// bypass tool restructured .text: most basic-library functions
+// shifted by -0x220, widget bindings shifted by +0x10, and the noop
+// stub moved to an entirely new region. .rdata is unchanged (CA key
+// still at 0x768378). All addresses below were verified by
+// byte-signature match against the original prologues; see commit
+// message for the diff data.
+static const LuaRvaSet kRvas_v1_1_bypass = {
+    "v1.1 + mercs2-securom-bypass (cracked retail)",
+    0x002D5640,  // noop_stub        (moved +0x266B0)
+    0x00460C70,  // luaB_type        (shifted -0x220)
+    0x00460FC0,  // luaB_loadstring  (shifted -0x220)
+    0x004615F0,  // luaB_pcall       (shifted -0x220)
+    0x001B7D40,  // CreateTextWidget (shifted +0x10)
+    0x0045F500,  // luaL_register    (shifted -0x220)
+};
+
+// Selected at runtime by SelectRvas(). All hook/executor code reads
+// from this pointer rather than hard-coded RVA constants.
+static const LuaRvaSet* g_rvas = &kRvas_v1_1;
+
+// FNV-1a 64-bit. Hashes are stable, deterministic, no crypto deps,
+// fast enough that fingerprinting at startup is invisible.
+static uint64_t Fnv1a64(const void* data, size_t len) {
+    uint64_t h = 0xCBF29CE484222325ULL;
+    const uint8_t* b = static_cast<const uint8_t*>(data);
+    for (size_t i = 0; i < len; ++i) {
+        h ^= b[i];
+        h *= 0x100000001B3ULL;
+    }
+    return h;
+}
+
+// Forward decl — SafeProbe is defined further down with the other
+// memory-safety helpers but SelectRvas (right below) needs it.
+static bool SafeProbe(const void* p, size_t bytes);
+
+// Fingerprint the loaded Mercenaries2.exe by hashing 4 KB at
+// RVA 0x11000 (= .text + 0x10000). Picked because:
+//   * it's well inside .text on every binary we've seen
+//   * the bypass tool's restructuring affects this region, so the
+//     hash discriminates v1.1 vs v1.1+bypass cleanly
+//   * 4 KB is large enough that collisions are statistically zero
+//   * no user-specific bytes live here
+//
+// Reproduce the hash for a new binary in Python (see Open questions
+// comment at the top of the per-binary tables):
+//
+//     def fnv1a64(d, h=0xCBF29CE484222325):
+//         for b in d: h = ((h ^ b) * 0x100000001B3) & 0xFFFFFFFFFFFFFFFF
+//         return h
+//     # read 4096 bytes at file offset = .text_RawData + 0x10000
+//     # (compute via PE section headers; for both known builds
+//     # .text starts at RVA 0x1000 and is at file offset 0x400)
+static const LuaRvaSet* SelectRvas(HMODULE mod) {
+    BYTE* base = reinterpret_cast<BYTE*>(mod);
+    if (!SafeProbe(base + 0x11000, 0x1000)) {
+        Log("[!] LuaBridge: SelectRvas: 4KB at RVA 0x11000 unreadable; "
+            "defaulting to v1.1 RVAs.");
+        return &kRvas_v1_1;
+    }
+    uint64_t fp = Fnv1a64(base + 0x11000, 0x1000);
+    Log("[*] LuaBridge: binary fingerprint = 0x%016llX", fp);
+
+    switch (fp) {
+        case 0xB79E4DD22A4BFCB3ULL:
+            Log("[*] LuaBridge: matched %s", kRvas_v1_1.label);
+            return &kRvas_v1_1;
+        case 0x1942B494FF9F4DB3ULL:
+            Log("[*] LuaBridge: matched %s", kRvas_v1_1_bypass.label);
+            return &kRvas_v1_1_bypass;
+        default:
+            Log("[!] LuaBridge: unknown binary (fingerprint not in table). "
+                "Falling back to v1.1 RVAs; the prologue validator will "
+                "disable any hook whose target bytes don't match. To enable "
+                "the bridge on this binary, re-derive RVAs via tools/, add "
+                "a new LuaRvaSet to dllmain.cpp, and add this fingerprint "
+                "(0x%016llX) to the SelectRvas switch.", fp);
+            return &kRvas_v1_1;
+    }
+}
 
 // Known but unused:
-//   kRVA 0x468CF0 = luaD_pcall       — internal, custom EAX-first ABI.
-//   kRVA 0x461190 = SecuROM thunk    — forwarder for some luaL_load* variant.
-//   kRVA 0x45F2C0 = luaL_where       (NOT lua_settop — that's inlined)
-//   kRVA 0x46B480 = luaC_step        (NOT lua_tolstring — that's inlined)
+//   RVA 0x468CF0 = luaD_pcall       — internal, custom EAX-first ABI.
+//   RVA 0x461190 = SecuROM thunk    — forwarder for some luaL_load* variant.
+//   RVA 0x45F2C0 = luaL_where       (NOT lua_settop — that's inlined)
+//   RVA 0x46B480 = luaC_step        (NOT lua_tolstring — that's inlined)
 
 // lua_State layout in this Mercenaries 2 build (Pandemic packed
 // CommonHeader more tightly than stock Lua 5.1.2). Verified by reading
@@ -1423,9 +1533,14 @@ static DWORD WINAPI LuaBridgeInitThread(LPVOID) {
     }
     BYTE* base = reinterpret_cast<BYTE*>(mod);
 
+    // Pick the RVA table that matches this exe. Falls through to v1.1
+    // RVAs on unknown binaries — the per-hook prologue validator then
+    // refuses the hooks and the bridge stays disabled (no CTD).
+    g_rvas = SelectRvas(mod);
+
     // Same unpack-race wait pattern as PatchFeslCAKey. .text appears to be
     // intact on disk for this binary, but waiting is cheap insurance.
-    BYTE* probe = base + kRVA_NoopStub;
+    BYTE* probe = base + g_rvas->noop_stub;
     for (int t = 0; t < 400; t++) {
         bool nonzero = false;
         for (int i = 0; i < 8; i++) if (probe[i]) { nonzero = true; break; }
@@ -1438,22 +1553,22 @@ static DWORD WINAPI LuaBridgeInitThread(LPVOID) {
     // executor in LuaDoString() uses these to compile+run user chunks,
     // but ONLY when invoked from a verified Lua context (currently
     // DetourLuaType — see PumpQueue(L) calls in each detour).
-    p_luaB_loadstring = reinterpret_cast<lua_CFunction_t>(base + kRVA_luaB_loadstring);
-    p_luaB_pcall      = reinterpret_cast<lua_CFunction_t>(base + kRVA_luaB_pcall);
+    p_luaB_loadstring = reinterpret_cast<lua_CFunction_t>(base + g_rvas->luaB_loadstring);
+    p_luaB_pcall      = reinterpret_cast<lua_CFunction_t>(base + g_rvas->luaB_pcall);
     InitChunkSource();
     Log("[*] LuaBridge: Phase 3 executor armed (loadstring=%p, pcall=%p, chunkbuf=%p)",
         p_luaB_loadstring, p_luaB_pcall, &g_chunkSource);
 
     struct HookSpec { DWORD rva; LPVOID detour; LPVOID* orig; const char* name; HookKind kind; };
     HookSpec specs[] = {
-            { kRVA_NoopStub,          &DetourNoopStub,         (LPVOID*)&fpOriginal_NoopStub,         "noop-stub (print/SendEvent_*/...)", HOOK_NOOP_STUB },
-            { kRVA_luaB_type,         &DetourLuaType,          (LPVOID*)&fpOriginal_luaB_type,        "luaB_type",                         HOOK_NORMAL_FUNC },
-            { kRVA_CreateTextWidget,  &DetourCreateTextWidget, (LPVOID*)&fpOriginal_CreateTextWidget, "CreateTextWidget",                  HOOK_NORMAL_FUNC },
+            { g_rvas->noop_stub,        &DetourNoopStub,         (LPVOID*)&fpOriginal_NoopStub,         "noop-stub (print/SendEvent_*/...)", HOOK_NOOP_STUB },
+            { g_rvas->luaB_type,        &DetourLuaType,          (LPVOID*)&fpOriginal_luaB_type,        "luaB_type",                         HOOK_NORMAL_FUNC },
+            { g_rvas->CreateTextWidget, &DetourCreateTextWidget, (LPVOID*)&fpOriginal_CreateTextWidget, "CreateTextWidget",                  HOOK_NORMAL_FUNC },
             // luaL_register: authoritative L capture + dump of every Lua
             // C function the engine exposes. The naked detour preserves
             // the custom ECX/EAX register-arg ABI; the C handler reads
             // the cdecl args we push and walks the luaL_Reg table.
-            { kRVA_luaL_register,     &DetourLuaLRegister,     (LPVOID*)&fpOriginal_luaL_register,    "luaL_register",                     HOOK_NORMAL_FUNC },
+            { g_rvas->luaL_register,    &DetourLuaLRegister,     (LPVOID*)&fpOriginal_luaL_register,    "luaL_register",                     HOOK_NORMAL_FUNC },
     };
     int hooks_armed = 0;
     for (const auto& s : specs) {
