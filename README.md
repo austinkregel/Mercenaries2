@@ -31,7 +31,6 @@ Merc2Reborn/
 │   ├── dllmain.cpp        time spoof, Lua hooks + REPL server (port 27050).
 │   ├── src/               MinHook (BSD 2-Clause, bundled) + buffer/hook code.
 │   └── include/MinHook.h
-├── Merc2Launcher/         C# launcher (Program.cs).
 ├── server.py              FESL + Theater + GameSpy server emulator
 │                          (Python 2.7, SSLv3 + RC4 for the legacy handshake).
 ├── tools/                 Python REPL, Lua probes, engine API docs.
