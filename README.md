@@ -10,6 +10,23 @@ emulation) so the multiplayer mode works again, and adds an ASI bridge
 that lets you execute arbitrary Lua against the live engine — including
 opening the dev cheat menu the original developers left in the binary.
 
+## Heads-up: this is iterative reverse-engineering, not polished code
+
+A lot of what's here is leftover from earlier attempts and experiments.
+Things that worked stayed in; things that turned out to be unnecessary
+sometimes also stayed in because removing them risks breaking the
+combination that *does* work, and nobody's gone back to clean up yet.
+
+A concrete example: the C++ side spoofs the system clock to 2012-06-15
+because the very first attempt at getting the FESL TLS handshake to
+succeed used cert-validity-window tricks. Other fixes layered on top
+later (the FESL CA key replay, the `WinVerifyTrust` blindfold) probably
+make the time spoof redundant now — but it hasn't been tested without
+it, so it's still there. The whole codebase has pockets like that.
+
+If you see something that looks vestigial or weirdly specific, it
+probably is. Pull requests welcome. Just expect rough edges.
+
 ## Project status
 
 | Phase | Status |
