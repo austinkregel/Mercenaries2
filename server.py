@@ -35,6 +35,138 @@ DEBUG_PACKETS = True
 
 SEND_LOCK = threading.Lock()
 
+# --- UDP RELAY POOL CONFIG ---
+RELAY_PORT_MIN = 10000
+RELAY_PORT_MAX = 10100
+AVAILABLE_PORTS = list(range(RELAY_PORT_MIN, RELAY_PORT_MAX + 1))
+PORT_LOCK = threading.Lock()
+
+# ----------------------------------------------------------------------------
+# UDP Relay Engine
+# ----------------------------------------------------------------------------
+def allocate_relay_ports():
+    with PORT_LOCK:
+        if len(AVAILABLE_PORTS) >= 2:
+            return AVAILABLE_PORTS.pop(0), AVAILABLE_PORTS.pop(0)
+        return None, None
+
+def free_relay_ports(port1, port2):
+    with PORT_LOCK:
+        AVAILABLE_PORTS.extend([port1, port2])
+
+def threaded_udp_relay(host_port, joiner_port, game_id, expected_ips):
+    """UDP relay between a lobby's host and joiner.
+
+    expected_ips is a shared dict {'host': <ip>, 'joiner': <ip or None>}.
+    Every inbound packet's source IP must match the corresponding
+    expected IP before we'll lock the (ip, port) tuple for that
+    direction or forward anything. After the first matching packet,
+    the (ip, port) is locked and subsequent packets must match it
+    exactly; anything else is dropped silently. This stops a port
+    scanner from claiming the host or joiner identity and hijacking
+    the session.
+
+    The joiner IP may legitimately be None for a brief window between
+    lobby create and EnterGame; during that window joiner-side packets
+    are dropped.
+    """
+    sock_host = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    sock_joiner = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+    # Bind early; on failure (port in use, permission denied, stale
+    # TIME_WAIT, etc.) free the ports back to the pool so they don't
+    # leak. Previously a bind failure here drained the pool silently.
+    try:
+        sock_host.bind(('0.0.0.0', host_port))
+        sock_joiner.bind(('0.0.0.0', joiner_port))
+    except Exception as e:
+        print "[!] RELAY: bind failed for ports {0}/{1} (Game {2}): {3}".format(
+            host_port, joiner_port, game_id, e)
+        sock_host.close()
+        sock_joiner.close()
+        free_relay_ports(host_port, joiner_port)
+        return
+
+    # State tracking for the NAT mapping. endpoints holds the
+    # currently-locked (ip, port) for each side. last_active drives
+    # the idle-timeout watchdog below.
+    endpoints = {'host': None, 'joiner': None}
+    running = [True]
+    last_active = [time.time()]
+
+    def relay(src_sock, dst_sock, src_key, dst_key):
+        src_sock.settimeout(1.0)  # hoisted; previously set every iteration
+        while running[0]:
+            try:
+                data, addr = src_sock.recvfrom(2048)
+            except socket.timeout:
+                continue
+            except Exception as e:
+                print "[!] RELAY: {0}->{1} recv error (Game {2}): {3}".format(
+                    src_key, dst_key, game_id, e)
+                continue
+
+            locked = endpoints[src_key]
+            if locked is None:
+                # No endpoint locked yet for this direction. Accept the
+                # first packet whose source IP matches what FESL told us
+                # to expect, and lock the full (ip, port) tuple from
+                # then on. Drop anything else; that's almost certainly
+                # a probe.
+                expected_ip = expected_ips.get(src_key)
+                if expected_ip is None:
+                    # We haven't been told who to expect yet (joiner
+                    # hasn't entered the game). Can't safely lock.
+                    continue
+                if addr[0] != expected_ip:
+                    # Probable hijack attempt. Could log at debug level
+                    # but unconditional logging would help port scanners
+                    # confirm a live relay; stay quiet.
+                    continue
+                endpoints[src_key] = addr
+                print "[*] RELAY: locked {0} endpoint to {1} for Game {2}".format(
+                    src_key, addr, game_id)
+            elif addr != locked:
+                # Locked endpoint mismatch. Drop spoofed traffic.
+                continue
+
+            last_active[0] = time.time()
+
+            dst = endpoints[dst_key]
+            if dst:
+                try:
+                    dst_sock.sendto(data, dst)
+                except Exception as e:
+                    print "[!] RELAY: {0}->{1} send error (Game {2}): {3}".format(
+                        src_key, dst_key, game_id, e)
+
+    t1 = threading.Thread(target=relay, args=(sock_host, sock_joiner, 'host', 'joiner'))
+    t2 = threading.Thread(target=relay, args=(sock_joiner, sock_host, 'joiner', 'host'))
+    t1.daemon = True
+    t2.daemon = True
+    t1.start()
+    t2.start()
+
+    print "[*] RELAY: Allocated ports {0} (Host) and {1} (Joiner) for Game {2}".format(host_port, joiner_port, game_id)
+
+    # The Watchdog Loop
+    while game_id in STATE.games:
+        # If 30 seconds pass with zero packets, assume a crash/Alt-F4
+        if time.time() - last_active[0] > 30.0:
+            print "[!] RELAY: Lobby {0} timed out (Crash/Alt-F4 detected).".format(game_id)
+            if game_id in STATE.games:
+                del STATE.games[game_id] 
+            break 
+            
+        time.sleep(1)
+
+    # Teardown and Cleanup
+    running[0] = False
+    sock_host.close()
+    sock_joiner.close()
+    free_relay_ports(host_port, joiner_port)
+    print "[*] RELAY: Recovered ports {0} and {1} for Game {2}".format(host_port, joiner_port, game_id)
+
 # ----------------------------------------------------------------------------
 # Wire format
 # ----------------------------------------------------------------------------
@@ -117,9 +249,8 @@ class User(object):
         self.id = uid
         self.name = name
         self.session = None
-        self.game_version = None  # Track the client's unique hash
+        self.game_version = None  
         
-        # Account Tracking Data
         self.known_ips = set()
         self.stats = {
             'logins': 0,
@@ -163,6 +294,14 @@ class Game(object):
         self.ipIn = (None, None)
         self.slots = 0
         self.info = {}
+        self.relay_ports = (None, None) # Added to track active relay ports
+        # Shared with the relay thread: {'host': <ip>, 'joiner': <ip or None>}.
+        # The relay validates the source IP of every UDP packet against
+        # the corresponding entry before forwarding, preventing a port
+        # scanner from hijacking an active session. The host IP is set
+        # at lobby create; the joiner IP gets filled in when a player
+        # joins via _handle_enter_game.
+        self.relay_expected_ips = None
 
 class Session(object):
     def __init__(self, fesl_conn=None, client_ip="Unknown"):
@@ -172,7 +311,6 @@ class Session(object):
         self.theater_conn = None
         self.client_ip = client_ip
         
-        # Heartbeat control
         self._stop_heartbeat = threading.Event()
         self._heartbeat_thread = None
 
@@ -215,7 +353,7 @@ class TheaterState(object):
         self.games = {}         
         self.last_user_id = 0
         self.last_game_id = 1000
-        self.ip_versions = {}     # IP to Version Hash mapping for ghost sockets
+        self.ip_versions = {}     
         self.lock = threading.Lock()
         
         self.load_database()
@@ -433,7 +571,6 @@ def handle_fesl_message(session, msg):
             reply.data['id.id'] = gid
             reply.data['id.partition'] = partition
             
-            # CAPTURE HASH: Save this client's unique game version string mapping it to their IP
             client_hash = msg.data.get('players.0.props.{filter-version}')
             if client_hash:
                 STATE.ip_versions[session.client_ip] = client_hash
@@ -538,6 +675,23 @@ def _handle_create_game(ctx, msg):
     if g.host:
         g.host.stats['games_hosted'] += 1
         STATE.save_database()
+
+    # --- START UDP RELAY THREAD ---
+    g.relay_ports = allocate_relay_ports()
+    if g.relay_ports[0] and g.relay_ports[1]:
+        # Shared with the relay thread for source-IP validation. The
+        # host IP is known now (peer IP of the theater connection that
+        # just created this lobby). The joiner IP gets filled in by
+        # _handle_enter_game once a player joins; until then the relay
+        # drops joiner-side packets rather than locking to a probe.
+        g.relay_expected_ips = {'host': g.ipEx[0], 'joiner': None}
+        t = threading.Thread(target=threaded_udp_relay,
+                             args=(g.relay_ports[0], g.relay_ports[1],
+                                   g.id, g.relay_expected_ips))
+        t.daemon = True
+        t.start()
+    else:
+        print "[!] RELAY: Port pool exhausted! Lobby {0} created without relay.".format(g.id)
         
     return [_theater_reply(msg, {
         'EKEY': g.ekey, 'GID': g.id, 'J': 0, 'JOIN': 0, 'LID': g.lid,
@@ -559,9 +713,18 @@ def _handle_enter_game(ctx, msg):
     rq.ipEx = (_peer_ip(ctx['conn']), msg.data.get('PORT'))
     game.requests[rq.pid] = rq
 
+    # Tell the relay (if one is running for this lobby) which source IP
+    # to accept on the joiner side. Single-key dict assignment is atomic
+    # under CPython's GIL, so no lock is needed.
+    if game.relay_expected_ips is not None:
+        game.relay_expected_ips['joiner'] = rq.ipEx[0]
+
     reply = _theater_reply(msg, {'GID': game.id, 'LID': game.lid})
 
-    rdict = {'PTYPE': 'P', 'GID': game.id, 'IP': rq.ipEx[0], 'PORT': rq.ipEx[1],
+    # --- OVERRIDE HOST CONNECTION PARAMS ---
+    host_port = game.relay_ports[0] if game.relay_ports[0] else rq.ipEx[1]
+    
+    rdict = {'PTYPE': 'P', 'GID': game.id, 'IP': SERVER_IP, 'PORT': host_port,
              'LID': game.lid, 'NAME': rq.user.name, 'UID': rq.user.id,
              'PID': rq.pid, 'R-INT-IP': rq.ipIn[0], 'R-INT-PORT': rq.ipIn[1],
              'TICKET': rq.id}
@@ -572,7 +735,7 @@ def _handle_enter_game(ctx, msg):
     host_sess = game.host.session if game.host else None
     if host_sess and host_sess.theater_conn:
         egrq_msg = FESLMessage('EGRQ', 0, rdict)
-        print "THTR  OUT (To Host) id=EGRQ (Asking host to accept)"
+        print "THTR  OUT (To Host) id=EGRQ (Asking host to accept routing to VPS)"
         send_msg(host_sess.theater_conn, egrq_msg)
     return [reply]
 
@@ -591,14 +754,17 @@ def _handle_enter_game_response(ctx, msg):
         rq.user.stats['games_joined'] += 1
         STATE.save_database()
 
+    # --- OVERRIDE JOINER CONNECTION PARAMS ---
+    joiner_port = game.relay_ports[1] if game.relay_ports[1] else game.ipEx[1]
+
     joiner_sess = rq.user.session if rq.user else None
     if joiner_sess and joiner_sess.theater_conn:
         egeg_msg = FESLMessage('EGEG', 0, {
             'LID': game.lid, 'GID': game.id, 'UGID': game.uid,
-            'HUID': game.host.id, 'I': game.ipEx[0], 'P': game.ipEx[1],
+            'HUID': game.host.id, 'I': SERVER_IP, 'P': joiner_port,
             'INT-IP': game.ipIn[0], 'INT-PORT': game.ipIn[1], 'PL': 'pc',
             'PID': pid, 'EKEY': game.ekey, 'TICKET': rq.id})
-        print "THTR  OUT (To Joiner) id=EGEG (Clear to connect!)"
+        print "THTR  OUT (To Joiner) id=EGEG (Clear to connect to VPS Relay!)"
         send_msg(joiner_sess.theater_conn, egeg_msg)
     return [reply]
 
@@ -616,8 +782,6 @@ def handle_theater_message(ctx, msg):
             sess.theater_conn = ctx['conn']
             ctx['session'] = sess
             reply.data['NAME'] = sess.user.name if sess.user else ''
-            
-            # PROFILE TRACKING: Add verified external IP to the database for Theater sessions
             if sess.user:
                 sess.user.known_ips.add(_peer_ip(ctx['conn']))
                 STATE.save_database()
@@ -646,12 +810,10 @@ def handle_theater_message(ctx, msg):
             })
             reply.data.update(game.info)
             
-            # SPOOF VERSION: Force the lobby version to match the querying user's version
             querying_user = ctx['session'].user if ctx['session'] else None
             if querying_user and querying_user.game_version:
                 reply.data['B-version'] = querying_user.game_version
             else:
-                # GHOST SOCKET CATCH: Look up the hash by their IP address
                 client_ip = _peer_ip(ctx['conn'])
                 ip_hash = STATE.ip_versions.get(client_ip)
                 if ip_hash:
