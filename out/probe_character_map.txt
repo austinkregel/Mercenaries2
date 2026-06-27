@@ -1,0 +1,2378 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "MrxPlayer table key: Hero
+  [1] = hero
+  [Activate] = function: 1F4E6340
+  [CleanupSurvival] = function: 1F4E6140
+  [OnDeactivate] = function: 1F4E62C0
+  [CreateDropEvent] = function: 1F4E6160
+  [EnterPassengerCallback] = function: 1F4E5FA0
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [OnDeath] = function: 1F4E62E0
+  [SetupSurvivalSystem] = function: 1F4E6100
+  [MrxVoSequence] = knPriorityContract - 2
+Start - function: 1F579F00
+Reset - function: 1F51BA20
+MrxSoundCategories - table: 1F796300
+MrxUtil - table: 1F5301C0
+Stop - function: 1F51BA60
+knPriorityBriefing - 1
+_CallSequenceCallbacks - function: 1F51BA00
+_nBaseDelay - 0.25
+knPriorityFreeplay - 4
+Cleanup - function: 1F51BA40
+_uDelayTimer - userdata: 0007021A
+IsSequenceInProgress - function: 1F51B9E0
+_ExecuteStage - function: 1F51BA80
+knPriorityCinematic - 0
+_THIS - table: 1F530180
+1 - mrxvosequence
+
+  ... total 40 entries
+MrxPlayer table key: MrxActionHijack
+  [1] = mrxactionhijack
+  [Hero] = Deinit - function: 1F4E6380
+tEvent - table: 1F4E6400
+MrxTutorialManager - table: 1F595720
+uRiderEvent - userdata: 00040085
+HealthDropped - function: 1F4F5E80
+EndSurvivalMode - function: 1F4E60C0
+Heal - function: 1F4F5E50
+SetupTransferSystem - function: 1F4E5FE0
+CleanupTransferSystem - function: 1F4E5FC0
+GetAttribute - function: 1F4E5F80
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+Init - function: 1F4E63A0
+HideTutorialMessage - function: 1F4E5F60
+SetTimeScale - function: 1F4E6020
+StartSurvivalMode - function: 1F4E60A0
+TutorialCueCallback - function: 1F4E5F40
+DisableGrappleTriggered - function: 1F4E5F20
+SaveOutInventory - function: 1F4E6280
+CleanEvents - function: 1F4E6120
+SurvivalModeCallback - function: 1F4E60E0
+_THIS - table: 1F593980
+nRiders - 1
+MrxParkingLotManager - table: 1F5939C0
+SetupInventory - function: 1F4E62A0
+CreateHealTimer - function: 1F4E6180
+MrxSound - table: 1F795D80
+WifEquipmentData - table: 1F769EC0
+SurvivalCooldownEnded - function: 1F4E6060
+OnActivate - function: 1F4E6360
+MrxVoSequence - table: 1F530180
+SetupSurvivalSystem - function: 1F4E6100
+OnDeath - function: 1F4E62E0
+MrxGui - table: 1F9C8CE0
+EnterPassengerCallback - function: 1F4E5FA0
+CreateDropEvent - function: 1F4E6160
+OnDeactivate - function: 1F4E62C0
+CleanupSurvival - function: 1F4E6140
+Activate - function: 1F4E6340
+1 - hero
+
+  [MrxAchievements] = GetNameFromHash - function: 1F4E55C0
+NetEventCallback - function: 1F4E55A0
+AchievementGrant - function: 1F4E5540
+MrxFactionManager - table: 1F531600
+AchievementIsGranted - function: 1F4E5500
+AchievementAddCount_MASTER_HIJACK - function: 1F4E54E0
+LoadSingleton - function: 1F4E5460
+ProcessSupportEvent - function: 1F4E54A0
+EVENT_ACHIEVEMENTGRANT - 1
+tSupportFilter - table: 1F4E5B20
+EVENT_GRANTACHIEVEMENT - 0
+AchievementAddCount - function: 1F4E5520
+tAchievementsList - table: 1F4E5B00
+NetGrantAchievement - function: 1F4E5580
+tSupportUsedInCoop - table: 1F594EA0
+EVENT_ACHIEVEMENTADDCOUNT - 2
+GetLocalRemote - function: 1F4E5560
+FactionMoodAchievements - function: 1F4E54C0
+SaveSingleton - function: 1F4E5480
+tSupportUsed - table: 1F594E60
+_THIS - table: 1F593940
+1 - mrxachievements
+
+  [OnRagdollDone] = function: 1F4E32E0
+  [CleanupCommonNonSuccess] = function: 1F4E3260
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [TankPrep] = function: 1F4E35A0
+  [ActionHijackComplete] = function: 1F4E31E0
+  [OnReactiveLoopAnimationComplete] = function: 1F4E34C0
+  [RULESET_APC] = 2
+  ... total 51 entries
+MrxPlayer table key: MrxGui
+  [1] = mrxgui
+  [GetAllWidgetsByName] = function: 1F9CC980
+  [HandleLoadingHint] = function: 1F9C83A0
+  [_bCurrentlyFadingIn] = false
+  [_tObjectiveInformationCallbackData] = 2 - table: 1E9E3860
+1 - table: 1E9E3240
+
+  [GetObjectiveDescription] = function: 1F9C8440
+  [GetWidgetByName] = function: 1F9CC9A0
+  [_CompleteFadeFlashLoad] = function: 1FAAEE40
+  [FadeFromColor] = function: 1F9CCEA0
+  [PushWidgetToFront] = function: 1F9CC9E0
+  ... total 77 entries
+MrxPlayer table key: _tSpawnLocations
+  [1] = Pmc_Entry1
+  [2] = Pmc_Entry2
+MrxPlayer table key: MrxTransit
+  [1] = mrxtransit
+  [MrxAchievements] = GetNameFromHash - function: 1F4E55C0
+NetEventCallback - function: 1F4E55A0
+AchievementGrant - function: 1F4E5540
+MrxFactionManager - table: 1F531600
+AchievementIsGranted - function: 1F4E5500
+AchievementAddCount_MASTER_HIJACK - function: 1F4E54E0
+LoadSingleton - function: 1F4E5460
+ProcessSupportEvent - function: 1F4E54A0
+EVENT_ACHIEVEMENTGRANT - 1
+tSupportFilter - table: 1F4E5B20
+EVENT_GRANTACHIEVEMENT - 0
+AchievementAddCount - function: 1F4E5520
+tAchievementsList - table: 1F4E5B00
+NetGrantAchievement - function: 1F4E5580
+tSupportUsedInCoop - table: 1F594EA0
+EVENT_ACHIEVEMENTADDCOUNT - 2
+GetLocalRemote - function: 1F4E5560
+FactionMoodAchievements - function: 1F4E54C0
+SaveSingleton - function: 1F4E5480
+tSupportUsed - table: 1F594E60
+_THIS - table: 1F593940
+1 - mrxachievements
+
+  [StartTransit] = function: 1F49F2E0
+  [FinishTransit] = function: 1F49F2C0
+  [MrxSupportTransit] = NETEVENT_ENTERVEHICLE - 0
+NetEventCallback - function: 1F49FD80
+MrxTutorialManager - table: 1F595720
+_PlayerLeftGame - function: 1F49FE80
+sDeliveryVehicle - UH1 Transport (Transit)
+AllPlayersExitVehicle - function: 1F49FD60
+_RemoveTimeoutEvent - function: 1F49FF00
+NETEVENT_CLEARMESSAGE - 3
+_WaitCallbackBriefing - function: 1F49FE20
+_HandleDeath - function: 1F49FD20
+bTransitInterfaceActive - false
+MrxUtil - table: 1F5301C0
+_TransitInterfaceCallback - function: 1F49FE60
+MrxSupportDesignatorSmoke - table: 1F596280
+MrxState - table: 1F594800
+SetPickupVehicle - function: 1F49FF40
+NETEVENT_EXITVEHICLE - 1
+__index - table: 1F57B060
+TransitToPoint - function: 1F49FE00
+_FinishTransit2 - function: 1F49FDA0
+_Cleanup - function: 1F49FD40
+MrxSupportDesignatorFlare - table: 1F57B280
+_PlayerExited - function: 1F49FEA0
+TransitInterfaceCallbackBriefing - function: 1F49FE40
+NETEVENT_SHOWMESSAGE - 2
+_THIS - table: 1F57B060
+oDesignator - table: 1EEE4B40
+DesignationCallback - function: 1F49FFA0
+MrxSupport - table: 1F532140
+_WaitCallback - function: 1F49FF60
+Commence - function: 1F49FFC0
+Create - function: 1F49FFE0
+_VehicleLanded - function: 1F49FF20
+_OnHibernate - function: 1F49FEE0
+WifPmcInterior - table: 1F5324E0
+MrxTransit - table: 1F57B000
+nAltitude - 250
+_OpenTransitInterface - function: 1F49FEC0
+_StartTransit - function: 1F49FDE0
+_FinishTransit - function: 1F49FDC0
+2 - table: 1F57B040
+1 - mrxsupporttransit
+
+  [_bInitialized] = true
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [MrxUnlockFanfare] = MrxCheatBootstrap - table: 1F530200
+WifEquipmentData - table: 1F769EC0
+SetClientBatchFanfareData - function: 1F4E05A0
+MrxFactionManager - table: 1F531600
+MrxStarterManager - table: 1F532480
+AddUnlockedItems - function: 1F4E0620
+MrxUtil - table: 1F5301C0
+SetClientFanfareData - function: 1F4E05E0
+WifStarterData - table: 1F593840
+AddUnlockedItem - function: 1F4E0A00
+_ClientBatchType - 
+ClientHVTFanfare - function: 1F4E0580
+MrxGui - table: 1F9C8CE0
+MrxSupportData - table: 1F531660
+_BuildMessage - function: 1F4E0600
+tClientMessages - table: 1F4E05C0
+_THIS - table: 1F57C860
+1 - mrxunlockfanfare
+
+  [IsInTransit] = function: 1F49F300
+  [SuppressLocation] = function: 1F49F460
+  ... total 44 entries
+MrxPlayer table key: MrxVoSequence
+  [1] = mrxvosequence
+  [_THIS] = knPriorityContract - 2
+Start - function: 1F579F00
+Reset - function: 1F51BA20
+MrxSoundCategories - table: 1F796300
+MrxUtil - table: 1F5301C0
+Stop - function: 1F51BA60
+knPriorityBriefing - 1
+_CallSequenceCallbacks - function: 1F51BA00
+_nBaseDelay - 0.25
+knPriorityFreeplay - 4
+Cleanup - function: 1F51BA40
+_uDelayTimer - userdata: 0007021A
+IsSequenceInProgress - function: 1F51B9E0
+_ExecuteStage - function: 1F51BA80
+knPriorityCinematic - 0
+_THIS - table: 1F530180
+1 - mrxvosequence
+
+  [knPriorityCinematic] = 0
+  [_ExecuteStage] = function: 1F51BA80
+  [IsSequenceInProgress] = function: 1F51B9E0
+  [_uDelayTimer] = userdata: 0007021A
+  [Cleanup] = function: 1F51BA40
+  [knPriorityFreeplay] = 4
+  [_nBaseDelay] = 0.25
+  [_CallSequenceCallbacks] = function: 1F51BA00
+  ... total 17 entries
+MrxPlayer table key: WifPmcInterior
+  [1] = wifpmcinterior
+  [_SetPortalMarker] = function: 1F458520
+  [MrxRewardData] = WifMissionData - table: 1F57A460
+NetEventCallback - function: 1F4A8D60
+WifEquipmentData - table: 1F769EC0
+WifMissionFlow - table: 1F57A4C0
+LoadSingleton - function: 1F4A8CE0
+_tRewards - table: 1F4AEE20
+EVENT_GRANTREWARDKEY - 0
+_FormatLevelMilestoneString - function: 1F4A8BC0
+gtAllSupport - table: 1F3940C0
+DispenseRewards - function: 1F4A8DC0
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+Init - function: 1F4A8E20
+EnableCashRewardHalving - function: 1F4A8D20
+GetWagerData - function: 1F4A8CC0
+GrantRewardKey - function: 1F4A8D40
+gtAllEquipment - table: 1F1C57C0
+_GetPrintableEquipmentString - function: 1F4A8C20
+DispenseAllRewards - function: 1F4A8DA0
+_tFuelReward - table: 1F4AEE60
+_FormatMilestoneSuffix - function: 1F4A8BE0
+GenerateRewardString - function: 1F4A8CA0
+GetRewards - function: 1F4A8E00
+SaveSingleton - function: 1F4A8D00
+GetRewardKeyFromHash - function: 1F4A8D80
+_THIS - table: 1F57C820
+_tCashReward - table: 1F4AEE80
+_tMoodReward - table: 1F4AEE40
+MrxFactionManager - table: 1F531600
+_bPrintRewardType - true
+_GetPrintableSupportString - function: 1F4A8C40
+GetAllPotentialShopItems - function: 1F4A8DE0
+MrxUnlockFanfare - table: 1F57C860
+AddCustomReward - function: 1F4A8C80
+MrxSupportData - table: 1F531660
+_GenerateStringFromRewardData - function: 1F4A8C60
+_FormatMilestoneString - function: 1F4A8C00
+1 - mrxrewarddata
+
+  [_OnEnter] = function: 1F49AA80
+  [_CompleteOnEnter] = function: 1F49A2C0
+  [_ChatterComplete] = function: 1F36B3A0
+  [MrxTransit] = Reset - function: 1F49F3A0
+OpenInterface - function: 1F49F5C0
+_nTransitFuelCost - 20
+_tLandingZones - table: 1EEE5880
+GetNumValidLocations - function: 1F49F4E0
+EnableFactionLocations - function: 1F49F4C0
+SetLocationEnabled - function: 1F49F4A0
+NETEVENT_CLIENTTRANSIT - 0
+SetSystemEnabled - function: 1F49F3E0
+IsSystemInitialized - function: 1F49F3C0
+GetTransitPoint - function: 1F49F560
+MrxUtil - table: 1F5301C0
+MrxStatsManager - table: 1F57AFA0
+LoadSingleton - function: 1F49F360
+MrxState - table: 1F594800
+GetTransitFuelCost - function: 1F49F320
+_InterfaceCallback - function: 1F49F5A0
+SetLocationIsNuked - function: 1F49F420
+Transit - function: 1F49F580
+NETEVENT_STARTTRANSIT - 1
+NetEventCallback - function: 1F49F2A0
+UnlockAllLandingZones - function: 1F49F340
+SaveSingleton - function: 1F49F380
+_bEnabled - true
+_GetTableSizeSlow - function: 1F49F480
+_evClientJoinedTransit - userdata: 00100067
+_THIS - table: 1F57B000
+GetUnlockableLocations - function: 1F49F500
+IsLocationEnabled - function: 1F49F440
+MrxFactionManager - table: 1F531600
+IsSystemEnabled - function: 1F49F400
+MrxSound - table: 1F795D80
+GetName - function: 1F49F540
+GetUnlockedLocations - function: 1F49F520
+SuppressLocation - function: 1F49F460
+IsInTransit - function: 1F49F300
+MrxUnlockFanfare - table: 1F57C860
+MrxGui - table: 1F9C8CE0
+_bInitialized - true
+MrxSupportTransit - table: 1F57B060
+FinishTransit - function: 1F49F2C0
+StartTransit - function: 1F49F2E0
+MrxAchievements - table: 1F593940
+1 - mrxtransit
+
+  [_InitOutfitChange] = function: 1F4581E0
+  [_ClientOnEnter] = function: 1F43FF60
+  [Enter] = function: 1F49B080
+  ... total 141 entries
+MrxPlayer table key: _THIS
+  [1] = mrxplayer
+  [Hero] = Deinit - function: 1F4E6380
+tEvent - table: 1F4E6400
+MrxTutorialManager - table: 1F595720
+uRiderEvent - userdata: 00040085
+HealthDropped - function: 1F4F5E80
+EndSurvivalMode - function: 1F4E60C0
+Heal - function: 1F4F5E50
+SetupTransferSystem - function: 1F4E5FE0
+CleanupTransferSystem - function: 1F4E5FC0
+GetAttribute - function: 1F4E5F80
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+Init - function: 1F4E63A0
+HideTutorialMessage - function: 1F4E5F60
+SetTimeScale - function: 1F4E6020
+StartSurvivalMode - function: 1F4E60A0
+TutorialCueCallback - function: 1F4E5F40
+DisableGrappleTriggered - function: 1F4E5F20
+SaveOutInventory - function: 1F4E6280
+CleanEvents - function: 1F4E6120
+SurvivalModeCallback - function: 1F4E60E0
+_THIS - table: 1F593980
+nRiders - 1
+MrxParkingLotManager - table: 1F5939C0
+SetupInventory - function: 1F4E62A0
+CreateHealTimer - function: 1F4E6180
+MrxSound - table: 1F795D80
+WifEquipmentData - table: 1F769EC0
+SurvivalCooldownEnded - function: 1F4E6060
+OnActivate - function: 1F4E6360
+MrxVoSequence - table: 1F530180
+SetupSurvivalSystem - function: 1F4E6100
+OnDeath - function: 1F4E62E0
+MrxGui - table: 1F9C8CE0
+EnterPassengerCallback - function: 1F4E5FA0
+CreateDropEvent - function: 1F4E6160
+OnDeactivate - function: 1F4E62C0
+CleanupSurvival - function: 1F4E6140
+Activate - function: 1F4E6340
+1 - hero
+
+  [MrxActionHijack] = PlayReactiveLoop - function: 1F4E3500
+Play - function: 1F4E34A0
+OnMinigameStart - function: 1F4E3440
+OnMinigameStatus - function: 1F4E3420
+ActionHijackCancel - function: 1F4E3200
+MrxMusic - table: 1F7979E0
+OnDriverSimulatedButtonPress - function: 1F4E33E0
+Begin - function: 1F4E3580
+CreateReactiveLoopAnimationCompleteEvent - function: 1F4E34E0
+OnAnimationComplete - function: 1F4E33A0
+ToggleLinkedObject - function: 1F4E3540
+MrxUtil - table: 1F5301C0
+OnFailAnimationComplete - function: 1F4E3340
+OnRagdollMinigameDone - function: 1F4E3300
+_ProcessMultiEventTable - function: 1F4E3560
+InitializeActionHijack - function: 1F4E35C0
+ChangeAtmosphere - function: 1F4E32C0
+CheckGoodStart - function: 1F4E35E0
+RULESET_HELICOPTER - 1
+RestoreCamera - function: 1F4E32A0
+DisableFacialExpressions - function: 1F4E3280
+_bIsInHijack - false
+CompleteHijackNonFailure - function: 1F4E3220
+HandleTapMinigame - function: 1F4E3400
+OnDriverDone - function: 1F4E31C0
+DeleteAllEvents - function: 1F4E31A0
+MrxGuiHudActionHijack - table: 1F5942C0
+PushActionHijack - function: 1F4E3160
+_THIS - table: 1F593900
+WifFreePlay - table: 1F593880
+OnAnimationCompleteRemote - function: 1F4E3180
+DoFailureAnimation - function: 1F4E3360
+ActionHijackFinish - function: 1F4E33C0
+SetMultiFacialExpressions - function: 1F4E3460
+SetUnloadCallback - function: 1F4E3600
+MrxGuiManager - table: 1F793BE0
+MrxSound - table: 1F795D80
+RULESET_TANK - 0
+OnRagdollMinigameUpdate - function: 1F4E3320
+DoSuccessAnimation - function: 1F4E3380
+IsInHijack - function: 1F4E3620
+RULESET_APC - 2
+OnReactiveLoopAnimationComplete - function: 1F4E34C0
+ActionHijackComplete - function: 1F4E31E0
+TankPrep - function: 1F4E35A0
+MrxGui - table: 1F9C8CE0
+CleanupCommonNonSuccess - function: 1F4E3260
+OnRagdollDone - function: 1F4E32E0
+MrxAchievements - table: 1F593940
+Hero - table: 1F593980
+1 - mrxactionhijack
+
+  [_RestoreEquipment] = function: 1EFC8C80
+  [RiseFromYourGrave] = function: 1F43CDC0
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [_tSpawnLocations] = 2 - Pmc_Entry2
+1 - Pmc_Entry1
+
+  [SetCharacterMap] = function: 1F43CC80
+  [MrxTransit] = Reset - function: 1F49F3A0
+OpenInterface - function: 1F49F5C0
+_nTransitFuelCost - 20
+_tLandingZones - table: 1EEE5880
+GetNumValidLocations - function: 1F49F4E0
+EnableFactionLocations - function: 1F49F4C0
+SetLocationEnabled - function: 1F49F4A0
+NETEVENT_CLIENTTRANSIT - 0
+SetSystemEnabled - function: 1F49F3E0
+IsSystemInitialized - function: 1F49F3C0
+GetTransitPoint - function: 1F49F560
+MrxUtil - table: 1F5301C0
+MrxStatsManager - table: 1F57AFA0
+LoadSingleton - function: 1F49F360
+MrxState - table: 1F594800
+GetTransitFuelCost - function: 1F49F320
+_InterfaceCallback - function: 1F49F5A0
+SetLocationIsNuked - function: 1F49F420
+Transit - function: 1F49F580
+NETEVENT_STARTTRANSIT - 1
+NetEventCallback - function: 1F49F2A0
+UnlockAllLandingZones - function: 1F49F340
+SaveSingleton - function: 1F49F380
+_bEnabled - true
+_GetTableSizeSlow - function: 1F49F480
+_evClientJoinedTransit - userdata: 00100067
+_THIS - table: 1F57B000
+GetUnlockableLocations - function: 1F49F500
+IsLocationEnabled - function: 1F49F440
+MrxFactionManager - table: 1F531600
+IsSystemEnabled - function: 1F49F400
+MrxSound - table: 1F795D80
+GetName - function: 1F49F540
+GetUnlockedLocations - function: 1F49F520
+SuppressLocation - function: 1F49F460
+IsInTransit - function: 1F49F300
+MrxUnlockFanfare - table: 1F57C860
+MrxGui - table: 1F9C8CE0
+_bInitialized - true
+MrxSupportTransit - table: 1F57B060
+FinishTransit - function: 1F49F2C0
+StartTransit - function: 1F49F2E0
+MrxAchievements - table: 1F593940
+1 - mrxtransit
+
+  [MrxVoSequence] = knPriorityContract - 2
+Start - function: 1F579F00
+Reset - function: 1F51BA20
+MrxSoundCategories - table: 1F796300
+MrxUtil - table: 1F5301C0
+Stop - function: 1F51BA60
+knPriorityBriefing - 1
+_CallSequenceCallbacks - function: 1F51BA00
+_nBaseDelay - 0.25
+knPriorityFreeplay - 4
+Cleanup - function: 1F51BA40
+_uDelayTimer - userdata: 0007021A
+IsSequenceInProgress - function: 1F51B9E0
+_ExecuteStage - function: 1F51BA80
+knPriorityCinematic - 0
+_THIS - table: 1F530180
+1 - mrxvosequence
+
+  ... total 66 entries
+MrxPlayer table key: MrxState
+  [1] = mrxstate
+  [STATE_WAITFORGAME] = 4
+  [_bEnableFade] = true
+  [_GlobalEnter] = function: 1F4E7560
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [_tGlobalEnterCallbacks] = (empty)
+
+  [MrxVoSequence] = knPriorityContract - 2
+Start - function: 1F579F00
+Reset - function: 1F51BA20
+MrxSoundCategories - table: 1F796300
+MrxUtil - table: 1F5301C0
+Stop - function: 1F51BA60
+knPriorityBriefing - 1
+_CallSequenceCallbacks - function: 1F51BA00
+_nBaseDelay - 0.25
+knPriorityFreeplay - 4
+Cleanup - function: 1F51BA40
+_uDelayTimer - userdata: 0007021A
+IsSequenceInProgress - function: 1F51B9E0
+_ExecuteStage - function: 1F51BA80
+knPriorityCinematic - 0
+_THIS - table: 1F530180
+1 - mrxvosequence
+
+  [PrintStatus] = function: 1F4E73A0
+  [Enter] = function: 1F4E74A0
+  [IsLocked] = function: 1F4E7400
+  ... total 41 entries
+MrxPlayer table key: MrxPmc
+  [1] = mrxpmc
+  [_nFuelCapacity] = 300
+  [GetFuelQty] = function: 1F3A6A80
+  [MrxSupportData] = mrxsmartbomb - table: 1F5318A0
+tSupportData - table: 1F3A7BA0
+mrxbunkerbuster - table: 1F531DA0
+bIgnoreRequirements - false
+MrxPmc - table: 1F531620
+mrxharmstrike - table: 1F5319E0
+mrxclusterbomb - table: 1F531C20
+GetFreebie - function: 1F3A7A20
+NETEVENT_REMOVEFREEBIE - 1
+_knUnlockStatusViewed - 2
+SynchNetRecruits - function: 1F3A7A80
+SetItemViewed - function: 1F3A7880
+Init - function: 1F3A7A40
+mrxdaisycutter - table: 1F531B00
+mrxmoab - table: 1F531980
+MrxGui - table: 1F9C8CE0
+AddFreebie - function: 1F3A7980
+GetFreebieStringIndex - function: 1F3A7940
+SetRequirement - function: 1F3A7AA0
+NetEventCallback - function: 1F3A7900
+mrxcombatairpatrol - table: 1F531BE0
+mrxsatclusterbomb - table: 1F531C80
+Add - function: 1F3A78E0
+IsItemUnlocked - function: 1F3A78C0
+mrxsatelliteguidedbomb - table: 1F531900
+IsItemNew - function: 1F3A78A0
+SaveSingleton - function: 1F3A7860
+mrxboatdelivery - table: 1F531EE0
+_knUnlockStatusNew - 1
+AddSupportData - function: 1F3A7820
+GetPlayerVisibleName - function: 1F3A77E0
+_AddFreebie - function: 1F3A79C0
+tRequirementsObtained - table: 1F36B820
+GetFreebieName - function: 1F3A77C0
+mrxsupporttransit - table: 1F57B060
+RemoveFreebie - function: 1F3A7960
+NETEVENT_ADDFREEBIE - 0
+_kMaxStock - 99
+LoadSingleton - function: 1F3A7840
+SetHeliPilotRecruited - function: 1F3A7B00
+mrxtankbuster - table: 1F531740
+mrxsupport - table: 1F532140
+mrxcratedelivery - table: 1F531BA0
+GetLocalRemote - function: 1F3A79E0
+SetJetPilotRecruited - function: 1F3A7AC0
+MrxAchievements - table: 1F593940
+mrxartillery - table: 1F531F80
+SetMechanicRecruited - function: 1F3A7AE0
+mrxsupportcopterdelivery - table: 1F5316C0
+mrxfuelairbomb - table: 1F531AA0
+MrxUtil - table: 1F5301C0
+WifMissionFlow - table: 1F57A4C0
+MrxOilCon002Delivery - table: 1F531700
+_RemoveFreebie - function: 1F3A79A0
+mrxsurgicalstrike - table: 1F5317A0
+MrxMunitionsPickup - table: 1F594860
+mrxsupportpickup - table: 1F5317E0
+MrxSoldierDelivery - table: 1F531860
+_THIS - table: 1F531660
+mrxbombingrun - table: 1F531E80
+mrxrocketartillery - table: 1F531940
+MrxFactionManager - table: 1F531600
+GetSupportStringIndex - function: 1F3A7920
+tRequirementStrings - table: 1F3A2E60
+MrxShop - table: 1F57B2A0
+SetIgnoreRequirements - function: 1F3A7A60
+MrxSupportPickup - table: 1F5317E0
+IsSupportEquippable - function: 1F3A7B20
+mrxgunship - table: 1F531A40
+mrxlaserguidedbomb - table: 1F531E00
+GetMaxQuantity - function: 1F3A7800
+mrxstrategicmissile - table: 1F531820
+mrxcarpetbomb - table: 1F531CC0
+mrxcruisemissile - table: 1F531B60
+AddAllFreebies - function: 1F3A7A00
+tFreebieData - table: 1F3A7B80
+1 - mrxsupportdata
+
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [SetAllSupportViewed] = function: 1F3A6960
+  [AddEquipment] = function: 1F3A6860
+  [MrxUnlockFanfare] = MrxCheatBootstrap - table: 1F530200
+WifEquipmentData - table: 1F769EC0
+SetClientBatchFanfareData - function: 1F4E05A0
+MrxFactionManager - table: 1F531600
+MrxStarterManager - table: 1F532480
+AddUnlockedItems - function: 1F4E0620
+MrxUtil - table: 1F5301C0
+SetClientFanfareData - function: 1F4E05E0
+WifStarterData - table: 1F593840
+AddUnlockedItem - function: 1F4E0A00
+_ClientBatchType - 
+ClientHVTFanfare - function: 1F4E0580
+MrxGui - table: 1F9C8CE0
+MrxSupportData - table: 1F531660
+_BuildMessage - function: 1F4E0600
+tClientMessages - table: 1F4E05C0
+_THIS - table: 1F57C860
+1 - mrxunlockfanfare
+
+  [_OnFuelTankDeath] = function: 1F3A6700
+  [_oDummyWidget] = BasicData - table: 1F390FA0
+CustomData - table: 1F390F60
+EventHandlers - table: 1F390F80
+
+  ... total 54 entries
+MrxPlayer table key: MrxCoop
+  [1] = mrxcoop
+  [MrxPlayer] = Reset - function: 1F43D180
+NetEventCallback - function: 1F43CC40
+MrxUtil - table: 1F5301C0
+OnPlayerInit - function: 1F43CDA0
+AreAnyHeroesAlive - function: 1F43CD00
+MrxMissionFlow - table: 1F57AF40
+KilledByPlayer - function: 1F43CC60
+RequestPlayerRevive - function: 1F43CF60
+MrxPlayState - table: 1F532440
+MrxSound - table: 1F795D80
+ResetWeapons - function: 1F43CDE0
+OnPlayerLeft - function: 1F43CFE0
+Init - function: 1F43D1E0
+IsInVehicle - function: 1F43CCA0
+MrxHqManager - table: 1F5322C0
+MoveToSickbay - function: 1F43CEA0
+PlayJoinVO - function: 1F44C920
+_MoveToSickbayEnd - function: 1F43CE20
+PlayerDied - function: 1F43CF40
+_fLocalPlayerJoinedFunc - function: 1F43CAA0
+NETEVENT_CLIENTSELECTMEDEVAC - 0
+NETEVENT_CLIENTKILL - 3
+_DialogBoxDismissed - function: 1F43CF00
+NETEVENT_CLIENTDONESTREAMING - 1
+SaveSingleton - function: 1F43CCE0
+_MoveToSickbayBegin - function: 1F43CE60
+SetSpawnLocations - function: 1F43D140
+CanMedEvac - function: 1F43CEE0
+_DisplayOnDeathDialogBox - function: 1F43CF20
+Munitions - table: 1F5948A0
+MrxGuiShellBootstrap - table: 1F9C8260
+GetSelectedCharacter - function: 1F43CD20
+MrxGuiManager - table: 1F793BE0
+_CompleteMove - function: 1F43CE40
+MrxStatsManager - table: 1F57AFA0
+ChangePlayerCharacter - function: 1F43CD40
+LoadSingleton - function: 1F43CCC0
+MrxGuiHudMessage - table: 1F5322A0
+GetMedEvacCost - function: 1F43CE00
+MrxCoop - table: 1F5962A0
+Deinit - function: 1F43D1C0
+NETEVENT_HOST_SELECT_MEDEVAC - 2
+MrxPmc - table: 1F531620
+DestroyPlayerCharacter - function: 1F43CD60
+MrxState - table: 1F594800
+GetTemplateAndModelName - function: 1F43D120
+NETEVENT_CLIENT_OUT_BOUNDARY_DEATH - 4
+SetLocalPlayerJoinedCallback - function: 1F43D160
+MedEvac - function: 1F43CEC0
+_THIS - table: 1F532400
+Start - function: 1F43D1A0
+PlayRandomLeftVO - function: 1F43D000
+OnPlayerJoined - function: 1F43D0E0
+ResetLocalCharacter - function: 1F43CE80
+CreatePlayerCharacter - function: 1F43CD80
+WifPmcInterior - table: 1F5324E0
+MrxVoSequence - table: 1F530180
+MrxTransit - table: 1F57B000
+SetCharacterMap - function: 1F43CC80
+_tSpawnLocations - table: 1F36B060
+MrxGui - table: 1F9C8CE0
+RiseFromYourGrave - function: 1F43CDC0
+_RestoreEquipment - function: 1EFC8C80
+MrxActionHijack - table: 1F593900
+Hero - table: 1F593980
+1 - mrxplayer
+
+  [_THIS] = _TetherInsideMin - function: 1F519920
+_TetherOutsideMax - function: 1F5198E0
+GetSquaredDistance - function: 1F5198C0
+DestroyTether - function: 1F519980
+MrxGui - table: 1F9C8CE0
+SetupTether - function: 1F519F20
+GetRespawnOrigin - function: 1F519940
+_TetherBetweenMinAndMax - function: 1F519900
+PlayerAddMessage - function: 1F5198A0
+AddPlayer - function: 1F519960
+_THIS - table: 1F5962A0
+MrxPlayer - table: 1F532400
+1 - mrxcoop
+
+  [AddPlayer] = function: 1F519960
+  [PlayerAddMessage] = function: 1F5198A0
+  [_TetherBetweenMinAndMax] = function: 1F519900
+  [GetRespawnOrigin] = function: 1F519940
+  [SetupTether] = function: 1F519F20
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [DestroyTether] = function: 1F519980
+  ... total 13 entries
+MrxPlayer table key: MrxGuiHudMessage
+  [1] = mrxguihudmessage
+  [_BeginContactFanfare] = function: 1F416DA0
+  [CreateFanfare] = function: 1F416EC0
+  [SetFanfareParameters] = function: 1F416CA0
+  [_tEventSounds] = outfit - ui_signal_ding
+stockpile - ui_signal_ding
+support - ui_signal_ding
+contact - ui_signal_ding
+landingzone - ui_signal_ding
+highscore - ui_signal_ding
+hvtkill - ui_signal_generic
+bounty - ui_signal_ding
+hvtcapture - ui_signal_generic
+
+  [_HandleClassyTextEnd] = function: 1F416720
+  [_EndFanfare] = function: 1F416AE0
+  [_TextFadeout] = function: 1F416A20
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [_gFullscreenFadeWidget] = false
+  ... total 82 entries
+MrxPlayer table key: MrxStatsManager
+  [1] = mrxstatsmanager
+  [IncreaseRetriesCounter] = function: 1F49CE40
+  [MrxAchievements] = GetNameFromHash - function: 1F4E55C0
+NetEventCallback - function: 1F4E55A0
+AchievementGrant - function: 1F4E5540
+MrxFactionManager - table: 1F531600
+AchievementIsGranted - function: 1F4E5500
+AchievementAddCount_MASTER_HIJACK - function: 1F4E54E0
+LoadSingleton - function: 1F4E5460
+ProcessSupportEvent - function: 1F4E54A0
+EVENT_ACHIEVEMENTGRANT - 1
+tSupportFilter - table: 1F4E5B20
+EVENT_GRANTACHIEVEMENT - 0
+AchievementAddCount - function: 1F4E5520
+tAchievementsList - table: 1F4E5B00
+NetGrantAchievement - function: 1F4E5580
+tSupportUsedInCoop - table: 1F594EA0
+EVENT_ACHIEVEMENTADDCOUNT - 2
+GetLocalRemote - function: 1F4E5560
+FactionMoodAchievements - function: 1F4E54C0
+SaveSingleton - function: 1F4E5480
+tSupportUsed - table: 1F594E60
+_THIS - table: 1F593940
+1 - mrxachievements
+
+  [IncreaseFuelOutAmount] = function: 1F49CEA0
+  [RecordBestTime] = function: 1F49CE00
+  [uStowFavWeaponTimer] = userdata: 0011008F
+  [DeleteWeaponTimer] = function: 1F49D120
+  [MrxVerifyManager] = GetCompletedTotal - function: 1F49E680
+_FindFactionFromName - function: 1F49E7A0
+GetTotalFactionVZA - function: 1F49E660
+CheckTechnoVikingAchievement - function: 1F49E7C0
+GetCompletedPMC - function: 1F49E600
+GetTotalFactionCHI - function: 1F49E4E0
+AddTarget - function: 1F49E820
+GetTotalFactionPIR - function: 1F49E5E0
+GetCompletedPIR - function: 1F49E5C0
+GetTotalFactionOIL - function: 1F49E5A0
+tTargetGuidList - table: 1F49E8A0
+GetCompletedOIL - function: 1F49E580
+_CheckJusticeAchievement - function: 1F49E7E0
+GetTotalFactionPMC - function: 1F49E620
+GetCompletedCHI - function: 1F49E4C0
+GetCompletedALL - function: 1F49E480
+GetTotalFactionCIV - function: 1F49E520
+nCount - 56
+GetTotal - function: 1F49E460
+SetKilledIfNotSet - function: 1F49E440
+nCaptured - 0
+AddCallback - function: 1F49E740
+UpdateStats - function: 1F49E720
+SaveSingleton - function: 1F49E860
+FindTargetFromGuid - function: 1F49E760
+GetCompletedGUR - function: 1F49E540
+_THIS - table: 1F57AFE0
+CountCompleted - function: 1F49E6A0
+Activated - function: 1F49E840
+GetStatus - function: 1F49E700
+UpdateTarget - function: 1F49E800
+GetTotalFactionGUR - function: 1F49E560
+tChangedCallback - table: 1F49E880
+sSolanoStatus - alive
+LoadSingleton - function: 1F49E8C0
+GetCaptured - function: 1F49E6C0
+SetSolanoVerified - function: 1F49E420
+GetCompletedCIV - function: 1F49E500
+GetKilled - function: 1F49E6E0
+BuildGuidList - function: 1F49E780
+tTargetListStatus - table: 1F3A2FE0
+nKilled - 0
+GetTotalFactionALL - function: 1F49E4A0
+MrxAchievements - table: 1F593940
+GetCompletedVZA - function: 1F49E640
+1 - mrxverifymanager
+
+  [MrxTransit] = Reset - function: 1F49F3A0
+OpenInterface - function: 1F49F5C0
+_nTransitFuelCost - 20
+_tLandingZones - table: 1EEE5880
+GetNumValidLocations - function: 1F49F4E0
+EnableFactionLocations - function: 1F49F4C0
+SetLocationEnabled - function: 1F49F4A0
+NETEVENT_CLIENTTRANSIT - 0
+SetSystemEnabled - function: 1F49F3E0
+IsSystemInitialized - function: 1F49F3C0
+GetTransitPoint - function: 1F49F560
+MrxUtil - table: 1F5301C0
+MrxStatsManager - table: 1F57AFA0
+LoadSingleton - function: 1F49F360
+MrxState - table: 1F594800
+GetTransitFuelCost - function: 1F49F320
+_InterfaceCallback - function: 1F49F5A0
+SetLocationIsNuked - function: 1F49F420
+Transit - function: 1F49F580
+NETEVENT_STARTTRANSIT - 1
+NetEventCallback - function: 1F49F2A0
+UnlockAllLandingZones - function: 1F49F340
+SaveSingleton - function: 1F49F380
+_bEnabled - true
+_GetTableSizeSlow - function: 1F49F480
+_evClientJoinedTransit - userdata: 00100067
+_THIS - table: 1F57B000
+GetUnlockableLocations - function: 1F49F500
+IsLocationEnabled - function: 1F49F440
+MrxFactionManager - table: 1F531600
+IsSystemEnabled - function: 1F49F400
+MrxSound - table: 1F795D80
+GetName - function: 1F49F540
+GetUnlockedLocations - function: 1F49F520
+SuppressLocation - function: 1F49F460
+IsInTransit - function: 1F49F300
+MrxUnlockFanfare - table: 1F57C860
+MrxGui - table: 1F9C8CE0
+_bInitialized - true
+MrxSupportTransit - table: 1F57B060
+FinishTransit - function: 1F49F2C0
+StartTransit - function: 1F49F2E0
+MrxAchievements - table: 1F593940
+1 - mrxtransit
+
+  [bActivated] = true
+  ... total 54 entries
+MrxPlayer table key: MrxGuiManager
+  [1] = mrxguimanager
+  [CreateGui] = function: 1F792400
+  [DoNothing] = function: 1F7920E0
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [HudLoaded] = function: 1F791DE0
+  [_RemoveAndDeleteWidgets] = function: 1F791220
+  [RemoveWidgetFromHud] = function: 1F7921A0
+  [_AllRequiredModulesLoaded] = function: 1F791300
+  [ToggleHud] = function: 1F792380
+  [ApplySatelliteUpdateEvent] = function: 1F792100
+  ... total 39 entries
+MrxPlayer table key: MrxGuiShellBootstrap
+  [1] = mrxguishellbootstrap
+  [_sSelectedCharacter] = false
+  [bNeedsReloading] = false
+  [SetUpSingleplayer] = function: 1F797C40
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [ClosePrecacheOnLoad] = function: 1F797D00
+  [ShellScreenLoaded] = function: 1F797CA0
+  [LoadPrecache] = function: 1F797D20
+  [ExitMultiplayer] = function: 1F797C00
+  [GetSelectedCharacter] = function: 1F797BC0
+  ... total 32 entries
+MrxPlayer table key: Munitions
+  [1] = munitions
+  [2] = 1 - table: 1F595760
+
+  [HideTutorialMessage] = function: 1F518760
+  [_bPlayedSupportHint2] = false
+  [OnDeactivate] = function: 1F518780
+  [Blippable] = MrxUtil - table: 1F5301C0
+OnActivate - function: 1F519880
+Awake - function: 1F519540
+Delete - function: 1F519520
+ClearBlipped - function: 1F5194E0
+tHiddenGuids - table: 1F5194A0
+HideMarker - function: 1F519480
+RemoveObjective - function: 1F519460
+SetBlipped - function: 1F519500
+AddObjective - function: 1F5194C0
+Inheritable - table: 1F595B20
+bSticky - false
+_THIS - table: 1F595760
+2 - table: 1F595740
+1 - blippable
+
+  [_eBlippedVOCoolDown] = userdata: 000701E2
+  [AreMunitionsTaggable] = function: 1F518560
+  [MrxSupportData] = mrxsmartbomb - table: 1F5318A0
+tSupportData - table: 1F3A7BA0
+mrxbunkerbuster - table: 1F531DA0
+bIgnoreRequirements - false
+MrxPmc - table: 1F531620
+mrxharmstrike - table: 1F5319E0
+mrxclusterbomb - table: 1F531C20
+GetFreebie - function: 1F3A7A20
+NETEVENT_REMOVEFREEBIE - 1
+_knUnlockStatusViewed - 2
+SynchNetRecruits - function: 1F3A7A80
+SetItemViewed - function: 1F3A7880
+Init - function: 1F3A7A40
+mrxdaisycutter - table: 1F531B00
+mrxmoab - table: 1F531980
+MrxGui - table: 1F9C8CE0
+AddFreebie - function: 1F3A7980
+GetFreebieStringIndex - function: 1F3A7940
+SetRequirement - function: 1F3A7AA0
+NetEventCallback - function: 1F3A7900
+mrxcombatairpatrol - table: 1F531BE0
+mrxsatclusterbomb - table: 1F531C80
+Add - function: 1F3A78E0
+IsItemUnlocked - function: 1F3A78C0
+mrxsatelliteguidedbomb - table: 1F531900
+IsItemNew - function: 1F3A78A0
+SaveSingleton - function: 1F3A7860
+mrxboatdelivery - table: 1F531EE0
+_knUnlockStatusNew - 1
+AddSupportData - function: 1F3A7820
+GetPlayerVisibleName - function: 1F3A77E0
+_AddFreebie - function: 1F3A79C0
+tRequirementsObtained - table: 1F36B820
+GetFreebieName - function: 1F3A77C0
+mrxsupporttransit - table: 1F57B060
+RemoveFreebie - function: 1F3A7960
+NETEVENT_ADDFREEBIE - 0
+_kMaxStock - 99
+LoadSingleton - function: 1F3A7840
+SetHeliPilotRecruited - function: 1F3A7B00
+mrxtankbuster - table: 1F531740
+mrxsupport - table: 1F532140
+mrxcratedelivery - table: 1F531BA0
+GetLocalRemote - function: 1F3A79E0
+SetJetPilotRecruited - function: 1F3A7AC0
+MrxAchievements - table: 1F593940
+mrxartillery - table: 1F531F80
+SetMechanicRecruited - function: 1F3A7AE0
+mrxsupportcopterdelivery - table: 1F5316C0
+mrxfuelairbomb - table: 1F531AA0
+MrxUtil - table: 1F5301C0
+WifMissionFlow - table: 1F57A4C0
+MrxOilCon002Delivery - table: 1F531700
+_RemoveFreebie - function: 1F3A79A0
+mrxsurgicalstrike - table: 1F5317A0
+MrxMunitionsPickup - table: 1F594860
+mrxsupportpickup - table: 1F5317E0
+MrxSoldierDelivery - table: 1F531860
+_THIS - table: 1F531660
+mrxbombingrun - table: 1F531E80
+mrxrocketartillery - table: 1F531940
+MrxFactionManager - table: 1F531600
+GetSupportStringIndex - function: 1F3A7920
+tRequirementStrings - table: 1F3A2E60
+MrxShop - table: 1F57B2A0
+SetIgnoreRequirements - function: 1F3A7A60
+MrxSupportPickup - table: 1F5317E0
+IsSupportEquippable - function: 1F3A7B20
+mrxgunship - table: 1F531A40
+mrxlaserguidedbomb - table: 1F531E00
+GetMaxQuantity - function: 1F3A7800
+mrxstrategicmissile - table: 1F531820
+mrxcarpetbomb - table: 1F531CC0
+mrxcruisemissile - table: 1F531B60
+AddAllFreebies - function: 1F3A7A00
+tFreebieData - table: 1F3A7B80
+1 - mrxsupportdata
+
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  ... total 62 entries
+MrxPlayer table key: MrxHqManager
+  [1] = mrxhqmanager
+  [LockAllHq] = function: 1F438020
+  [_THIS] = GetHq - function: 1F4380C0
+_tHqs - table: 1F438100
+LockHq - function: 1F438040
+MrxFactionManager - table: 1F531600
+IsInside - function: 1F417F20
+SetUnloadCallback - function: 1F417EE0
+_OnHqDeath - function: 1F417F60
+_OnHqHibernation - function: 1F417F40
+_SetupRespawn - function: 1F417FC0
+SetInside - function: 1F417F00
+SetHqRespawn - function: 1F417FA0
+MrxUtil - table: 1F5301C0
+AddStarter - function: 1F4380A0
+_SetHq - function: 1F417F80
+_tHqEvents - table: 1F4380E0
+MrxHq - table: 1F532300
+_CreateDeathEvent - function: 1F417FE0
+UnlockHq - function: 1F438060
+WifHqData - table: 1F57C7E0
+UnlockAllHq - function: 1F438000
+GetUnloadCallback - function: 1F417EC0
+RemoveStarter - function: 1F438080
+_THIS - table: 1F5322C0
+LockAllHq - function: 1F438020
+1 - mrxhqmanager
+
+  [RemoveStarter] = function: 1F438080
+  [GetUnloadCallback] = function: 1F417EC0
+  [UnlockAllHq] = function: 1F438000
+  [WifHqData] = GetHqConfigFromId - function: 1F57B320
+GetHqIndexFromId - function: 1F57B300
+GetHqIdFromIndex - function: 1F57B2E0
+_tHqConfigs - table: 1F57C080
+_THIS - table: 1F57C7E0
+1 - wifhqdata
+
+  [UnlockHq] = function: 1F438060
+  [_CreateDeathEvent] = function: 1F417FE0
+  [MrxHq] = WifMissionData - table: 1F57A460
+ExitEnd - function: 1F438420
+MrxTutorialManager - table: 1F595720
+MrxState - table: 1F594800
+MrxStarterManager - table: 1F532480
+_tAssetPreload - table: 1F438A80
+NetSafeUnloadAssets - function: 1F438880
+GetName - function: 1F438820
+NetSafeLoadAssets - function: 1F4388A0
+SetLock - function: 1F438800
+IsLocked - function: 1F4387E0
+MrxUtil - table: 1F5301C0
+WifMissionFlow - table: 1F57A4C0
+GetRespawn - function: 1F4386E0
+MrxHqManager - table: 1F5322C0
+GetFaction - function: 1F438720
+AddHqPdaBlip - function: 1F438680
+GetRadarIcon - function: 1F4387C0
+GetAtmosphere - function: 1F4387A0
+GetMissionDesc - function: 1F4386A0
+NetSafeAddHqPdaBlip - function: 1F4386C0
+NetSafeBriefingModuleLoaded - function: 1F4388E0
+_KickoffStarter - function: 1F438460
+RefreshUiDisplay - function: 1F438620
+SetPortal - function: 1F438600
+SetRespawn - function: 1F438700
+GetStarter - function: 1F4385A0
+_LockedOnEnter - function: 1F438520
+HideTutorialMessage - function: 1F438500
+RemoveStarter - function: 1F4385C0
+_THIS - table: 1F532300
+WifFreePlay - table: 1F593880
+_CompleteOnEnter - function: 1F4384E0
+_LoadInterior - function: 1F4384C0
+NetSafeRemoveHqPdaBlip - function: 1F438660
+MrxFactionManager - table: 1F531600
+MrxLayerManager - table: 1F5965E0
+SetName - function: 1F438840
+NetSafeLoadAssets1 - function: 1F4388C0
+MrxGuiBootstrap - table: 1F532340
+MrxSound - table: 1F795D80
+Create - function: 1F438860
+_OnInteriorLoad - function: 1F4384A0
+_BriefingModuleLoaded - function: 1F438480
+AddStarter - function: 1F4385E0
+RemoveHqPdaBlip - function: 1F438640
+GlobalExit - function: 1F438560
+MrxTransit - table: 1F57B000
+WifVzBoundary - table: 1F57AEC0
+_ToggleHuds - function: 1F438400
+WifHqData - table: 1F57C7E0
+GlobalEnter - function: 1F438580
+MrxGui - table: 1F9C8CE0
+GetEntryLocations - function: 1F438760
+MrxPlayState - table: 1F532440
+ExitBegin - function: 1F438440
+Unload - function: 1F4383E0
+GetBuildingName - function: 1F438740
+_OnEnter - function: 1F438540
+GetDrawDistance - function: 1F438780
+1 - mrxhq
+
+  ... total 25 entries
+MrxPlayer table key: MrxSound
+  [1] = mrxsound
+  [_FlagSystemReady] = function: 1F794A40
+  [_bSurvivalModeStarted] = false
+  [EnterShellState] = function: 1F797A20
+  [EnterAttractState] = function: 1F794C00
+  [ExitSatelliteView] = function: 1F794AA0
+  [_bSoundSystemReady] = false
+  [ExitCinematicState] = function: 1F794C60
+  [ExitingGame] = function: 1F796000
+  [MrxSoundBanks] = _tPendingRequests - table: 1F795D20
+LoadSoundBank - function: 1F7956A0
+_nOutstandingAssets - 0
+MrxSoundCategories - table: 1F796300
+LoadWaveBank - function: 1F795660
+_LoadRequiredAssets - function: 1F7954E0
+RequestAmbienceBank - function: 1F7955E0
+UnloadWaveBank - function: 1F795640
+MrxSound - table: 1F795D80
+_AddAssetRequest - function: 1F795580
+_LoadRequiredAssetsCommon - function: 1F795520
+_OpenStreamFiles - function: 1F795540
+_UnloadRequiredAssetsCommon - function: 1F795500
+LoadTempBank - function: 1F795620
+_UnloadRequiredAssets - function: 1F7954C0
+_FlagAssetOpComplete - function: 1F7954A0
+_OpenFile - function: 1F793E80
+_SubmitAssetRequest - function: 1F7955C0
+_nSubmittedRequests - 0
+_StripPWSExtension - function: 1F793EE0
+_GetLocalizedName - function: 1F795560
+UnloadTempBank - function: 1F795600
+UnloadSoundBank - function: 1F795680
+_THIS - table: 1F795D40
+_nLastAddedIndex - 0
+1 - mrxsoundbanks
+
+  ... total 39 entries
+MrxPlayer table key: MrxPlayState
+  [1] = mrxplaystate
+  [WifFreePlay] = MrxHqManager - table: 1F5322C0
+WifHints - table: 1F5938C0
+_Nag - function: 1F4E0AA0
+_TestNagConditions - function: 1F4E0A20
+_THIS - table: 1F593880
+_CreateNagTimer - function: 1F4E0AE0
+_uNagTimer - userdata: 00070252
+StartNag - function: 1F4E0E20
+MrxVoSequence - table: 1F530180
+MrxUtil - table: 1F5301C0
+WifPmcInterior - table: 1F5324E0
+_NagComplete - function: 1F4E0A60
+_DeleteNagTimer - function: 1F4E0AC0
+_bNagEnabled - true
+StopNag - function: 1F4E0B20
+IsNagEnabled - function: 1F4E0B00
+MrxActionHijack - table: 1F593900
+MrxPlayState - table: 1F532440
+1 - wiffreeplay
+
+  [_THIS] = Get - function: 1F43E3C0
+_knMission - 1
+IsValidState - function: 1F43E420
+GetCurrentMission - function: 1F43E380
+MrxStarterManager - table: 1F532480
+MrxMusic - table: 1F7979E0
+GetTimeElapsedInPriorSessions - function: 1F43E280
+WifPmcInterior - table: 1F5324E0
+_uSessionStartTimestamp - userdata: 1EA1C9B8
+GetSessionTimer - function: 1F43E2C0
+SetCurrentMission - function: 1F43E3A0
+Set - function: 1F43E3E0
+_nCurrState - 0
+MrxHqManager - table: 1F5322C0
+GetStateDisplayName - function: 1F43E400
+_UpdateHqObjectiveMarkers - function: 1F43E320
+_nTimeElapsedInPriorSessions - 5740
+Reset - function: 1F43E340
+_knNull - -1
+StartSessionTimer - function: 1F43E2E0
+_knFree - 0
+SetTimeElapsedInPriorSessions - function: 1F43E2A0
+GetTotalTimeElapsed - function: 1F43E300
+IsFree - function: 1F43E360
+_THIS - table: 1F532440
+WifFreePlay - table: 1F593880
+1 - mrxplaystate
+
+  [IsFree] = function: 1F43E360
+  [GetTotalTimeElapsed] = function: 1F43E300
+  [SetTimeElapsedInPriorSessions] = function: 1F43E2A0
+  [_knFree] = 0
+  [StartSessionTimer] = function: 1F43E2E0
+  [_knNull] = -1
+  [Reset] = function: 1F43E340
+  ... total 27 entries
+MrxPlayer table key: MrxMissionFlow
+  [1] = mrxmissionflow
+  [MrxTaskState] = _knLatent - 0
+_knCancelled - 3
+IsValidState - function: 1F596580
+_knActive - 1
+_knCompleted - 2
+_THIS - table: 1F5965A0
+GetStateDisplayName - function: 1F5963A0
+1 - mrxtaskstate
+
+  [WifRecommendationData] = HasRecommendations - function: 1F49C7E0
+GenerateRecommendationString - function: 1F49C7C0
+_FormatLineItem - function: 1F49C7A0
+MrxFactionManager - table: 1F531600
+_tRecommendations - table: 1F49CBC0
+MrxSupportData - table: 1F531660
+MrxShop - table: 1F57B2A0
+MrxPmc - table: 1F531620
+MrxRewardData - table: 1F57C820
+_THIS - table: 1F57AF80
+1 - wifrecommendationdata
+
+  [MrxRewardData] = WifMissionData - table: 1F57A460
+NetEventCallback - function: 1F4A8D60
+WifEquipmentData - table: 1F769EC0
+WifMissionFlow - table: 1F57A4C0
+LoadSingleton - function: 1F4A8CE0
+_tRewards - table: 1F4AEE20
+EVENT_GRANTREWARDKEY - 0
+_FormatLevelMilestoneString - function: 1F4A8BC0
+gtAllSupport - table: 1F3940C0
+DispenseRewards - function: 1F4A8DC0
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+Init - function: 1F4A8E20
+EnableCashRewardHalving - function: 1F4A8D20
+GetWagerData - function: 1F4A8CC0
+GrantRewardKey - function: 1F4A8D40
+gtAllEquipment - table: 1F1C57C0
+_GetPrintableEquipmentString - function: 1F4A8C20
+DispenseAllRewards - function: 1F4A8DA0
+_tFuelReward - table: 1F4AEE60
+_FormatMilestoneSuffix - function: 1F4A8BE0
+GenerateRewardString - function: 1F4A8CA0
+GetRewards - function: 1F4A8E00
+SaveSingleton - function: 1F4A8D00
+GetRewardKeyFromHash - function: 1F4A8D80
+_THIS - table: 1F57C820
+_tCashReward - table: 1F4AEE80
+_tMoodReward - table: 1F4AEE40
+MrxFactionManager - table: 1F531600
+_bPrintRewardType - true
+_GetPrintableSupportString - function: 1F4A8C40
+GetAllPotentialShopItems - function: 1F4A8DE0
+MrxUnlockFanfare - table: 1F57C860
+AddCustomReward - function: 1F4A8C80
+MrxSupportData - table: 1F531660
+_GenerateStringFromRewardData - function: 1F4A8C60
+_FormatMilestoneString - function: 1F4A8C00
+1 - mrxrewarddata
+
+  [MrxUnlockFanfare] = MrxCheatBootstrap - table: 1F530200
+WifEquipmentData - table: 1F769EC0
+SetClientBatchFanfareData - function: 1F4E05A0
+MrxFactionManager - table: 1F531600
+MrxStarterManager - table: 1F532480
+AddUnlockedItems - function: 1F4E0620
+MrxUtil - table: 1F5301C0
+SetClientFanfareData - function: 1F4E05E0
+WifStarterData - table: 1F593840
+AddUnlockedItem - function: 1F4E0A00
+_ClientBatchType - 
+ClientHVTFanfare - function: 1F4E0580
+MrxGui - table: 1F9C8CE0
+MrxSupportData - table: 1F531660
+_BuildMessage - function: 1F4E0600
+tClientMessages - table: 1F4E05C0
+_THIS - table: 1F57C860
+1 - mrxunlockfanfare
+
+  [DisableAllJobTracking] = function: 1F49B560
+  [BuildMissionHeader] = function: 1F49B200
+  [WifPmcInterior] = MrxStarterManager - table: 1F532480
+RefreshUiDisplay - function: 1F458540
+_OnInteriorLoad - function: 1F458740
+_SetStarterContextAction - function: 1F4583E0
+_tBuildingStates - table: 1F4A80A0
+_DoParkingLot - function: 1F43FDA0
+_tInteriorPortalData - table: 1F458E20
+_LoadInterior - function: 1F49A2A0
+_tStarters - table: 1F458FA0
+NETEVENT_UPDATESTOCKPILE - 0
+BriefingComplete - function: 1F458300
+NetSafeUnloadAssets - function: 1F43FFA0
+MrxPmc - table: 1F531620
+WifVzBoundary - table: 1F57AEC0
+_SetStarterMarker - function: 1F4583C0
+NETEVENT_CHANGEOUTFIT - 1
+_bTeleport - true
+NetSafeGetSpecialCaseGreeting - function: 1F458720
+_tStockpileQty - table: 1F458A20
+_SendStockpileToClient - function: 1F43FF20
+_evClientJoinedPMC - userdata: 00100092
+_ClientExit - function: 1F43FF40
+NetSafeBriefingModuleLoaded - function: 1F458000
+_UpdateStockpile - function: 1F4580A0
+Unlock - function: 1F4A8060
+IsGarageAlive - function: 1F49F5E0
+GetMissionDesc - function: 1F458580
+MrxPlayState - table: 1F532440
+_tOutfits - table: 1F458C60
+_SetupPreOilCon020Nag - function: 1F43FEE0
+_StopPreOilCon020Nag - function: 1F43FEC0
+IsInside - function: 1F4582E0
+MrxLayerManager - table: 1F5965E0
+SaveSingleton - function: 1F458060
+RemovePmcPdaBlip - function: 1F4585C0
+_bDisplayed - true
+_AddPortalAtHardpoint - function: 1F4584C0
+_GetPreeningVo - function: 1F43FE20
+_SetAllMarkers - function: 1F43FE80
+SetEntranceLock - function: 1F49B160
+_PreOilCon020Nag - function: 1F43FEA0
+NETEVENT_NOTIFYOUTFITCHANGE - 2
+_tLayers - table: 1EA1C000
+_BriefingModuleLoaded - function: 1F4586E0
+_DeinitOutfitChange - function: 1F4581C0
+MrxMultiPageMenu - table: 1F5947E0
+IsEntering - function: 1F4582C0
+WifPmcGarage - table: 1F57A3E0
+_AddPortal - function: 1F458500
+WifFreePlay - table: 1F593880
+_EnablePortals - function: 1F458480
+_SetStarterChatter - function: 1F4583A0
+_StarterChatter - function: 1F458380
+AddPmcPdaBlip - function: 1F458560
+_bInside - false
+_ClientUpdateStockpile - function: 1F43FF00
+GetWagerStatus - function: 1F49B140
+MrxUtil - table: 1F5301C0
+_OnPmcHibernation - function: 1F43FDE0
+MrxState - table: 1F594800
+MrxPlayer - table: 1F532400
+IsContractPending - function: 1F4582A0
+_tPortalData - table: 1F458EE0
+_OnPlayerJoined - function: 1F458020
+_SetFakePDA - function: 1F458680
+_LoadStarters - function: 1F458700
+_EnableInteriorPortals - function: 1F458460
+_tBuildingEvents - table: 1F4A8680
+_EnableStarters - function: 1F458400
+_GetStarterLayers - function: 1F458760
+_ReinitOutfitChange - function: 1F4581A0
+_bSticky - true
+SetUnloadCallback - function: 1F458240
+MrxGuiBootstrap - table: 1F532340
+IsUnlocked - function: 1F4A8000
+NetSafeAddPmcPdaBlip - function: 1F4585A0
+_CompleteChangeOutfit - function: 1F458120
+_tStockpile - table: 1F458A00
+SetAvailableCostumes - function: 1F4580C0
+NetSafeRemovePmcPdaBlip - function: 1F4585E0
+MrxVoSequence - table: 1F530180
+ChangeOutfit - function: 1F458100
+MrxGui - table: 1F9C8CE0
+_nAvailableCostumes - 1
+GetAvailableCostumes - function: 1F4580E0
+_OnExit - function: 1F458640
+NetEventCallback - function: 1F43FF80
+_bUnlocked - true
+_Kickoff - function: 1F4586A0
+_uOutfitDisc - userdata: 40005769
+_WardrobeOpen - false
+_GetStarterChatterVo - function: 1F43FE60
+_ExitEnd - function: 1F458620
+_SetupStarters - function: 1F458420
+_OnPmcDeath - function: 1F43FE00
+MrxCheatBootstrap - table: 1F530200
+_tBuildings - table: 1F49EA00
+_evClientQuitPMC - userdata: 00100094
+_AssociateStartersToBriefingModule - function: 1F4586C0
+_tPortals - table: 1F458F00
+NetSafeLoadAssets1 - function: 1F43FFE0
+MrxSound - table: 1F795D80
+LoadSingleton - function: 1F458040
+MrxHq - table: 1F532300
+_CloseCostumeDialog - function: 1F458160
+_SetAllStarterChatter - function: 1F43FE40
+SetWagerStatus - function: 1F49CBE0
+WifBriefingData - table: 1F57A3A0
+SetLoadCallback - function: 1F458260
+_SetCustomOutfitMarker - function: 1F458200
+_StartStarter - function: 1F458320
+_SelectOutfit - function: 1F458180
+WifMissionData - table: 1F57A460
+_RemovePortalAtHardpoint - function: 1F4584A0
+_tAssetPreload - table: 1F458E00
+GetStarterBriefingLocs - function: 1F458280
+NetSafeLoadAssets - function: 1F43FFC0
+_DisableStarter - function: 1F458340
+_SetPmcTransitLocation - function: 1F43FDC0
+WifMissionFlow - table: 1F57A4C0
+MrxGuiInterface - table: 1F532380
+_EnableStarter - function: 1F458360
+SetTeleportCallback - function: 1F458220
+_ChangeOutfit - function: 1F458140
+_OnInteriorPortalEnter - function: 1F458440
+_SetStockpileCategoryQty - function: 1F458080
+_ExitComplete - function: 1F458600
+_RemovePortal - function: 1F4584E0
+_THIS - table: 1F5324E0
+Exit - function: 1F458660
+MrxFactionManager - table: 1F531600
+Enter - function: 1F49B080
+_ClientOnEnter - function: 1F43FF60
+_InitOutfitChange - function: 1F4581E0
+MrxTransit - table: 1F57B000
+_ChatterComplete - function: 1F36B3A0
+_CompleteOnEnter - function: 1F49A2C0
+_OnEnter - function: 1F49AA80
+MrxRewardData - table: 1F57C820
+_SetPortalMarker - function: 1F458520
+1 - wifpmcinterior
+
+  [GetCaseSensitiveMissionId] = function: 1F49B500
+  [DestroyMission] = function: 1F49B6C0
+  ... total 91 entries
+MrxPlayer table key: MrxUtil
+  [1] = mrxutil
+  [TestDistanceToAllPlayers] = function: 1F3CEBA0
+  [MarkerGetNameByIndex_World] = function: 1F3CE960
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [FormatMoney] = function: 1F3CEE80
+  [SetBoundaryEffect] = function: 1F3CEAE0
+  [CopyTable] = function: 1F3CEEE0
+  [SetupLoadingCallback] = function: 1F3CEC80
+  [GetInlineIconNameByIndex] = function: 1F3CEA00
+  [MarkerGetIndexByName_Pda] = function: 1F3CE900
+  ... total 67 entries"
+<<<END>>>

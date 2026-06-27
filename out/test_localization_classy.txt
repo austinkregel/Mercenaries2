@@ -1,0 +1,23 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[runtime] <tt=2 val=40000014> "=== Constants in _MODULES.mrxguipda._ParseString ===
+  LuaQ
+  mrxguipda
+  string
+  gmatch
+  tonumber
+  number
+  type
+  sData
+  nSlot
+  sId
+  for
+  generator
+  state
+  control
+  nNumber
+  sSeperator
+  sString"
+<<<END>>>

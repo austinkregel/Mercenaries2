@@ -1,0 +1,963 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Found key: tank = 21 - [SHELL.Controls.Switch_Primary]
+5 - [SHELL.Controls.Exit]
+22 - [SHELL.Controls.Reset_Camera]
+15 - [SHELL.Controls.Aim_UD]
+1 - [SHELL.Controls.Show_Cash_And_Fuel]
+13 - [SHELL.Controls.Aim_LR]
+23 - [SHELL.Controls.Pause]
+11 - [SHELL.Controls.Move]
+9 - [SHELL.Controls.TurnLR]
+8 - [SHELL.Controls.Call_Allies]
+2 - [SHELL.Controls.Show_Cash_And_Fuel]
+7 - [SHELL.Controls.Reverse]
+24 - [SHELL.Controls.PDA]
+6 - [SHELL.Controls.Forward]
+20 - [SHELL.Controls.Fire_Primary]
+
+Found key: helicopter = 15 - [SHELL.Controls.Aim_UD]
+23 - [SHELL.Controls.Pause]
+24 - [SHELL.Controls.PDA]
+22 - [SHELL.Controls.Reset_Camera]
+20 - [SHELL.Controls.Fire_Primary]
+18 - [SHELL.Controls.Raise]
+1 - [SHELL.Controls.Show_Cash_And_Fuel]
+13 - [SHELL.Controls.TurnLR]
+11 - [SHELL.Controls.Move]
+9 - [SHELL.Controls.LeftRight]
+8 - [SHELL.Controls.Call_Allies]
+7 - [SHELL.Controls.Lower]
+6 - [SHELL.Controls.Raise]
+21 - [SHELL.Controls.Switch_Primary]
+5 - [SHELL.Controls.Exit]
+17 - [SHELL.Controls.Lower]
+3 - [SHELL.Controls.Winch]
+2 - [SHELL.Controls.Show_Cash_And_Fuel]
+
+Found string value: HUD_ICON_support_helicopter
+Found string value: VZ
+Found string value: Vza
+Found key: mrxtankbuster = LaunchMissile - function: 1F3C99C0
+DesignationCallback - function: 1F3C9A00
+_ValidateDropZone - function: 1F3C99A0
+__index - table: 1F531740
+MrxSupport - table: 1F532140
+Create - function: 1F3C9A80
+MrxSupportDesignatorSmoke - table: 1F596280
+_THIS - table: 1F531740
+Strike - function: 1F3C99E0
+2 - table: 1F531720
+1 - mrxtankbuster
+
+Found key: VzaCon01_SatBomb = sIcon - support_satellite_guided_bomb
+nFreebieQty - 1
+sName - [support.airstrike.satelliteguidedbomb.name]
+oSupport - table: 1F392F20
+
+Found key: VzaCon001_Airstrike = sIcon - support_cluster_bomb
+nFreebieQty - 3
+sName - [support.airstrike.clusterbomb.name]
+oSupport - table: 1F392E40
+
+Found key: tankbike = sIcon - vehicles_motorcycle_tankbike
+sDescription - [support.vehicle.tankbike.desc]
+sName - [vehicle.tankbike]
+sType - Light
+nMaxStock - 99
+nCashCost - 750000
+oSupport - table: 1F394460
+nFuelCost - 60
+
+Found key: tankbuster = sIcon - support_tank_buster
+sDescription - [support.airstrike.tankbuster.desc]
+sName - [support.airstrike.tankbuster.name]
+sType - Airstrike
+nMaxStock - 99
+nCashCost - 100000
+oSupport - table: 1F394380
+nFuelCost - 200
+
+Found key: m35guntruckvz = sIcon - vehicles_truck_m35
+sDescription - [support.vehicle.m35guntruckvz.desc]
+sName - [vehicle.m35guntruckvz]
+sType - Light
+nMaxStock - 99
+nCashCost - 20000
+oSupport - table: 1F396800
+nFuelCost - 60
+
+Found key: guntruckoc = sIcon - vehicles_truck_transport
+sDescription - [support.vehicle.guntruckoc.desc]
+sName - [vehicle.guntruckoc]
+sType - Light
+nMaxStock - 99
+nCashCost - 20000
+oSupport - table: 1F3A04A0
+nFuelCost - 100
+
+Found key: m35guntruckgr = sIcon - vehicles_truck_m35
+sDescription - [support.vehicle.m35guntruckgr.desc]
+sName - [vehicle.m35guntruckgr]
+sType - Light
+nMaxStock - 99
+nCashCost - 15000
+oSupport - table: 1F3968E0
+nFuelCost - 60
+
+Found key: monstertruck = sIcon - vehicles_car_monsterCar
+sDescription - [support.vehicle.monstertruck.desc]
+sName - [vehicle.monstertruck]
+sType - Civilian
+nMaxStock - 99
+nCashCost - 40000
+oSupport - table: 1F395FE0
+nFuelCost - 60
+
+Found key: uptankbuster = sIcon - support_tank_buster
+sDescription - [support.airstrike.tankbuster.desc]
+sName - [support.airstrike.uptankbuster.name]
+sType - Airstrike
+nMaxStock - 99
+nCashCost - 350000
+oSupport - table: 1F393640
+nFuelCost - 180
+
+Found string value: wiftutorialhelirepairpad
+Found string value: wiftutorialtankhijack
+Found string value: Vz_State_PmcInterior
+Found string value: Vz_State_PmcInterior_Hel
+Found string value: Vz_State_PmcInterior_MecAbsent
+Found key: VzaCon001 = sMissionId - VzaCon001
+sFactionId - Vza
+nCash - 0
+
+Found key: vz_state_gurjob012_02_pristine = false
+Found key: vz_state_car_city_pristine = false
+Found key: vz_state_gurjob11_04 = false
+Found key: vz_state_oiljob008_g_pristine = false
+Found key: vz_state_sol_bunker = false
+Found key: vz_state_gurcon005_airportdefbase = false
+Found key: vz_state_pmc_act1 = false
+Found key: vz_state_oiljob008_f_pristine = false
+Found key: vz_state_gurcon001_pristine = false
+Found key: vz_state_vzacon001_pregate1 = false
+Found key: vz_state_oiljob011_03 = false
+Found key: vz_state_chijob006_a_pristine = false
+Found key: vz_state_oiljob011_01 = false
+Found key: vz_state_gurjob007_03 = false
+Found key: vz_state_oiljob008_k_staging = false
+Found key: vz_state_oiljob008_j_staging = false
+Found key: vz_state_chijob010_01_pristine = false
+Found key: vz_state_mar_altagracia_act1 = false
+Found key: vz_state_chijob005_g_pristine = false
+Found key: vz_state_chi_hq_structures = false
+Found key: vz_state_merida_act1 = false
+Found key: vz_state_gurcon002_pristine = false
+Found key: vz_state_oiljob008_c_pristine = false
+Found key: vz_state_allcon001_pristine = false
+Found key: vz_state_chijob009_a_pristine = false
+Found key: vz_state_pirjob007_f_staging = false
+Found key: vz_state_alljob001_02_pristine = false
+Found key: vz_state_gurjob005_defenses = false
+Found key: vz_state_oiljob012_01 = false
+Found key: vz_state_pmc = false
+Found key: vz_state_oiljob001_pristine = false
+Found key: vz_state_gurcon001_fortress = false
+Found key: vz_state_gurjob11_08 = false
+Found key: vz_state_angel_falls_act1 = false
+Found key: vz_state_oiljob008_b_pristine = false
+Found key: vz_state_gurjob002_04_staging = false
+Found key: vz_state_alljob002_02_pristine = false
+Found key: vz_state_pirjob007_e_pristine = false
+Found key: vz_state_gurjob012_04_staging = false
+Found key: vz_state_gurjob11_01 = false
+Found key: vz_state_amazon_act1 = false
+Found key: vz_state_pirjob012_07_staging = false
+Found key: vz_state_gurjob005_staging = false
+Found key: vz_state_mar_outskirt_act1 = false
+Found key: vz_state_oiljob008_l_staging = false
+Found key: vz_state_oiljob008_l_pristine = false
+Found key: vz_state_oiljob011_04_staging = false
+Found key: vz_state_pirjob007_f_pristine = false
+Found key: vz_state_chicon054_pristine = false
+Found key: vz_state_cashpickups = false
+Found key: vz_state_oiljob002_staging = false
+Found key: vz_state_alljob009_02_pristine = false
+Found key: vz_state_pirjob002_01_pristine = false
+Found key: vz_state_oiljob008_f_staging = false
+Found key: vz_state_alljob009_04_pristine = false
+Found key: vz_state_oiljob011_05 = false
+Found key: vz_state_gua_upperclass_pristine = false
+Found key: vz_state_pirjob002_03_staging = false
+Found key: vz_state_vza_con001 = false
+Found key: vz_state_oiljob012_03_staging = false
+Found key: vz_state_pirjob002_03_pristine = false
+Found key: vz_state_oiljob008_h_staging = false
+Found key: vz_state_alljob002_03_pristine = false
+Found key: vz_state_sol_base_pristine = false
+Found key: vz_state_gurjob002_04_pristine = false
+Found key: vz_state_gurjob012_04_pristine = false
+Found key: vz_state_alljob010_05_pristine = false
+Found key: vz_state_munitions_freeplay = false
+Found key: vz_state_oiljob008_k_pristine = false
+Found key: vz_state_chijob001_01_pristine = false
+Found key: vz_state_chijob009_b_pristine_tg = false
+Found key: vz_state_gur_fuel_junglemountains = false
+Found key: vz_state_gurjob002_05_pristine = false
+Found key: vz_state_gurjob002_02_pristine = false
+Found key: vz_state_oiljob011_01_staging = false
+Found key: vz_state_alljob010_04_pristine = false
+Found key: vz_state_chijob002_01_staging = false
+Found key: vz_state_gurjob003_pristine = false
+Found key: vz_state_chicon002_hq_pristine = false
+Found key: vz_state_chijob010_02_pristine = false
+Found key: vz_state_alljob001_01_pristine = false
+Found key: vz_state_chijob006_d_staging = false
+Found key: vz_state_chijob002_03_staging = false
+Found key: vz_state_oiljob011_02 = false
+Found key: vz_state_alljob010_03_pristine = false
+Found key: vz_state_oiljob008_f_defenses = false
+Found key: vz_state_pirjob007_c_staging = false
+Found key: vz_state_gurjob002_03_pristine = false
+Found key: vz_state_gurjob005_pristine = false
+Found key: vz_state_oiljob012_03 = false
+Found key: vz_state_alljob002_01_pristine = false
+Found key: vz_state_oil_fuel_maroutskirts = false
+Found key: vz_state_pirjob012_10_staging = false
+Found key: vz_state_vzacon001_ruined = false
+Found key: vz_state_pirjob007_a_staging = false
+Found key: vz_state_chijob002_04_pristine = false
+Found key: vz_state_oiljob012_04_staging = false
+Found key: vz_state_gurjob003_staging = false
+Found key: vz_state_pirjob012_05_staging = false
+Found key: vz_state_oiljob008_b_defenses = false
+Found key: vz_state_chijob006_e_staging = false
+Found key: vz_state_oiljob012_04 = false
+Found key: vz_state_chijob009_b_pristine = false
+Found key: vz_state_chijob009_a_pristine_tg = false
+Found key: vz_state_alljob002_01_staging = false
+Found key: vz_state_jungle_mountain_act1 = false
+Found key: vz_state_chijob001_03_staging = false
+Found key: vz_state_gurjob11_07 = false
+Found key: vz_state_oiljob008_l_defenses = false
+Found key: vz_state_vzacon001_pregate2 = false
+Found key: vz_state_pirjob012_07_pristine = false
+Found key: vz_state_gurjob008_02_staging = false
+Found key: vz_state_alljob009_03_pristine = false
+Found key: vz_state_pmcjob001 = false
+Found key: vz_state_chijob001_04_pristine = false
+Found key: vz_state_chijob006_a_staging = false
+Found key: vz_state_gurjob002_03_staging = false
+Found key: vz_state_staging_oildepot = false
+Found key: vz_state_pmc_livedin = false
+Found key: vz_state_pirjob002_01_staging = false
+Found key: vz_state_pirjob012_08_pristine = false
+Found key: vz_state_mar_industrial_pristine = false
+Found key: vz_state_pirjob007_c_pristine = false
+Found key: vz_state_mer_big_lineregion = false
+Found key: vz_state_oiljob008_d_defenses = false
+Found key: vz_state_gurjob012_03_staging = false
+Found key: vz_state_chijob006_b_staging = false
+Found key: vz_state_oiljob012_01_staging = false
+Found key: vz_state_oiljob008_e_staging = false
+Found key: vz_state_oiljob011_03_staging = false
+Found key: vz_state_pirjob012_09_staging = false
+Found key: vz_state_oiljob012_05 = false
+Found key: vz_state_pirjob012_09_pristine = false
+Found key: vz_state_gurjob11_10 = false
+Found key: vz_state_oiljob008_b_staging = false
+Found key: vz_state_alljob002_05_pristine = false
+Found key: vz_state_gurjob007_01 = false
+Found key: vz_state_pirjob002_02_pristine = false
+Found key: vz_state_chijob005_a_pristine = false
+Found key: vz_state_oiljob011_05_pristine = false
+Found key: vz_state_oiljob011_02_pristine = false
+Found key: vz_state_merida_act1_helo = false
+Found key: vz_state_chicon054_staging = false
+Found key: vz_state_mar_industrial_act1 = false
+Found key: vz_state_merida_act1_staging = false
+Found key: vz_state_chijob001_02_pristine = false
+Found key: vz_state_pirjob007_e_staging = false
+Found key: vz_state_pirjob002_01_defenses = false
+Found key: vz_state_gurjob012_01_pristine = false
+Found key: vz_state_alljob001_03_staging2 = false
+Found key: vz_state_chijob005_f_pristine = false
+Found key: vz_state_alljob001_04_staging = false
+Found key: vz_state_oiljob008_c_defenses = false
+Found key: vz_state_pirjob007_g_staging = false
+Found key: vz_state_oiljob008_d_pristine = false
+Found key: vz_state_ocgate_dynamic = false
+Found key: vz_state_chijob001_03_pristine = false
+Found key: vz_state_chijob002_02_staging = false
+Found key: vz_state_alljob009_05_pristine = false
+Found key: vz_state_alljob001_03_pristine = false
+Found key: vz_state_chijob002_05_pristine = false
+Found key: vz_state_oiljob008_a_staging = false
+Found key: vz_state_mer_oilrig_pristine = false
+Found key: vz_state_oiljob008_g_staging = false
+Found key: vz_state_oiljob008_e_pristine = false
+Found key: vz_state_alljob001_04_pristine = false
+Found key: vz_state_oiljob002_pristine = false
+Found key: vz_state_pirjob007_a_pristine = false
+Found key: vz_state_staging_pirhq = false
+Found key: vz_state_margarita_precrash = false
+Found key: vz_state_mar_city_pristine = false
+Found key: vz_state_mar_village_act1 = false
+Found key: vz_state_chicon002_bridge_pristine = false
+Found key: vz_state_oiljob011_02_staging = false
+Found key: vz_state_pirjob007_b_staging = false
+Found key: vz_state_allcon003_and_chicon003_pristine = false
+Found key: vz_state_chijob010_04_pristine = false
+Found key: vz_state_oiljob008_e_defenses = false
+Found key: vz_state_chijob001_02_staging = false
+Found key: vz_state_gurjob012_05_pristine = false
+Found key: vz_state_oiljob012_05_staging = false
+Found key: vz_state_oiljob008_m_staging = false
+Found key: vz_state_gurjob002_01_pristine = false
+Found key: vz_state_gurjob002_02_staging = false
+Found key: vz_state_oiljob011_01_pristine = false
+Found key: vz_state_chijob001_04_staging = false
+Found key: vz_state_alljob002_04_staging = false
+Found key: vz_state_pirjob012_06_pristine = false
+Found key: vz_state_alljob002_02_staging = false
+Found key: vz_state_chijob005_e_pristine = false
+Found key: vz_state_oiljob004 = false
+Found key: vz_state_chijob006_c_staging = false
+Found key: vz_state_chijob002_02_pristine = false
+Found key: vz_state_oiljob012_05_pristine = false
+Found key: vz_state_oiljob011_04_pristine = false
+Found key: vz_state_pirjob012_05_pristine = false
+Found key: vz_state_alljob002_03_staging = false
+Found key: vz_state_chijob002_04_staging = false
+Found key: vz_state_oiljob005_pristine = false
+Found key: vz_state_gurjob012_03_pristine = false
+Found key: vz_state_oiljob008_c_staging = false
+Found key: vz_state_mar_city_act1 = false
+Found key: vz_state_pirjob002_02_staging = false
+Found key: vz_state_oiljob008_m_defenses = false
+Found key: vz_state_jetcon001_pristine = false
+Found key: vz_state_gurhq_act1 = false
+Found key: vz_state_alljob009_01_pristine = false
+Found key: vz_state_gurjob11_05 = false
+Found key: vz_state_mar_city_act1_depot = false
+Found key: vz_state_pirjob012_08_staging = false
+Found key: vz_state_oiljob012_04_pristine = false
+Found key: vz_state_oiljob008_j_defenses = false
+Found key: vz_state_chijob002_01_pristine = false
+Found key: vz_state_oc_depot_pristine = false
+Found key: vz_state_chijob002_03_pristine = false
+Found key: vz_state_alljob002_04_pristine = false
+Found key: vz_state_gurcon001_outpost_pristine = false
+Found key: vz_state_gurjob012_02_staging = false
+Found key: vz_state_oiljob008_g_defenses = false
+Found key: vz_state_chijob005_d_pristine = false
+Found key: vz_state_chicon002_depot_pristine = false
+Found key: vz_state_oiljob008_k_defenses = false
+Found key: vz_state_alljob010_02_pristine = false
+Found key: vz_state_gurjob008_02_pristine = false
+Found key: vz_state_chijob005_b_pristine = false
+Found key: vz_state_mer_oilrig_pristine_tg = false
+Found key: vz_state_gurjob11_09 = false
+Found key: vz_state_guanare_act1 = false
+Found key: vz_state_oiljob008_j_pristine = false
+Found key: vz_state_gurcon001_staging = false
+Found key: vz_state_chijob002_05_staging = false
+Found key: vz_state_pircon004_pristine = false
+Found key: vz_state_oiljob008_a_pristine = false
+Found key: vz_state_oiljob012_02 = false
+Found key: vz_state_oiljob011_04 = false
+Found key: vz_state_pirjob012_02_pristine = false
+Found key: vz_state_chijob005_c_pristine = false
+Found key: vz_state_oiljob008_m_pristine = false
+Found key: vz_state_mar_big_lineregion = false
+Found key: vz_state_gurjob11_02 = false
+Found key: vz_state_chicon001_pristine = false
+Found key: vz_state_oiljob011_03_pristine = false
+Found key: vz_state_pirjob012_10_pristine = false
+Found key: vz_state_oiljob005_staging = false
+Found key: vz_state_oiljob008_i_pristine = false
+Found key: vz_state_gurjob002_05_staging = false
+Found key: vz_state_oiljob012_03_pristine = false
+Found key: vz_state_alljob001_01_staging = false
+Found key: vz_state_oc_depot = false
+Found key: vz_state_chijob006_b_pristine = false
+Found key: vz_state_pirjob007_g_pristine = false
+Found key: vz_state_chijob006_d_pristine = false
+Found key: vz_state_gurjob008_01_pristine = false
+Found key: vz_state_gurjob008_01_staging = false
+Found key: vz_state_oiljob008_d_staging = false
+Found key: vz_state_oiljob001_staging = false
+Found key: vz_state_gurjob012_01_staging = false
+Found key: vz_state_oiljob011_05_staging = false
+Found key: vz_state_chijob006_e_pristine = false
+Found key: vz_state_oiljob008_h_defenses = false
+Found key: vz_state_chijob006_c_pristine = false
+Found key: vz_state_mer_commercialpristine = false
+Found key: vz_state_oiljob008_h_pristine = false
+Found key: vz_state_staging_oilhq = false
+Found key: vz_state_gurjob012_05_staging = false
+Found key: vz_state_oiljob012_02_staging = false
+Found key: vz_state_oiljob012_01_pristine = false
+Found key: vz_state_chijob001_01_staging = false
+Found key: vz_state_gurjob11_03 = false
+Found key: vz_state_gurjob002_01_staging = false
+Found key: vz_state_gurjob007_02 = false
+Found key: vz_state_oilcon002_pristine = false
+Found key: vz_state_pirjob012_06_staging = false
+Found key: vz_state_pirjob007_b_pristine = false
+Found key: vz_state_gurjob11_06 = false
+Found key: vz_state_alljob002_05_staging = false
+Found key: vz_state_oiljob012_02_pristine = false
+Found string value: _pmcoutpost_interior_recruitheli 0x000c73ec
+Found string value: Vz_State_PmcInterior_Jet
+Found string value: Vz_State_PmcInterior_Mec
+Found string value: vehicles_heli_alouette
+Found string value: vehicles_heli_md500
+Found string value: vehicles_heli_uh1
+Found string value: vehicles_truck_ext
+Found string value: vehicles_heli_ka28
+Found string value: [vehheli] 
+Found string value: vehicles_truck_m151
+Found string value: vehicles_tank_ztz63
+Found string value: vehicles_truck_hmmwv
+Found string value: vehicles_tank_ztz98
+Found string value: vehicles_tank_stingray2
+Found string value: supplies_AN_anti_tank
+Found string value: vehicles_tank_amx30
+Found string value: vehicles_tank_pgz95
+Found string value: vehicles_heli_mi35
+Found string value: vehicles_heli_ah1z
+Found string value: vehicles_tank_m1a2
+Found string value: vehicles_truck_sx2150
+Found string value: [vehicle.tankbike]
+Found string value: [support.vehicle.tankbike.desc]
+Found string value: vehicles_motorcycle_tankbike
+Found string value: vehicles_heli_mi26
+Found string value: vehicles_truck_m35
+Found string value: vehicles_truck_nglv
+Found string value: vehicles_heli_wz10
+Found string value: supplies_CH_anti_tank
+Found string value: vehicles_tank_mosquitoAA
+Found string value: vehicles_tank_m6
+Found string value: vehicles_truck_t300
+Found string value: [support.airstrike.tankbuster.name]
+Found string value: [support.airstrike.tankbuster.desc]
+Found string value: support_tank_buster
+Found string value: vehicles_tank_scorpion
+Found string value: [vehicle.m35guntruckvz]
+Found string value: [support.vehicle.m35guntruckvz.desc]
+Found string value: [vehicle.guntruckoc]
+Found string value: [support.vehicle.guntruckoc.desc]
+Found string value: vehicles_truck_transport
+Found string value: vehicles_tank_plz45
+Found string value: [vehicle.m35guntruckgr]
+Found string value: [support.vehicle.m35guntruckgr.desc]
+Found string value: [vehicle.monstertruck]
+Found string value: [support.vehicle.monstertruck.desc]
+Found string value: vehicles_tank_m551
+Found string value: [support.airstrike.uptankbuster.name]
+Found string value: VZSoldierArc_Zev01_Soldier_AI Subdual_x_x_x_x_x_01
+Found string value: VZSoldierArc_Zev01_VZ Soldier_AI Subdual_x_x_x_x_x_08
+Found string value: VZSoldier01.Reporting.CallIn01
+Found string value: VZSoldier01.Reporting.CallIn02
+Found string value: VZSoldier01.Reporting.CallIn03
+Found string value: VZSoldier01.Reporting.Jammed01
+Found string value: VZSoldier01.Reporting.Jammed02
+Found string value: VZSoldier01.Reporting.LongReport01
+Found string value: VZSoldier01.Reporting.LongReport02
+Found string value: VZSoldier01.Reporting.LongReport03
+Found string value: vz_state_PirCon002
+Found string value: vz_state_PirCon002_Deliverables
+Found string value: Vz_State_AllCon003
+Found string value: vz_state_AllCon003_and_ChiCon003_Pristine
+Found string value: vz_state_AllCon003_Pristine
+Found string value: vz_state_ChiCon003_Pristine
+Found string value: vz_state_PmcCon013_MP
+Found string value: vz_state_PmcCon013
+Found string value: vz_state_pmccon003
+Found string value: vz_state_PMCCon003_pristine
+Found string value: vz_state_JetCon001
+Found string value: vz_state_JetCon001_pristine
+Found string value: vz_state_PirCon003
+Found string value: vz_state_PirCon003_Deliverables
+Found string value: Vz_State_OilCon002
+Found string value: Vz_State_ChiCon002
+Found string value: Vz_State_ChiCon002_Pristine
+Found string value: VzaCon001_Start1
+Found string value: Vz_State_ChiCon003
+Found string value: vz_state_alljob001_02_captured
+Found string value: vz_state_ChiCon008_a
+Found string value: vz_State_PmcCon018_Veh
+Found string value: vz_State_PmcCon018
+Found string value: Vz_State_OilCon020
+Found string value: VZ_State_OilCon020_Deliveribles
+Found string value: vz_state_pmccon002
+Found key: vz = ClientRestorePreSaveCash - function: 1F36DEC0
+_SecondaryStreamComplete - function: 1F36DD40
+MrxTutorialManager - table: 1F595720
+MrxShootingGallery - table: 1F530160
+MrxStarterManager - table: 1F532480
+_oMasterStub - table: 1EEE3A00
+WifMissionFlow - table: 1F57A4C0
+SkipToMission - function: 1F36DD00
+_LoadLayers - function: 1F36DDE0
+MrxState - table: 1F594800
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+Init - function: 1F36DF20
+_StartPlayerVisibleGameplay - function: 1F36DD20
+_AttemptGameplaySetup - function: 1F36DDC0
+nInGameCash - 0
+ResetSingleton - function: 1F36DE20
+_tStaticLayers - table: 1F36DF60
+WifVzAmbience - table: 1F36FD40
+SaveComplete - function: 1F36DEA0
+SaveSingleton - function: 1F36DF00
+MrxPlayer - table: 1F532400
+WifBios - table: 1F57AE80
+_THIS - table: 1F36F700
+WifHints - table: 1F5938C0
+WifVzAtmosphere - table: 1F3900E0
+MrxTask - table: 1F596320
+ClientReimburseForSave - function: 1F36DEE0
+MrxStatsManager - table: 1F57AFA0
+WifEquipmentData - table: 1F769EC0
+MrxPlayState - table: 1F532440
+friendlygate - table: 1F57A500
+_CompleteGameplaySetup - function: 1F36DDA0
+_bStaticLayersLoaded - true
+Munitions - table: 1F5948A0
+MrxFactionManager - table: 1F531600
+MrxLayerManager - table: 1F5965E0
+MrxBootstrap - table: 1F5323C0
+MrxCheatBootstrap - table: 1F530200
+LoadSingleton - function: 1F36DE00
+GenerateSaveData - function: 1F36DE80
+MrxShop - table: 1F57B2A0
+MrxSoundBootstrap - table: 1F7949C0
+_GameplaySetup_LoadWorldState - function: 1F36DD60
+_bBootstrapComplete - true
+WifVZRegionNames - table: 1F390E60
+WifPmcInterior - table: 1F5324E0
+MrxVoSequence - table: 1F530180
+MrxTransit - table: 1F57B000
+WifVzBoundary - table: 1F57AEC0
+_tDefaultDynamicLayers - table: 1F36DF40
+_GameplaySetup_RestoreSubsystems - function: 1F36DD80
+SetPreContractSaveData - function: 1F36DE60
+MrxGui - table: 1F9C8CE0
+MrxSupportData - table: 1F531660
+StagingAct1 - table: 1F530120
+_tPreContractSaveData - table: 1EA68140
+RequestAutosave - function: 1F36DE40
+MrxRewardData - table: 1F57C820
+MrxAchievements - table: 1F593940
+Hero - table: 1F593980
+1 - vz
+
+Found string value: vz_state_pmcinterior_mecabsent
+Found string value: vz_state_pmcinterior_hel
+Found string value: vz_state_pmcinterior
+Found string value: M35 (Guntruck) (VZ)
+Found string value: Guntruck (OC)
+Found string value: M35 (Guntruck) (GR)
+Found string value: vz_state_OC_Depot_pristine
+Found string value: vz_state_OC_Depot
+Found string value: vz_State_Margarita_precrash
+Found string value: vz_State_AllCon001_pristine
+Found string value: vz_state_AllJob001_01_Pristine
+Found string value: Vz_State_AllJob001_01_Staging
+Found string value: vz_state_AllJob001_02_Pristine
+Found string value: vz_state_AllJob001_03_Pristine
+Found string value: Vz_State_AllJob001_03_Staging2
+Found string value: vz_state_AllJob001_04_Pristine
+Found string value: Vz_State_AllJob001_04_Staging
+Found string value: Vz_State_AllJob002_01_Pristine
+Found string value: Vz_State_AllJob002_02_Pristine
+Found string value: Vz_State_AllJob002_03_Pristine
+Found string value: Vz_State_AllJob002_04_Pristine
+Found string value: Vz_State_AllJob002_05_Pristine
+Found string value: Vz_State_AllJob002_01_Staging
+Found string value: Vz_State_AllJob002_02_Staging
+Found string value: Vz_State_AllJob002_03_Staging
+Found string value: Vz_State_AllJob002_04_Staging
+Found string value: Vz_State_AllJob002_05_Staging
+Found string value: Vz_State_AllJob009_01_Pristine
+Found string value: Vz_State_AllJob009_02_Pristine
+Found string value: Vz_State_AllJob009_03_Pristine
+Found string value: Vz_State_AllJob009_04_Pristine
+Found string value: Vz_State_AllJob009_05_Pristine
+Found string value: Vz_State_AllJob010_02_Pristine
+Found string value: Vz_State_AllJob010_03_Pristine
+Found string value: Vz_State_AllJob010_04_Pristine
+Found string value: Vz_State_AllJob010_05_Pristine
+Found string value: Vz_State_Chi_HQ_Structures
+Found string value: Vz_State_ChiCon001_Pristine
+Found string value: vz_State_ChiCon002_HQ_Pristine
+Found string value: vz_State_ChiCon002_Bridge_Pristine
+Found string value: vz_State_ChiCon002_Depot_Pristine
+Found string value: vz_state_ChiCon054_Pristine
+Found string value: vz_state_ChiCon054_Staging
+Found string value: vz_state_ChiJob001_01_Pristine
+Found string value: Vz_State_ChiJob001_01_Staging
+Found string value: vz_state_ChiJob001_02_Pristine
+Found string value: Vz_State_ChiJob001_02_Staging
+Found string value: vz_state_ChiJob001_03_Pristine
+Found string value: Vz_State_ChiJob001_03_Staging
+Found string value: vz_state_ChiJob001_04_Pristine
+Found string value: Vz_State_ChiJob001_04_Staging
+Found string value: Vz_State_ChiJob002_01_Pristine
+Found string value: Vz_State_ChiJob002_02_Pristine
+Found string value: Vz_State_ChiJob002_03_Pristine
+Found string value: Vz_State_ChiJob002_04_Pristine
+Found string value: Vz_State_ChiJob002_05_Pristine
+Found string value: Vz_State_ChiJob002_01_Staging
+Found string value: Vz_State_ChiJob002_02_Staging
+Found string value: Vz_State_ChiJob002_03_Staging
+Found string value: Vz_State_ChiJob002_04_Staging
+Found string value: Vz_State_ChiJob002_05_Staging
+Found string value: Vz_State_ChiJob005_A_Pristine
+Found string value: Vz_State_ChiJob005_B_Pristine
+Found string value: Vz_State_ChiJob005_C_Pristine
+Found string value: Vz_State_ChiJob005_D_Pristine
+Found string value: Vz_State_ChiJob005_E_Pristine
+Found string value: Vz_State_ChiJob005_F_Pristine
+Found string value: Vz_State_ChiJob005_G_Pristine
+Found string value: Vz_State_ChiJob006_A_Pristine
+Found string value: Vz_State_ChiJob006_B_Pristine
+Found string value: Vz_State_ChiJob006_C_Pristine
+Found string value: Vz_State_ChiJob006_D_Pristine
+Found string value: Vz_State_ChiJob006_E_Pristine
+Found string value: Vz_State_ChiJob006_A_Staging
+Found string value: Vz_State_ChiJob006_B_Staging
+Found string value: Vz_State_ChiJob006_C_Staging
+Found string value: Vz_State_ChiJob006_D_Staging
+Found string value: Vz_State_ChiJob006_E_Staging
+Found string value: Vz_State_ChiJob009_A_Pristine
+Found string value: Vz_State_ChiJob009_A_Pristine_tg
+Found string value: Vz_State_ChiJob009_B_Pristine
+Found string value: Vz_State_ChiJob009_B_Pristine_tg
+Found string value: Vz_State_ChiJob010_01_Pristine
+Found string value: Vz_State_ChiJob010_02_Pristine
+Found string value: Vz_State_ChiJob010_04_Pristine
+Found string value: vz_state_GurHQ_act1
+Found string value: Vz_State_GurJob002_01_Pristine
+Found string value: Vz_State_GurJob002_02_Pristine
+Found string value: Vz_State_GurJob002_03_Pristine
+Found string value: Vz_State_GurJob002_04_Pristine
+Found string value: Vz_State_GurJob002_05_Pristine
+Found string value: Vz_State_GurJob002_01_Staging
+Found string value: Vz_State_GurJob002_02_Staging
+Found string value: Vz_State_GurJob002_03_Staging
+Found string value: Vz_State_GurJob002_04_Staging
+Found string value: Vz_State_GurJob002_05_Staging
+Found string value: vz_state_GurJob003_Pristine
+Found string value: Vz_State_GurJob003_Staging
+Found string value: vz_state_GurJob005_Pristine
+Found string value: Vz_State_GurJob005_Staging
+Found string value: Vz_State_GurJob007_01
+Found string value: Vz_State_GurJob007_02
+Found string value: Vz_State_GurJob007_03
+Found string value: vz_state_GurJob008_01_Pristine
+Found string value: Vz_State_GurJob008_01_Staging
+Found string value: vz_state_GurJob008_02_Pristine
+Found string value: Vz_State_GurJob008_02_Staging
+Found string value: Vz_State_GurJob11_01
+Found string value: Vz_State_GurJob11_02
+Found string value: Vz_State_GurJob11_03
+Found string value: Vz_State_GurJob11_04
+Found string value: Vz_State_GurJob11_05
+Found string value: Vz_State_GurJob11_06
+Found string value: Vz_State_GurJob11_07
+Found string value: Vz_State_GurJob11_08
+Found string value: Vz_State_GurJob11_09
+Found string value: Vz_State_GurJob11_10
+Found string value: Vz_State_GurJob012_01_Pristine
+Found string value: Vz_State_GurJob012_02_Pristine
+Found string value: Vz_State_GurJob012_03_Pristine
+Found string value: Vz_State_GurJob012_04_Pristine
+Found string value: Vz_State_GurJob012_05_Pristine
+Found string value: Vz_State_GurJob012_01_Staging
+Found string value: Vz_State_GurJob012_02_Staging
+Found string value: Vz_State_GurJob012_03_Staging
+Found string value: Vz_State_GurJob012_04_Staging
+Found string value: Vz_State_GurJob012_05_Staging
+Found string value: vz_state_OilCon002_pristine
+Found string value: vz_state_OilCon021_staging
+Found string value: vz_state_OilJob001_Pristine
+Found string value: vz_state_OilJob001_Staging
+Found string value: vz_state_OilJob002_Pristine
+Found string value: vz_state_OilJob002_Staging
+Found string value: vz_state_OilJob005_Pristine
+Found string value: vz_state_OilJob005_Staging
+Found string value: Vz_State_OilJob008_A_Pristine
+Found string value: Vz_State_OilJob008_A_Staging
+Found string value: Vz_State_OilJob008_B_Pristine
+Found string value: Vz_State_OilJob008_B_Staging
+Found string value: Vz_State_OilJob008_C_Pristine
+Found string value: Vz_State_OilJob008_C_Staging
+Found string value: Vz_State_OilJob008_D_Pristine
+Found string value: Vz_State_OilJob008_D_Staging
+Found string value: Vz_State_OilJob008_E_Pristine
+Found string value: Vz_State_OilJob008_E_Staging
+Found string value: Vz_State_OilJob008_F_Pristine
+Found string value: Vz_State_OilJob008_F_Staging
+Found string value: Vz_State_OilJob008_G_Pristine
+Found string value: Vz_State_OilJob008_G_Staging
+Found string value: Vz_State_OilJob008_H_Pristine
+Found string value: Vz_State_OilJob008_H_Staging
+Found string value: Vz_State_OilJob008_I_Pristine
+Found string value: Vz_State_OilJob008_J_Pristine
+Found string value: Vz_State_OilJob008_J_Staging
+Found string value: Vz_State_OilJob008_k_Pristine
+Found string value: Vz_State_OilJob008_k_Staging
+Found string value: Vz_State_OilJob008_l_Pristine
+Found string value: Vz_State_OilJob008_l_Staging
+Found string value: Vz_State_OilJob008_m_Pristine
+Found string value: Vz_State_OilJob008_m_Staging
+Found string value: Vz_State_OilJob011_01_Pristine
+Found string value: Vz_State_OilJob011_02_Pristine
+Found string value: Vz_State_OilJob011_03_Pristine
+Found string value: Vz_State_OilJob011_04_Pristine
+Found string value: Vz_State_OilJob011_05_Pristine
+Found string value: Vz_State_OilJob011_01_Staging
+Found string value: Vz_State_OilJob011_02_Staging
+Found string value: Vz_State_OilJob011_03_Staging
+Found string value: Vz_State_OilJob011_04_Staging
+Found string value: Vz_State_OilJob011_05_Staging
+Found string value: Vz_State_OilJob012_01_Pristine
+Found string value: Vz_State_OilJob012_02_Pristine
+Found string value: Vz_State_OilJob012_03_Pristine
+Found string value: Vz_State_OilJob012_04_Pristine
+Found string value: Vz_State_OilJob012_05_Pristine
+Found string value: Vz_State_OilJob012_01_Staging
+Found string value: Vz_State_OilJob012_02_Staging
+Found string value: Vz_State_OilJob012_03_Staging
+Found string value: Vz_State_OilJob012_04_Staging
+Found string value: Vz_State_OilJob012_05_Staging
+Found string value: vz_State_PirCon004_Pristine
+Found string value: vz_state_PirJob002_01_Pristine
+Found string value: Vz_State_PirJob002_01_Staging
+Found string value: vz_state_PirJob002_02_Pristine
+Found string value: Vz_State_PirJob002_02_Staging
+Found string value: vz_state_PirJob002_03_Pristine
+Found string value: Vz_State_PirJob002_03_Staging
+Found string value: Vz_State_PirJob007_A_Pristine
+Found string value: Vz_State_PirJob007_B_Pristine
+Found string value: Vz_State_PirJob007_C_Pristine
+Found string value: Vz_State_PirJob007_E_Pristine
+Found string value: Vz_State_PirJob007_F_Pristine
+Found string value: Vz_State_PirJob007_G_Pristine
+Found string value: Vz_State_PirJob007_A_Staging
+Found string value: Vz_State_PirJob007_B_Staging
+Found string value: Vz_State_PirJob007_C_Staging
+Found string value: Vz_State_PirJob007_E_Staging
+Found string value: Vz_State_PirJob007_F_Staging
+Found string value: Vz_State_PirJob007_G_Staging
+Found string value: Vz_State_PirJob012_02_Pristine
+Found string value: Vz_State_PirJob012_05_Pristine
+Found string value: Vz_State_PirJob012_06_Pristine
+Found string value: Vz_State_PirJob012_07_Pristine
+Found string value: Vz_State_PirJob012_08_Pristine
+Found string value: Vz_State_PirJob012_09_Pristine
+Found string value: Vz_State_PirJob012_10_Pristine
+Found string value: Vz_State_PirJob012_05_Staging
+Found string value: Vz_State_PirJob012_06_Staging
+Found string value: Vz_State_PirJob012_07_Staging
+Found string value: Vz_State_PirJob012_08_Staging
+Found string value: Vz_State_PirJob012_09_Staging
+Found string value: Vz_State_PirJob012_10_Staging
+Found string value: VZ_State_Pmc_Pristine
+Found string value: vz_state_staging_OilDepot
+Found string value: vz_state_staging_OilHQ
+Found string value: vz_state_staging_PirHQ
+Found string value: vz_state_VzaCon001_Pristine
+Found string value: vz_state_PMC
+Found string value: vz_All_Hq
+Found string value: vz_All_Job001_a
+Found string value: vz_All_Job001_b
+Found string value: vz_All_Job001_c
+Found string value: vz_All_Job001_d
+Found string value: vz_All_Job002_a
+Found string value: vz_All_Job002_b
+Found string value: vz_All_Job002_c
+Found string value: vz_All_Job002_d
+Found string value: vz_All_Job002_e
+Found string value: vz_All_job005_a
+Found string value: vz_All_job005_e
+Found string value: vz_All_job005_d
+Found string value: vz_All_Job010_a
+Found string value: vz_All_Job010_b
+Found string value: vz_All_Job010_c
+Found string value: vz_All_Job010_d
+Found string value: vz_All_Job010_e
+Found string value: vz_amazon_base
+Found string value: vz_amazon_scrub
+Found string value: vz_amazon_road
+Found string value: vz_Amazon_foilage
+Found string value: vz_Amazon_billboard
+Found string value: vz_Angel_Falls_Foilage
+Found string value: vz_angel_falls_road
+Found string value: vz_atmosphere_regions
+Found string value: vz_boundary_regions
+Found string value: vz_caracas_base
+Found string value: vz_caracas_scrub
+Found string value: vz_car_city
+Found string value: vz_car_billboard
+Found string value: vz_car_city_roads
+Found string value: vz_car_estate
+Found string value: vz_caracas_foilage
+Found string value: vz_car_shanty02
+Found string value: vz_car_shanty_roads
+Found string value: vz_Chi_Con005_d
+Found string value: vz_Chi_Con006_d
+Found string value: vz_Chi_Con054
+Found string value: vz_Chi_Job001_a
+Found string value: vz_Chi_Job001_b
+Found string value: vz_Chi_Job001_c
+Found string value: vz_Chi_Job001_d
+Found string value: vz_Chi_Job002_a
+Found string value: vz_Chi_Job002_b
+Found string value: vz_Chi_Job002_c
+Found string value: vz_Chi_Job002_d
+Found string value: vz_Chi_Job002_e
+Found string value: vz_Chi_Job006_a
+Found string value: vz_Chi_Job006_b
+Found string value: vz_Chi_Job006_c
+Found string value: vz_Chi_Job006_d
+Found string value: vz_Chi_Job006_e
+Found string value: vz_Chi_Job010_a
+Found string value: vz_Chi_Job010_b
+Found string value: vz_Chi_Job010_c
+Found string value: vz_Chi_Job010_d
+Found string value: vz_Chi_Job010_e
+Found string value: Vz_CommonLocations
+Found string value: vz_cum_city
+Found string value: vz_cum_billboard
+Found string value: vz_cum_margarita
+Found string value: vz_cum_outskirt
+Found string value: vz_cum_fortress
+Found string value: vz_cum_roads
+Found string value: vz_cumana_scrub
+Found string value: vz_Cumana_foilage
+Found string value: vz_gua_upperclass
+Found string value: vz_gua_billboard
+Found string value: vz_guanare_road
+Found string value: vz_Gua_vzbase
+Found string value: vz_Gur_base
+Found string value: vz_gur_base_mines
+Found string value: vz_Gur_HQ
+Found string value: vz_Gur_Job002_b
+Found string value: vz_Gur_Job002_c
+Found string value: vz_Gur_Job002_d
+Found string value: vz_Gur_Job002_f
+Found string value: vz_Gur_job002_h
+Found string value: vz_Gur_job002_j
+Found string value: vz_Gur_Job003
+Found string value: vz_Gur_Job005
+Found string value: vz_Gur_Job008_a
+Found string value: vz_Gur_Job008_b
+Found string value: vz_Gur_Job012_a
+Found string value: vz_Gur_Job012_g
+Found string value: vz_Gur_Job012_i
+Found string value: vz_Jet_Con001
+Found string value: vz_jungle_mountain_billboard
+Found string value: vz_jungle_mountain_foilage
+Found string value: vz_jungle_mountain_road
+Found string value: vz_jungle_mountain_scrub
+Found string value: vz_landingzone
+Found string value: vz_mar_altagracia
+Found string value: vz_mar_altagracia_roads
+Found string value: vz_mar_city
+Found string value: vz_mar_fortress
+Found string value: vz_mar_roads
+Found string value: vz_mar_billboard
+Found string value: vz_mar_foilage
+Found string value: vz_mar_scrub
+Found string value: vz_mar_industrial
+Found string value: vz_mar_industrial_roads
+Found string value: vz_mar_outskirt
+Found string value: vz_mar_outskirt_roads
+Found string value: vz_mar_village
+Found string value: vz_mar_village_roads
+Found string value: vz_mer_commercial
+Found string value: vz_mer_billboard
+Found string value: vz_mer_dock
+Found string value: vz_mer_outskirt
+Found string value: vz_mer_residential
+Found string value: vz_mer_white
+Found string value: vz_merida_foilage
+Found string value: vz_merida_roads
+Found string value: vz_merida_scrub
+Found string value: vz_Oil_Job001
+Found string value: vz_Oil_Job002
+Found string value: vz_Oil_Job005
+Found string value: vz_Oil_Job008_d
+Found string value: vz_oil_job011_a
+Found string value: vz_oil_job011_c
+Found string value: vz_oil_job011_e
+Found string value: vz_oil_job011_h
+Found string value: vz_oil_job011_i
+Found string value: vz_oil_job011_j
+Found string value: vz_oil_job011_f
+Found string value: vz_oil_job011_g
+Found string value: vz_PIR_HQ
+Found string value: vz_Pir_con003
+Found string value: vz_Pir_Job002_a
+Found string value: vz_Pir_Job002_b
+Found string value: vz_Pir_Job002_c
+Found string value: vz_Pir_Job007_a
+Found string value: vz_Pir_Job012_a
+Found string value: vz_Pir_Job012_b
+Found string value: vz_Pir_Job012_c
+Found string value: vz_Pir_Job012_d
+Found string value: vz_Pir_Job012_e
+Found string value: vz_Pir_Job012_f
+Found string value: vz_Pir_Job012_g
+Found string value: vz_Pir_Job012_h
+Found string value: vz_Pir_Job012_i
+Found string value: vz_Pir_Job012_j
+Found string value: vz_Pirate_Isles_foilage
+Found string value: vz_Pirate_Isles_roads
+Found string value: vz_Pirate_Isles_scrub
+Found string value: vz_PMC
+Found string value: vz_PMC_roads
+Found string value: vz_PMC_scrub
+Found string value: vz_PMC_foilage
+Found string value: vz_poi_lineregions
+Found string value: vz_rover_camera_test
+Found string value: vz_sfx_ambience
+Found string value: vz_waterSounds
+Found string value: vz_sol_base
+Found string value: VZ_start_location
+Found string value: vz_teleporter
+Found string value: vz_LowResTerrain
+Found string value: VZ_terrain
+Found string value: vz_caracas_tiny
+Found string value: vz_maracaibo_tiny
+Found string value: vz_amazon_tiny
+Found string value: vz_angel_falls_tiny
+Found string value: vz_jungle_mountain_tiny
+Found string value: vz_merida_tiny
+Found string value: vz_guanare_tiny
+Found string value: vz_cumana_tiny
+Found string value: vz_pirate_isles_tiny
+Found string value: vz_pmc_tiny
+Found string value: Monster truck phase2
+Found string value: Monster truck phase1
+Found string value: Monster truck
+Found key: wiftutorialhelicopter = SetupActivationCriteria - function: 1EA198C0
+SetupCancellationCriteria - function: 1EA198A0
+GetMessage - function: 1EA19900
+_THIS - table: 1EA19940
+MrxTutorial - table: 1EA1A720
+2 - table: 1EA19920
+1 - wiftutorialhelicopter
+
+Found key: Vz = HUD_faction_VZ
+Found string value: temp_radar_icon_helicopter"
+<<<END>>>

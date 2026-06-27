@@ -1,0 +1,10 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "sd._THIS.sDeliveryVehicle = UH1 Transport (GR) (Full) (string)
+sd.__index.sDeliveryVehicle = UH1 Transport (GR) (Full) (string)
+sd.MrxSupport.sDeliveryVehicle = Support Vehicle (Mig27) (string)
+sd.sDeliveryVehicle = UH1 Transport (GR) (Full) (string)"
+<<<END>>>

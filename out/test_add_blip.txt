@@ -1,0 +1,70 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[runtime] <tt=2 val=40000014> "=== Constants in Pda.Map.AddBlip ===
+  LuaQ
+  mrxguiinterface
+  _GetWidgetsForPlayers
+  vPlayer
+  PDA
+  pairs
+  AddMapBlip
+  sName
+  sLabel
+  sDesc
+  uGuid
+  sTexture
+  sMission
+  nMeter
+  bSticky
+  bTodoList
+  sFaction
+  PMC
+  nSortOrder
+  Net
+  IsServer
+  bDontNetSync
+  MrxUtil
+  MarkerGetIndexByName_Pda
+  SendEvent_AddPdaObjective
+  WifMissionData
+  GetMissionIndexFromId
+  self
+  tArgs
+  tWidgets
+  for
+  generator
+  state
+  control
+  nIndex
+  oWidget
+  iSticky
+  nMarkerIndex
+=== Constants in Pda.Map.AddMission ===
+  LuaQ
+  mrxguiinterface
+  _GetWidgetsForPlayers
+  vPlayer
+  PDA
+  pairs
+  AddMapMission
+  sName
+  sLabel
+  sDesc
+  sFaction
+  sDefaultBlipTexture
+  sDefaultBlipLabel
+  bSuppress
+  bTrackable
+  nSortOrder
+  self
+  tArgs
+  tWidgets
+  for
+  generator
+  state
+  control
+  nIndex
+  oWidget"
+<<<END>>>

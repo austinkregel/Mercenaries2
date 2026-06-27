@@ -1,0 +1,14 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Target NPC: userdata: 0010E1CD
+Ai.GetState => ok=true, val=false
+Ai.GetFeeling => ok=true, val=nil
+Ai.GetPerceivability => ok=true, val=90
+Ai.Squad => ok=true, val=false
+Object.IsPlayerControlled => ok=true, val=nil"
+<<<END>>>
+
+[disconnected]

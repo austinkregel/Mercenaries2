@@ -1,0 +1,1137 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "=== Keys in MrxPlayer ===
+  1 = mrxplayer (string)
+  Hero = Deinit - function: 1F4E6380
+tEvent - table: 1F4E6400
+MrxTutorialManager - table: 1F595720
+uRiderEvent - userdata: 00040085
+HealthDropped - function: 1F4F5E80
+EndSurvivalMode - function: 1F4E60C0
+Heal - function: 1F4F5E50
+SetupTransferSystem - function: 1F4E5FE0
+CleanupTransferSystem - function: 1F4E5FC0
+GetAttribute - function: 1F4E5F80
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+Init - function: 1F4E63A0
+HideTutorialMessage - function: 1F4E5F60
+SetTimeScale - function: 1F4E6020
+StartSurvivalMode - function: 1F4E60A0
+TutorialCueCallback - function: 1F4E5F40
+DisableGrappleTriggered - function: 1F4E5F20
+SaveOutInventory - function: 1F4E6280
+CleanEvents - function: 1F4E6120
+SurvivalModeCallback - function: 1F4E60E0
+_THIS - table: 1F593980
+nRiders - 1
+MrxParkingLotManager - table: 1F5939C0
+SetupInventory - function: 1F4E62A0
+CreateHealTimer - function: 1F4E6180
+MrxSound - table: 1F795D80
+WifEquipmentData - table: 1F769EC0
+SurvivalCooldownEnded - function: 1F4E6060
+OnActivate - function: 1F4E6360
+MrxVoSequence - table: 1F530180
+SetupSurvivalSystem - function: 1F4E6100
+OnDeath - function: 1F4E62E0
+MrxGui - table: 1F9C8CE0
+EnterPassengerCallback - function: 1F4E5FA0
+CreateDropEvent - function: 1F4E6160
+OnDeactivate - function: 1F4E62C0
+CleanupSurvival - function: 1F4E6140
+Activate - function: 1F4E6340
+1 - hero
+ (table)
+  MrxActionHijack = PlayReactiveLoop - function: 1F4E3500
+Play - function: 1F4E34A0
+OnMinigameStart - function: 1F4E3440
+OnMinigameStatus - function: 1F4E3420
+ActionHijackCancel - function: 1F4E3200
+MrxMusic - table: 1F7979E0
+OnDriverSimulatedButtonPress - function: 1F4E33E0
+Begin - function: 1F4E3580
+CreateReactiveLoopAnimationCompleteEvent - function: 1F4E34E0
+OnAnimationComplete - function: 1F4E33A0
+ToggleLinkedObject - function: 1F4E3540
+MrxUtil - table: 1F5301C0
+OnFailAnimationComplete - function: 1F4E3340
+OnRagdollMinigameDone - function: 1F4E3300
+_ProcessMultiEventTable - function: 1F4E3560
+InitializeActionHijack - function: 1F4E35C0
+ChangeAtmosphere - function: 1F4E32C0
+CheckGoodStart - function: 1F4E35E0
+RULESET_HELICOPTER - 1
+RestoreCamera - function: 1F4E32A0
+DisableFacialExpressions - function: 1F4E3280
+_bIsInHijack - false
+CompleteHijackNonFailure - function: 1F4E3220
+HandleTapMinigame - function: 1F4E3400
+OnDriverDone - function: 1F4E31C0
+DeleteAllEvents - function: 1F4E31A0
+MrxGuiHudActionHijack - table: 1F5942C0
+PushActionHijack - function: 1F4E3160
+_THIS - table: 1F593900
+WifFreePlay - table: 1F593880
+OnAnimationCompleteRemote - function: 1F4E3180
+DoFailureAnimation - function: 1F4E3360
+ActionHijackFinish - function: 1F4E33C0
+SetMultiFacialExpressions - function: 1F4E3460
+SetUnloadCallback - function: 1F4E3600
+MrxGuiManager - table: 1F793BE0
+MrxSound - table: 1F795D80
+RULESET_TANK - 0
+OnRagdollMinigameUpdate - function: 1F4E3320
+DoSuccessAnimation - function: 1F4E3380
+IsInHijack - function: 1F4E3620
+RULESET_APC - 2
+OnReactiveLoopAnimationComplete - function: 1F4E34C0
+ActionHijackComplete - function: 1F4E31E0
+TankPrep - function: 1F4E35A0
+MrxGui - table: 1F9C8CE0
+CleanupCommonNonSuccess - function: 1F4E3260
+OnRagdollDone - function: 1F4E32E0
+MrxAchievements - table: 1F593940
+Hero - table: 1F593980
+1 - mrxactionhijack
+ (table)
+  _RestoreEquipment = function: 1EFC8C80 (function)
+  RiseFromYourGrave = function: 1F43CDC0 (function)
+  MrxGui = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+ (table)
+  _tSpawnLocations = 2 - Pmc_Entry2
+1 - Pmc_Entry1
+ (table)
+  SetCharacterMap = function: 1F43CC80 (function)
+  MrxTransit = Reset - function: 1F49F3A0
+OpenInterface - function: 1F49F5C0
+_nTransitFuelCost - 20
+_tLandingZones - table: 1EEE5880
+GetNumValidLocations - function: 1F49F4E0
+EnableFactionLocations - function: 1F49F4C0
+SetLocationEnabled - function: 1F49F4A0
+NETEVENT_CLIENTTRANSIT - 0
+SetSystemEnabled - function: 1F49F3E0
+IsSystemInitialized - function: 1F49F3C0
+GetTransitPoint - function: 1F49F560
+MrxUtil - table: 1F5301C0
+MrxStatsManager - table: 1F57AFA0
+LoadSingleton - function: 1F49F360
+MrxState - table: 1F594800
+GetTransitFuelCost - function: 1F49F320
+_InterfaceCallback - function: 1F49F5A0
+SetLocationIsNuked - function: 1F49F420
+Transit - function: 1F49F580
+NETEVENT_STARTTRANSIT - 1
+NetEventCallback - function: 1F49F2A0
+UnlockAllLandingZones - function: 1F49F340
+SaveSingleton - function: 1F49F380
+_bEnabled - true
+_GetTableSizeSlow - function: 1F49F480
+_evClientJoinedTransit - userdata: 00100067
+_THIS - table: 1F57B000
+GetUnlockableLocations - function: 1F49F500
+IsLocationEnabled - function: 1F49F440
+MrxFactionManager - table: 1F531600
+IsSystemEnabled - function: 1F49F400
+MrxSound - table: 1F795D80
+GetName - function: 1F49F540
+GetUnlockedLocations - function: 1F49F520
+SuppressLocation - function: 1F49F460
+IsInTransit - function: 1F49F300
+MrxUnlockFanfare - table: 1F57C860
+MrxGui - table: 1F9C8CE0
+_bInitialized - true
+MrxSupportTransit - table: 1F57B060
+FinishTransit - function: 1F49F2C0
+StartTransit - function: 1F49F2E0
+MrxAchievements - table: 1F593940
+1 - mrxtransit
+ (table)
+  MrxVoSequence = knPriorityContract - 2
+Start - function: 1F579F00
+Reset - function: 1F51BA20
+MrxSoundCategories - table: 1F796300
+MrxUtil - table: 1F5301C0
+Stop - function: 1F51BA60
+knPriorityBriefing - 1
+_CallSequenceCallbacks - function: 1F51BA00
+_nBaseDelay - 0.25
+knPriorityFreeplay - 4
+Cleanup - function: 1F51BA40
+_uDelayTimer - userdata: 0007021A
+IsSequenceInProgress - function: 1F51B9E0
+_ExecuteStage - function: 1F51BA80
+knPriorityCinematic - 0
+_THIS - table: 1F530180
+1 - mrxvosequence
+ (table)
+  WifPmcInterior = MrxStarterManager - table: 1F532480
+RefreshUiDisplay - function: 1F458540
+_OnInteriorLoad - function: 1F458740
+_SetStarterContextAction - function: 1F4583E0
+_tBuildingStates - table: 1F4A80A0
+_DoParkingLot - function: 1F43FDA0
+_tInteriorPortalData - table: 1F458E20
+_LoadInterior - function: 1F49A2A0
+_tStarters - table: 1F458FA0
+NETEVENT_UPDATESTOCKPILE - 0
+BriefingComplete - function: 1F458300
+NetSafeUnloadAssets - function: 1F43FFA0
+MrxPmc - table: 1F531620
+WifVzBoundary - table: 1F57AEC0
+_SetStarterMarker - function: 1F4583C0
+NETEVENT_CHANGEOUTFIT - 1
+_bTeleport - true
+NetSafeGetSpecialCaseGreeting - function: 1F458720
+_tStockpileQty - table: 1F458A20
+_SendStockpileToClient - function: 1F43FF20
+_evClientJoinedPMC - userdata: 00100092
+_ClientExit - function: 1F43FF40
+NetSafeBriefingModuleLoaded - function: 1F458000
+_UpdateStockpile - function: 1F4580A0
+Unlock - function: 1F4A8060
+IsGarageAlive - function: 1F49F5E0
+GetMissionDesc - function: 1F458580
+MrxPlayState - table: 1F532440
+_tOutfits - table: 1F458C60
+_SetupPreOilCon020Nag - function: 1F43FEE0
+_StopPreOilCon020Nag - function: 1F43FEC0
+IsInside - function: 1F4582E0
+MrxLayerManager - table: 1F5965E0
+SaveSingleton - function: 1F458060
+RemovePmcPdaBlip - function: 1F4585C0
+_bDisplayed - true
+_AddPortalAtHardpoint - function: 1F4584C0
+_GetPreeningVo - function: 1F43FE20
+_SetAllMarkers - function: 1F43FE80
+SetEntranceLock - function: 1F49B160
+_PreOilCon020Nag - function: 1F43FEA0
+NETEVENT_NOTIFYOUTFITCHANGE - 2
+_tLayers - table: 1EA1C000
+_BriefingModuleLoaded - function: 1F4586E0
+_DeinitOutfitChange - function: 1F4581C0
+MrxMultiPageMenu - table: 1F5947E0
+IsEntering - function: 1F4582C0
+WifPmcGarage - table: 1F57A3E0
+_AddPortal - function: 1F458500
+WifFreePlay - table: 1F593880
+_EnablePortals - function: 1F458480
+_SetStarterChatter - function: 1F4583A0
+_StarterChatter - function: 1F458380
+AddPmcPdaBlip - function: 1F458560
+_bInside - false
+_ClientUpdateStockpile - function: 1F43FF00
+GetWagerStatus - function: 1F49B140
+MrxUtil - table: 1F5301C0
+_OnPmcHibernation - function: 1F43FDE0
+MrxState - table: 1F594800
+MrxPlayer - table: 1F532400
+IsContractPending - function: 1F4582A0
+_tPortalData - table: 1F458EE0
+_OnPlayerJoined - function: 1F458020
+_SetFakePDA - function: 1F458680
+_LoadStarters - function: 1F458700
+_EnableInteriorPortals - function: 1F458460
+_tBuildingEvents - table: 1F4A8680
+_EnableStarters - function: 1F458400
+_GetStarterLayers - function: 1F458760
+_ReinitOutfitChange - function: 1F4581A0
+_bSticky - true
+SetUnloadCallback - function: 1F458240
+MrxGuiBootstrap - table: 1F532340
+IsUnlocked - function: 1F4A8000
+NetSafeAddPmcPdaBlip - function: 1F4585A0
+_CompleteChangeOutfit - function: 1F458120
+_tStockpile - table: 1F458A00
+SetAvailableCostumes - function: 1F4580C0
+NetSafeRemovePmcPdaBlip - function: 1F4585E0
+MrxVoSequence - table: 1F530180
+ChangeOutfit - function: 1F458100
+MrxGui - table: 1F9C8CE0
+_nAvailableCostumes - 1
+GetAvailableCostumes - function: 1F4580E0
+_OnExit - function: 1F458640
+NetEventCallback - function: 1F43FF80
+_bUnlocked - true
+_Kickoff - function: 1F4586A0
+_uOutfitDisc - userdata: 40005769
+_WardrobeOpen - false
+_GetStarterChatterVo - function: 1F43FE60
+_ExitEnd - function: 1F458620
+_SetupStarters - function: 1F458420
+_OnPmcDeath - function: 1F43FE00
+MrxCheatBootstrap - table: 1F530200
+_tBuildings - table: 1F49EA00
+_evClientQuitPMC - userdata: 00100094
+_AssociateStartersToBriefingModule - function: 1F4586C0
+_tPortals - table: 1F458F00
+NetSafeLoadAssets1 - function: 1F43FFE0
+MrxSound - table: 1F795D80
+LoadSingleton - function: 1F458040
+MrxHq - table: 1F532300
+_CloseCostumeDialog - function: 1F458160
+_SetAllStarterChatter - function: 1F43FE40
+SetWagerStatus - function: 1F49CBE0
+WifBriefingData - table: 1F57A3A0
+SetLoadCallback - function: 1F458260
+_SetCustomOutfitMarker - function: 1F458200
+_StartStarter - function: 1F458320
+_SelectOutfit - function: 1F458180
+WifMissionData - table: 1F57A460
+_RemovePortalAtHardpoint - function: 1F4584A0
+_tAssetPreload - table: 1F458E00
+GetStarterBriefingLocs - function: 1F458280
+NetSafeLoadAssets - function: 1F43FFC0
+_DisableStarter - function: 1F458340
+_SetPmcTransitLocation - function: 1F43FDC0
+WifMissionFlow - table: 1F57A4C0
+MrxGuiInterface - table: 1F532380
+_EnableStarter - function: 1F458360
+SetTeleportCallback - function: 1F458220
+_ChangeOutfit - function: 1F458140
+_OnInteriorPortalEnter - function: 1F458440
+_SetStockpileCategoryQty - function: 1F458080
+_ExitComplete - function: 1F458600
+_RemovePortal - function: 1F4584E0
+_THIS - table: 1F5324E0
+Exit - function: 1F458660
+MrxFactionManager - table: 1F531600
+Enter - function: 1F49B080
+_ClientOnEnter - function: 1F43FF60
+_InitOutfitChange - function: 1F4581E0
+MrxTransit - table: 1F57B000
+_ChatterComplete - function: 1F36B3A0
+_CompleteOnEnter - function: 1F49A2C0
+_OnEnter - function: 1F49AA80
+MrxRewardData - table: 1F57C820
+_SetPortalMarker - function: 1F458520
+1 - wifpmcinterior
+ (table)
+  CreatePlayerCharacter = function: 1F43CD80 (function)
+  ResetLocalCharacter = function: 1F43CE80 (function)
+  OnPlayerJoined = function: 1F43D0E0 (function)
+  PlayRandomLeftVO = function: 1F43D000 (function)
+  Start = function: 1F43D1A0 (function)
+  _THIS = Reset - function: 1F43D180
+NetEventCallback - function: 1F43CC40
+MrxUtil - table: 1F5301C0
+OnPlayerInit - function: 1F43CDA0
+AreAnyHeroesAlive - function: 1F43CD00
+MrxMissionFlow - table: 1F57AF40
+KilledByPlayer - function: 1F43CC60
+RequestPlayerRevive - function: 1F43CF60
+MrxPlayState - table: 1F532440
+MrxSound - table: 1F795D80
+ResetWeapons - function: 1F43CDE0
+OnPlayerLeft - function: 1F43CFE0
+Init - function: 1F43D1E0
+IsInVehicle - function: 1F43CCA0
+MrxHqManager - table: 1F5322C0
+MoveToSickbay - function: 1F43CEA0
+PlayJoinVO - function: 1F44C920
+_MoveToSickbayEnd - function: 1F43CE20
+PlayerDied - function: 1F43CF40
+_fLocalPlayerJoinedFunc - function: 1F43CAA0
+NETEVENT_CLIENTSELECTMEDEVAC - 0
+NETEVENT_CLIENTKILL - 3
+_DialogBoxDismissed - function: 1F43CF00
+NETEVENT_CLIENTDONESTREAMING - 1
+SaveSingleton - function: 1F43CCE0
+_MoveToSickbayBegin - function: 1F43CE60
+SetSpawnLocations - function: 1F43D140
+CanMedEvac - function: 1F43CEE0
+_DisplayOnDeathDialogBox - function: 1F43CF20
+Munitions - table: 1F5948A0
+MrxGuiShellBootstrap - table: 1F9C8260
+GetSelectedCharacter - function: 1F43CD20
+MrxGuiManager - table: 1F793BE0
+_CompleteMove - function: 1F43CE40
+MrxStatsManager - table: 1F57AFA0
+ChangePlayerCharacter - function: 1F43CD40
+LoadSingleton - function: 1F43CCC0
+MrxGuiHudMessage - table: 1F5322A0
+GetMedEvacCost - function: 1F43CE00
+MrxCoop - table: 1F5962A0
+Deinit - function: 1F43D1C0
+NETEVENT_HOST_SELECT_MEDEVAC - 2
+MrxPmc - table: 1F531620
+DestroyPlayerCharacter - function: 1F43CD60
+MrxState - table: 1F594800
+GetTemplateAndModelName - function: 1F43D120
+NETEVENT_CLIENT_OUT_BOUNDARY_DEATH - 4
+SetLocalPlayerJoinedCallback - function: 1F43D160
+MedEvac - function: 1F43CEC0
+_THIS - table: 1F532400
+Start - function: 1F43D1A0
+PlayRandomLeftVO - function: 1F43D000
+OnPlayerJoined - function: 1F43D0E0
+ResetLocalCharacter - function: 1F43CE80
+CreatePlayerCharacter - function: 1F43CD80
+WifPmcInterior - table: 1F5324E0
+MrxVoSequence - table: 1F530180
+MrxTransit - table: 1F57B000
+SetCharacterMap - function: 1F43CC80
+_tSpawnLocations - table: 1F36B060
+MrxGui - table: 1F9C8CE0
+RiseFromYourGrave - function: 1F43CDC0
+_RestoreEquipment - function: 1EFC8C80
+MrxActionHijack - table: 1F593900
+Hero - table: 1F593980
+1 - mrxplayer
+ (table)
+  MedEvac = function: 1F43CEC0 (function)
+  SetLocalPlayerJoinedCallback = function: 1F43D160 (function)
+  NETEVENT_CLIENT_OUT_BOUNDARY_DEATH = 4 (number)
+  GetTemplateAndModelName = function: 1F43D120 (function)
+  MrxState = Reset - function: 1F4E74E0
+_AttemptGlobalExit - function: 1F4E7440
+_nQuickFadeInTime - 0.5
+MrxSoundCategories - table: 1F796300
+_nLongFadeOutTime - 1.1000000238419
+SafeEnter - function: 1F4E7340
+_StateComplete - function: 1F4E74C0
+STATE_WAITFORSTREAMING - 2
+_States - table: 1F4E7800
+SafeExit - function: 1F4E7320
+STATE_CINEMATIC - 1
+MrxUtil - table: 1F5301C0
+_bStateComplete - true
+_bUseQuickFade - false
+MrxGuiInterface - table: 1F532380
+_nLongFadeInTime - 1.1000000238419
+_CompleteEnter - function: 1F4E7480
+_GetTotalRefCount - function: 1F4E7420
+SetQuickFade - function: 1F4E73E0
+EnableFade - function: 1F4E73C0
+GetStateName - function: 1F4E7380
+_nQuickFadeOutTime - 0.10000000149012
+SafeEnterCallback - function: 1F4E7360
+MrxMunitionsPickup - table: 1F594860
+_GlobalExit - function: 1F4E7540
+_tGlobalExitCallbacks - table: 1E028CA0
+STATE_WAITFORTETHER - 3
+_THIS - table: 1F594800
+Exit - function: 1F4E7460
+AddGlobalExitCallback - function: 1F4E7300
+STATE_NONE - 0
+IsLocked - function: 1F4E7400
+Enter - function: 1F4E74A0
+PrintStatus - function: 1F4E73A0
+MrxVoSequence - table: 1F530180
+_tGlobalEnterCallbacks - table: 1F213000
+MrxGui - table: 1F9C8CE0
+_GlobalEnter - function: 1F4E7560
+_bEnableFade - true
+STATE_WAITFORGAME - 4
+1 - mrxstate
+ (table)
+  DestroyPlayerCharacter = function: 1F43CD60 (function)
+  MrxPmc = Init - function: 1F3A6B20
+_tEvents - table: 1F3A6BE0
+MrxTutorialManager - table: 1F595720
+_tClientSupportSpendings - table: 1F3A6B40
+_nLatestCount - 0
+DisplayResources - function: 1F3A67A0
+SetSupportQty - function: 1F3A69C0
+GetSupportQty - function: 1F3A69A0
+_tEquipment - table: 1EEE7B80
+AddFuelCapacity - function: 1F3A6A20
+DisplayCash - function: 1F3A6800
+MrxUtil - table: 1F5301C0
+WifMissionFlow - table: 1F57A4C0
+CheckSupportThreshold - function: 1F3A6920
+SetStockpileChangeCallback - function: 1F3A6900
+RemoveEquipment - function: 1F3A6840
+AddFreebieQty - function: 1F3A68C0
+SetFreebieQty - function: 1F3A68A0
+DeleteStockpileChangeCallback - function: 1F3A68E0
+IsSupportNew - function: 1F3A6940
+HasEquipment - function: 1F3A6820
+_tStockpileThresholdInfo - table: 1F3A6B60
+GetCashQty - function: 1F3A6AC0
+_tFreebies - table: 1F36C7C0
+AddFuelQty - function: 1F3A6AA0
+AddCashQty - function: 1F3A6AE0
+RemoveFuelTank - function: 1F3A6720
+AddFuelTank - function: 1F3A6780
+SetSupportNew - function: 1F3A6980
+SetFuelCapacity - function: 1F3A6A60
+_THIS - table: 1F531620
+GetClientReimburseAmount - function: 1F3A66E0
+NetClientReimburse - function: 1F3A66C0
+GetFuelCapacity - function: 1F3A6A00
+MapPluralReasonToSingular - function: 1F3A67E0
+_CreateHiScoreEvent - function: 1F3A66A0
+_HiScoreUpdated - function: 1F3A6680
+AddSupportQty - function: 1F3A69E0
+SaveSingleton - function: 1F3A6660
+LoadSingleton - function: 1F3A6640
+MrxStatsManager - table: 1F57AFA0
+GetFreebieQty - function: 1F3A6880
+WifEquipmentData - table: 1F769EC0
+_tStockpile - table: 1F36C7A0
+_oDummyWidget - table: 1F390FC0
+_OnFuelTankDeath - function: 1F3A6700
+MrxUnlockFanfare - table: 1F57C860
+AddEquipment - function: 1F3A6860
+SetAllSupportViewed - function: 1F3A6960
+MrxGui - table: 1F9C8CE0
+MrxSupportData - table: 1F531660
+GetFuelQty - function: 1F3A6A80
+_nFuelCapacity - 300
+1 - mrxpmc
+ (table)
+  NETEVENT_HOST_SELECT_MEDEVAC = 2 (number)
+  Deinit = function: 1F43D1C0 (function)
+  MrxCoop = _TetherInsideMin - function: 1F519920
+_TetherOutsideMax - function: 1F5198E0
+GetSquaredDistance - function: 1F5198C0
+DestroyTether - function: 1F519980
+MrxGui - table: 1F9C8CE0
+SetupTether - function: 1F519F20
+GetRespawnOrigin - function: 1F519940
+_TetherBetweenMinAndMax - function: 1F519900
+PlayerAddMessage - function: 1F5198A0
+AddPlayer - function: 1F519960
+_THIS - table: 1F5962A0
+MrxPlayer - table: 1F532400
+1 - mrxcoop
+ (table)
+  GetMedEvacCost = function: 1F43CE00 (function)
+  MrxGuiHudMessage = nY - 340
+_EndCardFanfare - function: 1F416CE0
+_BeginFanfareFlash - function: 1F416BE0
+_ContactLoadCompleteCallback - function: 1F416DC0
+_BeginCardFanfare - function: 1F416D20
+_gFanfareFlashWidget - false
+_RetryEvents - function: 1F416B40
+_LoadCompleteCallback - function: 1F416C00
+SetFanfareCompleteCallback - function: 1F416EA0
+_ContinueFanfare - function: 1F416BA0
+_SkipFanfare - function: 1F416B60
+ContactFanfareCommence - function: 1F416DE0
+Init - function: 1F4167A0
+_knTextQueueFadeTime - 0.5
+MrxHqManager - table: 1F5322C0
+_tEventTitles - table: 1F4169E0
+nGlobalHeight - 128
+OnPlayerJoined - function: 1F416B20
+_EventFanfareProcessTextQueue - function: 1F416920
+_EventFanfareContinueTextFade - function: 1F416900
+_EventFanfareFinishDisplay - function: 1F4168E0
+CardFanfareSetParameters - function: 1F416D80
+_CardLoadCompleteCallback - function: 1F416D40
+_EventFanfareComplete - function: 1F4168C0
+GetEventFanfareTitle - function: 1F4168A0
+ShowCompletedMessage - function: 1F416860
+nMagnification - 5
+ShowFailedMessage - function: 1F416840
+HandleUpdateEvent - function: 1F4167E0
+ShowMessage - function: 1F416820
+_HandleFanfareInput - function: 1F416AA0
+_SlowdownUpdate - function: 1F416C20
+_nClassyTextHeight - 33.333335876465
+nFadeTime - 1
+_TextFanfareDone - function: 1F416A60
+DisplayClassyText - function: 1F416760
+_InitialDelay - function: 1F416B80
+ShowEventFanfare - function: 1F416960
+MrxGuiManager - table: 1F793BE0
+_ClassyTextLoadCompleteCallback - function: 1F416740
+AnimationFinishCallback - function: 1F416800
+nGlobalWidth - 256
+ShowTextFanfare - function: 1F416A80
+_DeleteClassyText - function: 1F416700
+HandleInitialization - function: 1F416880
+AddFanfareLineItem - function: 1F416C80
+_TextDelete - function: 1F416A00
+nX - 320
+_tEventTextureWidths - table: 1F416980
+nAnimationTimeLength - 0.10000000149012
+RemovalCallback - function: 1F4167C0
+SupportFanfareAddItem - function: 1F416E80
+_EventFanfareFinishAppear - function: 1F416940
+_tEventTextures - table: 1F4169C0
+MrxGuiBase - table: 1FAAEEC0
+_ContinueCardFanfare - function: 1F416D00
+_SupportLoadCompleteCallback - function: 1F416E40
+_CleanupCardFanfare - function: 1F416CC0
+_DeleteFanfareEvents - function: 1F416B00
+_TextDelay - function: 1F416A40
+_DeleteFanfareWidget - function: 1F416AC0
+CardFanfareCommence - function: 1F416D60
+_nClassyTextWidth - 566.66668701172
+SupportFanfareCommence - function: 1F416E60
+_THIS - table: 1F5322A0
+_InitializeFanfareFlash - function: 1F416BC0
+HandleClassyTextInit - function: 1F416780
+nLifeTime - 3
+_BeginSupportFanfare - function: 1F416E20
+_ScrollOutFanfare - function: 1F416E00
+NetClientCloseFanfare - function: 1F416C40
+CommenceFanfare - function: 1F416C60
+_gFullscreenFadeWidget - false
+MrxGui - table: 1F9C8CE0
+_TextFadeout - function: 1F416A20
+_EndFanfare - function: 1F416AE0
+_HandleClassyTextEnd - function: 1F416720
+_tEventSounds - table: 1F4169A0
+SetFanfareParameters - function: 1F416CA0
+CreateFanfare - function: 1F416EC0
+_BeginContactFanfare - function: 1F416DA0
+1 - mrxguihudmessage
+ (table)
+  LoadSingleton = function: 1F43CCC0 (function)
+  ChangePlayerCharacter = function: 1F43CD40 (function)
+  MrxStatsManager = WifMissionData - table: 1F57A460
+BuildStats - function: 1F4C1CC0
+CompleteToolboxPart - function: 1F49D160
+SetFavVehicleTime - function: 1F49CFA0
+MrxStarterManager - table: 1F532480
+JobDestroyPart - function: 1F49D180
+StartVehicleTime - function: 1F49CFE0
+StartWeaponTime - function: 1F49D0C0
+GetTotalNumContracts - function: 1F49D300
+GetTotalNumHVTs - function: 1F49D2E0
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+TrackVehicleTime - function: 1F49D000
+UpdateVehicleTime - function: 1F49CFC0
+SetFavWeaponTime - function: 1F49D080
+GetFavVehicle - function: 1F49CF80
+IncreaseOutpostCapturedCounter - function: 1F49CF60
+bAddedProgressCategory - true
+IncreaseTransitCounter - function: 1F49CE20
+IncreaseFuelInAmount - function: 1F49CEC0
+ReasonsForDebits - function: 1F49CEE0
+UpdateWeaponTime - function: 1F49D0A0
+IncreaseDebitAmount - function: 1F49CF00
+GetPercentCompleted - function: 1F4C1D10
+IncreaseDeathCounter - function: 1F49CE80
+IncreaseMedevacCounter - function: 1F49CE60
+SaveSingleton - function: 1F4B6C60
+ReasonsForCredits - function: 1F49CF20
+_GetTableSizeSlow - function: 1F49D320
+PdaStatistics - function: 1F4C1C70
+_THIS - table: 1F57AFA0
+uDropFavWeaponTimer - userdata: 00110090
+bAddedStatisticCategory - true
+Activated - function: 1F49D580
+TrackWeaponTime - function: 1F49D100
+MrxFactionManager - table: 1F531600
+IncreaseCreditAmount - function: 1F49CF40
+DeleteVehicleTimer - function: 1F49D020
+AddWeaponTimer - function: 1F49D140
+GetFavWeapon - function: 1F49D060
+uEquipFavWeaponTimer - userdata: 00110091
+MrxShop - table: 1F57B2A0
+LoadSingleton - function: 1F4B6CC0
+AddVehicleTimer - function: 1F49D040
+bActivated - true
+MrxTransit - table: 1F57B000
+MrxVerifyManager - table: 1F57AFE0
+DeleteWeaponTimer - function: 1F49D120
+uStowFavWeaponTimer - userdata: 0011008F
+RecordBestTime - function: 1F49CE00
+IncreaseFuelOutAmount - function: 1F49CEA0
+MrxAchievements - table: 1F593940
+IncreaseRetriesCounter - function: 1F49CE40
+1 - mrxstatsmanager
+ (table)
+  _CompleteMove = function: 1F43CE40 (function)
+  MrxGuiManager = _DetoggleWidgetRecursive - function: 1F7922E0
+_tHudStates - table: 1F790DE0
+ToggleSatellite - function: 1F792180
+SetSatelliteMinigameData - function: 1F792040
+SetLoadingCompleteCallback - function: 1F791F00
+SatelliteLoaded - function: 1F791B60
+PdaLoaded - function: 1F791940
+_SetupMasterLayouts - function: 1F791460
+_oMasterHud - false
+_DetoggleWidget - function: 1F792360
+_bFirstGuiInQueue - true
+_oMasterScope - false
+_tPendingList - table: 1F1375C0
+SetSatelliteCost - function: 1F791FC0
+_RecursiveWakeup - function: 1F7922C0
+MrxUtil_Shell - table: 1FAAEBE0
+_tPlayerGuiList - table: 1F791120
+GetHudState - function: 1F792240
+_bLoadingNow - false
+AddWidgetToHud - function: 1F792220
+_oMasterSatellite - false
+_oMasterPda - false
+Init - function: 1F7911A0
+_tPendingHudWidgets - table: 1F790DC0
+ScopeLoaded - function: 1F791D60
+DeleteGui - function: 1F791FA0
+_THIS - table: 1F793BE0
+DeleteAllGuis - function: 1F791F20
+SetSatelliteSuccessCallback - function: 1F792060
+ApplySatelliteUpdateEvent - function: 1F792100
+ToggleHud - function: 1F792380
+_AllRequiredModulesLoaded - function: 1F791300
+RemoveWidgetFromHud - function: 1F7921A0
+_RemoveAndDeleteWidgets - function: 1F791220
+HudLoaded - function: 1F791DE0
+MrxGui - table: 1F9C8CE0
+DoNothing - function: 1F7920E0
+CreateGui - function: 1F792400
+1 - mrxguimanager
+ (table)
+  GetSelectedCharacter = function: 1F43CD20 (function)
+  MrxGuiShellBootstrap = Reset - function: 1F797D80
+SetUpMultiplayer - function: 1F797C20
+SetSelectedCharacter - function: 1F797BE0
+SetExitSingleplayerCallback - function: 1F797B80
+ExitShell - function: 1F797CC0
+MrxGuiBase - table: 1FAAEEC0
+SetEnterMultiplayerCallback - function: 1F797B60
+PrecacheScreenLoaded - function: 1F797D40
+CloseShellOnLoad - function: 1F797C60
+Init - function: 1F797DC0
+tExitMultiplayerCallbackArguments - table: 1F3A5700
+tExitSingleplayerCallbackArguments - table: 1F797B00
+tEnterMultiplayerCallbackArguments - table: 1F797AE0
+SetEnterSingleplayerCallback - function: 1F797BA0
+LoadMovieLayouts - function: 1F797DA0
+EnterPrecache - function: 1F797D60
+_THIS - table: 1F9C8260
+tEnterSingleplayerCallbackArguments - table: 1F797B20
+SetExitMultiplayerCallback - function: 1F797B40
+nPlayersSelected - 1
+EnterShell - function: 1F797CE0
+LoadShell - function: 1F797C80
+GetSelectedCharacter - function: 1F797BC0
+ExitMultiplayer - function: 1F797C00
+LoadPrecache - function: 1F797D20
+ShellScreenLoaded - function: 1F797CA0
+ClosePrecacheOnLoad - function: 1F797D00
+MrxGui - table: 1F9C8CE0
+SetUpSingleplayer - function: 1F797C40
+bNeedsReloading - false
+_sSelectedCharacter - false
+1 - mrxguishellbootstrap
+ (table)
+  Munitions = MrxPlayState - table: 1F532440
+NetEventCallback - function: 1F518420
+MrxTutorialManager - table: 1F595720
+HumanControlled - function: 1F518640
+Far - function: 1F5186E0
+_bPlayedFuelHint2 - true
+IsFuel - function: 1F5185C0
+_bPlayedFuelHint1 - false
+GetMunitionsCount - function: 1F518440
+_bPlayedCashHint2 - false
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+OnDeath - function: 1F518600
+CanActionTarget - function: 1F5186A0
+SetMunitionsTaggable - function: 1F518580
+_nBlippedVOCoolDownTime - 30
+SaveSingleton - function: 1F518520
+Actioned - function: 1F518680
+RefreshMunitions - function: 1F518540
+_nTagged - 0
+_tHideEvents - table: 1F5187E0
+IsMunitionTagged - function: 1F518480
+GetTaggedMunition - function: 1F5184A0
+PlayBlippedVO - function: 1F518720
+MrxMunitionsPickup - table: 1F594860
+ClientTagAndBlip - function: 1F518460
+ActionTarget - function: 1F518660
+_bPlayedCashHint1 - false
+_bMunitionsTaggable - true
+PickupAllMunitions - function: 1F5184E0
+_THIS - table: 1F5948A0
+_bPlayedSupportHint1 - false
+SetAllowBlippedVO - function: 1F518740
+PickupMunitions - function: 1F5184C0
+NETEVENT_SETTAGGABLE - 0
+IsSupport - function: 1F5185A0
+NETEVENT_CLIENTSTOCKPILEACK - 2
+NETEVENT_PICKUP - 3
+IsCash - function: 1F5185E0
+NETEVENT_MARKERPULSE - 4
+_bAllowBlippedVO - true
+NETEVENT_ISMUNITIONTAGGED - 5
+NETEVENT_CLIENTSTOCKPILEQUERY - 1
+LoadSingleton - function: 1F518500
+AddContextAction - function: 1F5186C0
+OnActivate - function: 1F518800
+Delete - function: 1F518620
+MrxVoSequence - table: 1F530180
+Near - function: 1F518700
+OnPlayerJoined - function: 1F518400
+Awake - function: 1F5187C0
+_kDistance - 175
+MrxGui - table: 1F9C8CE0
+MrxSupportData - table: 1F531660
+AreMunitionsTaggable - function: 1F518560
+_eBlippedVOCoolDown - userdata: 000701E2
+Blippable - table: 1F595760
+OnDeactivate - function: 1F518780
+_bPlayedSupportHint2 - false
+HideTutorialMessage - function: 1F518760
+2 - table: 1F594880
+1 - munitions
+ (table)
+  _DisplayOnDeathDialogBox = function: 1F43CF20 (function)
+  CanMedEvac = function: 1F43CEE0 (function)
+  SetSpawnLocations = function: 1F43D140 (function)
+  _MoveToSickbayBegin = function: 1F43CE60 (function)
+  SaveSingleton = function: 1F43CCE0 (function)
+  NETEVENT_CLIENTDONESTREAMING = 1 (number)
+  _DialogBoxDismissed = function: 1F43CF00 (function)
+  NETEVENT_CLIENTKILL = 3 (number)
+  NETEVENT_CLIENTSELECTMEDEVAC = 0 (number)
+  _fLocalPlayerJoinedFunc = function: 1F43CAA0 (function)
+  PlayerDied = function: 1F43CF40 (function)
+  _MoveToSickbayEnd = function: 1F43CE20 (function)
+  PlayJoinVO = function: 1F44C920 (function)
+  MoveToSickbay = function: 1F43CEA0 (function)
+  MrxHqManager = GetHq - function: 1F4380C0
+_tHqs - table: 1F438100
+LockHq - function: 1F438040
+MrxFactionManager - table: 1F531600
+IsInside - function: 1F417F20
+SetUnloadCallback - function: 1F417EE0
+_OnHqDeath - function: 1F417F60
+_OnHqHibernation - function: 1F417F40
+_SetupRespawn - function: 1F417FC0
+SetInside - function: 1F417F00
+SetHqRespawn - function: 1F417FA0
+MrxUtil - table: 1F5301C0
+AddStarter - function: 1F4380A0
+_SetHq - function: 1F417F80
+_tHqEvents - table: 1F4380E0
+MrxHq - table: 1F532300
+_CreateDeathEvent - function: 1F417FE0
+UnlockHq - function: 1F438060
+WifHqData - table: 1F57C7E0
+UnlockAllHq - function: 1F438000
+GetUnloadCallback - function: 1F417EC0
+RemoveStarter - function: 1F438080
+_THIS - table: 1F5322C0
+LockAllHq - function: 1F438020
+1 - mrxhqmanager
+ (table)
+  IsInVehicle = function: 1F43CCA0 (function)
+  Init = function: 1F43D1E0 (function)
+  OnPlayerLeft = function: 1F43CFE0 (function)
+  ResetWeapons = function: 1F43CDE0 (function)
+  MrxSound = BeginActionHijack - function: 1F794BC0
+BeginSurvivalMode - function: 1F794B80
+_bExitingGame - false
+MrxSoundCategories - table: 1F796300
+EnterScopeView - function: 1F794A80
+MrxMusic - table: 1F7979E0
+EndSurvivalMode - function: 1F794B60
+ExitScopeView - function: 1F794A60
+_CheckSoundReady - function: 1F794A00
+EnterPDAState - function: 1F794C40
+EnterPauseState - function: 1F797DE0
+_StartShellMusic - function: 1F794CC0
+ExitAttractState - function: 1F794BE0
+EndActionHijack - function: 1F794BA0
+EnterCinematicState - function: 1F7956C0
+EnterInterior - function: 1F794B40
+BeginTransit - function: 1F794B00
+ExitPDAState - function: 1F794C20
+_bWaitForSoundAssets - false
+ExitGame - function: 1F794C80
+_THIS - table: 1F795D80
+SetSoundReadyFunc - function: 1F794A20
+_SetupGameExit - function: 1F794CA0
+ExitShellState - function: 1F794CE0
+EndTransit - function: 1F794AE0
+Initialize - function: 1F7949E0
+ExitInterior - function: 1F794B20
+EnterSatelliteView - function: 1F794AC0
+ExitPauseState - function: 1F797120
+MrxSoundBanks - table: 1F795D40
+ExitingGame - function: 1F796000
+ExitCinematicState - function: 1F794C60
+_bSoundSystemReady - false
+ExitSatelliteView - function: 1F794AA0
+EnterAttractState - function: 1F794C00
+EnterShellState - function: 1F797A20
+_bSurvivalModeStarted - false
+_FlagSystemReady - function: 1F794A40
+1 - mrxsound
+ (table)
+  MrxPlayState = Get - function: 1F43E3C0
+_knMission - 1
+IsValidState - function: 1F43E420
+GetCurrentMission - function: 1F43E380
+MrxStarterManager - table: 1F532480
+MrxMusic - table: 1F7979E0
+GetTimeElapsedInPriorSessions - function: 1F43E280
+WifPmcInterior - table: 1F5324E0
+_uSessionStartTimestamp - userdata: 1EA1C9B8
+GetSessionTimer - function: 1F43E2C0
+SetCurrentMission - function: 1F43E3A0
+Set - function: 1F43E3E0
+_nCurrState - 0
+MrxHqManager - table: 1F5322C0
+GetStateDisplayName - function: 1F43E400
+_UpdateHqObjectiveMarkers - function: 1F43E320
+_nTimeElapsedInPriorSessions - 5740
+Reset - function: 1F43E340
+_knNull - -1
+StartSessionTimer - function: 1F43E2E0
+_knFree - 0
+SetTimeElapsedInPriorSessions - function: 1F43E2A0
+GetTotalTimeElapsed - function: 1F43E300
+IsFree - function: 1F43E360
+_THIS - table: 1F532440
+WifFreePlay - table: 1F593880
+1 - mrxplaystate
+ (table)
+  RequestPlayerRevive = function: 1F43CF60 (function)
+  KilledByPlayer = function: 1F43CC60 (function)
+  MrxMissionFlow = Reset - function: 1F49B7A0
+NetEventCallback - function: 1F49B380
+_fPreContractSave - function: 1F36DE60
+MrxCheatBootstrap - table: 1F530200
+MrxStarterManager - table: 1F532480
+_tCulledBindings - table: 1EEE38C0
+SaveSingleton - function: 1F49B540
+EnableAutosave - function: 1F49B4A0
+_TrackMission - function: 1F49B780
+GetLastCompletedContractName - function: 1F49B4C0
+Refresh - function: 1F49B5C0
+_sLastCompletedContractName - OilCon002
+IsCheckpointSaveModeEnabled - function: 1F49B480
+CleanupAllActiveMissions - function: 1F49B760
+MrxHqManager - table: 1F5322C0
+WifHqData - table: 1F57C7E0
+_EndBlockingSequence - function: 1F49B280
+SetVehicleDisguise - 1
+RemoveKey - function: 1F49B620
+SetFlowData - function: 1F49B740
+AreResourceCountersEnabled - function: 1F49B2E0
+MrxPlayState - table: 1F532440
+_RefreshComplete - function: 1F49B240
+AddPdaMissionDetails - function: 1F49B220
+SetMissionToRepeat - function: 1F49B5A0
+BuildMissionDescription - function: 1F49B1E0
+MrxTask - table: 1F596320
+DoesMissionHaveABriefing - function: 1F49B660
+Autosave - function: 1F49B360
+_evSetVehicleDisguise - userdata: 00100075
+UnlockMission - function: 1F49B6E0
+NETEVENT_SETGRAPPLE - 0
+_bGrappleEnabled - false
+RemovePDAMission - function: 1F49B1A0
+_bVehicleDisguiseEnabled - true
+_BeginBlockingSequence - function: 1F49B2A0
+MrxLayerManager - table: 1F5965E0
+SetGrappleEnabled - function: 1F49B3C0
+RefreshAllPdaMissionDetails - function: 1F49B1C0
+_bResourceCountersEnabled - true
+MrxStatsManager - table: 1F57AFA0
+_tMyFlowData - table: 1F36D680
+EnableFlow - function: 1F49B7C0
+LoadSingleton - function: 1F49B520
+_tActiveMissions - table: 1EEE38E0
+SetPersistentRetryLocations - function: 1F49B400
+SetMissionParent - function: 1F49B720
+_tMissionsToRepeat - table: 1EEE38A0
+GetPersistentRetryLocations - function: 1F49B3E0
+GetRetryLocations - function: 1F49B420
+GetBriefingStartLocations - function: 1F49B680
+EnableCheckpointSaveMode - function: 1F49B460
+_oParent - table: 1EEE3A00
+WifStarterData - table: 1F593840
+SetLastCompletedContractName - function: 1F49B4E0
+IsVehicleDisguiseEnabled - function: 1F49B320
+_nBlockingSequences - 0
+GetMissionStates - function: 1F49B2C0
+SetRetryLocations - function: 1F49B440
+WifMissionData - table: 1F57A460
+IsGrappleEnabled - function: 1F49B340
+NETEVENT_SETVEHICLEDISGUISE - 2
+NETEVENT_AUTOSAVE - 1
+AcceptMissions - function: 1F49B580
+SetGrapple - 0
+SetVehicleDisguiseEnabled - function: 1F49B3A0
+MrxUtil - table: 1F5301C0
+WifMissionFlow - table: 1F57A4C0
+MrxState - table: 1F594800
+GetMissionStartLocations - function: 1F49B6A0
+GetKeyValue - function: 1F49B5E0
+EnableResourceCounters - function: 1F49B300
+_tFlowData - table: 1EA1C840
+AwardKey - function: 1F49B640
+_AttemptSkipModeExit - function: 1F49B260
+SetPreContractSaveFunction - function: 1F49B700
+_bEnable - true
+_THIS - table: 1F57AF40
+MrxFactionManager - table: 1F531600
+HasKey - function: 1F49B600
+_evSetGrapple - userdata: 00100074
+DestroyMission - function: 1F49B6C0
+GetCaseSensitiveMissionId - function: 1F49B500
+WifPmcInterior - table: 1F5324E0
+BuildMissionHeader - function: 1F49B200
+DisableAllJobTracking - function: 1F49B560
+MrxUnlockFanfare - table: 1F57C860
+MrxRewardData - table: 1F57C820
+WifRecommendationData - table: 1F57AF80
+MrxTaskState - table: 1F5965A0
+1 - mrxmissionflow
+ (table)
+  AreAnyHeroesAlive = function: 1F43CD00 (function)
+  OnPlayerInit = function: 1F43CDA0 (function)
+  MrxUtil = SpawnActor - function: 1F3CECC0
+GetFaction - function: 1F3CEB00
+GetPrimaryObjectiveRgb - function: 1F3CEA80
+MrxCheatBootstrap - table: 1F530200
+TeleportHeroesToLocations - function: 1F3CEE20
+tObjPdaMarker - table: 1F3CE9C0
+GetRandomTableElement - function: 1F3CEB20
+SpawnObject - function: 1F3CECE0
+_SpawnActorComplete - function: 1F3CECA0
+MarkerGetIndexByName_World - function: 1F3CE940
+WifPmcInterior - table: 1F5324E0
+_CompleteTeleportHeroes - function: 1F3CEDC0
+Init - function: 1F3CE880
+MarkerGetNameByIndex_Radar - function: 1F3CE8E0
+MrxHqManager - table: 1F5322C0
+MarkerGetIndexByName_Radar - function: 1F3CE8C0
+tInlineIcons - table: 1F3CEA40
+ExitAllPlayerModes - function: 1F3CE8A0
+MarkerGetNameByIndex_Pda - function: 1F3CE920
+GetNumberOfDigits - function: 1F3CE840
+IsInside - function: 1F3CE820
+ClearVehiclesNearPoint - function: 1F3CE800
+ExplodeMissionName - function: 1F3CEC00
+GetDistanceBetween - function: 1F3CEBC0
+GetDistanceToObject - function: 1F3CEBE0
+DisplayHealthBar - function: 1F3CEAC0
+tObjWorldMarkers - table: 1F3CE9E0
+GetSecondaryObjectiveRgb - function: 1F3CEA60
+MrxGuiShellBootstrap - table: 1F9C8260
+FindSpawnPointOutOfView - function: 1F3CED00
+_TeleportHero - function: 1F3CED80
+CleanupLoadingCallback - function: 1F3CEC60
+StopHealthBar - function: 1F3CEAA0
+GetInlineIconIndexByName - function: 1F3CEA20
+PlaceSecondaryPlayer - function: 1F3CEE40
+SetDefault - function: 1F3CEF00
+tObjRadarMaker - table: 1F3CE9A0
+LoadingCallback - function: 1F3CEC40
+GetCharacterIdentity - function: 1F3CEB60
+TeleportHeroesToHardpoints - function: 1F3CEE00
+_tNumbers - table: 1F390E80
+ShieldFace - function: 1F3CE860
+GetTableAsString - function: 1F3CEEA0
+_TeleportStreamingComplete - function: 1F3CEDA0
+ProcessCallbackTable - function: 1F3CED20
+TeleportSecondaryHeroToPrimaryHero - function: 1F3CEE60
+EnableHeroWeapons - function: 1F3CEB40
+MergeIndexedTables - function: 1F3CEEC0
+MrxState - table: 1F594800
+_SearchMarkerTable - function: 1F3CE980
+CallWithOptionalArgs - function: 1F3CEF20
+_TeleportComplete - function: 1F3CED60
+_TeleportHeroes - function: 1F3CEDE0
+_THIS - table: 1F5301C0
+EnterBestAvailableSeat - function: 1F3CED40
+GetPrimaryCharacterName - function: 1F3CEC20
+GetDistantLocations - function: 1F3CEB80
+MarkerGetIndexByName_Pda - function: 1F3CE900
+GetInlineIconNameByIndex - function: 1F3CEA00
+SetupLoadingCallback - function: 1F3CEC80
+CopyTable - function: 1F3CEEE0
+SetBoundaryEffect - function: 1F3CEAE0
+FormatMoney - function: 1F3CEE80
+MrxGui - table: 1F9C8CE0
+MarkerGetNameByIndex_World - function: 1F3CE960
+TestDistanceToAllPlayers - function: 1F3CEBA0
+1 - mrxutil
+ (table)
+  NetEventCallback = function: 1F43CC40 (function)
+  Reset = function: 1F43D180 (function)"
+<<<END>>>

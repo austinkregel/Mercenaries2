@@ -1,0 +1,37 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=400254B8> "----------------------------------------
+Trying VZ sky heli: Alouette 3 Transport (VZ) (Full)
+  Spawn failed: nil
+----------------------------------------
+Trying VZ sky heli: Alouette 3 Transport (Vza) (Full)
+  Spawn failed: nil
+----------------------------------------
+Trying VZ sky heli: Alouette3 Transport (VZ) (Full)
+  Spawn failed: nil
+----------------------------------------
+Trying VZ sky heli: Alouette3 Transport (Vza) (Full)
+  Spawn failed: nil
+----------------------------------------
+Trying VZ sky heli: alouette3transportvz
+  Spawn failed: nil
+----------------------------------------
+Trying VZ sky heli: alouette3transportvz (Full)
+  Spawn failed: nil
+----------------------------------------
+Trying VZ sky heli: Alouette 3 Transport (Full)
+  Spawn failed: nil
+----------------------------------------
+Trying VZ sky heli: Coanda Transport (Full)
+  Spawned handle: userdata: 4003677B
+    Seat 1: userdata: 40036782 (HP: 125)
+    Seat 2: userdata: 40036786 (HP: 125)
+    Seat 3: userdata: 4003678A (HP: 125)
+    Seat 4: userdata: 4003678E (HP: 125)
+    Total riders: 4"
+<<<END>>>
+
+[disconnected]

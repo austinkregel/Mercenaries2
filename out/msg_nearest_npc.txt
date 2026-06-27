@@ -1,0 +1,9 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Nearest AI status: Nearest AI: Oil (Foot) | HP: 125/125 | Dist: 178.1m
+AddMessage status => ok=true, err=userdata: 40000014 - 2
+"
+<<<END>>>

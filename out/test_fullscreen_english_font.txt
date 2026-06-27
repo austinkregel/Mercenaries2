@@ -1,0 +1,9 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Viewport ID: userdata: 00000001
+Widget uId: userdata: 00000185
+AddWidgetChild => ok=true, err=nil"
+<<<END>>>

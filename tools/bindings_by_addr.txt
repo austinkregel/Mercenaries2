@@ -1,0 +1,4261 @@
+# Engine Lua C functions grouped by address.
+# Addresses with multiple names = aliases (same compiled body
+# registered under several Lua-side names — the noop stub at
+# 0x006AEF90 is the most extreme example).
+
+0x004245C0  (1 name)
+    LTIVideoGetViewDistance
+
+0x005A4C30  (1 name)
+    TweakAttachedSpawners
+
+0x005A4D00  (1 name)
+    TweakAttachedSpawnersInGroup
+
+0x005A4E90  (1 name)
+    GetSpawnList
+
+0x005A5000  (1 name)
+    GetSpawnListChangeInfo
+
+0x005A5170  (1 name)
+    SetSpawnList
+
+0x005A56E0  (1 name)
+    ClearSpawnListChanges
+
+0x005A5850  (1 name)
+    ResetAllSpawnLists
+
+0x005A70A0  (1 name)
+    Goal
+
+0x005A7290  (1 name)
+    DefaultGoal
+
+0x005A7410  (1 name)
+    RemoveGoal
+
+0x005A7570  (1 name)
+    Squad
+
+0x005A7E10  (1 name)
+    Role
+
+0x005A7FA0  (1 name)
+    Anchor
+
+0x005A81B0  (1 name)
+    SetFacing
+
+0x005A8370  (1 name)
+    LivingWorld
+
+0x005A84C0  (1 name)
+    GetAttrib
+
+0x005A8620  (1 name)
+    SetState
+
+0x005A87B0  (1 name)
+    GetState
+
+0x005A8AD0  (1 name)
+    Enable
+
+0x005A8C00  (1 name)
+    SetHaste
+
+0x005A8D30  (1 name)
+    SetDriveThroughMassRatio
+
+0x005A8EF0  (1 name)
+    SetPriorityTarget
+
+0x005A8FE0  (1 name)
+    Deliver
+
+0x005A9240  (1 name)
+    HeliLand
+
+0x005A93E0  (1 name)
+    Deploy
+
+0x005A9820  (1 name)
+    EveryoneOut
+
+0x005A9A30  (1 name)
+    HeliTakeoff
+
+0x005A9B80  (1 name)
+    TestDropZone
+
+0x005A9DF0  (1 name)
+    HeliDropZoneInfo
+
+0x005AA230  (1 name)
+    GoIn
+
+0x005AA3F0  (1 name)
+    SetPerceivability
+
+0x005AA5E0  (1 name)
+    GetPerceivability
+
+0x005AA740  (1 name)
+    AddSubject
+
+0x005AA800  (1 name)
+    RemoveSubject
+
+0x005AA8C0  (1 name)
+    RemoveAllSubjects
+
+0x005AA8E0  (1 name)
+    GetSubjectData
+
+0x005AAA30  (2 names)
+    Admire
+    Rest
+
+0x005AAAE0  (1 name)
+    GetFeeling
+
+0x005AABD0  (1 name)
+    SetFeeling
+
+0x005AACD0  (1 name)
+    GetRelation
+
+0x005AADC0  (1 name)
+    SetRelation
+
+0x005AAEE0  (1 name)
+    ChangeRelation
+
+0x005AB000  (1 name)
+    GetFactionGuid
+
+0x005AB0E0  (1 name)
+    AddInfraction
+
+0x005AB1F0  (1 name)
+    SetInfractionMultiplier
+
+0x005AB2B0  (1 name)
+    SetAttitude
+
+0x005AC540  (1 name)
+    SpawnOrdnance
+
+0x005AC790  (1 name)
+    SpawnTargettedOrdnance
+
+0x005ACA40  (1 name)
+    ConeSpawn
+
+0x005ACB60  (1 name)
+    SpawnCarpetBombLine
+
+0x005AD100  (1 name)
+    FindExitPoint
+
+0x005AD230  (1 name)
+    SpawnPlaneNew
+
+0x005AD3C0  (1 name)
+    EquipDesignator
+
+0x005AD550  (1 name)
+    RemoveDesignator
+
+0x005AD640  (1 name)
+    Flyby
+
+0x005AD850  (1 name)
+    SpawnDirectedObject
+
+0x005AD9D0  (1 name)
+    FindDesignatorOwner
+
+0x005ADA80  (1 name)
+    BindFaceAnimSet
+
+0x005ADC00  (1 name)
+    UnbindFaceAnimSet
+
+0x005ADDA0  (1 name)
+    PlayFaceAnim
+
+0x005ADE70  (1 name)
+    PlayFacialExpression
+
+0x005ADFC0  (1 name)
+    GetTranslationForStanceAndAction
+
+0x005AE0C0  (1 name)
+    SetUseBriefingLOD
+
+0x005AE150  (1 name)
+    _GETFENV
+
+0x005AE2C0  (1 name)
+    _IMPORT
+
+0x005AE3A0  (1 name)
+    _INHERIT
+
+0x005AE570  (1 name)
+    _DYNAMIC_IMPORT
+
+0x005AEA40  (1 name)
+    _DYNAMIC_REMOVE
+
+0x005AEB80  (1 name)
+    _MODULEINDEX
+
+0x005AED60  (1 name)
+    GetYaw
+
+0x005AEF00  (1 name)
+    SetYaw
+
+0x005AEFA0  (1 name)
+    GetPitch
+
+0x005AF180  (1 name)
+    SetPitch
+
+0x005AF220  (1 name)
+    StopBlending
+
+0x005AF2C0  (1 name)
+    Shake
+
+0x005AF460  (1 name)
+    SetFOV
+
+0x005AF500  (1 name)
+    GetFOV
+
+0x005AF5D0  (1 name)
+    SetPosition
+
+0x005AF7C0  (1 name)
+    SetLookAt
+
+0x005AF9F0  (1 name)
+    Hold
+
+0x005AFB80  (1 name)
+    Follow
+
+0x005AFD50  (1 name)
+    Blend
+
+0x005AFED0  (1 name)
+    SetShot
+
+0x005B0050  (1 name)
+    ScreenShot
+
+0x005B00A0  (1 name)
+    SetNumFrameSync
+
+0x005B0100  (1 name)
+    SetScreenRatio
+
+0x005B02C0  (1 name)
+    GetScreenRatio
+
+0x005B0390  (1 name)
+    ReloadShaders
+
+0x005B03A0  (1 name)
+    SetGamma
+
+0x005B0460  (1 name)
+    SetShadowBaseDistance
+
+0x005B04C0  (1 name)
+    GetShadowBaseDistance
+
+0x005B0510  (1 name)
+    InitTinyGeometry
+
+0x005B0520  (1 name)
+    ShowTinyGeometryObject
+
+0x005B05F0  (1 name)
+    SetNearFar
+
+0x005B06E0  (1 name)
+    RestoreNearFar
+
+0x005B0790  (1 name)
+    SetFovParams
+
+0x005B0890  (1 name)
+    RestoreFovParams
+
+0x005B0940  (1 name)
+    SetFocusParams
+
+0x005B0A90  (1 name)
+    RestoreFocusParams
+
+0x005B0B40  (1 name)
+    SetLodParams
+
+0x005B0C40  (1 name)
+    Change
+
+0x005B0D10  (1 name)
+    ChangeLineRegionSetting
+
+0x005B0E00  (1 name)
+    GetLineRegionSetting
+
+0x005B0EB0  (1 name)
+    GetLineRegion
+
+0x005B1010  (1 name)
+    Restore
+
+0x005B1080  (1 name)
+    GetCurrentSetting
+
+0x005B10F0  (1 name)
+    EnableImmediatelyChangeMode
+
+0x005B1140  (1 name)
+    GetValue
+
+0x005B11F0  (1 name)
+    SetValue
+
+0x005B1290  (1 name)
+    GetColorValue
+
+0x005B1420  (1 name)
+    SetColorValue
+
+0x005B1530  (1 name)
+    GetIntValue
+
+0x005B15E0  (1 name)
+    SetIntValue
+
+0x005B1680  (1 name)
+    IsInterpolating
+
+0x005B16C0  (1 name)
+    Begin
+
+0x005B16E0  (1 name)
+    End
+
+0x005B1740  (1 name)
+    SetTime
+
+0x005B17B0  (1 name)
+    SetTimeSpeed
+
+0x005B1820  (1 name)
+    SetLightIntensity
+
+0x005B1890  (1 name)
+    SetLightModifier
+
+0x005B1960  (1 name)
+    SetLightAngle
+
+0x005B19D0  (1 name)
+    SetAmbientColor
+
+0x005B1A70  (1 name)
+    SetAmbientCube
+
+0x005B1B10  (1 name)
+    SetRimColor
+
+0x005B1B60  (1 name)
+    SetTurbinity
+
+0x005B1BD0  (1 name)
+    SetInscatteringMultiplier
+
+0x005B1C40  (1 name)
+    SetExtinctionMultiplier
+
+0x005B1CB0  (1 name)
+    SetBetaRayMultiplier
+
+0x005B1D20  (1 name)
+    SetBetaMieMultiplier
+
+0x005B1D90  (1 name)
+    SetHenyeyGreensteinConst
+
+0x005B1E00  (1 name)
+    SetAtmosphere
+
+0x005B1EC0  (1 name)
+    SetHaze
+
+0x005B1F80  (1 name)
+    SetWindDirection
+
+0x005B2080  (1 name)
+    SetBlurRadius
+
+0x005B20D0  (1 name)
+    SetThreshold
+
+0x005B2120  (1 name)
+    SetMultiplier
+
+0x005B2170  (1 name)
+    SetAmount
+
+0x005B21E0  (1 name)
+    SetTargetLuminance
+
+0x005B2250  (1 name)
+    SetAdaptiveLuminancePercent
+
+0x005B22C0  (1 name)
+    SetAdaptiveLuminanceScale
+
+0x005B25B0  (1 name)
+    SetParticlesPerSecond
+
+0x005B2600  (1 name)
+    SetRainSpeed
+
+0x005B2650  (1 name)
+    SetRainDensity
+
+0x005B26A0  (1 name)
+    CameraFade
+
+0x005B2750  (1 name)
+    AmbientTop
+
+0x005B2840  (1 name)
+    Terrain
+
+0x005B2950  (1 name)
+    AmbientSides
+
+0x005B2A40  (1 name)
+    Put
+
+0x005B2B10  (1 name)
+    SetBoundaryEffect
+
+0x005B2D40  (1 name)
+    LoadTexture
+
+0x005B2DD0  (1 name)
+    LoadFont
+
+0x005B2E60  (1 name)
+    GetReticlePosition
+
+0x005B2F00  (1 name)
+    IsPdaOnSelect
+
+0x005B2F40  (1 name)
+    IsXboxController
+
+0x005B2F90  (1 name)
+    ControllerInUse
+
+0x005B3000  (1 name)
+    FindGuiLocation
+
+0x005B32F0  (1 name)
+    _MarkerAdd
+
+0x005B36B0  (1 name)
+    _MarkerAddTripwire
+
+0x005B38C0  (1 name)
+    _MarkerAddDisc
+
+0x005B3AD0  (1 name)
+    _MarkerAdd3D
+
+0x005B3D20  (1 name)
+    _MarkerSetBlipLimit
+
+0x005B3D90  (1 name)
+    _MarkerAddOld
+
+0x005B4100  (1 name)
+    _MarkerRemove
+
+0x005B4180  (1 name)
+    _MarkerPulse
+
+0x005B42A0  (1 name)
+    _MarkerHaltPulse
+
+0x005B4320  (1 name)
+    _MarkerSetLocation
+
+0x005B43F0  (1 name)
+    _MarkerSetColor
+
+0x005B4540  (1 name)
+    _MarkerSetFollowGuid
+
+0x005B4600  (1 name)
+    _MarkerSetScale
+
+0x005B46C0  (1 name)
+    SetFactionMarkerVisibleDistance
+
+0x005B4750  (1 name)
+    EnableFactionMarkers
+
+0x005B47D0  (1 name)
+    SetVehicleEntranceMarkerVisibleDistance
+
+0x005B4860  (1 name)
+    EnableVehicleEntranceMarkers
+
+0x005B48E0  (1 name)
+    SetFactionMarkerSize
+
+0x005B4940  (1 name)
+    SetVehicleEntranceMarkerSize
+
+0x005B49A0  (1 name)
+    EnablePickupMarkers
+
+0x005B4A20  (1 name)
+    SetPickupMarkerSize
+
+0x005B4A80  (1 name)
+    SetPickupMarkerVisibleDistance
+
+0x005B4B10  (1 name)
+    EnablePlayerMarkers
+
+0x005B4B70  (1 name)
+    GetLanguageNum
+
+0x005B4BB0  (1 name)
+    GetLanguageName
+
+0x005B4BF0  (1 name)
+    DoSigninCheck
+
+0x005B4C00  (1 name)
+    OnShellLoaded
+
+0x005B4C10  (1 name)
+    OnGlobalExit
+
+0x005B4C20  (1 name)
+    ShowLoadingHints
+
+0x005B4C80  (1 name)
+    OutputToPIX
+
+0x005B4E70  (1 name)
+    CreateWidget
+
+0x005B4F10  (1 name)
+    DeleteWidget
+
+0x005B4F90  (1 name)
+    SetWidgetLocation
+
+0x005B5190  (1 name)
+    GetWidgetLocation
+
+0x005B5240  (1 name)
+    SetWidgetHighlightable
+
+0x005B5300  (1 name)
+    GetWidgetHighlightable
+
+0x005B53B0  (1 name)
+    SetWidgetCorrectedLocation
+
+0x005B54A0  (1 name)
+    GetWidgetCorrectedLocation
+
+0x005B5550  (1 name)
+    SetWidgetColor
+
+0x005B5740  (1 name)
+    GetWidgetColor
+
+0x005B5840  (1 name)
+    SetWidgetVisible
+
+0x005B5910  (1 name)
+    GetWidgetVisible
+
+0x005B59C0  (1 name)
+    SetWidgetIgnoresPause
+
+0x005B5A90  (1 name)
+    GetWidgetIgnoresPause
+
+0x005B5B40  (1 name)
+    ActivateWidget
+
+0x005B5C00  (1 name)
+    SetWidgetSleep
+
+0x005B5CD0  (1 name)
+    GetWidgetSleep
+
+0x005B5D80  (1 name)
+    PushWidgetToFront
+
+0x005B5DF0  (1 name)
+    PushWidgetToBack
+
+0x005B5E60  (1 name)
+    SetWidgetAnchoring
+
+0x005B5FD0  (1 name)
+    GetWidgetAnchoring
+
+0x005B60E0  (1 name)
+    InterpolateWidget
+
+0x005B6450  (1 name)
+    SetWidgetUpdateCallback
+
+0x005B6540  (1 name)
+    SetWidgetViewport
+
+0x005B6600  (1 name)
+    GetWidgetViewport
+
+0x005B66D0  (1 name)
+    AddWidgetChild
+
+0x005B67E0  (1 name)
+    SetWidgetChild
+
+0x005B6900  (1 name)
+    RemoveWidgetChild
+
+0x005B6A00  (1 name)
+    RemoveAllWidgetChildren
+
+0x005B6AA0  (1 name)
+    GetWidgetChildren
+
+0x005B6BB0  (1 name)
+    SetWidgetFullscreen
+
+0x005B6D60  (1 name)
+    CorrectWidgetForResolution
+
+0x005B6E00  (1 name)
+    SetWidgetUseResolutionCorrection
+
+0x005B6ED0  (1 name)
+    SetWidgetUseNewRescale
+
+0x005B6FA0  (1 name)
+    GetWidgetHighlightId
+
+0x005B7000  (1 name)
+    GetWidgetDownId
+
+0x005B7060  (1 name)
+    CreateImageWidget
+
+0x005B7100  (1 name)
+    SetImageTexture
+
+0x005B7200  (1 name)
+    SetImageRotation
+
+0x005B72F0  (1 name)
+    GetImageRotation
+
+0x005B7410  (1 name)
+    SetImageTextureCoordinates
+
+0x005B75B0  (1 name)
+    GetImageTextureCoordinates
+
+0x005B7670  (1 name)
+    SetImageTiling
+
+0x005B7760  (1 name)
+    SetImageTextureTransience
+
+0x005B7830  (1 name)
+    SetImageClockAnimation
+
+0x005B7980  (1 name)
+    SetImageClockCallback
+
+0x005B7A90  (1 name)
+    GetImageClockElapsed
+
+0x005B7B50  (1 name)
+    SetImagePieSliceRender
+
+0x005B7C80  (1 name)
+    DisableImagePieSliceRender
+
+0x005B7D30  (1 name)
+    CreateTextWidget
+
+0x005B7DD0  (1 name)
+    SetTextText
+
+0x005B7EB0  (1 name)
+    GetTextText
+
+0x005B7FB0  (1 name)
+    SetTextFont
+
+0x005B8090  (1 name)
+    SetTextWrapping
+
+0x005B8160  (1 name)
+    GetTextWrapping
+
+0x005B8230  (1 name)
+    GetTextWidth
+
+0x005B8300  (1 name)
+    GetTextHeight
+
+0x005B83D0  (1 name)
+    SetTextJustification
+
+0x005B84E0  (1 name)
+    GetTextJustification
+
+0x005B85E0  (1 name)
+    SetTextScale
+
+0x005B86C0  (1 name)
+    GetTextScale
+
+0x005B8780  (1 name)
+    SplitText
+
+0x005B8AB0  (1 name)
+    AnimateText
+
+0x005B8BD0  (1 name)
+    HaltTextAnimation
+
+0x005B8CA0  (1 name)
+    MinimapCreate
+
+0x005B8ED0  (1 name)
+    MinimapUpdate
+
+0x005B90C0  (1 name)
+    MinimapSetPlayerLocation
+
+0x005B90D0  (1 name)
+    MinimapSetFocusLocation
+
+0x005B91D0  (1 name)
+    MinimapSetRotation
+
+0x005B92B0  (1 name)
+    MinimapSetRange
+
+0x005B93B0  (1 name)
+    SetMinimapOwner
+
+0x005B94B0  (1 name)
+    SetMinimapBorder
+
+0x005B95F0  (1 name)
+    SetMinimapRadius
+
+0x005B96D0  (1 name)
+    MinimapAddObjective
+
+0x005B9A00  (1 name)
+    MinimapAnimateObjectiveSize
+
+0x005B9C70  (1 name)
+    MinimapAnimateObjectiveAlpha
+
+0x005B9E80  (1 name)
+    MinimapAnimateObjectiveSonar
+
+0x005BA1D0  (1 name)
+    MinimapUnanimateObjective
+
+0x005BA350  (1 name)
+    MinimapRemoveObjective
+
+0x005BA420  (1 name)
+    MinimapDelete
+
+0x005BA4F0  (1 name)
+    SetPlayerPDAWidget
+
+0x005BA670  (1 name)
+    CreateFlashWidget
+
+0x005BA710  (1 name)
+    SetFlashSwfFile
+
+0x005BA840  (1 name)
+    SetFlashPlaySpeed
+
+0x005BA920  (1 name)
+    GetFlashPlaySpeed
+
+0x005BA9E0  (1 name)
+    PauseFlash
+
+0x005BAAA0  (1 name)
+    PlayFlash
+
+0x005BAB60  (1 name)
+    RestartFlash
+
+0x005BAC10  (1 name)
+    SendFlashInput
+
+0x005BAD40  (1 name)
+    SendFlashLeftAnalogInput
+
+0x005BAE60  (1 name)
+    SendFlashRightAnalogInput
+
+0x005BAF80  (1 name)
+    SetFlashCallback
+
+0x005BB090  (1 name)
+    SetFlashTesselationAllowed
+
+0x005BB160  (1 name)
+    CallFlashScriptFunction
+
+0x005BB4D0  (1 name)
+    SetFlashPauseMenu
+
+0x005BB6E0  (1 name)
+    RemoveFlashPauseMenu
+
+0x005BB7A0  (1 name)
+    CreateSpriteWidget
+
+0x005BB840  (1 name)
+    SetSpriteTexture
+
+0x005BBAE0  (1 name)
+    SetSpriteTextureSize
+
+0x005BBC50  (1 name)
+    SetSpriteFrameSize
+
+0x005BBEB0  (1 name)
+    AnimateSprite
+
+0x005BBFF0  (1 name)
+    HaltSpriteAnimation
+
+0x005BC0B0  (1 name)
+    SetSpriteFrame
+
+0x005BC190  (1 name)
+    CreateMovieWidget
+
+0x005BC230  (1 name)
+    SetMovieFile
+
+0x005BC320  (1 name)
+    PlayMovie
+
+0x005BC400  (1 name)
+    PauseMovie
+
+0x005BC4B0  (1 name)
+    StopMovie
+
+0x005BC560  (1 name)
+    GetMovieCurrentFrameNumber
+
+0x005BC630  (1 name)
+    SetMovieEndCallback
+
+0x005BC720  (1 name)
+    RegisterForPdaUpdate
+
+0x005BCE60  (1 name)
+    AddPdaMapBlips
+
+0x005BCF80  (1 name)
+    UpdatePdaBlip
+
+0x005BD0B0  (1 name)
+    RemovePdaBlip
+
+0x005BD1D0  (1 name)
+    ForceExitSeatNoSnap
+
+0x005BD250  (1 name)
+    DoAction
+
+0x005BD730  (1 name)
+    Emote
+
+0x005BD740  (1 name)
+    PlayRawAnimation
+
+0x005BD750  (1 name)
+    SetState
+
+0x005BD850  (1 name)
+    Knockdown
+
+0x005BD9A0  (1 name)
+    SetPreemptiveRagdoll
+
+0x005BDA60  (1 name)
+    PersistTransform
+
+0x005BDBF0  (1 name)
+    IsSwimming
+
+0x005BDD00  (1 name)
+    IsCarrying
+
+0x005BDDC0  (1 name)
+    Drop
+
+0x005BDEF0  (1 name)
+    IsGrappling
+
+0x005BDFB0  (1 name)
+    StopGrappling
+
+0x005BE210  (1 name)
+    EnableWeapons
+
+0x005BE220  (1 name)
+    DisableWeapons
+
+0x005BE230  (1 name)
+    SetFireLock
+
+0x005BE330  (1 name)
+    EquipWeapon
+
+0x005BE4B0  (1 name)
+    StowWeapon
+
+0x005BE5E0  (1 name)
+    SetAllowCorpseCleanup
+
+0x005BE720  (1 name)
+    Scrub
+
+0x005BE880  (1 name)
+    SetJostleEnabled
+
+0x005BE9A0  (1 name)
+    GetPrimaryWeapon
+
+0x005BEB20  (1 name)
+    GetSecondaryWeapon
+
+0x005BECA0  (1 name)
+    GetVehicleWeapon
+
+0x005BED50  (1 name)
+    GetAllWeapons
+
+0x005BF150  (1 name)
+    SetAllWeapons
+
+0x005BF410  (1 name)
+    DropWeapon
+
+0x005BF4D0  (1 name)
+    EquipWeapon
+
+0x005BF620  (1 name)
+    DestroyAllWeapons
+
+0x005BF6A0  (1 name)
+    ReloadAll
+
+0x005BF850  (1 name)
+    SpawnHomingProjectile
+
+0x005BFAF0  (1 name)
+    CreateRegion
+
+0x005BFCB0  (1 name)
+    Subdue
+
+0x005BFDE0  (1 name)
+    SpawnWithModel
+
+0x005BFF80  (1 name)
+    GetModelBBoxExtents
+
+0x005C0110  (1 name)
+    FormatTime
+
+0x005C0330  (2 names)
+    IsInstallable
+    NoHud
+
+0x005C0350  (1 name)
+    ActivateAlarm
+
+0x005C0420  (1 name)
+    ToggleAlarm
+
+0x005C0590  (1 name)
+    LTIMovieStop
+
+0x005C05F0  (1 name)
+    LTIMoviePause
+
+0x005C0650  (1 name)
+    LTIMovieResume
+
+0x005C0A40  (1 name)
+    LTIVideoEnter
+
+0x005C0B10  (1 name)
+    LTIVideoSwitchMode
+
+0x005C0D00  (1 name)
+    LTIVideoNextRes
+
+0x005C0E30  (1 name)
+    LTIVideoPrevRes
+
+0x005C0F60  (1 name)
+    LTIVideoNextRefresh
+
+0x005C1020  (1 name)
+    LTIVideoPrevRefresh
+
+0x005C10E0  (1 name)
+    LTIVideoSetGamma
+
+0x005C1160  (1 name)
+    LTIVideoApplyChanges
+
+0x005C1180  (1 name)
+    LTIVideoDefault
+
+0x005C11F0  (1 name)
+    LTIVideoCancel
+
+0x005C1230  (1 name)
+    LTIVideoAdvanceEnter
+
+0x005C1260  (1 name)
+    LTIVideoSwitchOpt1
+
+0x005C13C0  (1 name)
+    LTIVideoAdvanceDefault
+
+0x005C1490  (1 name)
+    LTIInputGeneralEnter
+
+0x005C1620  (1 name)
+    LTIInputGeneralOptions
+
+0x005C17D0  (1 name)
+    LTIInputGeneralInvertMouse
+
+0x005C1810  (1 name)
+    LTIInputGeneralMouseSense
+
+0x005C1880  (1 name)
+    LTIInputGeneralJoySense
+
+0x005C18D0  (1 name)
+    LTIInputGeneralRumble
+
+0x005C1920  (1 name)
+    LTIInputKMEnter
+
+0x005C1CE0  (1 name)
+    LTIInputKMChangeInput
+
+0x005C1D20  (1 name)
+    LTIInputKMApplyChanges
+
+0x005C1EF0  (1 name)
+    LTIInputKMDefault
+
+0x005C2740  (2 names)
+    LTIInputJoystickCancel
+    LTIInputKMCancelInput
+
+0x005C2750  (1 name)
+    LTIOverBoundResponse
+
+0x005C2970  (1 name)
+    LTIInputKMExit
+
+0x005C2990  (1 name)
+    LTIInputJoystickEnter
+
+0x005C2CC0  (1 name)
+    LTIInputJoystickChangePrimary
+
+0x005C2E60  (1 name)
+    LTIInputJoystickChangeInput
+
+0x005C3210  (1 name)
+    LTIJoystickOverBoundResponse
+
+0x005C3400  (1 name)
+    LTIInputJoystickApplyChanges
+
+0x005C3510  (1 name)
+    LTIInputJoystickDefault
+
+0x005C36A0  (1 name)
+    LTIInputJoystickExit
+
+0x005C36C0  (1 name)
+    LTIInputJoystickReEnter
+
+0x005C36E0  (1 name)
+    LTIGetStartButton
+
+0x005C3750  (1 name)
+    ChangeShellState
+
+0x005C3790  (1 name)
+    LTIProfileEnter
+
+0x005C37B0  (1 name)
+    LTIProfileExit
+
+0x005C37D0  (1 name)
+    LTIPrecacheDone
+
+0x005C37E0  (1 name)
+    LTIPrecacheSmokeDone
+
+0x005C37F0  (1 name)
+    LTIPauseItemChanged
+
+0x005C57F0  (1 name)
+    LTIChoseOnline
+
+0x005C5830  (1 name)
+    LTIGetDateFormat
+
+0x005C58A0  (1 name)
+    LTICamera
+
+0x005C58F0  (1 name)
+    FirstRun
+
+0x005C5960  (1 name)
+    abs
+
+0x005C59A0  (1 name)
+    floor
+
+0x005C59E0  (1 name)
+    ceil
+
+0x005C5A30  (1 name)
+    round
+
+0x005C5A80  (1 name)
+    max
+
+0x005C5AD0  (1 name)
+    min
+
+0x005C5B20  (1 name)
+    rad
+
+0x005C5B60  (1 name)
+    deg
+
+0x005C5BA0  (1 name)
+    exp
+
+0x005C5BE0  (1 name)
+    pow
+
+0x005C5C30  (1 name)
+    randi
+
+0x005C5D00  (1 name)
+    randf
+
+0x005C5E00  (1 name)
+    GetXZHeading
+
+0x005C5F80  (1 name)
+    Normalize
+
+0x005C6050  (1 name)
+    CrossProduct
+
+0x005C6150  (1 name)
+    Length
+
+0x005C6250  (1 name)
+    PolarToRect
+
+0x005C6470  (1 name)
+    Stop
+
+0x005C64A0  (1 name)
+    Pause
+
+0x005C64D0  (1 name)
+    Resume
+
+0x005C6500  (1 name)
+    Start
+
+0x005C66B0  (3 names)
+    IsConnectedToInternet
+    IsOnlineConnected
+    IsPlatformConnected
+
+0x005C66F0  (1 name)
+    IsMultiplayer
+
+0x005C6740  (1 name)
+    IsEnabled
+
+0x005C6780  (1 name)
+    IsActive
+
+0x005C67C0  (1 name)
+    IsLobby
+
+0x005C6800  (1 name)
+    IsClient
+
+0x005C6840  (1 name)
+    IsServer
+
+0x005C6880  (3 names)
+    AutoClient
+    AutoLobby
+    IsDedicated
+
+0x005C68C0  (1 name)
+    AutoServer
+
+0x005C6910  (1 name)
+    GetHostName
+
+0x005C6940  (1 name)
+    EnterFriendsLobby
+
+0x005C69B0  (1 name)
+    ExitFriendsLobby
+
+0x005C6A10  (1 name)
+    EnterLobby
+
+0x005C6A70  (1 name)
+    ResetServerList
+
+0x005C6AD0  (1 name)
+    ConnectToServer
+
+0x005C6C70  (1 name)
+    StartServer
+
+0x005C6D60  (1 name)
+    Stop
+
+0x005C6DC0  (1 name)
+    QuitGame
+
+0x005C6E20  (1 name)
+    SendEvent_ShowMessage
+
+0x005C7180  (1 name)
+    SendEvent_AddRadarObjective
+
+0x005C74E0  (1 name)
+    SendEvent_AddMarkerObjective
+
+0x005C7810  (1 name)
+    SendEvent_AddPdaObjective
+
+0x005C7A20  (1 name)
+    SendEvent_RemoveRadarObjective
+
+0x005C7AF0  (1 name)
+    SendEvent_RemovePdaObjective
+
+0x005C7BD0  (1 name)
+    SendEvent_RemoveMarkerObjective
+
+0x005C7CA0  (1 name)
+    SendEvent_TeleportPlayer
+
+0x005C7E30  (1 name)
+    SendEvent_TeleportPlayerToHardPoint
+
+0x005C8070  (1 name)
+    SetLastHeroTeleportLocation
+
+0x005C81B0  (1 name)
+    SendEvent_Fanfare
+
+0x005C84F0  (1 name)
+    SendEvent_CloseFanfare
+
+0x005C8560  (1 name)
+    SendEvent_ObjectiveMessage
+
+0x005C86B0  (1 name)
+    SendEvent_Support
+
+0x005C8930  (3 names)
+    SendEvent_AddSupportItem
+    SendEvent_EnableHeroWeapons
+    SendEvent_RemoveSupportItem
+
+0x005C8970  (1 name)
+    SendEvent_RevivePlayer
+
+0x005C8AC0  (1 name)
+    SendEvent_RequestPosition
+
+0x005C8B00  (1 name)
+    SendEvent_SetObjectiveTraySlotText
+
+0x005C8C90  (1 name)
+    SendEvent_SetObjectiveTraySlotImage
+
+0x005C8E60  (1 name)
+    SendEvent_ClearObjectiveTraySlot
+
+0x005C8FC0  (1 name)
+    SendEvent_ShowMovie
+
+0x005C90F0  (1 name)
+    SendEvent_HideMovie
+
+0x005C9160  (1 name)
+    BeginLayerEventGroup
+
+0x005C91A0  (1 name)
+    EndLayerEventGroup
+
+0x005C91E0  (1 name)
+    GrantAchievement
+
+0x005C9250  (1 name)
+    KickPlayer
+
+0x005C9280  (1 name)
+    ApplyCachedFactionRelations
+
+0x005C92C0  (1 name)
+    SendEvent_AddDangerousBuilding
+
+0x005C93E0  (1 name)
+    SendEvent_RemoveDangerousBuilding
+
+0x005C94F0  (1 name)
+    SendEvent_SetOccupiedDangerousBuilding
+
+0x005C9590  (1 name)
+    SendEvent_AddRandomDangerousBuilding
+
+0x005C9630  (1 name)
+    SendEvent_TextFanfare
+
+0x005C9800  (1 name)
+    SendEvent_CardFanfare
+
+0x005C99C0  (1 name)
+    SendEvent_HVTFanfare
+
+0x005C9B50  (1 name)
+    SendEvent_UnlockFanfare
+
+0x005C9D00  (1 name)
+    SendEvent_BatchUnlockFanfare
+
+0x005C9EB0  (1 name)
+    SendEvent_ForceClientTether
+
+0x005C9F20  (1 name)
+    SendEvent_PursuitMessage
+
+0x005CA050  (1 name)
+    SetPursuitReportingState
+
+0x005CA160  (1 name)
+    SendEvent_AddPDAMission
+
+0x005CA420  (1 name)
+    SendEvent_RemovePDAMission
+
+0x005CA4C0  (1 name)
+    SendEvent_AddHqPdaBlip
+
+0x005CA6E0  (1 name)
+    SendEvent_RemoveHqPdaBlip
+
+0x005CA790  (1 name)
+    SendEvent_AddPmcPdaBlip
+
+0x005CA930  (1 name)
+    SendEvent_RemovePmcPdaBlip
+
+0x005CA9C0  (1 name)
+    SendCustomEvent
+
+0x005CACF0  (2 names)
+    IsMatchmakingInternet
+    IsOnlineEnabled
+
+0x005CAD40  (1 name)
+    ShouldPlayOnline
+
+0x005CAD80  (2 names)
+    DialogBoxPlayLocal
+    DialogBoxPlayOffline
+
+0x005CAE30  (1 name)
+    DialogBoxMustBeSignInToLive
+
+0x005CAE70  (1 name)
+    LoadMissionSpiel
+
+0x005CAFE0  (1 name)
+    UnloadMissionSpiel
+
+0x005CB070  (1 name)
+    SetBriefingInterior
+
+0x005CB0F0  (1 name)
+    SetBriefingStarters
+
+0x005CB360  (1 name)
+    SetBriefingCheapCinematic
+
+0x005CB440  (1 name)
+    SetLoadingScreen
+
+0x005CB4C0  (1 name)
+    SetShootingGalleryBorder
+
+0x005CB550  (1 name)
+    SendEvent_RecruitsUnlocked
+
+0x005CB6A0  (1 name)
+    HasPlayerUnlockedCode
+
+0x005CB700  (1 name)
+    UpdatePresence
+
+0x005CB7F0  (1 name)
+    SendEvent_JoinPOForceRequest
+
+0x005CB870  (1 name)
+    SetTutorialMessage
+
+0x005CB8F0  (1 name)
+    DoneReloadingLayers
+
+0x005CB940  (1 name)
+    IsReadyToTether
+
+0x005CBC40  (1 name)
+    GetParent
+
+0x005CBD10  (1 name)
+    IsTemplate
+
+0x005CBDA0  (1 name)
+    GetHealth
+
+0x005CBED0  (1 name)
+    SetHealth
+
+0x005CC020  (1 name)
+    GetMaxHealth
+
+0x005CC110  (1 name)
+    GetNodeHealth
+
+0x005CC240  (1 name)
+    GetLocalizedName
+
+0x005CC350  (1 name)
+    GetCashValue
+
+0x005CC400  (1 name)
+    GetPosition
+
+0x005CC4D0  (1 name)
+    GetYaw
+
+0x005CC5D0  (1 name)
+    GetVelocitySquared
+
+0x005CC6F0  (1 name)
+    GetVelocity
+
+0x005CC820  (1 name)
+    GetVelocityVector
+
+0x005CC9F0  (1 name)
+    GetName
+
+0x005CCAE0  (1 name)
+    SetName
+
+0x005CCC10  (1 name)
+    GetModelName
+
+0x005CCCF0  (1 name)
+    SetModelName
+
+0x005CCF00  (1 name)
+    SetPosition
+
+0x005CCFE0  (1 name)
+    SetPositionToObject
+
+0x005CD1E0  (1 name)
+    SetTransformToObject
+
+0x005CD3E0  (1 name)
+    GetDistanceFrom
+
+0x005CD690  (1 name)
+    SetYaw
+
+0x005CD8B0  (1 name)
+    IsAlive
+
+0x005CD9E0  (2 names)
+    GetSeatFromRider
+    InSeat
+
+0x005CDAC0  (1 name)
+    InVehicle
+
+0x005CDBF0  (1 name)
+    Remove
+
+0x005CDD30  (1 name)
+    FadeOut
+
+0x005CDEB0  (1 name)
+    Kill
+
+0x005CDF50  (1 name)
+    IsValid
+
+0x005CDFE0  (1 name)
+    IsPlayerControlled
+
+0x005CE160  (1 name)
+    Revive
+
+0x005CE310  (1 name)
+    AreEqual
+
+0x005CE4C0  (1 name)
+    GetInvincible
+
+0x005CE5D0  (1 name)
+    SetInvincible
+
+0x005CE6D0  (1 name)
+    SetUnkillable
+
+0x005CE7D0  (1 name)
+    SetInfiniteAmmo
+
+0x005CE8F0  (1 name)
+    AddLabel
+
+0x005CEB90  (1 name)
+    RemoveLabel
+
+0x005CEE30  (1 name)
+    HasLabel
+
+0x005CEF10  (1 name)
+    IsDisguised
+
+0x005CF020  (1 name)
+    GetMass
+
+0x005CF100  (1 name)
+    SetMass
+
+0x005CF230  (1 name)
+    IsHibernated
+
+0x005CF2F0  (1 name)
+    IsAwake
+
+0x005CF410  (1 name)
+    GetHibernationDistance
+
+0x005CF4E0  (1 name)
+    SetHibernationDistance
+
+0x005CF5F0  (1 name)
+    RevertHibernationDistance
+
+0x005CF780  (1 name)
+    InsideBoundary
+
+0x005CF870  (1 name)
+    OutsideBoundary
+
+0x005CF970  (1 name)
+    TransformLocalToWorld
+
+0x005CFA70  (1 name)
+    GetHardpointPosition
+
+0x005CFB60  (1 name)
+    GetHardpointYaw
+
+0x005CFCA0  (1 name)
+    GetHardpointPitch
+
+0x005CFED0  (1 name)
+    ApplyImpulse
+
+0x005D0050  (1 name)
+    ApplyPointImpulse
+
+0x005D0220  (1 name)
+    ApplyAngularImpulse
+
+0x005D03A0  (1 name)
+    SetVisible
+
+0x005D04B0  (1 name)
+    IsVisible
+
+0x005D0730  (1 name)
+    EnablePhysics
+
+0x005D0740  (1 name)
+    DisablePhysics
+
+0x005D0750  (1 name)
+    GetPhysicsType
+
+0x005D0BC0  (1 name)
+    PlayAnimation
+
+0x005D0DE0  (1 name)
+    StopAnimation
+
+0x005D0ED0  (1 name)
+    StopAnimationChannel
+
+0x005D0FC0  (1 name)
+    StopAllAnimation
+
+0x005D1050  (1 name)
+    Attach
+
+0x005D1270  (1 name)
+    Detach
+
+0x005D13B0  (1 name)
+    IsAttached
+
+0x005D1510  (1 name)
+    GetAttachedObjects
+
+0x005D1650  (1 name)
+    PlayMaterialAnimation
+
+0x005D17E0  (1 name)
+    StopMaterialAnimation
+
+0x005D18D0  (1 name)
+    OpenGate
+
+0x005D19D0  (1 name)
+    CloseGate
+
+0x005D1AF0  (1 name)
+    AddQualityRef
+
+0x005D1C60  (1 name)
+    RemoveQualityRef
+
+0x005D1D20  (1 name)
+    HasWinch
+
+0x005D1DD0  (1 name)
+    IsWinching
+
+0x005D1E90  (1 name)
+    IsWinched
+
+0x005D1FD0  (1 name)
+    AttachCargoToWinch
+
+0x005D21B0  (1 name)
+    DetachCargoFromWinch
+
+0x005D2240  (1 name)
+    GetWinchState
+
+0x005D2340  (1 name)
+    SetWinchState
+
+0x005D2470  (1 name)
+    QueueAcceleration
+
+0x005D26F0  (1 name)
+    BeginQueuedAcceleration
+
+0x005D27D0  (1 name)
+    GetHeightAboveTerrain
+
+0x005D28F0  (1 name)
+    AddToDisposer
+
+0x005D29E0  (1 name)
+    RemoveFromDisposer
+
+0x005D2AD0  (1 name)
+    SendMessage
+
+0x005D2BD0  (1 name)
+    SendDamage
+
+0x005D2CD0  (1 name)
+    SetState
+
+0x005D2DD0  (1 name)
+    GetLinkGuid
+
+0x005D2F90  (1 name)
+    StartEmitter
+
+0x005D3080  (1 name)
+    StopEmitter
+
+0x005D3170  (1 name)
+    GetStringHash
+
+0x005D3210  (1 name)
+    GetGuidByName
+
+0x005D3340  (1 name)
+    GetAllGuidsByName
+
+0x005D34B0  (1 name)
+    GetAllLandingZones
+
+0x005D3A50  (1 name)
+    FastCollectHelicopters
+
+0x005D3B70  (1 name)
+    FastCollectJets
+
+0x005D3C90  (1 name)
+    FastCollectFlying
+
+0x005D3DE0  (1 name)
+    FastCollectTanks
+
+0x005D3F00  (1 name)
+    FastCollectGroundVehicles
+
+0x005D4050  (2 names)
+    FastCollectCars
+    FastCollectGroundVehiclesExceptTanks
+
+0x005D4170  (1 name)
+    FastCollectHumans
+
+0x005D4290  (1 name)
+    FastCollectBoats
+
+0x005D43B0  (1 name)
+    FastCollectProps
+
+0x005D44D0  (1 name)
+    FastCollectUsables
+
+0x005D4590  (1 name)
+    FastCollectBuildings
+
+0x005D46B0  (1 name)
+    GetAwakeObjects
+
+0x005D4900  (1 name)
+    GetObjectsInArea
+
+0x005D4B40  (1 name)
+    UnloadingStaticLayers
+
+0x005D4B90  (1 name)
+    GetUnloadingStaticLayers
+
+0x005D4BD0  (1 name)
+    ResetSingletonDone
+
+0x005D4BE0  (1 name)
+    IsStaticLayer
+
+0x005D4C70  (1 name)
+    LoadLayer
+
+0x005D4E30  (1 name)
+    UnloadLayer
+
+0x005D4F80  (1 name)
+    ReloadLayer
+
+0x005D53D0  (1 name)
+    AssetExists
+
+0x005D54B0  (1 name)
+    LoadAsset
+
+0x005D54F0  (1 name)
+    UnloadAsset
+
+0x005D5530  (1 name)
+    ReloadAsset
+
+0x005D58C0  (1 name)
+    SpawnRelative
+
+0x005D5D10  (1 name)
+    Spawn
+
+0x005D6000  (1 name)
+    SpawnFromCamera
+
+0x005D6730  (1 name)
+    SpawnPlayer
+
+0x005D67F0  (1 name)
+    SpawnPlayerAdvanced
+
+0x005D68D0  (1 name)
+    FindPointFromCamera
+
+0x005D6D50  (1 name)
+    IsPointInBoundary
+
+0x005D7150  (1 name)
+    GetLineRegionPoints
+
+0x005D7620  (1 name)
+    AddContextAction
+
+0x005D7810  (1 name)
+    RemoveContextAction
+
+0x005D78A0  (1 name)
+    SetBoundaryRadius
+
+0x005D7910  (1 name)
+    GetBoundaryRadius
+
+0x005D7960  (1 name)
+    SetWarningRadius
+
+0x005D79D0  (1 name)
+    GetWarningRadius
+
+0x005D7A20  (1 name)
+    GetTetherDiameterStart
+
+0x005D7A70  (1 name)
+    GetTetherDiameterEnd
+
+0x005D7AC0  (1 name)
+    EnableRoad
+
+0x005D7BC0  (1 name)
+    EnableIntersection
+
+0x005D7CA0  (1 name)
+    SaveGame
+
+0x005D7D20  (1 name)
+    LoadGame
+
+0x005D7DA0  (1 name)
+    ContractActivated
+
+0x005D7E30  (2 names)
+    ContractCancelled
+    ContractCompleted
+
+0x005D7E60  (1 name)
+    LoadIsRetry
+
+0x005D7E90  (1 name)
+    GetDistantSpawnPointOnPath
+
+0x005D8230  (1 name)
+    Rumble
+
+0x005D8320  (1 name)
+    AchievementIsGranted
+
+0x005D8400  (1 name)
+    AchievementAddCount
+
+0x005D84E0  (1 name)
+    LockPursuit
+
+0x005D8610  (1 name)
+    ClearPursuitLock
+
+0x005D8680  (1 name)
+    SetPursuit
+
+0x005D87C0  (1 name)
+    SetPursuitSeconds
+
+0x005D8900  (1 name)
+    AdjustPursuitLevel
+
+0x005D8B40  (1 name)
+    AdjustPursuitTimer
+
+0x005D8D30  (1 name)
+    GetPursuitState
+
+0x005D9010  (1 name)
+    ClearPursuitRestrictions
+
+0x005D90E0  (1 name)
+    RestrictAllPursuit
+
+0x005D9140  (1 name)
+    RestrictPursuitFaction
+
+0x005D9240  (1 name)
+    RestrictPursuitType
+
+0x005D92D0  (1 name)
+    TweakPursuitParam
+
+0x005D93B0  (1 name)
+    SetMaxPursuitLevel
+
+0x005D9410  (1 name)
+    SetMaxPursuitTime
+
+0x005D9490  (1 name)
+    SetPursuitLevelTimes
+
+0x005D9A20  (1 name)
+    SetCustomPursuit
+
+0x005D9C00  (1 name)
+    ClearCustomPursuit
+
+0x005D9CB0  (1 name)
+    SetSkirmishTable
+
+0x005DA000  (1 name)
+    AddSkirmishTemplate
+
+0x005DA120  (1 name)
+    SetGlobalSkirmishState
+
+0x005DA4C0  (1 name)
+    StartHeliWaveSpawner
+
+0x005DA780  (1 name)
+    StopHeliWaveSpawner
+
+0x005DA790  (1 name)
+    GetName
+
+0x005DA860  (1 name)
+    GetCharacter
+
+0x005DA930  (1 name)
+    GetSeat
+
+0x005DAA10  (1 name)
+    GetControlledObject
+
+0x005DAB40  (1 name)
+    GetCameraXZHeading
+
+0x005DACB0  (1 name)
+    GetViewport
+
+0x005DAF00  (1 name)
+    GetViewportId
+
+0x005DAFE0  (1 name)
+    GetCamera
+
+0x005DB0C0  (1 name)
+    TeleportCamera
+
+0x005DB1D0  (1 name)
+    SetPDAMapModeCallback
+
+0x005DB330  (1 name)
+    SetPDAMapModeCancelCallback
+
+0x005DB460  (1 name)
+    RequestPDAMapModeExit
+
+0x005DB590  (1 name)
+    RequestPDAMapModeCancel
+
+0x005DB690  (1 name)
+    CheckSpawnPos
+
+0x005DB770  (1 name)
+    SetPDAMapMode
+
+0x005DB970  (1 name)
+    SetSatelliteScanMode
+
+0x005DBA70  (1 name)
+    SetupSatelliteScan
+
+0x005DBBD0  (1 name)
+    SetSatelliteScanCallbacks
+
+0x005DBCE0  (1 name)
+    AddSatelliteScanTarget
+
+0x005DBDD0  (1 name)
+    SetSatelliteScanPaused
+
+0x005DBED0  (1 name)
+    SetCinematicMode
+
+0x005DC080  (1 name)
+    InCinematicMode
+
+0x005DC150  (1 name)
+    SetOutBoundary
+
+0x005DC260  (1 name)
+    SetInputEnabled
+
+0x005DC3A0  (1 name)
+    SetSurvivalMode
+
+0x005DC4E0  (1 name)
+    SetHealthClamp
+
+0x005DC5F0  (1 name)
+    SetSurvivalModeCallback
+
+0x005DC710  (1 name)
+    GetOutBoundary
+
+0x005DC800  (1 name)
+    IsInWarningZone
+
+0x005DC8F0  (1 name)
+    AddBoundary
+
+0x005DCA20  (1 name)
+    RemoveBoundary
+
+0x005DCB20  (1 name)
+    RemoveAllBoundary
+
+0x005DCC10  (1 name)
+    GetAllBoundaryGuid
+
+0x005DCD50  (1 name)
+    SetBoundaryCallback
+
+0x005DCE80  (1 name)
+    IsPositionOutBoundary
+
+0x005DD030  (1 name)
+    IsBoundaryDeath
+
+0x005DD130  (1 name)
+    SetSeatMovementLocks
+
+0x005DD2D0  (1 name)
+    SetVehicleControlsLock
+
+0x005DD420  (1 name)
+    GetControlBindingType
+
+0x005DD6A0  (1 name)
+    GetTargetUnderReticle
+
+0x005DD820  (1 name)
+    IsCoopMultiplayer
+
+0x005DD890  (1 name)
+    GetPrimaryPlayer
+
+0x005DD8F0  (1 name)
+    GetSecondaryPlayer
+
+0x005DD950  (1 name)
+    GetPrimaryCharacter
+
+0x005DD9D0  (1 name)
+    GetSecondaryCharacter
+
+0x005DDA50  (1 name)
+    GetMaximumPlayers
+
+0x005DDA90  (1 name)
+    GetCurrentPlayers
+
+0x005DDAD0  (1 name)
+    GetPlayer
+
+0x005DDB80  (1 name)
+    GetAllPlayers
+
+0x005DDC20  (1 name)
+    GetPlayerId
+
+0x005DDD30  (1 name)
+    IsJoined
+
+0x005DDDD0  (1 name)
+    IsLocal
+
+0x005DDED0  (1 name)
+    IsRemote
+
+0x005DDF80  (1 name)
+    GetMaximumLocalPlayers
+
+0x005DDFC0  (1 name)
+    GetCurrentLocalPlayers
+
+0x005DE000  (1 name)
+    GetLocalId
+
+0x005DE0A0  (1 name)
+    GetLocalPlayer
+
+0x005DE140  (1 name)
+    GetLocalPlayerId
+
+0x005DE1C0  (1 name)
+    GetLocalCharacter
+
+0x005DE250  (1 name)
+    GetAnyCharacter
+
+0x005DE290  (1 name)
+    GetAllCharacters
+
+0x005DE2D0  (1 name)
+    CreatePlayer
+
+0x005DE3B0  (1 name)
+    ClearPlayerDB
+
+0x005DE430  (1 name)
+    DestroyPlayer
+
+0x005DE4D0  (1 name)
+    AttachToCharacter
+
+0x005DE5C0  (1 name)
+    DetachFromCharacter
+
+0x005DE680  (1 name)
+    BindToLocal
+
+0x005DE730  (1 name)
+    BindToRemote
+
+0x005DE7C0  (1 name)
+    Unbind
+
+0x005DE850  (1 name)
+    SetPlayerJoinedCallback
+
+0x005DEA00  (1 name)
+    SetPlayerLeftCallback
+
+0x005DEBB0  (1 name)
+    RemovePlayerJoinedCallback
+
+0x005DEC00  (1 name)
+    RemovePlayerLeftCallback
+
+0x005DEC50  (1 name)
+    GetPlayerStart
+
+0x005DEC80  (1 name)
+    SetPlayerStart
+
+0x005DED10  (1 name)
+    ClaimSeat
+
+0x005DEF70  (1 name)
+    UnClaimSeat
+
+0x005DF140  (1 name)
+    SetWaitForInGame
+
+0x005DF1F0  (1 name)
+    GetRetryPosition
+
+0x005DF2C0  (1 name)
+    GetAllTargetMarkerPos
+
+0x005DF430  (1 name)
+    GetCash
+
+0x005DF470  (1 name)
+    SetCash
+
+0x005DF500  (1 name)
+    AddCash
+
+0x005DF580  (1 name)
+    GetFuel
+
+0x005DF5C0  (1 name)
+    SetFuel
+
+0x005DF660  (1 name)
+    AddFuel
+
+0x005DF6D0  (1 name)
+    GetFuelCapacity
+
+0x005DF710  (1 name)
+    SetFuelCapacity
+
+0x005DF780  (1 name)
+    GetProfileCharacter
+
+0x005DF7C0  (1 name)
+    SetProfileCharacter
+
+0x005DF820  (1 name)
+    GetProfileUpgrade
+
+0x005DF860  (1 name)
+    SetProfileUpgrade
+
+0x005DF8D0  (1 name)
+    GetProfileCostume
+
+0x005DF910  (1 name)
+    SetProfileCostume
+
+0x005DF970  (1 name)
+    SetOutfit
+
+0x005DFAF0  (1 name)
+    GetAvailableCostumes
+
+0x005DFB30  (1 name)
+    SetAvailableCostumes
+
+0x005DFBA0  (1 name)
+    SetGrappleEnabled
+
+0x005DFCB0  (1 name)
+    SetInPmc
+
+0x005DFDC0  (1 name)
+    SetAimMode
+
+0x005DFED0  (1 name)
+    ClearGPS
+
+0x005DFF90  (1 name)
+    SetScopeEnabled
+
+0x005E00A0  (1 name)
+    SetVehicleDisguise
+
+0x005E0120  (1 name)
+    GetVehicleDisguise
+
+0x005E0160  (1 name)
+    SetSwimmingSearchRadius
+
+0x005E0290  (1 name)
+    VehicleDisguise
+
+0x005E0460  (1 name)
+    GetVehicleDisguiseState
+
+0x005E0570  (1 name)
+    Init
+
+0x005E06C0  (1 name)
+    GetInfractions
+
+0x005E08C0  (1 name)
+    SetDelay
+
+0x005E09B0  (1 name)
+    Completed
+
+0x005E0A50  (1 name)
+    Failed
+
+0x005E0D50  (1 name)
+    TestCueSound
+
+0x005E0E10  (1 name)
+    TestStopSound
+
+0x005E0ED0  (1 name)
+    TestPauseSound
+
+0x005E0F90  (1 name)
+    CueSound
+
+0x005E1090  (1 name)
+    StopSound
+
+0x005E1190  (1 name)
+    PauseSound
+
+0x005E1290  (1 name)
+    SetCategoryVolume
+
+0x005E1330  (1 name)
+    SetCategoryPitch
+
+0x005E13D0  (1 name)
+    LockListenerPosition
+
+0x005E1440  (1 name)
+    BindMusicCue
+
+0x005E1520  (1 name)
+    ClearMusicCues
+
+0x005E15A0  (1 name)
+    TransitionMusic
+
+0x005E1680  (1 name)
+    SetDynamicMusic
+
+0x005E16E0  (1 name)
+    IsDynamicMusic
+
+0x005E1740  (1 name)
+    SetTimerUpdateMusic
+
+0x005E17A0  (1 name)
+    AddFactionMusic
+
+0x005E1820  (1 name)
+    SetFactionMusic
+
+0x005E1890  (1 name)
+    LockFactionMusic
+
+0x005E1900  (1 name)
+    IsFactionLockedMusic
+
+0x005E1960  (1 name)
+    SetActionLevelsMusic
+
+0x005E1AA0  (1 name)
+    LockActionLevelMusic
+
+0x005E1B10  (1 name)
+    IsActionLevelLockedMusic
+
+0x005E1B70  (1 name)
+    SetHostilityDecayRateMusic
+
+0x005E1BE0  (1 name)
+    SetRootFactionRegionMusic
+
+0x005E1C60  (1 name)
+    ActivateFactionRegionMusic
+
+0x005E1C90  (1 name)
+    SetSourceMusic
+
+0x005E1D00  (1 name)
+    AddSourceMusicEntryState
+
+0x005E1D90  (1 name)
+    ClearSourceMusicEntryStates
+
+0x005E1DB0  (1 name)
+    SetActionThresholdsMusic
+
+0x005E1E70  (1 name)
+    SetHijackMusic
+
+0x005E1F40  (1 name)
+    AddMusicState
+
+0x005E20B0  (1 name)
+    AddMusicTransition
+
+0x005E21D0  (1 name)
+    AddMusicSourcePlaylist
+
+0x005E2270  (1 name)
+    ClearMusicSourcePlaylist
+
+0x005E22E0  (1 name)
+    RemoveMusicSourcePlaylist
+
+0x005E2360  (1 name)
+    AddCueToMusicSourcePlaylist
+
+0x005E2420  (1 name)
+    LoadBank
+
+0x005E2510  (1 name)
+    UnloadBank
+
+0x005E25D0  (1 name)
+    LoadSoundBank
+
+0x005E2650  (1 name)
+    LoadWaveBank
+
+0x005E26D0  (1 name)
+    UnloadSoundBank
+
+0x005E2750  (1 name)
+    UnloadWaveBank
+
+0x005E27D0  (1 name)
+    LoadTempBank
+
+0x005E29B0  (1 name)
+    UnloadTempBank
+
+0x005E2B90  (1 name)
+    LoadBankWithCallback
+
+0x005E2D70  (1 name)
+    UnloadBankWithCallback
+
+0x005E2F50  (1 name)
+    RequestAmbienceBank
+
+0x005E2FB0  (1 name)
+    SetStreamBlockDumping
+
+0x005E3020  (1 name)
+    SilenceAmbience
+
+0x005E3090  (1 name)
+    CueAmbience
+
+0x005E3110  (1 name)
+    StopAmbience
+
+0x005E3180  (1 name)
+    SetMessageFiltering
+
+0x005E3230  (1 name)
+    DefineReverbPreset
+
+0x005E3460  (1 name)
+    SetReverbPreset
+
+0x005E34E0  (1 name)
+    SetReverb
+
+0x005E3550  (1 name)
+    SetLowPassFilterSettings
+
+0x005E3610  (1 name)
+    SetLowPassFilter
+
+0x005E3680  (1 name)
+    SetSurvivalMode
+
+0x005E3710  (1 name)
+    SetVehicleEngineBoost
+
+0x005E37D0  (1 name)
+    ForceActionTransition
+
+0x005E3800  (1 name)
+    GetMaxDuration
+
+0x005E38A0  (1 name)
+    ClearFadeCategories
+
+0x005E38B0  (1 name)
+    FadeCategoryDown
+
+0x005E39C0  (1 name)
+    FadeCategoryUp
+
+0x005E3A70  (1 name)
+    GetCategoryVolume
+
+0x005E3B20  (1 name)
+    PitchCategoryActivate
+
+0x005E3C30  (1 name)
+    PitchCategoryDeactivate
+
+0x005E3CE0  (1 name)
+    GetCategoryPitch
+
+0x005E3D90  (1 name)
+    SetSystemPause
+
+0x005E3E10  (1 name)
+    SetPauseFilter
+
+0x005E3E80  (1 name)
+    RegisterReadyCallback
+
+0x005E3FC0  (1 name)
+    OpenStreamFile
+
+0x005E4070  (1 name)
+    CloseStreamFile
+
+0x005E40E0  (1 name)
+    GetAudioDir
+
+0x005E4120  (1 name)
+    OverrideUserMusic
+
+0x005E4160  (1 name)
+    RestoreUserMusic
+
+0x005E41A0  (1 name)
+    StopAndFlushAllSounds
+
+0x005E41E0  (1 name)
+    SetMasterVolume
+
+0x005E42A0  (1 name)
+    _GetLibVersion
+
+0x005E4400  (1 name)
+    ToStringL
+
+0x005E47D0  (1 name)
+    MemUsage
+
+0x005E48B0  (1 name)
+    StringToGuid
+
+0x005E49E0  (1 name)
+    GuidToString
+
+0x005E4A90  (1 name)
+    RequestGameState
+
+0x005E4BF0  (1 name)
+    StartSingleplayer
+
+0x005E4CE0  (1 name)
+    IsLoadingOrStreaming
+
+0x005E4D40  (1 name)
+    SetNumberOfViewports
+
+0x005E4E10  (1 name)
+    SetTimeScale
+
+0x005E4F10  (1 name)
+    LTIGetPrecacheBypass
+
+0x005E4F90  (1 name)
+    GetLevelName
+
+0x005E4FF0  (1 name)
+    GetMasterScriptName
+
+0x005E5050  (1 name)
+    SetLevelName
+
+0x005E50C0  (1 name)
+    SetMasterScriptName
+
+0x005E5130  (1 name)
+    GetCharacterTemplate
+
+0x005E5190  (1 name)
+    RequiredAsset
+
+0x005E52B0  (1 name)
+    SetAssetRequestMax
+
+0x005E5350  (1 name)
+    GetAssetRequestMax
+
+0x005E53A0  (1 name)
+    Callback
+
+0x005E5430  (1 name)
+    AutoLoad
+
+0x005E5460  (1 name)
+    FinishedShell
+
+0x005E5490  (1 name)
+    GetSkipMission
+
+0x005E54B0  (1 name)
+    SetSkipMission
+
+0x005E5540  (1 name)
+    GetINIBriefing
+
+0x005E5570  (1 name)
+    SetINIBriefing
+
+0x005E55E0  (1 name)
+    GetINILoadLastSave
+
+0x005E5610  (1 name)
+    IsDemoMode
+
+0x005E5640  (1 name)
+    DisableAssetPreload
+
+0x005E5670  (1 name)
+    FlushAssets
+
+0x005E56A0  (1 name)
+    MainTime
+
+0x005E56E0  (1 name)
+    RealTime
+
+0x005E5720  (1 name)
+    MainTimeStamp
+
+0x005E5750  (1 name)
+    RealTimeStamp
+
+0x005E5780  (1 name)
+    TimeStampMark
+
+0x005E57D0  (1 name)
+    TimeStampGetElapsed
+
+0x005E5850  (1 name)
+    Clock
+
+0x005E5960  (1 name)
+    Date
+
+0x005E5C70  (1 name)
+    Time
+
+0x005E5E90  (1 name)
+    DiffTime
+
+0x005E5F20  (1 name)
+    PlayIntroMovies
+
+0x005E5F50  (1 name)
+    StartWithResources
+
+0x005E5F80  (1 name)
+    SubtitlesEnabled
+
+0x005E5FB0  (1 name)
+    RumbleEnabled
+
+0x005E5FE0  (1 name)
+    TutorialsEnabled
+
+0x005E6010  (1 name)
+    SetTutorialsEnabled
+
+0x005E6090  (1 name)
+    YAxisInverted
+
+0x005E60C0  (1 name)
+    SetLuaSaveVersion
+
+0x005E6120  (1 name)
+    AddStringDb
+
+0x005E6180  (1 name)
+    ClearStringDb
+
+0x005E6190  (1 name)
+    RequestAutosave
+
+0x005E62F0  (1 name)
+    IsConfirmOnCircle
+
+0x005E6330  (1 name)
+    GetPlatform
+
+0x005E6370  (1 name)
+    IsGermanSKU
+
+0x005E63C0  (1 name)
+    GetLanguage
+
+0x005E6530  (1 name)
+    HaveActiveProfile
+
+0x005E6560  (1 name)
+    IsFinalConfig
+
+0x005E6580  (1 name)
+    IsAutosaveEnabled
+
+0x005E65B0  (1 name)
+    SetAutosaveEnabled
+
+0x005E6610  (1 name)
+    ForceNextAutosave
+
+0x005E6620  (1 name)
+    GetVersion
+
+0x005E66C0  (1 name)
+    GetShellCode
+
+0x005E6780  (1 name)
+    GetForceNewGame
+
+0x005E6C20  (1 name)
+    GetRiders
+
+0x005E6FD0  (1 name)
+    GetDriver
+
+0x005E7090  (2 names)
+    GetFromRider
+    GetFromSeat
+
+0x005E7190  (1 name)
+    GetRiderFromSeat
+
+0x005E7270  (1 name)
+    GetSeatByType
+
+0x005E7410  (1 name)
+    GetSeatParams
+
+0x005E75F0  (1 name)
+    SetCanPlayerUse
+
+0x005E77E0  (1 name)
+    GetSeatToSeat
+
+0x005E7B40  (1 name)
+    IsSeatBlocked
+
+0x005E7E70  (1 name)
+    IsSeatALadder
+
+0x005E7F10  (1 name)
+    TransferToSeat
+
+0x005E8000  (1 name)
+    Enter
+
+0x005E81F0  (1 name)
+    EnterBySeatGuid
+
+0x005E83F0  (1 name)
+    Exit
+
+0x005E8510  (1 name)
+    HijackAbort
+
+0x005E85A0  (1 name)
+    HijackAbortDone
+
+0x005E8670  (1 name)
+    HijackComplete
+
+0x005E8740  (1 name)
+    EnableTurret
+
+0x005E8910  (1 name)
+    SetTurretPitch
+
+0x005E8A60  (1 name)
+    SetTurretYaw
+
+0x005E8BB0  (1 name)
+    OpenDoor
+
+0x005E8C90  (1 name)
+    CloseDoor
+
+0x005E8D70  (1 name)
+    StartTankHijackMotion
+
+0x005E8E40  (1 name)
+    StopTankHijackMotion
+
+0x005E8F10  (1 name)
+    SpinHeli
+
+0x005E9030  (1 name)
+    IsFlying
+
+0x005E9130  (1 name)
+    IsFlipped
+
+0x005E91F0  (1 name)
+    IsHijackRemote
+
+0x005E92F0  (1 name)
+    HijackStart
+
+0x005E9400  (1 name)
+    SetHijackState
+
+0x005E94A0  (1 name)
+    SetHijackSuccess
+
+0x005E9570  (1 name)
+    CancelHijack
+
+0x005E9660  (1 name)
+    Usable
+
+0x005E9780  (1 name)
+    IsHijackBad
+
+0x005E9940  (1 name)
+    RestoreHealth
+
+0x005E99C0  (2 names)
+    RefillDesignator
+    RestoreAmmo
+
+0x005E9A40  (1 name)
+    SetParts
+
+0x005E9BE0  (1 name)
+    ClearControls
+
+0x005E9D80  (1 name)
+    Cue
+
+0x005E9EE0  (1 name)
+    CueWithoutSubtitles
+
+0x005EA040  (1 name)
+    Cancel
+
+0x005EA160  (1 name)
+    CancelAll
+
+0x005EA1B0  (2 names)
+    Pause
+    Unpause
+
+0x005EA260  (2 names)
+    PauseAll
+    UnpauseAll
+
+0x005EA2B0  (1 name)
+    SetCinematicMode
+
+0x005EA360  (1 name)
+    AddSequence
+
+0x005EA410  (1 name)
+    RemoveSequence
+
+0x005EA4C0  (1 name)
+    SetClipAmmo
+
+0x005EA590  (1 name)
+    GetClipAmmo
+
+0x005EA650  (1 name)
+    GetMaxClipAmmo
+
+0x005EA730  (1 name)
+    SetReserveAmmo
+
+0x005EA800  (1 name)
+    GetReserveAmmo
+
+0x005EA8D0  (1 name)
+    GetMaxReserveAmmo
+
+0x005EAA20  (1 name)
+    Reload
+
+0x005EAB10  (1 name)
+    IsDesignator
+
+0x005EAC00  (1 name)
+    IsPrimary
+
+0x005F6990  (1 name)
+    Create
+
+0x005F69A0  (1 name)
+    CreatePersistent
+
+0x005F69B0  (1 name)
+    Delete
+
+0x005F6A30  (1 name)
+    Post
+
+0x005F6C30  (1 name)
+    _GC
+
+0x005F6C90  (1 name)
+    Create
+
+0x005F6CB0  (1 name)
+    Copy
+
+0x005F6D10  (1 name)
+    SetFilter
+
+0x005F6DD0  (1 name)
+    ClearFilter
+
+0x005F6E90  (1 name)
+    AddObject
+
+0x005F6FC0  (1 name)
+    RemoveObject
+
+0x005F70D0  (1 name)
+    GetObjects
+
+0x005F71F0  (1 name)
+    ClearObjects
+
+0x005F7280  (1 name)
+    UsePlayers
+
+0x005F7330  (1 name)
+    SetAssociation
+
+0x005F7400  (1 name)
+    ClearAssociation
+
+0x005F7480  (1 name)
+    SetRelation
+
+0x005F75F0  (1 name)
+    ClearRelation
+
+0x005F7680  (1 name)
+    Eval
+
+0x005F7770  (1 name)
+    GetCoopPlayerGuid
+
+0x006AEF90  [STUB]  (62 names)
+    AddFadeCategory
+    AddObjective
+    AddPitchCategory
+    AddRoadException
+    Assert
+    ClearPitchCategories
+    ClearSourceMusicTransitions
+    DebugStateMachine
+    DescribeGuid
+    DrawPath
+    DumpAssetMemory
+    DumpAssets
+    DumpAssetsDiff
+    DumpMemory
+    DumpStats
+    DumpTextures
+    Extinguish
+    Feed
+    GetCallstack
+    GetLoadingStaticLayers
+    Ignite
+    InstallToHDD
+    LTIMovieStart
+    LTIupdateSupportQuickSlot
+    LoadData
+    LoadFunctions
+    LoadScript
+    LoadingStaticLayers
+    LogError
+    LogInfo
+    LogWarning
+    Plan
+    PlanClear
+    PlanIterate
+    PlanSetConditions
+    PlanSetGoal
+    PrintStateMachine
+    Printf
+    RemoveExclusionZone
+    RemoveRoadException
+    Search
+    SendEvent_AddObjective
+    SendEvent_RemoveObjective
+    SetCinematicMode
+    SetExclusionZone
+    SetLaneActive
+    SetQGrey
+    SetRoadSpawning
+    SetSidewalkSpawning
+    SetSky
+    SetSourceEnterMusic
+    SetSourceExitMusic
+    SetSourceMusicTransition
+    SetTrafficSpawning
+    ShowObjectSpawners
+    Talk
+    Temp
+    UseExistingInstall
+    Water
+    WriteToConsole
+    _SummonEd
+    print
+
+0x006B9360  (7 names)
+    attachSound
+    loadSound
+    setPan
+    setTransform
+    setVolume
+    start
+    stop
+
+0x0077DCB0  (1 name)
+    getDepth
+
+0x007847E0  (1 name)
+    NaN
+
+0x007847F0  (1 name)
+    POSITIVE_INFINITY
+
+0x00784800  (1 name)
+    NEGATIVE_INFINITY
+
+0x00784810  (1 name)
+    MIN_VALUE
+
+0x00784820  (1 name)
+    MAX_VALUE
+
+0x007868D0  (1 name)
+    addProperty
+
+0x00786A80  (1 name)
+    hasOwnProperty
+
+0x00786B40  (1 name)
+    watch
+
+0x00786C90  (1 name)
+    unwatch
+
+0x00786D50  (1 name)
+    isPropertyEnumerable
+
+0x00786E50  (1 name)
+    isPrototypeOf
+
+0x00786ED0  (1 name)
+    toString
+
+0x00786F80  (1 name)
+    valueOf
+
+0x007899B0  (1 name)
+    addListener
+
+0x007899F0  (1 name)
+    broadcastMessage
+
+0x00789AB0  (1 name)
+    removeListener
+
+0x0078BF00  (1 name)
+    concat
+
+0x0078C010  (1 name)
+    join
+
+0x0078C130  (1 name)
+    pop
+
+0x0078C190  (1 name)
+    push
+
+0x0078C290  (1 name)
+    reverse
+
+0x0078C2E0  (1 name)
+    shift
+
+0x0078C340  (1 name)
+    slice
+
+0x0078C4E0  (1 name)
+    sort
+
+0x0078C820  (1 name)
+    sortOn
+
+0x0078CF90  (1 name)
+    splice
+
+0x0078D270  (1 name)
+    toString
+
+0x0078D370  (1 name)
+    unshift
+
+0x0078D470  (1 name)
+    valueOf
+
+0x00794030  (1 name)
+    play
+
+0x00794070  (1 name)
+    stop
+
+0x007940B0  (1 name)
+    gotoAndPlay
+
+0x007941D0  (1 name)
+    gotoAndStop
+
+0x007942F0  (1 name)
+    nextFrame
+
+0x00794380  (1 name)
+    prevFrame
+
+0x007943E0  (1 name)
+    getBytesLoaded
+
+0x00794440  (1 name)
+    getBytesTotal
+
+0x007944B0  (1 name)
+    duplicateMovieClip
+
+0x007945C0  (1 name)
+    attachMovie
+
+0x00794820  (1 name)
+    attachBitmap
+
+0x00794B70  (1 name)
+    createEmptyMovieClip
+
+0x00794D10  (1 name)
+    createTextField
+
+0x00794F20  (1 name)
+    removeMovieClip
+
+0x00794F80  (1 name)
+    setMask
+
+0x00795070  (1 name)
+    getBounds
+
+0x007954D0  (1 name)
+    localToGlobal
+
+0x00795700  (1 name)
+    globalToLocal
+
+0x00795900  (1 name)
+    hitTest
+
+0x00795CA0  (1 name)
+    swapDepths
+
+0x00795DE0  (1 name)
+    getNextHighestDepth
+
+0x00795E70  (1 name)
+    getInstanceAtDepth
+
+0x00795F40  (1 name)
+    getSWFVersion
+
+0x00795FB0  (1 name)
+    startDrag
+
+0x00796160  (1 name)
+    stopDrag
+
+0x007961B0  (1 name)
+    loadMovie
+
+0x007962F0  (1 name)
+    unloadMovie
+
+0x00796340  (1 name)
+    loadVariables
+
+0x00796680  (1 name)
+    clear
+
+0x007966D0  (1 name)
+    beginFill
+
+0x00797050  (1 name)
+    beginGradientFill
+
+0x007970B0  (1 name)
+    lineGradientStyle
+
+0x00797110  (1 name)
+    beginBitmapFill
+
+0x00797320  (1 name)
+    endFill
+
+0x00797370  (1 name)
+    lineStyle
+
+0x00797710  (1 name)
+    moveTo
+
+0x007977C0  (1 name)
+    lineTo
+
+0x00797850  (1 name)
+    curveTo
+
+0x0079DC50  (1 name)
+    setTransform
+
+0x0079DEC0  (1 name)
+    getTransform
+
+0x0079E1C0  (1 name)
+    setRGB
+
+0x0079E330  (1 name)
+    getRGB
+
+0x0079F1D0  (2 names)
+    toString
+    valueOf
+
+0x0079F520  (1 name)
+    clone
+
+0x0079F5C0  (1 name)
+    concat
+
+0x0079F740  (1 name)
+    createBox
+
+0x0079F900  (1 name)
+    createGradientBox
+
+0x0079FB00  (1 name)
+    identity
+
+0x0079FB60  (1 name)
+    invert
+
+0x0079FCB0  (1 name)
+    rotate
+
+0x0079FE20  (1 name)
+    scale
+
+0x0079FEF0  (1 name)
+    translate
+
+0x0079FF80  (1 name)
+    transformPoint
+
+0x007A0250  (1 name)
+    deltaTransformPoint
+
+0x007A6A40  (1 name)
+    setTextFormat
+
+0x007A6D20  (1 name)
+    getTextFormat
+
+0x007A6ED0  (1 name)
+    getNewTextFormat
+
+0x007A6FB0  (1 name)
+    setNewTextFormat
+
+0x007A70A0  (1 name)
+    replaceText
+
+0x007A72B0  (1 name)
+    appendText
+
+0x007A7330  (1 name)
+    appendHtml
+
+0x007A73B0  (1 name)
+    removeTextField
+
+0x007A7410  (1 name)
+    getCharBoundaries
+
+0x007A7570  (1 name)
+    getExactCharBoundaries
+
+0x007A76D0  (1 name)
+    getCharIndexAtPoint
+
+0x007A77C0  (1 name)
+    getLineIndexAtPoint
+
+0x007A78A0  (1 name)
+    getLineOffset
+
+0x007A7960  (1 name)
+    getLineLength
+
+0x007A7A20  (1 name)
+    getLineMetrics
+
+0x007A7C70  (1 name)
+    getLineText
+
+0x007A7D80  (1 name)
+    getFirstCharInParagraph
+
+0x007A7E40  (1 name)
+    getLineIndexOfChar
+
+0x007A8510  (1 name)
+    setImageSubstitutions
+
+0x007A8640  (1 name)
+    updateImageSubstitution
+
+0x007AA4A0  (4 names)
+    getBytesLoaded
+    getBytesTotal
+    getPan
+    getVolume
+
+0x007AA4D0  (12 names)
+    addListener
+    broadcastMessage
+    getBeginIndex
+    getCaretIndex
+    getEndIndex
+    getFocus
+    getTransform
+    hide
+    removeListener
+    setFocus
+    setSelection
+    show
+
+0x007ABE40  (1 name)
+    clone
+
+0x007ABF00  (1 name)
+    contains
+
+0x007AC030  (1 name)
+    containsPoint
+
+0x007AC180  (1 name)
+    containsRectangle
+
+0x007AC320  (1 name)
+    equals
+
+0x007AC430  (1 name)
+    inflate
+
+0x007AC510  (1 name)
+    inflatePoint
+
+0x007AC600  (1 name)
+    intersection
+
+0x007AC880  (1 name)
+    intersects
+
+0x007ACA80  (1 name)
+    isEmpty
+
+0x007ACBC0  (1 name)
+    offset
+
+0x007ACD00  (1 name)
+    offsetPoint
+
+0x007ACF90  (1 name)
+    setEmpty
+
+0x007ACFE0  (1 name)
+    toString
+
+0x007AD1F0  (1 name)
+    union
+
+0x007AE140  (1 name)
+    addListener
+
+0x007AE300  (1 name)
+    removeListener
+
+0x007AE410  (1 name)
+    show
+
+0x007AE470  (1 name)
+    hide
+
+0x007AF110  (1 name)
+    charAt
+
+0x007AF240  (1 name)
+    charCodeAt
+
+0x007AF340  (1 name)
+    concat
+
+0x007AF520  (1 name)
+    indexOf
+
+0x007AF770  (1 name)
+    lastIndexOf
+
+0x007AF9E0  (1 name)
+    slice
+
+0x007AFAF0  (1 name)
+    split
+
+0x007B00C0  (1 name)
+    substr
+
+0x007B01F0  (1 name)
+    substring
+
+0x007B0350  (1 name)
+    toLowerCase
+
+0x007B03E0  (2 names)
+    toString
+    valueOf
+
+0x007B0420  (1 name)
+    toUpperCase
+
+0x007B0FC0  (1 name)
+    getFocus
+
+0x007B1040  (1 name)
+    setFocus
+
+0x007B11C0  (1 name)
+    getCaretIndex
+
+0x007B1270  (1 name)
+    setSelection
+
+0x007B2310  (1 name)
+    getProgress
+
+0x007B24A0  (1 name)
+    loadClip
+
+0x007B25E0  (1 name)
+    unloadClip
+
+0x007B89A0  (1 name)
+    getTimezoneOffset
+
+0x007B8A00  (1 name)
+    getMonth
+
+0x007B8AE0  (1 name)
+    getDate
+
+0x007B8C10  (1 name)
+    getDay
+
+0x007B8C80  (2 names)
+    getTime
+    valueOf
+
+0x007B8CD0  (1 name)
+    getHours
+
+0x007B8D30  (1 name)
+    getMinutes
+
+0x007B8DA0  (1 name)
+    getSeconds
+
+0x007B8E10  (1 name)
+    getMilliseconds
+
+0x007B8E70  (1 name)
+    getYear
+
+0x007B8EC0  (1 name)
+    getFullYear
+
+0x007B8F10  (1 name)
+    setYear
+
+0x007B8FB0  (1 name)
+    setFullYear
+
+0x007B9040  (1 name)
+    setMonth
+
+0x007B9140  (1 name)
+    setDate
+
+0x007B9240  (1 name)
+    setTime
+
+0x007B9290  (1 name)
+    setHours
+
+0x007B9300  (1 name)
+    setMinutes
+
+0x007B9380  (1 name)
+    setSeconds
+
+0x007B9400  (1 name)
+    setMilliseconds
+
+0x007B9460  (1 name)
+    getUTCMonth
+
+0x007B9540  (1 name)
+    getUTCDate
+
+0x007B9670  (1 name)
+    getUTCDay
+
+0x007B96E0  (1 name)
+    getUTCHours
+
+0x007B9740  (1 name)
+    getUTCMinutes
+
+0x007B97B0  (1 name)
+    getUTCSeconds
+
+0x007B9820  (1 name)
+    getUTCMilliseconds
+
+0x007B9880  (1 name)
+    getUTCYear
+
+0x007B98D0  (1 name)
+    getUTCFullYear
+
+0x007B9920  (1 name)
+    setUTCYear
+
+0x007B99C0  (1 name)
+    setUTCFullYear
+
+0x007B9A50  (1 name)
+    setUTCMonth
+
+0x007B9B50  (1 name)
+    setUTCDate
+
+0x007B9C50  (1 name)
+    setUTCHours
+
+0x007B9CC0  (1 name)
+    setUTCMinutes
+
+0x007B9D40  (1 name)
+    setUTCSeconds
+
+0x007B9DC0  (1 name)
+    setUTCMilliseconds
+
+0x007B9E20  (1 name)
+    toString
+
+0x007D18D0  (1 name)
+    addRequestHeader
+
+0x007D1900  (1 name)
+    decode
+
+0x007D1A20  (1 name)
+    getBytesLoaded
+
+0x007D1A80  (1 name)
+    getBytesTotal
+
+0x007D1AE0  (1 name)
+    load
+
+0x007D1BA0  (1 name)
+    send
+
+0x007D1BD0  (1 name)
+    sendAndLoad
+
+0x007D1C00  (1 name)
+    toString
+
+0x007D30A0  (1 name)
+    add
+
+0x007D31B0  (1 name)
+    clone
+
+0x007D3290  (1 name)
+    equals
+
+0x007D3360  (1 name)
+    normalize
+
+0x007D3430  (1 name)
+    offset
+
+0x007D3500  (1 name)
+    subtract
+
+0x007D3620  (1 name)
+    toString
+
+0x007D3910  (1 name)
+    distance
+
+0x007D3B30  (1 name)
+    interpolate
+
+0x007D3CC0  (1 name)
+    polar
+
+0x008604C0  (1 name)
+    tonumber
+
+0x008606A0  (1 name)
+    error
+
+0x00860790  (1 name)
+    getmetatable
+
+0x00860800  (1 name)
+    setmetatable
+
+0x008609B0  (1 name)
+    getfenv
+
+0x00860A00  (1 name)
+    setfenv
+
+0x00860B20  (1 name)
+    rawequal
+
+0x00860BD0  (1 name)
+    rawget
+
+0x00860C90  (1 name)
+    rawset
+
+0x00860D60  (1 name)
+    gcinfo
+
+0x00860DA0  (1 name)
+    collectgarbage
+
+0x00860E90  (1 name)
+    type
+
+0x00860F00  (1 name)
+    next
+
+0x008611E0  (1 name)
+    loadstring
+
+0x00861290  (1 name)
+    loadfile
+
+0x008613D0  (1 name)
+    load
+
+0x008614D0  (1 name)
+    dofile
+
+0x00861570  (1 name)
+    assert
+
+0x00861630  (1 name)
+    unpack
+
+0x00861740  (1 name)
+    select
+
+0x00861810  (1 name)
+    pcall
+
+0x008618E0  (1 name)
+    xpcall
+
+0x00861A10  (1 name)
+    tostring
+
+0x00861DC0  (1 name)
+    resume
+
+0x00861F20  (1 name)
+    create
+
+0x00861FE0  (1 name)
+    wrap
+
+0x00862010  (1 name)
+    yield
+
+0x00862050  (1 name)
+    status
+
+0x00862150  (1 name)
+    running
+
+0x00862350  (1 name)
+    foreachi
+
+0x00862480  (1 name)
+    foreach
+
+0x008625A0  (1 name)
+    maxn
+
+0x008626A0  (1 name)
+    getn
+
+0x00862700  (1 name)
+    setn
+
+0x00862770  (1 name)
+    insert
+
+0x00862880  (1 name)
+    remove
+
+0x008629B0  (1 name)
+    concat
+
+0x00863330  (1 name)
+    sort
+
+0x00863440  (1 name)
+    len
+
+0x00863490  (1 name)
+    sub
+
+0x008635B0  (1 name)
+    reverse
+
+0x00863670  (1 name)
+    lower
+
+0x00863740  (1 name)
+    upper
+
+0x00863810  (1 name)
+    rep
+
+0x008638C0  (1 name)
+    byte
+
+0x00863A80  (1 name)
+    char
+
+0x00863B60  (1 name)
+    dump
+
+0x00864910  (1 name)
+    find
+
+0x00864930  (1 name)
+    match
+
+0x00864AD0  (1 name)
+    gmatch
+
+0x00864C00  (1 name)
+    gfind
+
+0x00864E80  (1 name)
+    gsub
+
+0x00865370  (1 name)
+    format
+
+0x009E29E7  (1 name)
+    freeaddrinfo
+
+0x009E2A20  (1 name)
+    getaddrinfo
+
+0x009E2C9A  (1 name)
+    getnameinfo
+
+0x021054EC  (1 name)
+    CK
+
+0x0210C3C8  (1 name)
+    Dec
+
+0x02118CCC  (1 name)
+    PM
+
+0x02118CD8  (1 name)
+    AM
+
+0x02118CDC  (1 name)
+    December
+
+0x02118CE0  (1 name)
+    November
+
+0x02118CEC  (1 name)
+    October
+
+0x02118CF8  (1 name)
+    September
+
+0x02118D00  (1 name)
+    August
+
+0x02118D0C  (1 name)
+    July
+
+0x02118D14  (1 name)
+    June
+
+0x02118D1C  (1 name)
+    May
+
+0x02118D24  (1 name)
+    March
+
+0x02118D2C  (1 name)
+    February
+
+0x02118D34  (1 name)
+    January
+
+0x02118D40  (1 name)
+    Dec
+
+0x02118D48  (1 name)
+    Nov
+
+0x02118D4C  (1 name)
+    Oct
+
+0x02118D50  (1 name)
+    Sep
+
+0x02118D54  (1 name)
+    Aug
+
+0x02118D58  (1 name)
+    Jul
+
+0x02118D5C  (1 name)
+    Jun
+
+0x02118D60  (1 name)
+    May
+
+0x02118D64  (2 names)
+    Apr
+    April
+
+0x02118D68  (1 name)
+    Mar
+
+0x02118D6C  (1 name)
+    Feb
+
+0x02118D70  (1 name)
+    Jan
+
+0x02118D74  (2 names)
+    0123456789ABCDEF
+    Saturday
+
+0x02118D78  (1 name)
+    Friday
+
+0x02118D84  (1 name)
+    Thursday
+
+0x02118D8C  (1 name)
+    Wednesday
+
+0x02118D98  (1 name)
+    Tuesday
+
+0x02118DA4  (1 name)
+    Monday
+
+0x02118DAC  (1 name)
+    Sunday
+
+0x02118DB4  (1 name)
+    Sat
+
+0x02118DBC  (1 name)
+    Fri
+
+0x02118DC0  (1 name)
+    Thu
+
+0x02118DC4  (1 name)
+    Wed
+
+0x02118DC8  (1 name)
+    Tue
+
+0x02118DCC  (1 name)
+    Mon
+
+0x02118DD0  (1 name)
+    Sun
+
+0x02124860  (1 name)
+    BIO
+
+0x02136678  (1 name)
+    gethostbyname
+
+0x02136A48  (1 name)
+    store
+
+0x02136A50  (1 name)
+    ec_pre_comp
+
+0x02136A58  (1 name)
+    bn
+
+0x02136A64  (1 name)
+    ecdh
+
+0x02136A68  (1 name)
+    ec
+
+0x02136A70  (1 name)
+    ecdsa
+
+0x02136A74  (1 name)
+    ui
+
+0x02136A7C  (1 name)
+    engine
+
+0x02136A80  (1 name)
+    dynlock
+
+0x02136A88  (1 name)
+    dso
+
+0x02136A90  (1 name)
+    debug_malloc2
+
+0x02136A94  (1 name)
+    dh
+
+0x02136AA4  (1 name)
+    RSA_blinding
+
+0x02136AA8  (1 name)
+    readdir
+
+0x02136AB8  (1 name)
+    getservbyname
+
+0x02136AC0  (1 name)
+    debug_malloc
+
+0x02136AC4  (1 name)
+    rand2
+
+0x02136AD4  (1 name)
+    rand
+
+0x02136ADC  (1 name)
+    ssl_method
+
+0x02136AE4  (1 name)
+    ssl
+
+0x02136AF0  (1 name)
+    ssl_sess_cert
+
+0x02136AF4  (1 name)
+    ssl_session
+
+0x02136B04  (1 name)
+    ssl_cert
+
+0x02136B10  (1 name)
+    ssl_ctx
+
+0x02136B1C  (1 name)
+    x509_store
+
+0x02136B24  (1 name)
+    evp_pkey
+
+0x02136B30  (1 name)
+    rsa
+
+0x02136B3C  (1 name)
+    dsa
+
+0x02136B40  (1 name)
+    x509_req
+
+0x02136B44  (1 name)
+    x509_crl
+
+0x02136B50  (1 name)
+    x509_pkey
+
+0x02136B5C  (1 name)
+    x509_info
+
+0x02136B68  (1 name)
+    x509
+
+0x02136B74  (1 name)
+    ex_data
+
+0x02136B7C  (1 name)
+    err
+
+0x02136C20  (1 name)
+    comp
+
+0x02145F58  (1 name)
+    SEQUENCE
+
+0x02145F94  (1 name)
+    PRINTABLESTRING
+
+0x02145FB0  (1 name)
+    NUMERICSTRING
+
+0x02145FC8  (1 name)
+    GRAPHICSTRING
+
+0x02145FFC  (1 name)
+    VIDEOTEXSTRING
+
+0x02146014  (1 name)
+    GENERALSTRING
+
+0x02146050  (1 name)
+    UTCTIME
+
+0x02146064  (1 name)
+    IA5STRING
+
+0x02146B48  (1 name)
+    UNIVERSALSTRING
+
+0x02146B54  (1 name)
+    VISIBLESTRING
+
+0x02146B64  (1 name)
+    GENERALIZEDTIME
+
+0x02146B74  (1 name)
+    T61STRING
+
+0x02146B84  (1 name)
+    SET
+
+0x02146BAC  (1 name)
+    UTF8STRING
+
+0x02146BC4  (1 name)
+    ENUMERATED
+
+0x02146BD0  (1 name)
+    EXTERNAL
+
+0x02146BE4  (1 name)
+    OBJECT
+
+0x02146C38  (1 name)
+    BMPSTRING
+
+0x02159D6C  (1 name)
+    WL
+
+0x02159D78  (1 name)
+    VER
+
+0x03064000  (1 name)
+    BNRAND
+
+0x03065000  (1 name)
+    BN_BLINDING_create_param
+
+0x03066000  (1 name)
+    BN_BLINDING_invert_ex
+
+0x03067000  (1 name)
+    BN_BLINDING_new
+
+0x03068000  (1 name)
+    BN_BLINDING_update
+
+0x03069000  (1 name)
+    BN_bn2dec
+
+0x0306A000  (1 name)
+    BN_CTX_get
+
+0x0306B000  (1 name)
+    BN_CTX_start
+
+0x0306C000  (1 name)
+    BN_exp
+
+0x0306D000  (1 name)
+    BN_mod_exp2_mont
+
+0x0306E000  (1 name)
+    BN_mod_exp_simple
+
+0x0306F000  (1 name)
+    BN_mod_lshift_quick
+
+0x03070000  (1 name)
+    BN_mod_sqrt
+
+0x03071000  (1 name)
+    BN_mpi2bn
+
+0x03072000  (1 name)
+    BN_new
+
+0x03073000  (1 name)
+    BN_rand_range
+
+0x03074000  (1 name)
+    BN_bn2hex
+
+0x03075000  (1 name)
+    BN_mod_exp_mont_consttime
+
+0x03076000  (1 name)
+    BN_GF2m_mod_sqrt
+
+0x03077000  (1 name)
+    BN_mod_inverse
+
+0x03078000  (1 name)
+    bn_expand2
+
+0x03079000  (1 name)
+    BN_mod_mul_reciprocal
+
+0x0307A000  (1 name)
+    BN_rand
+
+0x0307B000  (1 name)
+    BN_div_recp
+
+0x0307C000  (1 name)
+    BN_mod_exp_mont
+
+0x0307D000  (1 name)
+    BN_mod_exp_mont_word
+
+0x0307E000  (1 name)
+    BN_mod_exp_recp
+
+0x03080000  (1 name)
+    BN_BLINDING_convert_ex
+
+0x03081000  (1 name)
+    BN_CTX_new
+
+0x03082000  (1 name)
+    BN_div
+
+0x03083000  (1 name)
+    BN_EXPAND_INTERNAL
+
+0x03084000  (1 name)
+    BN_GF2m_mod
+
+0x03085000  (1 name)
+    BN_GF2m_mod_exp
+
+0x03086000  (1 name)
+    BN_GF2m_mod_mul
+
+0x03087000  (1 name)
+    BN_GF2m_mod_solve_quad
+
+0x03088000  (1 name)
+    BN_GF2m_mod_solve_quad_arr
+
+0x03089000  (1 name)
+    BN_GF2m_mod_sqr
+

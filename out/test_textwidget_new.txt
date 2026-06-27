@@ -1,0 +1,7 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <function> <table> <function> <function> false "[string "mrxguibase"]:2001: attempt to index local 'self' (a nil value)" true <table> <function> <function> "new({}) => ok=%s, err=%s" "true" <function> "" <table> <function>
+<<<END>>>

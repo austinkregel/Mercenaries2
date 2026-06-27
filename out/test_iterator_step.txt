@@ -1,0 +1,9 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[ok]	"Iterator type: userdata
+Iterator value: userdata: F0000001
+Metatable type: nil
+Metatable is not a table"
+<<<END>>>

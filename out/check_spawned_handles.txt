@@ -1,0 +1,16 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Checking handle: Human #2 (userdata: 40003C0A)
+  Type: userdata
+  IsValid: true
+  IsAlive: true
+  Position: 3014.86, -7.11, -655.46
+Checking handle: Human #3 (userdata: 40003C0E)
+  Type: userdata
+  IsValid: true
+  IsAlive: true
+  Position: 3014.28, -5.98, -653.38"
+<<<END>>>

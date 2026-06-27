@@ -1,0 +1,9 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Spawned actor: userdata: 40015C71
+_SpawnActorComplete => ok=true, err=nil
+Found in FastCollectHumans list: false"
+<<<END>>>

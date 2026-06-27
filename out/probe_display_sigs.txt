@@ -1,0 +1,7 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <function> <table> <function> <function> <tt=2 val=40000014> <tt=2 val=4000563D> <function> nil nil <tt=2 val=40000014> "Hello World" "ShowText(lp, 'Hello World')" <function> nil <function> <function>
+<<<END>>>

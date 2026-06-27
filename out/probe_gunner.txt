@@ -1,0 +1,22 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[ok]	"Driver seat handle: userdata: 0010E18F
+Other seat handle (StowSeatGuid): userdata: 3D297A8D
+Occupant of other seat: userdata: 4000563D
+Occupant is alive: true
+Occupant health: 120
+Occupant is player controlled: userdata: 40000014
+  OtherSeat.IsHijackBlocker = false
+  OtherSeat.IsDriver = true
+  OtherSeat.IsCargo = false
+  OtherSeat.IsGunner = false
+  OtherSeat.IsRiderVulnerable = true
+  OtherSeat.IsStowable = true
+  OtherSeat.IsRiderBashable = false
+  OtherSeat.IsHijackable = true
+  OtherSeat.StowSeatGuid = userdata: 3D297A8D
+  OtherSeat.IsRiderInvisible = false"
+<<<END>>>

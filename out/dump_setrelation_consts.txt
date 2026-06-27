@@ -1,0 +1,13 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[ok]	"Faction 'Oil': Template=OC, PdaId=OC, Guid=userdata: 800056C5
+Faction 'Vza': Template=VZ, PdaId=VZ, Guid=userdata: 80004382
+Faction 'Pmc': Template=PMC, PdaId=PMC, Guid=userdata: 800056C4
+Faction 'Pir': Template=Pirate, PdaId=PR, Guid=userdata: 800056C2
+Faction 'Gur': Template=Guerilla, PdaId=GR, Guid=userdata: 80002CF1
+Faction 'All': Template=Allied, PdaId=AN, Guid=userdata: 80002CF0
+Faction 'Civ': Template=Civ, PdaId=nil, Guid=userdata: 800056BE
+Faction 'Chi': Template=China, PdaId=CH, Guid=userdata: 800056C6"
+<<<END>>>

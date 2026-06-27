@@ -1,0 +1,47 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "=== Constants in _DesignatorCallback ===
+  LuaQ
+  mrxsoldierdelivery
+  Net
+  IsClient
+  oDesignator
+  GetTarget
+  FindPointFromCamera
+  MrxSupport
+  GetSpawnHeight
+  uOwner
+  math
+  randi
+  nAltitude
+  Spawn
+  uDeliveryVehicle
+  Object
+  GetPosition
+  Math
+  GetXZHeading
+  SetYaw
+  Event
+  Create
+  ObjectHibernation
+  awake
+  _WaitCallback
+  SetupDamageEvent
+  self
+  nDesX
+  nDesY
+  nDesZ
+  nTargetX
+  nTargetY
+  nTargetZ
+  uHeli
+  nHeliX
+  nHeliY
+  nHeliZ
+  nOrientation"
+<<<END>>>
+
+[disconnected]

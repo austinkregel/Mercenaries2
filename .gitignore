@@ -1,0 +1,62 @@
+# --- Visual Studio ---
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# --- C++ build artifacts ---
+[Dd]ebug/
+[Rr]elease/
+*.obj
+*.pdb
+*.iobj
+*.ipdb
+*.pch
+*.ilk
+*.exp
+*.lib
+*.dll
+*.exe
+*.tlog/
+*_MD.tlog/
+*.Build.CppClean.log
+*.recipe
+*.lastbuildstate
+*.unsuccessfulbuild
+*.idb
+*.tlb
+
+# --- C# / .NET ---
+bin/
+obj/
+*.dll.config
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.python-version
+
+# --- Logs / runtime ---
+Merc2Debug.log
+*.log
+
+# --- OS junk ---
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# --- Editor scratch ---
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# --- AI session state (per-machine, not part of the project) ---
+.claude/
+
+# --- Local scratch under tools/ (Python __pycache__ etc.) ---
+tools/__pycache__/

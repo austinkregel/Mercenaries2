@@ -1,0 +1,36 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Module mrxcarpetbomb sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxsupportdelivery sDeliveryVehicle = UH1 Transport (PMC) (Driver)
+Module mrxgunship sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxrocketartillery sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxsupportpickup sDeliveryVehicle = UH1 Transport (PMC) (Driver)
+Module mrxartillery sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxsoldierdelivery sDeliveryVehicle = UH1 Transport (GR) (Full)
+Module mrxsupport sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxtankbuster sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxharmstrike sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxcruisemissile sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxlaserguidedbomb sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxbombingrun sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxclusterbomb sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxsurgicalstrike sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxfuelairbomb sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxboatdelivery sDeliveryVehicle = UH1 Transport (PMC) (Driver)
+Module mrxsupporttransit sDeliveryVehicle = UH1 Transport (Transit)
+Module mrxmunitionspickup sDeliveryVehicle = UH1 Transport (PMC) (Driver)
+Module mrxbunkerbuster sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxcratedelivery sDeliveryVehicle = UH1 Transport (PMC) (Driver)
+Module mrxsupportcopterdelivery sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxoilcon002delivery sDeliveryVehicle = UH1 Transport (PMC) (Driver)
+Module mrxstrategicmissile sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxsatelliteguidedbomb sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxmoab sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxdaisycutter sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxcombatairpatrol sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxsatclusterbomb sDeliveryVehicle = Support Vehicle (Mig27)
+Module mrxsmartbomb sDeliveryVehicle = Support Vehicle (Mig27)"
+<<<END>>>

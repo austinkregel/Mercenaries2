@@ -1,0 +1,10 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "radar.oParent uId = userdata: 000000C3 (type=nil, text=nil)
+radar.oRadarObject uId = userdata: 000000C7 (type=minimap, text=nil)
+ammocountersnew.oChild uId = userdata: 00000054 (type=image, text=nil)
+ammocountersnew.ParentWidget uId = userdata: 00000053 (type=nil, text=nil)"
+<<<END>>>

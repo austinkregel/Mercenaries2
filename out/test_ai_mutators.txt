@@ -1,0 +1,18 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[runtime] <tt=2 val=40000014> "allied=userdata: 80002CF0, vza=userdata: 80004382, oil=userdata: 800056C5, player_char=userdata: 4000563D
+GetRelation(allied, vza) => ok=true, val=-100
+GetRelation(vza, allied) => ok=true, val=-100
+GetRelation(lc, allied) => ok=true, val=-1
+GetRelation(lc, vza) => ok=true, val=-50
+GetRelation('Allied', 'Vza') => ok=true, val=nil
+GetRelation('All', 'Vza') => ok=true, val=nil
+GetFactionGuid('Allied') => ok=true, val=nil
+GetFactionGuid('All') => ok=true, val=nil
+GetFactionGuid('AN') => ok=true, val=nil
+GetFactionGuid('Allied') => ok=true, val=nil
+GetFactionGuid('OC') => ok=true, val=nil
+GetFactionGuid('Oil') => ok=true, val=nil"
+<<<END>>>

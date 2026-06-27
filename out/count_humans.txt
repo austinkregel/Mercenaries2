@@ -1,0 +1,12 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=400254B8> "Total humans now: 3
+  [1] Handle=userdata: 4002AAE1, Name=unnamed, LocalName=[0xb7f587a3], HP=120, Pos=(2734.1, -747.2)
+  [2] Handle=userdata: 400290AE, Name=unnamed, LocalName=[0x7a4c1e28], HP=125, Pos=(3014.8, -655.4)
+  [3] Handle=userdata: 400290B2, Name=unnamed, LocalName=[0x7a4c1e28], HP=125, Pos=(3014.2, -653.3)"
+<<<END>>>
+
+[disconnected]

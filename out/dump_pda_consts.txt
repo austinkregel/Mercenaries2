@@ -1,0 +1,12 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[runtime] <tt=2 val=40000014> "AddHelpEntry() => ok=false, err=[string "mrxguiinterface"]:3558: attempt to index local 'tArgs' (a nil value)
+AddHelpEntry('test') => ok=false, err=[string "mrxguiinterface"]:3558: attempt to index local 'tArgs' (a nil value)
+AddHelpEntry('test', 'test2') => ok=true, err=nil
+AddLogEntry() => ok=false, err=[string "mrxguiinterface"]:3535: attempt to index local 'tArgs' (a nil value)
+AddLogEntry('test') => ok=false, err=[string "mrxguiinterface"]:3535: attempt to index local 'tArgs' (a nil value)
+AddDossierEntry() => ok=false, err=[string "mrxguiinterface"]:3581: attempt to index local 'tArgs' (a nil value)
+AddDossierEntry('test') => ok=false, err=[string "mrxguiinterface"]:3581: attempt to index local 'tArgs' (a nil value)"
+<<<END>>>

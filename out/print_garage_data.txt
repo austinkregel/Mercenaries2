@@ -1,0 +1,1208 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Key: 1 = wifpmcgarage (string)
+Key: _OnFionaCarEnter = function: 1F45B980 (function)
+Key: _CompleteOnVehicleEnter = function: 1F45B8A0 (function)
+Key: _ActivateEva = function: 1F45BB20 (function)
+Key: _AddVehicleToSupport = function: 1F45B820 (function)
+Key: MrxSupportData = mrxsmartbomb - table: 1F5318A0
+tSupportData - table: 1F3A7BA0
+mrxbunkerbuster - table: 1F531DA0
+bIgnoreRequirements - false
+MrxPmc - table: 1F531620
+mrxharmstrike - table: 1F5319E0
+mrxclusterbomb - table: 1F531C20
+GetFreebie - function: 1F3A7A20
+NETEVENT_REMOVEFREEBIE - 1
+_knUnlockStatusViewed - 2
+SynchNetRecruits - function: 1F3A7A80
+SetItemViewed - function: 1F3A7880
+Init - function: 1F3A7A40
+mrxdaisycutter - table: 1F531B00
+mrxmoab - table: 1F531980
+MrxGui - table: 1F9C8CE0
+AddFreebie - function: 1F3A7980
+GetFreebieStringIndex - function: 1F3A7940
+SetRequirement - function: 1F3A7AA0
+NetEventCallback - function: 1F3A7900
+mrxcombatairpatrol - table: 1F531BE0
+mrxsatclusterbomb - table: 1F531C80
+Add - function: 1F3A78E0
+IsItemUnlocked - function: 1F3A78C0
+mrxsatelliteguidedbomb - table: 1F531900
+IsItemNew - function: 1F3A78A0
+SaveSingleton - function: 1F3A7860
+mrxboatdelivery - table: 1F531EE0
+_knUnlockStatusNew - 1
+AddSupportData - function: 1F3A7820
+GetPlayerVisibleName - function: 1F3A77E0
+_AddFreebie - function: 1F3A79C0
+tRequirementsObtained - table: 1F36B820
+GetFreebieName - function: 1F3A77C0
+mrxsupporttransit - table: 1F57B060
+RemoveFreebie - function: 1F3A7960
+NETEVENT_ADDFREEBIE - 0
+_kMaxStock - 99
+LoadSingleton - function: 1F3A7840
+SetHeliPilotRecruited - function: 1F3A7B00
+mrxtankbuster - table: 1F531740
+mrxsupport - table: 1F532140
+mrxcratedelivery - table: 1F531BA0
+GetLocalRemote - function: 1F3A79E0
+SetJetPilotRecruited - function: 1F3A7AC0
+MrxAchievements - table: 1F593940
+mrxartillery - table: 1F531F80
+SetMechanicRecruited - function: 1F3A7AE0
+mrxsupportcopterdelivery - table: 1F5316C0
+mrxfuelairbomb - table: 1F531AA0
+MrxUtil - table: 1F5301C0
+WifMissionFlow - table: 1F57A4C0
+MrxOilCon002Delivery - table: 1F531700
+_RemoveFreebie - function: 1F3A79A0
+mrxsurgicalstrike - table: 1F5317A0
+MrxMunitionsPickup - table: 1F594860
+mrxsupportpickup - table: 1F5317E0
+MrxSoldierDelivery - table: 1F531860
+_THIS - table: 1F531660
+mrxbombingrun - table: 1F531E80
+mrxrocketartillery - table: 1F531940
+MrxFactionManager - table: 1F531600
+GetSupportStringIndex - function: 1F3A7920
+tRequirementStrings - table: 1F3A2E60
+MrxShop - table: 1F57B2A0
+SetIgnoreRequirements - function: 1F3A7A60
+MrxSupportPickup - table: 1F5317E0
+IsSupportEquippable - function: 1F3A7B20
+mrxgunship - table: 1F531A40
+mrxlaserguidedbomb - table: 1F531E00
+GetMaxQuantity - function: 1F3A7800
+mrxstrategicmissile - table: 1F531820
+mrxcarpetbomb - table: 1F531CC0
+mrxcruisemissile - table: 1F531B60
+AddAllFreebies - function: 1F3A7A00
+tFreebieData - table: 1F3A7B80
+1 - mrxsupportdata
+ (table)
+  [1] = mrxsupportdata
+  [tFreebieData] = Extraction_OC - table: 1F391F80
+SoldierDelivery_GR - table: 1F391BE0
+AL_LaserGuidedBomb - table: 1F3910C0
+OilCon002_Delivery - table: 1F392640
+OC_ClusterBomb - table: 1F392CA0
+MunitionsPickup - table: 1F392480
+Extraction_PR - table: 1F391E80
+ChiCon001_RocketArtillery - table: 1F393180
+SoldierDelivery_CH - table: 1F391CC0
+ChiCon001_Airstrike - table: 1F393320
+GurCon001_Artillery - table: 1F392B40
+OilCon001_Crate - table: 1F392960
+VzaCon001_Airstrike - table: 1F392D80
+SoldierDelivery_PR - table: 1F391A20
+ChiCon002_Bombs - table: 1F392A40
+CopterDelivery_CH - table: 1F391860
+LightMG - table: 1F3916A0
+OC - table: 1F3914E0
+Extraction_PMC - table: 1F392380
+AL_DaisyCutter - table: 1F391140
+OilCon002_OC - table: 1F391400
+Extraction_GR - table: 1F392080
+PmcCon004_Nuke - table: 1F3928E0
+Extraction_CH - table: 1F392180
+Practice Satellite - table: 1F392F40
+ChiCon001_Copter - table: 1F3933C0
+Ramp Delivery - table: 1F392780
+Practice Laser - table: 1F393020
+GurCon002_Artillery - table: 1F392AC0
+CopterDelivery_AL - table: 1F391940
+AL_CruiseMissile - table: 1F3912A0
+CH_CruiseMissile - table: 1F391220
+AL_Gunship - table: 1F390FE0
+GurCon001_Munitions - table: 1F392560
+VzaCon01_SatBomb - table: 1F392E60
+Bunker Buster - table: 1F392860
+Gunship - table: 1F3930A0
+OilCon002_EXT - table: 1F391320
+Extraction_AL - table: 1F392280
+SoldierDelivery_AL - table: 1F391DA0
+OC_BombingRun - table: 1F392BC0
+SoldierDelivery_OC - table: 1F391B00
+CopterDelivery_OC - table: 1F391780
+
+  [AddAllFreebies] = function: 1F3A7A00
+  [mrxcruisemissile] = DropBomb - function: 1F3CB9A0
+DesignationCallback - function: 1F3CB9C0
+__index - table: 1F531B60
+MrxSupport - table: 1F532140
+MrxSupportDesignatorBeacon - table: 1F532120
+Create - function: 1F3CB9E0
+BombExplodes - function: 1F3CB960
+_THIS - table: 1F531B60
+2 - table: 1F531B40
+1 - mrxcruisemissile
+
+  [mrxcarpetbomb] = DropBomb - function: 1F3CBF00
+DesignationCallback - function: 1F3CBF20
+NextExplosionCallback - function: 1F3CBEE0
+__index - table: 1F531CC0
+MrxSupport - table: 1F532140
+MrxSupportDesignatorSatellite - table: 1F531D20
+Create - function: 1F3CC0C0
+explode - function: 1F3CBEC0
+_THIS - table: 1F531CC0
+2 - table: 1F531CA0
+1 - mrxcarpetbomb
+
+  ... total 77 entries
+Key: _tStorage = 3 - table: 1F45BE00
+2 - table: 1F45BE20
+1 - table: 1F45BE40
+ (table)
+  [1] = (empty)
+
+  [2] = (empty)
+
+  [3] = (empty)
+
+Key: CheckFionaCar = function: 1F45B9E0 (function)
+Key: _OnVehicleEnter = function: 1F45B8E0 (function)
+Key: MrxVoSequence = knPriorityContract - 2
+Start - function: 1F579F00
+Reset - function: 1F51BA20
+MrxSoundCategories - table: 1F796300
+MrxUtil - table: 1F5301C0
+Stop - function: 1F51BA60
+knPriorityBriefing - 1
+_CallSequenceCallbacks - function: 1F51BA00
+_nBaseDelay - 0.25
+knPriorityFreeplay - 4
+Cleanup - function: 1F51BA40
+_uDelayTimer - userdata: 0007021A
+IsSequenceInProgress - function: 1F51B9E0
+_ExecuteStage - function: 1F51BA80
+knPriorityCinematic - 0
+_THIS - table: 1F530180
+1 - mrxvosequence
+ (table)
+  [1] = mrxvosequence
+  [_THIS] = knPriorityContract - 2
+Start - function: 1F579F00
+Reset - function: 1F51BA20
+MrxSoundCategories - table: 1F796300
+MrxUtil - table: 1F5301C0
+Stop - function: 1F51BA60
+knPriorityBriefing - 1
+_CallSequenceCallbacks - function: 1F51BA00
+_nBaseDelay - 0.25
+knPriorityFreeplay - 4
+Cleanup - function: 1F51BA40
+_uDelayTimer - userdata: 0007021A
+IsSequenceInProgress - function: 1F51B9E0
+_ExecuteStage - function: 1F51BA80
+knPriorityCinematic - 0
+_THIS - table: 1F530180
+1 - mrxvosequence
+
+  [knPriorityCinematic] = 0
+  [_ExecuteStage] = function: 1F51BA80
+  [IsSequenceInProgress] = function: 1F51B9E0
+  ... total 17 entries
+Key: WifPmcInterior = MrxStarterManager - table: 1F532480
+RefreshUiDisplay - function: 1F458540
+_OnInteriorLoad - function: 1F458740
+_SetStarterContextAction - function: 1F4583E0
+_tBuildingStates - table: 1F4A80A0
+_DoParkingLot - function: 1F43FDA0
+_tInteriorPortalData - table: 1F458E20
+_LoadInterior - function: 1F49A2A0
+_tStarters - table: 1F458FA0
+NETEVENT_UPDATESTOCKPILE - 0
+BriefingComplete - function: 1F458300
+NetSafeUnloadAssets - function: 1F43FFA0
+MrxPmc - table: 1F531620
+WifVzBoundary - table: 1F57AEC0
+_SetStarterMarker - function: 1F4583C0
+NETEVENT_CHANGEOUTFIT - 1
+_bTeleport - true
+NetSafeGetSpecialCaseGreeting - function: 1F458720
+_tStockpileQty - table: 1F458A20
+_SendStockpileToClient - function: 1F43FF20
+_evClientJoinedPMC - userdata: 00100092
+_ClientExit - function: 1F43FF40
+NetSafeBriefingModuleLoaded - function: 1F458000
+_UpdateStockpile - function: 1F4580A0
+Unlock - function: 1F4A8060
+IsGarageAlive - function: 1F49F5E0
+GetMissionDesc - function: 1F458580
+MrxPlayState - table: 1F532440
+_tOutfits - table: 1F458C60
+_SetupPreOilCon020Nag - function: 1F43FEE0
+_StopPreOilCon020Nag - function: 1F43FEC0
+IsInside - function: 1F4582E0
+MrxLayerManager - table: 1F5965E0
+SaveSingleton - function: 1F458060
+RemovePmcPdaBlip - function: 1F4585C0
+_bDisplayed - true
+_AddPortalAtHardpoint - function: 1F4584C0
+_GetPreeningVo - function: 1F43FE20
+_SetAllMarkers - function: 1F43FE80
+SetEntranceLock - function: 1F49B160
+_PreOilCon020Nag - function: 1F43FEA0
+NETEVENT_NOTIFYOUTFITCHANGE - 2
+_tLayers - table: 1EA1C000
+_BriefingModuleLoaded - function: 1F4586E0
+_DeinitOutfitChange - function: 1F4581C0
+MrxMultiPageMenu - table: 1F5947E0
+IsEntering - function: 1F4582C0
+WifPmcGarage - table: 1F57A3E0
+_AddPortal - function: 1F458500
+WifFreePlay - table: 1F593880
+_EnablePortals - function: 1F458480
+_SetStarterChatter - function: 1F4583A0
+_StarterChatter - function: 1F458380
+AddPmcPdaBlip - function: 1F458560
+_bInside - false
+_ClientUpdateStockpile - function: 1F43FF00
+GetWagerStatus - function: 1F49B140
+MrxUtil - table: 1F5301C0
+_OnPmcHibernation - function: 1F43FDE0
+MrxState - table: 1F594800
+MrxPlayer - table: 1F532400
+IsContractPending - function: 1F4582A0
+_tPortalData - table: 1F458EE0
+_OnPlayerJoined - function: 1F458020
+_SetFakePDA - function: 1F458680
+_LoadStarters - function: 1F458700
+_EnableInteriorPortals - function: 1F458460
+_tBuildingEvents - table: 1F4A8680
+_EnableStarters - function: 1F458400
+_GetStarterLayers - function: 1F458760
+_ReinitOutfitChange - function: 1F4581A0
+_bSticky - true
+SetUnloadCallback - function: 1F458240
+MrxGuiBootstrap - table: 1F532340
+IsUnlocked - function: 1F4A8000
+NetSafeAddPmcPdaBlip - function: 1F4585A0
+_CompleteChangeOutfit - function: 1F458120
+_tStockpile - table: 1F458A00
+SetAvailableCostumes - function: 1F4580C0
+NetSafeRemovePmcPdaBlip - function: 1F4585E0
+MrxVoSequence - table: 1F530180
+ChangeOutfit - function: 1F458100
+MrxGui - table: 1F9C8CE0
+_nAvailableCostumes - 1
+GetAvailableCostumes - function: 1F4580E0
+_OnExit - function: 1F458640
+NetEventCallback - function: 1F43FF80
+_bUnlocked - true
+_Kickoff - function: 1F4586A0
+_uOutfitDisc - userdata: 40005769
+_WardrobeOpen - false
+_GetStarterChatterVo - function: 1F43FE60
+_ExitEnd - function: 1F458620
+_SetupStarters - function: 1F458420
+_OnPmcDeath - function: 1F43FE00
+MrxCheatBootstrap - table: 1F530200
+_tBuildings - table: 1F49EA00
+_evClientQuitPMC - userdata: 00100094
+_AssociateStartersToBriefingModule - function: 1F4586C0
+_tPortals - table: 1F458F00
+NetSafeLoadAssets1 - function: 1F43FFE0
+MrxSound - table: 1F795D80
+LoadSingleton - function: 1F458040
+MrxHq - table: 1F532300
+_CloseCostumeDialog - function: 1F458160
+_SetAllStarterChatter - function: 1F43FE40
+SetWagerStatus - function: 1F49CBE0
+WifBriefingData - table: 1F57A3A0
+SetLoadCallback - function: 1F458260
+_SetCustomOutfitMarker - function: 1F458200
+_StartStarter - function: 1F458320
+_SelectOutfit - function: 1F458180
+WifMissionData - table: 1F57A460
+_RemovePortalAtHardpoint - function: 1F4584A0
+_tAssetPreload - table: 1F458E00
+GetStarterBriefingLocs - function: 1F458280
+NetSafeLoadAssets - function: 1F43FFC0
+_DisableStarter - function: 1F458340
+_SetPmcTransitLocation - function: 1F43FDC0
+WifMissionFlow - table: 1F57A4C0
+MrxGuiInterface - table: 1F532380
+_EnableStarter - function: 1F458360
+SetTeleportCallback - function: 1F458220
+_ChangeOutfit - function: 1F458140
+_OnInteriorPortalEnter - function: 1F458440
+_SetStockpileCategoryQty - function: 1F458080
+_ExitComplete - function: 1F458600
+_RemovePortal - function: 1F4584E0
+_THIS - table: 1F5324E0
+Exit - function: 1F458660
+MrxFactionManager - table: 1F531600
+Enter - function: 1F49B080
+_ClientOnEnter - function: 1F43FF60
+_InitOutfitChange - function: 1F4581E0
+MrxTransit - table: 1F57B000
+_ChatterComplete - function: 1F36B3A0
+_CompleteOnEnter - function: 1F49A2C0
+_OnEnter - function: 1F49AA80
+MrxRewardData - table: 1F57C820
+_SetPortalMarker - function: 1F458520
+1 - wifpmcinterior
+ (table)
+  [1] = wifpmcinterior
+  [_SetPortalMarker] = function: 1F458520
+  [MrxRewardData] = WifMissionData - table: 1F57A460
+NetEventCallback - function: 1F4A8D60
+WifEquipmentData - table: 1F769EC0
+WifMissionFlow - table: 1F57A4C0
+LoadSingleton - function: 1F4A8CE0
+_tRewards - table: 1F4AEE20
+EVENT_GRANTREWARDKEY - 0
+_FormatLevelMilestoneString - function: 1F4A8BC0
+gtAllSupport - table: 1F3940C0
+DispenseRewards - function: 1F4A8DC0
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+Init - function: 1F4A8E20
+EnableCashRewardHalving - function: 1F4A8D20
+GetWagerData - function: 1F4A8CC0
+GrantRewardKey - function: 1F4A8D40
+gtAllEquipment - table: 1F1C57C0
+_GetPrintableEquipmentString - function: 1F4A8C20
+DispenseAllRewards - function: 1F4A8DA0
+_tFuelReward - table: 1F4AEE60
+_FormatMilestoneSuffix - function: 1F4A8BE0
+GenerateRewardString - function: 1F4A8CA0
+GetRewards - function: 1F4A8E00
+SaveSingleton - function: 1F4A8D00
+GetRewardKeyFromHash - function: 1F4A8D80
+_THIS - table: 1F57C820
+_tCashReward - table: 1F4AEE80
+_tMoodReward - table: 1F4AEE40
+MrxFactionManager - table: 1F531600
+_bPrintRewardType - true
+_GetPrintableSupportString - function: 1F4A8C40
+GetAllPotentialShopItems - function: 1F4A8DE0
+MrxUnlockFanfare - table: 1F57C860
+AddCustomReward - function: 1F4A8C80
+MrxSupportData - table: 1F531660
+_GenerateStringFromRewardData - function: 1F4A8C60
+_FormatMilestoneString - function: 1F4A8C00
+1 - mrxrewarddata
+
+  [_OnEnter] = function: 1F49AA80
+  [_CompleteOnEnter] = function: 1F49A2C0
+  ... total 141 entries
+Key: _OnAsleep = function: 1F45BA00 (function)
+Key: _bPmcAwake = true (boolean)
+Key: LoadSingleton = function: 1F45B7A0 (function)
+Key: _uFionaCarWinchEvent = userdata: 0009012D (userdata)
+Key: _tGarageDoorEvents = (empty)
+ (table)
+Key: _uFionaCar = userdata: 4000578B (userdata)
+Key: _RemoveVehicleFromSupport = function: 1F45B800 (function)
+Key: _MoveCharacter = function: 1F45B880 (function)
+Key: _DeactivateGarageDoors = function: 1F45BAA0 (function)
+Key: _uFionaCarEvent = userdata: 0002012B (userdata)
+Key: _SpawnVehicleFromData = function: 1F45B780 (function)
+Key: _SpawnVehicleCleanup = function: 1F45BB60 (function)
+Key: _OnRegionEnter = function: 1F45B940 (function)
+Key: _THIS = _OnAddComplete - function: 1F45B860
+_CompleteCallback - function: 1F45BBC0
+OpenVehicleInventory - function: 1F482FA0
+_IsVehicleAvailable - function: 1F45BBE0
+Unlock - function: 1F45BD00
+_uFionaCarEnterEvent - userdata: 0004012C
+MrxGuiGarage - table: 1F57A420
+_SpawnVehicle - function: 1F45BBA0
+_OnGarageDoorEnter - function: 1F45BA80
+_DeactivateEva - function: 1F45BB00
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+_OnGarageDoorExit - function: 1F45BA60
+_OnWakeUp - function: 1F45BA40
+MrxState - table: 1F594800
+_OnFionaCarDeath - function: 1F45B960
+ResetSingleton - function: 1F45BC60
+_ActivateGarageDoors - function: 1F45BAE0
+_OnVehicleDeath - function: 1F45B900
+_OnVehicleExit - function: 1F45B8C0
+SetAdvancedMode - function: 1F45BCE0
+_tRegionEvents - table: 1F45BDE0
+_OnRegionExit - function: 1F45B920
+_AddVehicle - function: 1F482010
+_tLastVehicles - table: 1F45BD20
+SaveSingleton - function: 1F45B7E0
+_FindVehicleInSupport - function: 1F45B840
+_RemoveVehicle - function: 1F481FE0
+_GetVehicleData - function: 1F45B7C0
+_THIS - table: 1F57A3E0
+_OnRegionEnter - function: 1F45B940
+_SpawnVehicleCleanup - function: 1F45BB60
+_SpawnVehicleFromData - function: 1F45B780
+_uFionaCarEvent - userdata: 0002012B
+_DeactivateGarageDoors - function: 1F45BAA0
+_MoveCharacter - function: 1F45B880
+_RemoveVehicleFromSupport - function: 1F45B800
+_uFionaCar - userdata: 4000578B
+_tGarageDoorEvents - table: 1F45BD40
+_uFionaCarWinchEvent - userdata: 0009012D
+LoadSingleton - function: 1F45B7A0
+_bPmcAwake - true
+_OnAsleep - function: 1F45BA00
+WifPmcInterior - table: 1F5324E0
+MrxVoSequence - table: 1F530180
+_OnVehicleEnter - function: 1F45B8E0
+CheckFionaCar - function: 1F45B9E0
+_tStorage - table: 1F45BE80
+MrxSupportData - table: 1F531660
+_AddVehicleToSupport - function: 1F45B820
+_ActivateEva - function: 1F45BB20
+_CompleteOnVehicleEnter - function: 1F45B8A0
+_OnFionaCarEnter - function: 1F45B980
+1 - wifpmcgarage
+ (table)
+  [1] = wifpmcgarage
+  [_OnFionaCarEnter] = function: 1F45B980
+  [_CompleteOnVehicleEnter] = function: 1F45B8A0
+  [_ActivateEva] = function: 1F45BB20
+  [_AddVehicleToSupport] = function: 1F45B820
+  ... total 54 entries
+Key: _GetVehicleData = function: 1F45B7C0 (function)
+Key: _RemoveVehicle = function: 1F481FE0 (function)
+Key: _FindVehicleInSupport = function: 1F45B840 (function)
+Key: SaveSingleton = function: 1F45B7E0 (function)
+Key: _tLastVehicles = (empty)
+ (table)
+Key: _AddVehicle = function: 1F482010 (function)
+Key: _OnRegionExit = function: 1F45B920 (function)
+Key: _tRegionEvents = 3 - table: 1F45BD60
+2 - table: 1F45BD80
+1 - table: 1F45BDA0
+ (table)
+  [1] = (empty)
+
+  [2] = (empty)
+
+  [3] = (empty)
+
+Key: SetAdvancedMode = function: 1F45BCE0 (function)
+Key: _OnVehicleExit = function: 1F45B8C0 (function)
+Key: _OnVehicleDeath = function: 1F45B900 (function)
+Key: _ActivateGarageDoors = function: 1F45BAE0 (function)
+Key: ResetSingleton = function: 1F45BC60 (function)
+Key: _OnFionaCarDeath = function: 1F45B960 (function)
+Key: MrxState = Reset - function: 1F4E74E0
+_AttemptGlobalExit - function: 1F4E7440
+_nQuickFadeInTime - 0.5
+MrxSoundCategories - table: 1F796300
+_nLongFadeOutTime - 1.1000000238419
+SafeEnter - function: 1F4E7340
+_StateComplete - function: 1F4E74C0
+STATE_WAITFORSTREAMING - 2
+_States - table: 1F4E7800
+SafeExit - function: 1F4E7320
+STATE_CINEMATIC - 1
+MrxUtil - table: 1F5301C0
+_bStateComplete - true
+_bUseQuickFade - false
+MrxGuiInterface - table: 1F532380
+_nLongFadeInTime - 1.1000000238419
+_CompleteEnter - function: 1F4E7480
+_GetTotalRefCount - function: 1F4E7420
+SetQuickFade - function: 1F4E73E0
+EnableFade - function: 1F4E73C0
+GetStateName - function: 1F4E7380
+_nQuickFadeOutTime - 0.10000000149012
+SafeEnterCallback - function: 1F4E7360
+MrxMunitionsPickup - table: 1F594860
+_GlobalExit - function: 1F4E7540
+_tGlobalExitCallbacks - table: 1E028CA0
+STATE_WAITFORTETHER - 3
+_THIS - table: 1F594800
+Exit - function: 1F4E7460
+AddGlobalExitCallback - function: 1F4E7300
+STATE_NONE - 0
+IsLocked - function: 1F4E7400
+Enter - function: 1F4E74A0
+PrintStatus - function: 1F4E73A0
+MrxVoSequence - table: 1F530180
+_tGlobalEnterCallbacks - table: 1F213000
+MrxGui - table: 1F9C8CE0
+_GlobalEnter - function: 1F4E7560
+_bEnableFade - true
+STATE_WAITFORGAME - 4
+1 - mrxstate
+ (table)
+  [1] = mrxstate
+  [STATE_WAITFORGAME] = 4
+  [_bEnableFade] = true
+  [_GlobalEnter] = function: 1F4E7560
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  ... total 41 entries
+Key: _OnWakeUp = function: 1F45BA40 (function)
+Key: _OnGarageDoorExit = function: 1F45BA60 (function)
+Key: MrxUtil = SpawnActor - function: 1F3CECC0
+GetFaction - function: 1F3CEB00
+GetPrimaryObjectiveRgb - function: 1F3CEA80
+MrxCheatBootstrap - table: 1F530200
+TeleportHeroesToLocations - function: 1F3CEE20
+tObjPdaMarker - table: 1F3CE9C0
+GetRandomTableElement - function: 1F3CEB20
+SpawnObject - function: 1F3CECE0
+_SpawnActorComplete - function: 1F3CECA0
+MarkerGetIndexByName_World - function: 1F3CE940
+WifPmcInterior - table: 1F5324E0
+_CompleteTeleportHeroes - function: 1F3CEDC0
+Init - function: 1F3CE880
+MarkerGetNameByIndex_Radar - function: 1F3CE8E0
+MrxHqManager - table: 1F5322C0
+MarkerGetIndexByName_Radar - function: 1F3CE8C0
+tInlineIcons - table: 1F3CEA40
+ExitAllPlayerModes - function: 1F3CE8A0
+MarkerGetNameByIndex_Pda - function: 1F3CE920
+GetNumberOfDigits - function: 1F3CE840
+IsInside - function: 1F3CE820
+ClearVehiclesNearPoint - function: 1F3CE800
+ExplodeMissionName - function: 1F3CEC00
+GetDistanceBetween - function: 1F3CEBC0
+GetDistanceToObject - function: 1F3CEBE0
+DisplayHealthBar - function: 1F3CEAC0
+tObjWorldMarkers - table: 1F3CE9E0
+GetSecondaryObjectiveRgb - function: 1F3CEA60
+MrxGuiShellBootstrap - table: 1F9C8260
+FindSpawnPointOutOfView - function: 1F3CED00
+_TeleportHero - function: 1F3CED80
+CleanupLoadingCallback - function: 1F3CEC60
+StopHealthBar - function: 1F3CEAA0
+GetInlineIconIndexByName - function: 1F3CEA20
+PlaceSecondaryPlayer - function: 1F3CEE40
+SetDefault - function: 1F3CEF00
+tObjRadarMaker - table: 1F3CE9A0
+LoadingCallback - function: 1F3CEC40
+GetCharacterIdentity - function: 1F3CEB60
+TeleportHeroesToHardpoints - function: 1F3CEE00
+_tNumbers - table: 1F390E80
+ShieldFace - function: 1F3CE860
+GetTableAsString - function: 1F3CEEA0
+_TeleportStreamingComplete - function: 1F3CEDA0
+ProcessCallbackTable - function: 1F3CED20
+TeleportSecondaryHeroToPrimaryHero - function: 1F3CEE60
+EnableHeroWeapons - function: 1F3CEB40
+MergeIndexedTables - function: 1F3CEEC0
+MrxState - table: 1F594800
+_SearchMarkerTable - function: 1F3CE980
+CallWithOptionalArgs - function: 1F3CEF20
+_TeleportComplete - function: 1F3CED60
+_TeleportHeroes - function: 1F3CEDE0
+_THIS - table: 1F5301C0
+EnterBestAvailableSeat - function: 1F3CED40
+GetPrimaryCharacterName - function: 1F3CEC20
+GetDistantLocations - function: 1F3CEB80
+MarkerGetIndexByName_Pda - function: 1F3CE900
+GetInlineIconNameByIndex - function: 1F3CEA00
+SetupLoadingCallback - function: 1F3CEC80
+CopyTable - function: 1F3CEEE0
+SetBoundaryEffect - function: 1F3CEAE0
+FormatMoney - function: 1F3CEE80
+MrxGui - table: 1F9C8CE0
+MarkerGetNameByIndex_World - function: 1F3CE960
+TestDistanceToAllPlayers - function: 1F3CEBA0
+1 - mrxutil
+ (table)
+  [1] = mrxutil
+  [TestDistanceToAllPlayers] = function: 1F3CEBA0
+  [MarkerGetNameByIndex_World] = function: 1F3CE960
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  [FormatMoney] = function: 1F3CEE80
+  ... total 67 entries
+Key: MrxPmc = Init - function: 1F3A6B20
+_tEvents - table: 1F3A6BE0
+MrxTutorialManager - table: 1F595720
+_tClientSupportSpendings - table: 1F3A6B40
+_nLatestCount - 0
+DisplayResources - function: 1F3A67A0
+SetSupportQty - function: 1F3A69C0
+GetSupportQty - function: 1F3A69A0
+_tEquipment - table: 1EEE7B80
+AddFuelCapacity - function: 1F3A6A20
+DisplayCash - function: 1F3A6800
+MrxUtil - table: 1F5301C0
+WifMissionFlow - table: 1F57A4C0
+CheckSupportThreshold - function: 1F3A6920
+SetStockpileChangeCallback - function: 1F3A6900
+RemoveEquipment - function: 1F3A6840
+AddFreebieQty - function: 1F3A68C0
+SetFreebieQty - function: 1F3A68A0
+DeleteStockpileChangeCallback - function: 1F3A68E0
+IsSupportNew - function: 1F3A6940
+HasEquipment - function: 1F3A6820
+_tStockpileThresholdInfo - table: 1F3A6B60
+GetCashQty - function: 1F3A6AC0
+_tFreebies - table: 1F36C7C0
+AddFuelQty - function: 1F3A6AA0
+AddCashQty - function: 1F3A6AE0
+RemoveFuelTank - function: 1F3A6720
+AddFuelTank - function: 1F3A6780
+SetSupportNew - function: 1F3A6980
+SetFuelCapacity - function: 1F3A6A60
+_THIS - table: 1F531620
+GetClientReimburseAmount - function: 1F3A66E0
+NetClientReimburse - function: 1F3A66C0
+GetFuelCapacity - function: 1F3A6A00
+MapPluralReasonToSingular - function: 1F3A67E0
+_CreateHiScoreEvent - function: 1F3A66A0
+_HiScoreUpdated - function: 1F3A6680
+AddSupportQty - function: 1F3A69E0
+SaveSingleton - function: 1F3A6660
+LoadSingleton - function: 1F3A6640
+MrxStatsManager - table: 1F57AFA0
+GetFreebieQty - function: 1F3A6880
+WifEquipmentData - table: 1F769EC0
+_tStockpile - table: 1F36C7A0
+_oDummyWidget - table: 1F390FC0
+_OnFuelTankDeath - function: 1F3A6700
+MrxUnlockFanfare - table: 1F57C860
+AddEquipment - function: 1F3A6860
+SetAllSupportViewed - function: 1F3A6960
+MrxGui - table: 1F9C8CE0
+MrxSupportData - table: 1F531660
+GetFuelQty - function: 1F3A6A80
+_nFuelCapacity - 300
+1 - mrxpmc
+ (table)
+  [1] = mrxpmc
+  [_nFuelCapacity] = 300
+  [GetFuelQty] = function: 1F3A6A80
+  [MrxSupportData] = mrxsmartbomb - table: 1F5318A0
+tSupportData - table: 1F3A7BA0
+mrxbunkerbuster - table: 1F531DA0
+bIgnoreRequirements - false
+MrxPmc - table: 1F531620
+mrxharmstrike - table: 1F5319E0
+mrxclusterbomb - table: 1F531C20
+GetFreebie - function: 1F3A7A20
+NETEVENT_REMOVEFREEBIE - 1
+_knUnlockStatusViewed - 2
+SynchNetRecruits - function: 1F3A7A80
+SetItemViewed - function: 1F3A7880
+Init - function: 1F3A7A40
+mrxdaisycutter - table: 1F531B00
+mrxmoab - table: 1F531980
+MrxGui - table: 1F9C8CE0
+AddFreebie - function: 1F3A7980
+GetFreebieStringIndex - function: 1F3A7940
+SetRequirement - function: 1F3A7AA0
+NetEventCallback - function: 1F3A7900
+mrxcombatairpatrol - table: 1F531BE0
+mrxsatclusterbomb - table: 1F531C80
+Add - function: 1F3A78E0
+IsItemUnlocked - function: 1F3A78C0
+mrxsatelliteguidedbomb - table: 1F531900
+IsItemNew - function: 1F3A78A0
+SaveSingleton - function: 1F3A7860
+mrxboatdelivery - table: 1F531EE0
+_knUnlockStatusNew - 1
+AddSupportData - function: 1F3A7820
+GetPlayerVisibleName - function: 1F3A77E0
+_AddFreebie - function: 1F3A79C0
+tRequirementsObtained - table: 1F36B820
+GetFreebieName - function: 1F3A77C0
+mrxsupporttransit - table: 1F57B060
+RemoveFreebie - function: 1F3A7960
+NETEVENT_ADDFREEBIE - 0
+_kMaxStock - 99
+LoadSingleton - function: 1F3A7840
+SetHeliPilotRecruited - function: 1F3A7B00
+mrxtankbuster - table: 1F531740
+mrxsupport - table: 1F532140
+mrxcratedelivery - table: 1F531BA0
+GetLocalRemote - function: 1F3A79E0
+SetJetPilotRecruited - function: 1F3A7AC0
+MrxAchievements - table: 1F593940
+mrxartillery - table: 1F531F80
+SetMechanicRecruited - function: 1F3A7AE0
+mrxsupportcopterdelivery - table: 1F5316C0
+mrxfuelairbomb - table: 1F531AA0
+MrxUtil - table: 1F5301C0
+WifMissionFlow - table: 1F57A4C0
+MrxOilCon002Delivery - table: 1F531700
+_RemoveFreebie - function: 1F3A79A0
+mrxsurgicalstrike - table: 1F5317A0
+MrxMunitionsPickup - table: 1F594860
+mrxsupportpickup - table: 1F5317E0
+MrxSoldierDelivery - table: 1F531860
+_THIS - table: 1F531660
+mrxbombingrun - table: 1F531E80
+mrxrocketartillery - table: 1F531940
+MrxFactionManager - table: 1F531600
+GetSupportStringIndex - function: 1F3A7920
+tRequirementStrings - table: 1F3A2E60
+MrxShop - table: 1F57B2A0
+SetIgnoreRequirements - function: 1F3A7A60
+MrxSupportPickup - table: 1F5317E0
+IsSupportEquippable - function: 1F3A7B20
+mrxgunship - table: 1F531A40
+mrxlaserguidedbomb - table: 1F531E00
+GetMaxQuantity - function: 1F3A7800
+mrxstrategicmissile - table: 1F531820
+mrxcarpetbomb - table: 1F531CC0
+mrxcruisemissile - table: 1F531B60
+AddAllFreebies - function: 1F3A7A00
+tFreebieData - table: 1F3A7B80
+1 - mrxsupportdata
+
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  ... total 54 entries
+Key: _DeactivateEva = function: 1F45BB00 (function)
+Key: _OnGarageDoorEnter = function: 1F45BA80 (function)
+Key: _SpawnVehicle = function: 1F45BBA0 (function)
+Key: MrxGuiGarage = SetCallback - function: 1F45D0A0
+_EndCallback - function: 1F45CFA0
+MrxGuiDialogBox - table: 1F9C9DA0
+_RemoveFlashFile - function: 1F45CF60
+_CommenceWidget - function: 1F45D040
+MrxGuiBase - table: 1FAAEEC0
+MrxGuiManager - table: 1F793BE0
+AddItem - function: 1F45D0E0
+Commence - function: 1F45D060
+Create - function: 1F45D400
+MrxPmc - table: 1F531620
+_tGarageList - table: 1F3A2FC0
+Init - function: 1F45D020
+_RunGarage - function: 1F45CFE0
+_SetupGarageFlash - function: 1F45CFC0
+_AddItemWidget - function: 1F45D0C0
+_SetCallbackWidget - function: 1F45D080
+sFlashFile - garage
+_CloseCallback - function: 1F45CF80
+MrxGui - table: 1F9C8CE0
+MrxSupportData - table: 1F531660
+_FlashLoadedCallback - function: 1F45D000
+_THIS - table: 1F57A420
+1 - mrxguigarage
+ (table)
+  [1] = mrxguigarage
+  [_THIS] = SetCallback - function: 1F45D0A0
+_EndCallback - function: 1F45CFA0
+MrxGuiDialogBox - table: 1F9C9DA0
+_RemoveFlashFile - function: 1F45CF60
+_CommenceWidget - function: 1F45D040
+MrxGuiBase - table: 1FAAEEC0
+MrxGuiManager - table: 1F793BE0
+AddItem - function: 1F45D0E0
+Commence - function: 1F45D060
+Create - function: 1F45D400
+MrxPmc - table: 1F531620
+_tGarageList - table: 1F3A2FC0
+Init - function: 1F45D020
+_RunGarage - function: 1F45CFE0
+_SetupGarageFlash - function: 1F45CFC0
+_AddItemWidget - function: 1F45D0C0
+_SetCallbackWidget - function: 1F45D080
+sFlashFile - garage
+_CloseCallback - function: 1F45CF80
+MrxGui - table: 1F9C8CE0
+MrxSupportData - table: 1F531660
+_FlashLoadedCallback - function: 1F45D000
+_THIS - table: 1F57A420
+1 - mrxguigarage
+
+  [_FlashLoadedCallback] = function: 1F45D000
+  [MrxSupportData] = mrxsmartbomb - table: 1F5318A0
+tSupportData - table: 1F3A7BA0
+mrxbunkerbuster - table: 1F531DA0
+bIgnoreRequirements - false
+MrxPmc - table: 1F531620
+mrxharmstrike - table: 1F5319E0
+mrxclusterbomb - table: 1F531C20
+GetFreebie - function: 1F3A7A20
+NETEVENT_REMOVEFREEBIE - 1
+_knUnlockStatusViewed - 2
+SynchNetRecruits - function: 1F3A7A80
+SetItemViewed - function: 1F3A7880
+Init - function: 1F3A7A40
+mrxdaisycutter - table: 1F531B00
+mrxmoab - table: 1F531980
+MrxGui - table: 1F9C8CE0
+AddFreebie - function: 1F3A7980
+GetFreebieStringIndex - function: 1F3A7940
+SetRequirement - function: 1F3A7AA0
+NetEventCallback - function: 1F3A7900
+mrxcombatairpatrol - table: 1F531BE0
+mrxsatclusterbomb - table: 1F531C80
+Add - function: 1F3A78E0
+IsItemUnlocked - function: 1F3A78C0
+mrxsatelliteguidedbomb - table: 1F531900
+IsItemNew - function: 1F3A78A0
+SaveSingleton - function: 1F3A7860
+mrxboatdelivery - table: 1F531EE0
+_knUnlockStatusNew - 1
+AddSupportData - function: 1F3A7820
+GetPlayerVisibleName - function: 1F3A77E0
+_AddFreebie - function: 1F3A79C0
+tRequirementsObtained - table: 1F36B820
+GetFreebieName - function: 1F3A77C0
+mrxsupporttransit - table: 1F57B060
+RemoveFreebie - function: 1F3A7960
+NETEVENT_ADDFREEBIE - 0
+_kMaxStock - 99
+LoadSingleton - function: 1F3A7840
+SetHeliPilotRecruited - function: 1F3A7B00
+mrxtankbuster - table: 1F531740
+mrxsupport - table: 1F532140
+mrxcratedelivery - table: 1F531BA0
+GetLocalRemote - function: 1F3A79E0
+SetJetPilotRecruited - function: 1F3A7AC0
+MrxAchievements - table: 1F593940
+mrxartillery - table: 1F531F80
+SetMechanicRecruited - function: 1F3A7AE0
+mrxsupportcopterdelivery - table: 1F5316C0
+mrxfuelairbomb - table: 1F531AA0
+MrxUtil - table: 1F5301C0
+WifMissionFlow - table: 1F57A4C0
+MrxOilCon002Delivery - table: 1F531700
+_RemoveFreebie - function: 1F3A79A0
+mrxsurgicalstrike - table: 1F5317A0
+MrxMunitionsPickup - table: 1F594860
+mrxsupportpickup - table: 1F5317E0
+MrxSoldierDelivery - table: 1F531860
+_THIS - table: 1F531660
+mrxbombingrun - table: 1F531E80
+mrxrocketartillery - table: 1F531940
+MrxFactionManager - table: 1F531600
+GetSupportStringIndex - function: 1F3A7920
+tRequirementStrings - table: 1F3A2E60
+MrxShop - table: 1F57B2A0
+SetIgnoreRequirements - function: 1F3A7A60
+MrxSupportPickup - table: 1F5317E0
+IsSupportEquippable - function: 1F3A7B20
+mrxgunship - table: 1F531A40
+mrxlaserguidedbomb - table: 1F531E00
+GetMaxQuantity - function: 1F3A7800
+mrxstrategicmissile - table: 1F531820
+mrxcarpetbomb - table: 1F531CC0
+mrxcruisemissile - table: 1F531B60
+AddAllFreebies - function: 1F3A7A00
+tFreebieData - table: 1F3A7B80
+1 - mrxsupportdata
+
+  [MrxGui] = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  ... total 24 entries
+Key: _uFionaCarEnterEvent = userdata: 0004012C (userdata)
+Key: Unlock = function: 1F45BD00 (function)
+Key: _IsVehicleAvailable = function: 1F45BBE0 (function)
+Key: OpenVehicleInventory = function: 1F482FA0 (function)
+Key: _CompleteCallback = function: 1F45BBC0 (function)
+Key: _OnAddComplete = function: 1F45B860 (function)"
+<<<END>>>

@@ -1,0 +1,12 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "FastCollectHumans returned type: table
+Number of humans collected: 2
+  [1] Handle=userdata: 4000563D, Valid=true, Alive=true, Name=unnamed, LocalizedName=[0xb7f587a3], DistSq=0.0
+  [2] Handle=userdata: 40006085, Valid=true, Alive=true, Name=unnamed, LocalizedName=[0x0f50cdf5], DistSq=56535.7"
+<<<END>>>
+
+[disconnected]

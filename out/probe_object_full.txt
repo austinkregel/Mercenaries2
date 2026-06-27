@@ -1,0 +1,53 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "char = userdata: 4000563D (userdata)
+OK[1] IsValid(c) => boolean=true
+OK[1] IsAlive(c) => boolean=true
+OK[1] IsAwake(c) => boolean=true
+OK[1] IsTemplate(c) => boolean=false
+OK[1] IsVisible(c) => boolean=true
+OK[1] IsDisguised(c) => boolean=false
+OK[1] IsHibernated(c) => boolean=false
+OK[1] IsAttached(c) => boolean=false
+OK[1] IsPlayerControlled(c) => userdata=userdata: 40000014
+OK[1] IsWinched(c) => nil=nil
+OK[1] IsWinching(c) => nil=nil
+OK[1] HasWinch(c) => boolean=false
+OK[2] InVehicle(c) => nil=nil, nil=nil
+OK[1] InSeat(c) => nil=nil
+OK[1] GetName(c) => nil=nil
+OK[1] GetLocalizedName(c) => string=[0xb7f587a3]
+OK[1] GetModelName(c) => userdata=userdata: A3C1FABC
+OK[1] GetHealth(c) => number=120
+OK[1] GetMaxHealth(c) => number=120
+OK[1] GetNodeHealth(c) => nil=nil
+OK[1] GetInvincible(c) => boolean=true
+OK[3] GetPosition(c) => number=3789.2937011719, number=450.06643676758, number=-3881.2150878906
+OK[1] GetYaw(c) => number=3.9972615242004
+OK[1] GetMass(c) => number=100
+OK[1] GetHeightAboveTerrain(c) => number=111.58364868164
+OK[1] GetHibernationDistance(c) => number=120
+OK[1] GetVelocity(c) => number=0
+OK[1] GetVelocitySquared(c) => number=0
+OK[3] GetVelocityVector(c) => number=0, number=0, number=0
+OK[1] GetPhysicsType(c) => string=human
+OK[1] GetHardpointPosition(c) => nil=nil
+OK[1] GetHardpointPitch(c) => nil=nil
+OK[1] GetHardpointYaw(c) => nil=nil
+OK[1] GetParent(c) => userdata=userdata: 80000003
+OK[1] GetAttachedObjects(c) => table=4 - userdata: 40005760
+3 - userdata: 4000575F
+2 - userdata: 4000575D
+1 - userdata: 4000575B
+
+OK[1] GetWinchState(c) => nil=nil
+OK[0] GetCashValue(c) => (void)
+OK[1] HasLabel(c, 'player') => boolean=false
+OK[1] InsideBoundary(c) => nil=nil
+OK[1] OutsideBoundary(c) => nil=nil"
+<<<END>>>
+
+[disconnected]

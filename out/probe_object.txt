@@ -1,0 +1,25 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[ok]	"char = userdata: 4000563D (userdata)
+OK	Object.IsValid(char)	true
+OK	Object.IsAlive(char)	true
+OK	Object.GetName(char)	nil
+OK	Object.GetLocalizedName(char)	[0xb7f587a3]
+OK	Object.GetHealth(char)	120
+OK	Object.GetMaxHealth(char)	120
+OK	Object.GetPosition(char)	3789.7534179688
+OK	Object.GetYaw(char)	-53.878063201904
+OK	Object.GetMass(char)	100
+OK	Object.GetModelName(char)	userdata: A3C1FABC
+OK	Object.GetVelocity(char)	0
+OK	Object.GetVelocityVector(char)	0
+OK	Object.GetHeightAboveTerrain(char)	111.53353881836
+OK	Object.IsAwake(char)	true
+OK	Object.InVehicle(char)	nil
+OK	Object.IsPlayerControlled(char)	userdata: 40000014
+OK	Object.GetInvincible(char)	true
+OK	Object.GetParent(char)	userdata: 80000003"
+<<<END>>>

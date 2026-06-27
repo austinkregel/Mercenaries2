@@ -1,0 +1,49 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "=== Cheat ===
+  DisplayOptions	function
+=== Disguise ===
+  Init	function
+=== FactionZone ===
+  Init	function
+=== _SYS ===
+  _DYNAMIC_IMPORT	function
+  _DYNAMIC_REMOVE	function
+  _GETFENV	function
+  _IMPORT	function
+  _INHERIT	function
+  _MODULEINDEX	function
+=== Movie ===
+  Pause	function
+  Resume	function
+  Start	function
+  Stop	function
+=== Debug ===
+  Assert	function
+  GetCallstack	function
+  LogError	function
+  LogInfo	function
+  LogWarning	function
+  Printf	function
+=== Math ===
+  CrossProduct	function
+  GetXZHeading	function
+  Length	function
+  Normalize	function
+  PolarToRect	function
+  abs	function
+  ceil	function
+  deg	function
+  exp	function
+  floor	function
+  max	function
+  min	function
+  pow	function
+  rad	function
+  randf	function
+  randi	function
+  round	function"
+<<<END>>>

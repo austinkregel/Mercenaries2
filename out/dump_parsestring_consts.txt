@@ -1,0 +1,9 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[ok]	"mrxguipda._ParseString(hash) => ok=true, val=0
+mrxguisupportshop._ParseString(hash) => ok=true, val=nil
+mrxguipda._ParseString('[0x5cb97d23]') => ok=true, val=0
+mrxguipda._ParseString('Plain Text') => ok=true, val=nil"
+<<<END>>>

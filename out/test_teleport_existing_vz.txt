@@ -1,0 +1,13 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Player Position: 2963.56, -25.00, -759.35
+Found VZ soldier (userdata: 400168C3) at: 2948.68, -28.71, -714.93
+Teleporting VZ soldier to: 2965.56, -25.00, -757.35
+SetPosition status: ok=true, err=true
+Immediate position after teleport: 2965.56, -25.00, -757.35"
+<<<END>>>
+
+[disconnected]

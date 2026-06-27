@@ -1,0 +1,77 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[runtime] <tt=2 val=0001C455> "Vehicle: userdata: 40003BD4
+Seat handle: userdata: 0010E18F
+RiderFromSeat(0) => ok=true, rider=userdata: 4000563D
+  Rider Name: nil
+  Rider IsPlayer: userdata: 40000014
+GetSeatParams(0) => ok=true, type=table
+  SeatParams(0).IsHijackBlocker = false
+  SeatParams(0).IsDriver = true
+  SeatParams(0).IsCargo = false
+  SeatParams(0).IsGunner = false
+  SeatParams(0).IsRiderVulnerable = true
+  SeatParams(0).IsStowable = true
+  SeatParams(0).IsRiderBashable = false
+  SeatParams(0).IsHijackable = true
+  SeatParams(0).StowSeatGuid = userdata: 3D297A8D
+  SeatParams(0).IsRiderInvisible = false
+RiderFromSeat(1) => ok=true, rider=userdata: 4000563D
+  Rider Name: nil
+  Rider IsPlayer: userdata: 40000014
+GetSeatParams(1) => ok=true, type=table
+  SeatParams(1).IsHijackBlocker = false
+  SeatParams(1).IsDriver = true
+  SeatParams(1).IsCargo = false
+  SeatParams(1).IsGunner = false
+  SeatParams(1).IsRiderVulnerable = true
+  SeatParams(1).IsStowable = true
+  SeatParams(1).IsRiderBashable = false
+  SeatParams(1).IsHijackable = true
+  SeatParams(1).StowSeatGuid = userdata: 3D297A8D
+  SeatParams(1).IsRiderInvisible = false
+RiderFromSeat(2) => ok=true, rider=userdata: 4000563D
+  Rider Name: nil
+  Rider IsPlayer: userdata: 40000014
+GetSeatParams(2) => ok=true, type=table
+  SeatParams(2).IsHijackBlocker = false
+  SeatParams(2).IsDriver = true
+  SeatParams(2).IsCargo = false
+  SeatParams(2).IsGunner = false
+  SeatParams(2).IsRiderVulnerable = true
+  SeatParams(2).IsStowable = true
+  SeatParams(2).IsRiderBashable = false
+  SeatParams(2).IsHijackable = true
+  SeatParams(2).StowSeatGuid = userdata: 3D297A8D
+  SeatParams(2).IsRiderInvisible = false
+RiderFromSeat(3) => ok=true, rider=userdata: 4000563D
+  Rider Name: nil
+  Rider IsPlayer: userdata: 40000014
+GetSeatParams(3) => ok=true, type=table
+  SeatParams(3).IsHijackBlocker = false
+  SeatParams(3).IsDriver = true
+  SeatParams(3).IsCargo = false
+  SeatParams(3).IsGunner = false
+  SeatParams(3).IsRiderVulnerable = true
+  SeatParams(3).IsStowable = true
+  SeatParams(3).IsRiderBashable = false
+  SeatParams(3).IsHijackable = true
+  SeatParams(3).StowSeatGuid = userdata: 3D297A8D
+  SeatParams(3).IsRiderInvisible = false
+RiderFromSeat(4) => ok=true, rider=userdata: 4000563D
+  Rider Name: nil
+  Rider IsPlayer: userdata: 40000014
+GetSeatParams(4) => ok=true, type=table
+  SeatParams(4).IsHijackBlocker = false
+  SeatParams(4).IsDriver = true
+  SeatParams(4).IsCargo = false
+  SeatParams(4).IsGunner = false
+  SeatParams(4).IsRiderVulnerable = true
+  SeatParams(4).IsStowable = true
+  SeatParams(4).IsRiderBashable = false
+  SeatParams(4).IsHijackable = true
+  SeatParams(4).StowSeatGuid = userdata: 3D297A8D
+  SeatParams(4).IsRiderInvisible = false"
+<<<END>>>

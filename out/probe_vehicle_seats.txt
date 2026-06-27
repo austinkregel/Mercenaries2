@@ -1,0 +1,22 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[ok]	"Local Player: userdata: 40000014
+Local Character: userdata: 4000563D
+Vehicle: userdata: 40003BD4
+Seat: userdata: 0010E18F
+OK[1] Vehicle.GetDriver(veh) => nil=nil
+OK[1] Vehicle.GetRiders(veh) => table={}
+OK[1] Vehicle.GetFromRider(lc) => userdata=userdata: 0010E18F
+OK[1] Vehicle.GetFromSeat(veh, seat) => nil=nil
+OK[1] Vehicle.GetRiderFromSeat(veh, seat) => userdata=userdata: 4000563D
+OK[1] Vehicle.GetSeatFromRider(veh, lc) => nil=nil
+OK[1] Vehicle.GetSeatFromRider(lc) => userdata=userdata: 40003BD4
+OK[1] Vehicle.GetSeatParams(veh, seat) => table={IsHijackBlocker=false, IsDriver=true, IsCargo=false, IsGunner=false, IsRiderVulnerable=true, IsStowable=true, IsRiderBashable=false, IsHijackable=true, StowSeatGuid=userdata: 3D297A8D, IsRiderInvisible=false}
+OK[1] Vehicle.OpenDoor(veh, seat) => nil=nil
+OK[1] Vehicle.CloseDoor(veh, seat) => nil=nil
+OK[1] Vehicle.GetSeatByType(veh, 'driver') => nil=nil
+OK[1] Vehicle.GetSeatByType(veh, 0) => nil=nil"
+<<<END>>>

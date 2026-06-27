@@ -1,0 +1,145 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Total humans collected: 22
+[1] Local Player (userdata: 4000563D)
+[2] NPC (userdata: 40003C0A):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: userdata: 40003C09, Seat: userdata: 0010E1BE
+    Vehicle Name: unnamed, LocalizedName: [0xed59b812]
+  Position: 3014.85, -7.10, -655.35
+  Yaw: 152.38758850098
+[3] NPC (userdata: 40003C0E):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: userdata: 40003C0D, Seat: userdata: 0010E1BE
+    Vehicle Name: unnamed, LocalizedName: [0x8898c655]
+  Position: 3014.29, -5.97, -653.27
+  Yaw: 152.38758850098
+[4] NPC (userdata: 40003C1B):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: userdata: 40003C1A, Seat: userdata: 0010E1BF
+    Vehicle Name: unnamed, LocalizedName: [0xed59b812]
+  Position: 3035.80, -6.39, -658.81
+  Yaw: -129.46385192871
+[5] NPC (userdata: 40003C1F):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: userdata: 40003C1E, Seat: userdata: 0010E1BF
+    Vehicle Name: unnamed, LocalizedName: [0x8898c655]
+  Position: 3037.61, -5.17, -657.72
+  Yaw: -129.46385192871
+[6] NPC (userdata: 40003BC2):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: userdata: 40003BC1, Seat: userdata: 0010E188
+    Vehicle Name: unnamed, LocalizedName: [0xed59b812]
+  Position: 3038.99, -26.30, -909.60
+  Yaw: 178.56292724609
+[7] NPC (userdata: 40003BC6):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: userdata: 40003BC5, Seat: userdata: 0010E188
+    Vehicle Name: unnamed, LocalizedName: [0x8898c655]
+  Position: 3039.38, -25.27, -907.42
+  Yaw: 178.56292724609
+[8] NPC (userdata: 40004C82):
+  Health: 100/100
+  Faction GUID: userdata: 80002CF1 (Gur)
+  In Vehicle: userdata: 40004C81, Seat: userdata: 000D069B
+    Vehicle Name: unnamed, LocalizedName: [0xbee6ce78]
+  Position: 2993.87, -10.45, -440.06
+  Yaw: -14.761792182922
+[9] NPC (userdata: 40004C87):
+  Health: 100/100
+  Faction GUID: userdata: 80002CF1 (Gur)
+  In Vehicle: userdata: 40004C86, Seat: userdata: 000D069B
+    Vehicle Name: unnamed, LocalizedName: [0xed59b812]
+  Position: 2994.68, -10.44, -439.85
+  Yaw: -14.761792182922
+[10] NPC (userdata: 40004C61):
+  Health: 100/100
+  Faction GUID: userdata: 80002CF1 (Gur)
+  In Vehicle: userdata: 40004C60, Seat: userdata: 000D0693
+    Vehicle Name: unnamed, LocalizedName: [0xbee6ce78]
+  Position: 2985.65, -10.41, -442.24
+  Yaw: 46.588554382324
+[11] NPC (userdata: 40004C66):
+  Health: 100/100
+  Faction GUID: userdata: 80002CF1 (Gur)
+  In Vehicle: userdata: 40004C65, Seat: userdata: 000D0693
+    Vehicle Name: unnamed, LocalizedName: [0x8898c655]
+  Position: 2985.07, -9.59, -443.35
+  Yaw: 46.588554382324
+[12] NPC (userdata: 40004C6B):
+  Health: 100/100
+  Faction GUID: userdata: 80002CF1 (Gur)
+  In Vehicle: userdata: 40004C6A, Seat: userdata: 000D0693
+    Vehicle Name: unnamed, LocalizedName: [0xed59b812]
+  Position: 2986.22, -10.40, -442.85
+  Yaw: 46.588554382324
+[13] NPC (userdata: 0010E1C8):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: nil, Seat: nil
+  Position: 3037.74, -7.03, -633.66
+  Yaw: -143.2706451416
+[14] NPC (userdata: 0010E1C9):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: nil, Seat: nil
+  Position: 3037.67, -6.87, -645.71
+  Yaw: 119.18177032471
+[15] NPC (userdata: 0010E1CC):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: nil, Seat: nil
+  Position: 3017.24, -7.07, -654.32
+  Yaw: -54.973571777344
+[16] NPC (userdata: 0010E1CD):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: nil, Seat: nil
+  Position: 3033.29, -6.71, -653.99
+  Yaw: -124.84879302979
+[17] NPC (userdata: 0010E1CE):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: nil, Seat: nil
+  Position: 3037.41, -4.46, -672.27
+  Yaw: -69.035919189453
+[18] NPC (userdata: 0010E1C0):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: nil, Seat: nil
+  Position: 3020.98, -7.35, -662.52
+  Yaw: -59.151348114014
+[19] NPC (userdata: 0010E1C5):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: nil, Seat: nil
+  Position: 3036.44, -5.44, -667.01
+  Yaw: -89.384750366211
+[20] NPC (userdata: 0010E1C7):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: nil, Seat: nil
+  Position: 3050.34, 0.90, -668.60
+  Yaw: -47.811210632324
+[21] NPC (userdata: 0010E1C6):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: nil, Seat: nil
+  Position: 3047.67, -7.01, -631.92
+  Yaw: -132.41654968262
+[22] NPC (userdata: 40003D66):
+  Health: 125/125
+  Faction GUID: userdata: 800056C5 (Oil)
+  In Vehicle: nil, Seat: nil
+  Position: 3019.88, -7.38, -662.44
+  Yaw: -57.261264801025"
+<<<END>>>

@@ -1,0 +1,12 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Pg.Spawn type: function
+  Dump failed (C function): unable to dump given function
+Pg.SpawnFromCamera type: function
+  Dump failed (C function): unable to dump given function
+Pg.SpawnRelative type: function
+  Dump failed (C function): unable to dump given function"
+<<<END>>>

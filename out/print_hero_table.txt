@@ -1,0 +1,414 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "=== Keys in mp.Hero ===
+  1 = hero
+  Activate = function: 1F4E6340
+  CleanupSurvival = function: 1F4E6140
+  OnDeactivate = function: 1F4E62C0
+  CreateDropEvent = function: 1F4E6160
+  EnterPassengerCallback = function: 1F4E5FA0
+  MrxGui = LoadGuiFile - function: 1F9CB760
+SetAllWidgetsSleep - function: 1F9CB6C0
+_sFadeWidgetName - Fullscreen Fade Effect Widget
+CloseDialogBox - function: 1F9C9120
+AddWidget - function: 1F9CCA60
+LoadGUIFile - function: 1F9CB760
+AddWidgetWithChildren - function: 1F9CCA40
+RemoveWidgetWithChildren - function: 1F9CCA00
+_bCurrentlyFadedIn - false
+SetGlobalFadeVisible - function: 1FAAEE60
+RemoveObjectiveInformation - function: 1F9C8400
+SendEvent - function: 1F9CCC80
+UnloadGuiFile - function: 1F9CB600
+_tFadeCallbacks - table: 1F213040
+_oFadeFlash - table: 1F790E40
+RemoveAllWidgetsInLayout - function: 1F9CB740
+GetReticleSize - function: 1F9C82A0
+ReAddAllWidgets - function: 1F9CB720
+GlobalFadeFromBlack - function: 1F9C83C0
+CleanupFadeFlash - function: 1F9CD020
+_FadeUpdate - function: 1FAAECA0
+MrxGuiNumericBox - table: 1F9CC8C0
+Widget - table: 1F9CC900
+DuplicateLayout - function: 1F9CB660
+FadeToColor - function: 1F9CD040
+RemoveAllWidgets - function: 1F9CB740
+FlashWidget - table: 1F9CBE00
+SetFadeEnabled - function: 1F9CCA80
+Joystick - table: 1F9CCE80
+AddMessage - function: 1F9C8340
+_HideWhenDone - function: 1F9CA000
+_bE3HudModeOn - false
+_FinishFadeToBlack - function: 1F9C8380
+MovieWidget - table: 1F9CBB00
+SetE3HudMode - function: 1F9C8300
+SetObjectiveInformationCallback - function: 1F9C8420
+FindShellWidget - function: 1F9C82C0
+PushAllTextToFront - function: 1F9CB6A0
+PushWidgetToBack - function: 1F9CC9C0
+ImageWidget - table: 1F9CC020
+DeleteTransientWidgets - function: 1F9CC920
+Init - function: 1F9C8280
+_nGlobalFadeCountNew - 0
+_PushAllTextToFront - function: 1F9CB6A0
+HideAllWidgets - function: 1F9CB700
+ShowAllWidgets - function: 1F9CB6E0
+GlobalFadeToBlack - function: 1F9C83E0
+ClearMessages - function: 1F9C8320
+DisplayNumericBox - function: 1F9C9FE0
+TextWidget - table: 1F9CC2A0
+_FinishFadeFromBlack - function: 1F9C8360
+AssignLayoutToPlayer - function: 1F9CB680
+RemoveWidget - function: 1F9CCA20
+MrxGuiDialogBox - table: 1F9C9DA0
+MrxGuiBase - table: 1FAAEEC0
+_oGlobalScreenFadeWidget - false
+IsE3HudModeActive - function: 1F9C82E0
+_nGlobalFadeCount - 0
+DisplayDialogBox - function: 1F9C9140
+MinimapWidget - table: 1F9CBA00
+SpriteWidget - table: 1F9CBC00
+MrxUtil_Shell - table: 1FAAEBE0
+GetWidgetByNameAndOwner - function: 1F9CC960
+RemoveEverySingleWidget - function: 1F9CCB60
+_fObjectiveInformationCallback - function: 1F519F40
+_THIS - table: 1F9C8CE0
+_InitFadeFlash - function: 1F9CB5E0
+PushWidgetToFront - function: 1F9CC9E0
+FadeFromColor - function: 1F9CCEA0
+_CompleteFadeFlashLoad - function: 1FAAEE40
+GetWidgetByName - function: 1F9CC9A0
+GetObjectiveDescription - function: 1F9C8440
+_tObjectiveInformationCallbackData - table: 1E9E0940
+_bCurrentlyFadingIn - false
+HandleLoadingHint - function: 1F9C83A0
+GetAllWidgetsByName - function: 1F9CC980
+1 - mrxgui
+
+  OnDeath = function: 1F4E62E0
+  SetupSurvivalSystem = function: 1F4E6100
+  MrxVoSequence = knPriorityContract - 2
+Start - function: 1F579F00
+Reset - function: 1F51BA20
+MrxSoundCategories - table: 1F796300
+MrxUtil - table: 1F5301C0
+Stop - function: 1F51BA60
+knPriorityBriefing - 1
+_CallSequenceCallbacks - function: 1F51BA00
+_nBaseDelay - 0.25
+knPriorityFreeplay - 4
+Cleanup - function: 1F51BA40
+_uDelayTimer - userdata: 0007021A
+IsSequenceInProgress - function: 1F51B9E0
+_ExecuteStage - function: 1F51BA80
+knPriorityCinematic - 0
+_THIS - table: 1F530180
+1 - mrxvosequence
+
+  OnActivate = function: 1F4E6360
+  SurvivalCooldownEnded = function: 1F4E6060
+  WifEquipmentData = IsItemUnlocked - function: 1F769660
+IsItemNew - function: 1F769640
+SetItemViewed - function: 1F769620
+knTypeCostume - 2
+knTypeGrapplingHook - 3
+GetPlayerVisibleName - function: 1F769600
+LoadSingleton - function: 1F7695C0
+_tEquipment - table: 1F769EA0
+_knUnlockStatusViewed - 2
+GetEquipmentData - function: 1F7696C0
+UnlockItem - function: 1F7696A0
+_UnlockItem - function: 1F769680
+SaveSingleton - function: 1F7695E0
+knTypeFuelTank - 1
+_knUnlockStatusNew - 1
+_THIS - table: 1F769EC0
+1 - wifequipmentdata
+
+  MrxSound = BeginActionHijack - function: 1F794BC0
+BeginSurvivalMode - function: 1F794B80
+_bExitingGame - false
+MrxSoundCategories - table: 1F796300
+EnterScopeView - function: 1F794A80
+MrxMusic - table: 1F7979E0
+EndSurvivalMode - function: 1F794B60
+ExitScopeView - function: 1F794A60
+_CheckSoundReady - function: 1F794A00
+EnterPDAState - function: 1F794C40
+EnterPauseState - function: 1F797DE0
+_StartShellMusic - function: 1F794CC0
+ExitAttractState - function: 1F794BE0
+EndActionHijack - function: 1F794BA0
+EnterCinematicState - function: 1F7956C0
+EnterInterior - function: 1F794B40
+BeginTransit - function: 1F794B00
+ExitPDAState - function: 1F794C20
+_bWaitForSoundAssets - false
+ExitGame - function: 1F794C80
+_THIS - table: 1F795D80
+SetSoundReadyFunc - function: 1F794A20
+_SetupGameExit - function: 1F794CA0
+ExitShellState - function: 1F794CE0
+EndTransit - function: 1F794AE0
+Initialize - function: 1F7949E0
+ExitInterior - function: 1F794B20
+EnterSatelliteView - function: 1F794AC0
+ExitPauseState - function: 1F797120
+MrxSoundBanks - table: 1F795D40
+ExitingGame - function: 1F796000
+ExitCinematicState - function: 1F794C60
+_bSoundSystemReady - false
+ExitSatelliteView - function: 1F794AA0
+EnterAttractState - function: 1F794C00
+EnterShellState - function: 1F797A20
+_bSurvivalModeStarted - false
+_FlagSystemReady - function: 1F794A40
+1 - mrxsound
+
+  CreateHealTimer = function: 1F4E6180
+  SetupInventory = function: 1F4E62A0
+  MrxParkingLotManager = _GetLastVehicle - function: 1F4E6D60
+kiBlipSize - 6
+MrxTutorialManager - table: 1F595720
+kiParkingLotLimit - 8
+_UnmarkVehicle - function: 1F4E6D20
+_ShowTutorial2 - function: 1F4E6CE0
+Setup - function: 1F4E6E00
+_TrackVehicle - function: 1F4E6DA0
+MarkLastVehicle - function: 1F4E6DC0
+_HideTutorial - function: 1F4E6CC0
+_ShowTutorial1 - function: 1F4E6D00
+MrxUtil - table: 1F5301C0
+eParkingLotTracker - userdata: 00040004
+eParkingLotTriggered - userdata: 00100005
+Cleanup - function: 1F4E6DE0
+_tParkingLotCandidates - table: 1F3A5660
+MrxGui - table: 1F9C8CE0
+kfTutorialTime - 6
+_MarkVehicle - function: 1F4E6D40
+_MoveVehicle - function: 1F4E6D80
+_THIS - table: 1F5939C0
+1 - mrxparkinglotmanager
+
+  nRiders = 1
+  _THIS = Deinit - function: 1F4E6380
+tEvent - table: 1F4E6400
+MrxTutorialManager - table: 1F595720
+uRiderEvent - userdata: 00040085
+HealthDropped - function: 1F4F5E80
+EndSurvivalMode - function: 1F4E60C0
+Heal - function: 1F4F5E50
+SetupTransferSystem - function: 1F4E5FE0
+CleanupTransferSystem - function: 1F4E5FC0
+GetAttribute - function: 1F4E5F80
+MrxPmc - table: 1F531620
+MrxUtil - table: 1F5301C0
+Init - function: 1F4E63A0
+HideTutorialMessage - function: 1F4E5F60
+SetTimeScale - function: 1F4E6020
+StartSurvivalMode - function: 1F4E60A0
+TutorialCueCallback - function: 1F4E5F40
+DisableGrappleTriggered - function: 1F4E5F20
+SaveOutInventory - function: 1F4E6280
+CleanEvents - function: 1F4E6120
+SurvivalModeCallback - function: 1F4E60E0
+_THIS - table: 1F593980
+nRiders - 1
+MrxParkingLotManager - table: 1F5939C0
+SetupInventory - function: 1F4E62A0
+CreateHealTimer - function: 1F4E6180
+MrxSound - table: 1F795D80
+WifEquipmentData - table: 1F769EC0
+SurvivalCooldownEnded - function: 1F4E6060
+OnActivate - function: 1F4E6360
+MrxVoSequence - table: 1F530180
+SetupSurvivalSystem - function: 1F4E6100
+OnDeath - function: 1F4E62E0
+MrxGui - table: 1F9C8CE0
+EnterPassengerCallback - function: 1F4E5FA0
+CreateDropEvent - function: 1F4E6160
+OnDeactivate - function: 1F4E62C0
+CleanupSurvival - function: 1F4E6140
+Activate - function: 1F4E6340
+1 - hero
+
+  SurvivalModeCallback = function: 1F4E60E0
+  CleanEvents = function: 1F4E6120
+  SaveOutInventory = function: 1F4E6280
+  DisableGrappleTriggered = function: 1F4E5F20
+  TutorialCueCallback = function: 1F4E5F40
+  StartSurvivalMode = function: 1F4E60A0
+  SetTimeScale = function: 1F4E6020
+  HideTutorialMessage = function: 1F4E5F60
+  Init = function: 1F4E63A0
+  MrxUtil = SpawnActor - function: 1F3CECC0
+GetFaction - function: 1F3CEB00
+GetPrimaryObjectiveRgb - function: 1F3CEA80
+MrxCheatBootstrap - table: 1F530200
+TeleportHeroesToLocations - function: 1F3CEE20
+tObjPdaMarker - table: 1F3CE9C0
+GetRandomTableElement - function: 1F3CEB20
+SpawnObject - function: 1F3CECE0
+_SpawnActorComplete - function: 1F3CECA0
+MarkerGetIndexByName_World - function: 1F3CE940
+WifPmcInterior - table: 1F5324E0
+_CompleteTeleportHeroes - function: 1F3CEDC0
+Init - function: 1F3CE880
+MarkerGetNameByIndex_Radar - function: 1F3CE8E0
+MrxHqManager - table: 1F5322C0
+MarkerGetIndexByName_Radar - function: 1F3CE8C0
+tInlineIcons - table: 1F3CEA40
+ExitAllPlayerModes - function: 1F3CE8A0
+MarkerGetNameByIndex_Pda - function: 1F3CE920
+GetNumberOfDigits - function: 1F3CE840
+IsInside - function: 1F3CE820
+ClearVehiclesNearPoint - function: 1F3CE800
+ExplodeMissionName - function: 1F3CEC00
+GetDistanceBetween - function: 1F3CEBC0
+GetDistanceToObject - function: 1F3CEBE0
+DisplayHealthBar - function: 1F3CEAC0
+tObjWorldMarkers - table: 1F3CE9E0
+GetSecondaryObjectiveRgb - function: 1F3CEA60
+MrxGuiShellBootstrap - table: 1F9C8260
+FindSpawnPointOutOfView - function: 1F3CED00
+_TeleportHero - function: 1F3CED80
+CleanupLoadingCallback - function: 1F3CEC60
+StopHealthBar - function: 1F3CEAA0
+GetInlineIconIndexByName - function: 1F3CEA20
+PlaceSecondaryPlayer - function: 1F3CEE40
+SetDefault - function: 1F3CEF00
+tObjRadarMaker - table: 1F3CE9A0
+LoadingCallback - function: 1F3CEC40
+GetCharacterIdentity - function: 1F3CEB60
+TeleportHeroesToHardpoints - function: 1F3CEE00
+_tNumbers - table: 1F390E80
+ShieldFace - function: 1F3CE860
+GetTableAsString - function: 1F3CEEA0
+_TeleportStreamingComplete - function: 1F3CEDA0
+ProcessCallbackTable - function: 1F3CED20
+TeleportSecondaryHeroToPrimaryHero - function: 1F3CEE60
+EnableHeroWeapons - function: 1F3CEB40
+MergeIndexedTables - function: 1F3CEEC0
+MrxState - table: 1F594800
+_SearchMarkerTable - function: 1F3CE980
+CallWithOptionalArgs - function: 1F3CEF20
+_TeleportComplete - function: 1F3CED60
+_TeleportHeroes - function: 1F3CEDE0
+_THIS - table: 1F5301C0
+EnterBestAvailableSeat - function: 1F3CED40
+GetPrimaryCharacterName - function: 1F3CEC20
+GetDistantLocations - function: 1F3CEB80
+MarkerGetIndexByName_Pda - function: 1F3CE900
+GetInlineIconNameByIndex - function: 1F3CEA00
+SetupLoadingCallback - function: 1F3CEC80
+CopyTable - function: 1F3CEEE0
+SetBoundaryEffect - function: 1F3CEAE0
+FormatMoney - function: 1F3CEE80
+MrxGui - table: 1F9C8CE0
+MarkerGetNameByIndex_World - function: 1F3CE960
+TestDistanceToAllPlayers - function: 1F3CEBA0
+1 - mrxutil
+
+  MrxPmc = Init - function: 1F3A6B20
+_tEvents - table: 1F3A6BE0
+MrxTutorialManager - table: 1F595720
+_tClientSupportSpendings - table: 1F3A6B40
+_nLatestCount - 0
+DisplayResources - function: 1F3A67A0
+SetSupportQty - function: 1F3A69C0
+GetSupportQty - function: 1F3A69A0
+_tEquipment - table: 1EEE7B80
+AddFuelCapacity - function: 1F3A6A20
+DisplayCash - function: 1F3A6800
+MrxUtil - table: 1F5301C0
+WifMissionFlow - table: 1F57A4C0
+CheckSupportThreshold - function: 1F3A6920
+SetStockpileChangeCallback - function: 1F3A6900
+RemoveEquipment - function: 1F3A6840
+AddFreebieQty - function: 1F3A68C0
+SetFreebieQty - function: 1F3A68A0
+DeleteStockpileChangeCallback - function: 1F3A68E0
+IsSupportNew - function: 1F3A6940
+HasEquipment - function: 1F3A6820
+_tStockpileThresholdInfo - table: 1F3A6B60
+GetCashQty - function: 1F3A6AC0
+_tFreebies - table: 1F36C7C0
+AddFuelQty - function: 1F3A6AA0
+AddCashQty - function: 1F3A6AE0
+RemoveFuelTank - function: 1F3A6720
+AddFuelTank - function: 1F3A6780
+SetSupportNew - function: 1F3A6980
+SetFuelCapacity - function: 1F3A6A60
+_THIS - table: 1F531620
+GetClientReimburseAmount - function: 1F3A66E0
+NetClientReimburse - function: 1F3A66C0
+GetFuelCapacity - function: 1F3A6A00
+MapPluralReasonToSingular - function: 1F3A67E0
+_CreateHiScoreEvent - function: 1F3A66A0
+_HiScoreUpdated - function: 1F3A6680
+AddSupportQty - function: 1F3A69E0
+SaveSingleton - function: 1F3A6660
+LoadSingleton - function: 1F3A6640
+MrxStatsManager - table: 1F57AFA0
+GetFreebieQty - function: 1F3A6880
+WifEquipmentData - table: 1F769EC0
+_tStockpile - table: 1F36C7A0
+_oDummyWidget - table: 1F390FC0
+_OnFuelTankDeath - function: 1F3A6700
+MrxUnlockFanfare - table: 1F57C860
+AddEquipment - function: 1F3A6860
+SetAllSupportViewed - function: 1F3A6960
+MrxGui - table: 1F9C8CE0
+MrxSupportData - table: 1F531660
+GetFuelQty - function: 1F3A6A80
+_nFuelCapacity - 300
+1 - mrxpmc
+
+  GetAttribute = function: 1F4E5F80
+  CleanupTransferSystem = function: 1F4E5FC0
+  SetupTransferSystem = function: 1F4E5FE0
+  Heal = function: 1F4F5E50
+  EndSurvivalMode = function: 1F4E60C0
+  HealthDropped = function: 1F4F5E80
+  uRiderEvent = userdata: 00040085
+  MrxTutorialManager = Reset - function: 1F594A80
+SetCurrentTutorial - function: 1F5949E0
+WifTutorialAPC - table: 1EA19B20
+GetTutorial - function: 1F594980
+_bMessageDisplayed - false
+Setup - function: 1F594A60
+HideMessage - function: 1F594920
+UpdateCurrentTutorial - function: 1F5949C0
+WifTutorialTankHijack - table: 1EA19CE0
+WifTutorialLowFuel - table: 1EA19880
+LoadSingleton - function: 1F5948E0
+WifTutorialHelicopter - table: 1EA19940
+HideCurrentTutorial - function: 1F5949A0
+WifTutorialCoopRevive - table: 1EA19DE0
+StartTutorial - function: 1F594A00
+BeginCustomTutorial - function: 1F594A40
+WifTutorialTrespass - table: 1EA19780
+_tTutorials - table: 1F595020
+WifTutorialSwimming - table: 1EA19F40
+WifTutorialAirstrikeInterrupt - table: 1EA1A080
+DestroyTutorial - function: 1F594960
+EndCustomTutorial - function: 1F594A20
+WifTutorialGateHonk - table: 1EA1A2E0
+WifTutorialNoFuel - table: 1EA1A3E0
+SaveSingleton - function: 1F594900
+WifTutorialCoopTether - table: 1EA1A500
+WifTutorialC4Switch - table: 1EA1A1A0
+ShowMessage - function: 1F594940
+_THIS - table: 1F595720
+WifTutorialHeliRepairPad - table: 1EA19A20
+1 - mrxtutorialmanager
+
+  tEvent = userdata: 4000563D - table: 1EB58200
+
+  Deinit = function: 1F4E6380"
+<<<END>>>
+
+[disconnected]

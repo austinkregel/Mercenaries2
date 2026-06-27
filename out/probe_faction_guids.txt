@@ -1,0 +1,144 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[runtime] <tt=2 val=40000014> "MrxFactionManager type: table
+=== Factions ===
+  [Oil] = tReportVO - table: 1F40B320
+nReportFrequency - 15
+bCanReport - true
+bAttitudeMutable - true
+fGetInitialRelation - function: 1F40B3A0
+tPursuitVO - table: 1F40B380
+sPdaIcon - icon_oc_mc
+sMarkerTexture - HUD_faction_OC
+uGuid - userdata: 800056C5
+sMaxRelationAchievement - ACHIEVEMENT_DIRTY_DEEDS
+tTresspassVO - table: 1F40B280
+sInlineIcon - [flagoil]
+nReportThreshold - 1
+sPdaFactionId - OC
+bDynamic - true
+tJammedVO - table: 1F40B2A0
+tReportedVO - table: 1F40B2E0
+sFactionTemplate - OC
+tIntentVO - table: 1F40B360
+ (table)
+  [Vza] = sMarkerTexture - HUD_faction_VZ
+tReportVO - table: 1F40B0E0
+uGuid - userdata: 80004382
+nReportFrequency - 20
+tTresspassVO - table: 1F40B080
+sInlineIcon - [flagvz]
+nReportThreshold - 1
+sPdaFactionId - VZ
+bDynamic - false
+tPursuitVO - table: 1F40B140
+tJammedVO - table: 1F40B0A0
+sFactionTemplate - VZ
+tIntentVO - table: 1F40B120
+ (table)
+  [Pmc] = sMarkerTexture - HUD_faction_CV
+sPdaFactionId - PMC
+bDynamic - false
+uGuid - userdata: 800056C4
+sFactionTemplate - PMC
+sInlineIcon - [flagpmc]
+ (table)
+  [Pir] = sMarkerTexture - HUD_faction_PR
+fGetInitialRelation - function: 1F40B220
+uGuid - userdata: 800056C2
+bCanReport - true
+sMaxRelationAchievement - ACHIEVEMENT_ISLAND_DOMINATION
+tTresspassVO - table: 1F40B1A0
+tReportedVO - table: 1F40B1E0
+sInlineIcon - [flagpirates]
+nReportThreshold - 1
+sPdaFactionId - PR
+bDynamic - true
+tPursuitVO - table: 1F40B200
+nReportFrequency - 15
+sPdaIcon - icon_pr_mc
+sFactionTemplate - Pirate
+ (table)
+  [Gur] = tReportVO - table: 1F40B480
+nReportFrequency - 15
+bCanReport - true
+fGetInitialRelation - function: 1F40B4E0
+tPursuitVO - table: 1F40B4C0
+sPdaIcon - icon_gr_mc
+sMarkerTexture - HUD_faction_GR
+uGuid - userdata: 80002CF1
+sMaxRelationAchievement - ACHIEVEMENT_FOREVER_FREE
+tTresspassVO - table: 1F40B3E0
+sInlineIcon - [flagguerillas]
+nReportThreshold - 1
+sPdaFactionId - GR
+bDynamic - true
+tJammedVO - table: 1F40B400
+tReportedVO - table: 1F40B440
+sFactionTemplate - Guerilla
+tIntentVO - table: 1F40B4A0
+ (table)
+  [All] = tReportVO - table: 1F40B720
+nReportFrequency - 15
+bCanReport - true
+fGetInitialRelation - function: 1F40B7A0
+tPursuitVO - table: 1F40B780
+sPdaIcon - icon_an_mc
+sMarkerTexture - HUD_faction_AN
+uGuid - userdata: 80002CF0
+sMaxRelationAchievement - ACHIEVEMENT_STAND_UP_AND_SHOUT
+tTresspassVO - table: 1F40B680
+sInlineIcon - [flagallies]
+nReportThreshold - 1
+sPdaFactionId - AN
+bDynamic - true
+tJammedVO - table: 1F40B6A0
+tReportedVO - table: 1F40B6E0
+sFactionTemplate - Allied
+tIntentVO - table: 1F40B760
+ (table)
+  [Civ] = sMarkerTexture - HUD_faction_CV
+uGuid - userdata: 800056BE
+bDynamic - false
+sFactionTemplate - Civ
+sInlineIcon - [flagcivilian]
+ (table)
+  [Chi] = tReportVO - table: 1F40B5E0
+nReportFrequency - 15
+bCanReport - true
+fGetInitialRelation - function: 1F40B640
+tPursuitVO - table: 1F40B620
+sPdaIcon - icon_ch_mc
+sMarkerTexture - HUD_faction_CH
+uGuid - userdata: 800056C6
+sMaxRelationAchievement - ACHIEVEMENT_LONGING_FOR_FIRE
+tTresspassVO - table: 1F40B540
+sInlineIcon - [flagchina]
+nReportThreshold - 1
+sPdaFactionId - CH
+bDynamic - true
+tJammedVO - table: 1F40B560
+tReportedVO - table: 1F40B5A0
+sFactionTemplate - China
+tIntentVO - table: 1F40B600
+ (table)
+=== Attitudes ===
+  [1] = sLabel - Hostile
+tRange - table: 1F40B9A0
+tRgbColor - table: 1F40B960
+
+  [2] = sLabel - Neutral
+tRgbColor - table: 1F40B8C0
+tRange - table: 1F40B900
+nPrices - 1.5
+
+  [3] = sLabel - Friendly
+tRgbColor - table: 1F40B820
+tRange - table: 1F40B860
+nPrices - 1
+"
+<<<END>>>
+
+[disconnected]

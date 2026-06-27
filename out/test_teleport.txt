@@ -1,0 +1,10 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Original Player Position: 2749.82, -13.79, -699.49
+Found target human (userdata: 40003C0A) at: 3014.86, -7.11, -655.46
+Teleporting player to target... ok=true, err=true
+New Player Position: 3014.86, -6.11, -654.46"
+<<<END>>>

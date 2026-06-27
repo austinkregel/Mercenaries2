@@ -1,0 +1,36 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=400254B8> "Found Transport string: UH1 Transport (PMC) (Driver)
+Found Transport string: UH1 Transport (GR) (Full)
+Found Transport string: UH1 Transport (Transit)
+Found Transport string: coandatransport
+Found Transport string: uh1transportgr
+Found Transport string: alouette3transportvz
+Found Transport string: alouette3transportpr
+Found Transport string: [vehicle.uh1transportgr]
+Found Transport string: [support.vehicle.uh1transportgr.desc]
+Found Transport string: [vehicle.alouette3transportvz]
+Found Transport string: [support.vehicle.alouette3transportvz.desc]
+Found Transport string: vehicles_truck_transport
+Found Transport string: [vehicle.coandatransport]
+Found Transport string: [support.vehicle.coandatransport.desc]
+Found Transport string: [vehicle.alouette3transportpr]
+Found Transport string: [support.vehicle.alouette3transportpr.desc]
+Found Transport string: Coanda Transport (Full)
+Found Transport string: UH1 Transport (GR) (Driver)
+Found Transport string: UH1 Transport (GR) (Extraction)
+Found Transport string: UH1 Transport (PMC) (Extraction)
+Found Transport string: Coanda Transport (Driver)
+Found Transport string: Alouette3 Transport (PR) (Full)
+Found Transport string: Alouette3 Transport (PR) (Extraction)
+Found Transport string: UH1 Transport (PMC) (Ghost)
+Found Transport string: Coanda Transport (Extraction)
+Found Transport string: UH1 Transport (GR) (Ewan)
+Found Transport string: Alouette3 Transport (VZ) (Ewan)
+Found Transport string: Coanda Transport (Ewan)
+Found Transport string: Alouette3 Transport (PR) (Ewan)
+Found Transport string: Transport Truck"
+<<<END>>>

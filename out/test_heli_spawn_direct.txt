@@ -1,0 +1,17 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=400254B8> "Player Pos: 2726.78, -14.01, -763.07
+Spawn ok=true, handle=userdata: 400355A3
+  Seat 1: userdata: 400355B1
+  Seat 2: userdata: 400355B6
+  Seat 3: userdata: 400355BB
+  Seat 4: userdata: 400355C0
+  Seat 5: userdata: 400355C4
+  Total riders: 5
+  Removed vehicle"
+<<<END>>>
+
+[disconnected]

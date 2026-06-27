@@ -1,0 +1,163 @@
+# Functions whose name matches a debug/cheat/dev/menu keyword.
+# Keyword set: debug, cheat, dev, console, test, god, menu, skip, spawn, give, unlock, noclip, kill, teleport, tp_, warp, summon, mission, hierarchy, traverse, trigger, eval, exec, run, load, script
+# Sorted so REAL functions (not stubbed) appear first.
+
+name                                              address     notes
+--------------------------------------------------------------------------------
+AutoLoad                                          0x005E5430
+CallFlashScriptFunction                           0x005BB160
+CheckSpawnPos                                     0x005DB690
+ClearSpawnListChanges                             0x005A56E0
+ConeSpawn                                         0x005ACA40
+debug_malloc                                      0x02136AC0
+debug_malloc2                                     0x02136A90
+DisableAssetPreload                               0x005E5640
+DoneReloadingLayers                               0x005CB8F0
+Eval                                              0x005F7680
+FirstRun                                          0x005C58F0
+getBytesLoaded                                    0x007943E0
+getBytesLoaded                                    0x007AA4A0
+getBytesLoaded                                    0x007D1A20
+getBytesTotal                                     0x00794440
+getBytesTotal                                     0x007AA4A0
+getBytesTotal                                     0x007D1A80
+GetDistantSpawnPointOnPath                        0x005D7E90
+GetINILoadLastSave                                0x005E55E0
+GetMasterScriptName                               0x005E4FF0
+GetMovieCurrentFrameNumber                        0x005BC560
+GetSkipMission                                    0x005E5490
+GetSpawnList                                      0x005A4E90
+GetSpawnListChangeInfo                            0x005A5000
+GetUnloadingStaticLayers                          0x005D4B90
+HasPlayerUnlockedCode                             0x005CB6A0
+hitTest                                           0x00795900
+IsLoadingOrStreaming                              0x005E4CE0
+Kill                                              0x005CDEB0
+load                                              0x007D1AE0
+load                                              0x008613D0
+LoadAsset                                         0x005D54B0
+LoadBank                                          0x005E2420
+LoadBankWithCallback                              0x005E2B90
+loadClip                                          0x007B24A0
+loadfile                                          0x00861290
+LoadFont                                          0x005B2DD0
+LoadGame                                          0x005D7D20
+LoadIsRetry                                       0x005D7E60
+LoadLayer                                         0x005D4C70
+LoadMissionSpiel                                  0x005CAE70
+loadMovie                                         0x007961B0
+loadSound                                         0x006B9360
+LoadSoundBank                                     0x005E25D0
+loadstring                                        0x008611E0
+LoadTempBank                                      0x005E27D0
+LoadTexture                                       0x005B2D40
+loadVariables                                     0x00796340
+LoadWaveBank                                      0x005E2650
+OnShellLoaded                                     0x005B4C00
+Reload                                            0x005EAA20
+ReloadAll                                         0x005BF6A0
+ReloadAsset                                       0x005D5530
+ReloadLayer                                       0x005D4F80
+ReloadShaders                                     0x005B0390
+RemoveFlashPauseMenu                              0x005BB6E0
+ResetAllSpawnLists                                0x005A5850
+running                                           0x00862150
+sendAndLoad                                       0x007D1BD0
+SendEvent_AddDangerousBuilding                    0x005C92C0
+SendEvent_AddHqPdaBlip                            0x005CA4C0
+SendEvent_AddMarkerObjective                      0x005C74E0
+SendEvent_AddPDAMission                           0x005CA160
+SendEvent_AddPdaObjective                         0x005C7810
+SendEvent_AddPmcPdaBlip                           0x005CA790
+SendEvent_AddRadarObjective                       0x005C7180
+SendEvent_AddRandomDangerousBuilding              0x005C9590
+SendEvent_AddSupportItem                          0x005C8930
+SendEvent_BatchUnlockFanfare                      0x005C9D00
+SendEvent_CardFanfare                             0x005C9800
+SendEvent_ClearObjectiveTraySlot                  0x005C8E60
+SendEvent_CloseFanfare                            0x005C84F0
+SendEvent_EnableHeroWeapons                       0x005C8930
+SendEvent_Fanfare                                 0x005C81B0
+SendEvent_ForceClientTether                       0x005C9EB0
+SendEvent_HideMovie                               0x005C90F0
+SendEvent_HVTFanfare                              0x005C99C0
+SendEvent_JoinPOForceRequest                      0x005CB7F0
+SendEvent_ObjectiveMessage                        0x005C8560
+SendEvent_PursuitMessage                          0x005C9F20
+SendEvent_RecruitsUnlocked                        0x005CB550
+SendEvent_RemoveDangerousBuilding                 0x005C93E0
+SendEvent_RemoveHqPdaBlip                         0x005CA6E0
+SendEvent_RemoveMarkerObjective                   0x005C7BD0
+SendEvent_RemovePDAMission                        0x005CA420
+SendEvent_RemovePdaObjective                      0x005C7AF0
+SendEvent_RemovePmcPdaBlip                        0x005CA930
+SendEvent_RemoveRadarObjective                    0x005C7A20
+SendEvent_RemoveSupportItem                       0x005C8930
+SendEvent_RequestPosition                         0x005C8AC0
+SendEvent_RevivePlayer                            0x005C8970
+SendEvent_SetObjectiveTraySlotImage               0x005C8C90
+SendEvent_SetObjectiveTraySlotText                0x005C8B00
+SendEvent_SetOccupiedDangerousBuilding            0x005C94F0
+SendEvent_ShowMessage                             0x005C6E20
+SendEvent_ShowMovie                               0x005C8FC0
+SendEvent_Support                                 0x005C86B0
+SendEvent_TeleportPlayer                          0x005C7CA0
+SendEvent_TeleportPlayerToHardPoint               0x005C7E30
+SendEvent_TextFanfare                             0x005C9630
+SendEvent_UnlockFanfare                           0x005C9B50
+SetFlashPauseMenu                                 0x005BB4D0
+SetLastHeroTeleportLocation                       0x005C8070
+SetLoadingScreen                                  0x005CB440
+SetMasterScriptName                               0x005E50C0
+SetSkipMission                                    0x005E54B0
+SetSpawnList                                      0x005A5170
+SetUnkillable                                     0x005CE6D0
+ShowLoadingHints                                  0x005B4C20
+Spawn                                             0x005D5D10
+SpawnCarpetBombLine                               0x005ACB60
+SpawnDirectedObject                               0x005AD850
+SpawnFromCamera                                   0x005D6000
+SpawnHomingProjectile                             0x005BF850
+SpawnOrdnance                                     0x005AC540
+SpawnPlaneNew                                     0x005AD230
+SpawnPlayer                                       0x005D6730
+SpawnPlayerAdvanced                               0x005D67F0
+SpawnRelative                                     0x005D58C0
+SpawnTargettedOrdnance                            0x005AC790
+SpawnWithModel                                    0x005BFDE0
+StartHeliWaveSpawner                              0x005DA4C0
+StopHeliWaveSpawner                               0x005DA780
+TeleportCamera                                    0x005DB0C0
+TestCueSound                                      0x005E0D50
+TestDropZone                                      0x005A9B80
+TestPauseSound                                    0x005E0ED0
+TestStopSound                                     0x005E0E10
+TweakAttachedSpawners                             0x005A4C30
+TweakAttachedSpawnersInGroup                      0x005A4D00
+UnloadAsset                                       0x005D54F0
+UnloadBank                                        0x005E2510
+UnloadBankWithCallback                            0x005E2D70
+unloadClip                                        0x007B25E0
+UnloadingStaticLayers                             0x005D4B40
+UnloadLayer                                       0x005D4E30
+UnloadMissionSpiel                                0x005CAFE0
+unloadMovie                                       0x007962F0
+UnloadSoundBank                                   0x005E26D0
+UnloadTempBank                                    0x005E29B0
+UnloadWaveBank                                    0x005E2750
+_SummonEd                                         0x006AEF90  [STUB - stripped from retail]
+DebugStateMachine                                 0x006AEF90  [STUB - stripped from retail]
+GetLoadingStaticLayers                            0x006AEF90  [STUB - stripped from retail]
+LoadData                                          0x006AEF90  [STUB - stripped from retail]
+LoadFunctions                                     0x006AEF90  [STUB - stripped from retail]
+LoadingStaticLayers                               0x006AEF90  [STUB - stripped from retail]
+LoadScript                                        0x006AEF90  [STUB - stripped from retail]
+SendEvent_AddObjective                            0x006AEF90  [STUB - stripped from retail]
+SendEvent_RemoveObjective                         0x006AEF90  [STUB - stripped from retail]
+SetRoadSpawning                                   0x006AEF90  [STUB - stripped from retail]
+SetSidewalkSpawning                               0x006AEF90  [STUB - stripped from retail]
+SetTrafficSpawning                                0x006AEF90  [STUB - stripped from retail]
+ShowObjectSpawners                                0x006AEF90  [STUB - stripped from retail]
+WriteToConsole                                    0x006AEF90  [STUB - stripped from retail]
+
+# 155 matches total, 141 real / 14 stubbed.

@@ -1,0 +1,65 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "=== Constants in MrxUtil.SpawnActor ===
+  LuaQ
+  mrxutil
+  Debug
+  Printf
+  Spawning
+  actor
+  GetGuidByName
+  Spawn
+  Object
+  SetName
+  type
+  string
+  Anchor
+  object
+  specified
+  tostring
+  hardpoint
+  SetTransformToObject
+  Attach
+  position
+  SetPosition
+  number
+  SetYaw
+  HqInterior
+  Event
+  Create
+  ObjectHibernation
+  awake
+  _SpawnActorComplete
+  sTemplate
+  sName
+  vAnchorObject
+  sAnchorHardpoint
+  nYaw
+  bLink
+  bHighDetail
+  fCallback
+  tData
+  uGuid
+  uAnchor
+  bInanimate
+  nDetail
+=== Constants in MrxUtil.SpawnObject ===
+  LuaQ
+  mrxutil
+  type
+  string
+  GetGuidByName
+  Object
+  GetPosition
+  GetYaw
+  Spawn
+  SetName
+  sTemplate
+  sLocation
+  sName
+  res
+  yaw"
+<<<END>>>

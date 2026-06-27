@@ -1,0 +1,17 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[runtime] <tt=2 val=40000014> "Original relation Allied <-> Oil: 100
+SetRelation(allied, oil, 85) => true
+New relation: 85
+ChangeRelation(allied, oil, -15) => true
+New relation after change: 70
+Restored relation: 100
+Testing SetAttitude...
+  SetAttitude(allied, oil, 1) => ok=true
+  SetAttitude(allied, oil, 2) => ok=true
+  SetAttitude(allied, oil, 3) => ok=true
+fm._knRelationMin = -100
+fm._knRelationMax = 100"
+<<<END>>>

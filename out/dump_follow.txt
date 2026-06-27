@@ -1,0 +1,37 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "=== Constants in FollowTheLeader ===
+  LuaQ
+  mrxsoldierdelivery
+  ipairs
+  Object
+  IsAlive
+  Role
+  AIGuid
+  Follow
+  Target
+  Player
+  GetCharacter
+  uOwner
+  MinDistance
+  MoveDistance
+  MaxDistance
+  Priority
+  medPri
+  MrxSupport
+  GoHome
+  self
+  tRiders
+  uHeli
+  uDriver
+  for
+  generator
+  state
+  control
+  uDude"
+<<<END>>>
+
+[disconnected]

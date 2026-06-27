@@ -1,0 +1,11 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[ok]	"GetAllCharacters(0) => ok=true, val=userdata: F0000001
+GetAllCharacters(1) => ok=true, val=userdata: F0000001
+GetAllCharacters(2) => ok=true, val=userdata: F0000001
+GetAllCharacters(3) => ok=true, val=userdata: F0000001
+GetAllCharacters(4) => ok=true, val=userdata: F0000001
+GetAllCharacters(5) => ok=true, val=userdata: F0000001"
+<<<END>>>

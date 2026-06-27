@@ -1,0 +1,34 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "OK	Player.GetLocalPlayer()	userdata: 40000014
+OK	Player.GetLocalCharacter()	userdata: 4000563D
+OK	Player.GetCash()	1141700
+OK	Player.GetFuel()	300
+OK	Player.GetFuelCapacity()	300
+OK	Player.GetCurrentPlayers()	1
+OK	Player.GetMaximumPlayers()	2
+OK	Player.GetLocalId()	nil
+OK	Player.GetName()	nil
+OK	Sys.GetLevelName()	vz
+OK	Sys.GetVersion()	100000
+OK	Sys.GetPlatform()	3
+OK	Sys.GetLanguage()	English
+OK	Sys.GetMasterScriptName()	vz
+OK	Sys.MemUsage()	4038
+OK	Sys.RealTime()	197.02766418457
+OK	Sys.MainTime()	140.75
+OK	Sys.Clock()	-1579536.125
+OK	Sys.IsLoadingOrStreaming()	false
+OK	Sys.HaveActiveProfile()	true
+OK	Sys.IsDemoMode()	false
+OK	Sys.IsFinalConfig()	true
+OK	Net.IsServer()	true
+OK	Net.IsClient()	false
+OK	Net.IsMultiplayer()	false
+OK	Net.IsActive()	false
+OK	Net.GetHostName()	hostname
+OK	Net.IsOnlineConnected()	false"
+<<<END>>>

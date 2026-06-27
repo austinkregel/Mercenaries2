@@ -1,0 +1,16 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Faction name: Oil => GUID: userdata: 800056C5
+Faction name: Vza => GUID: userdata: 80004382
+Faction name: Pmc => GUID: userdata: 800056C4
+Faction name: Pir => GUID: userdata: 800056C2
+Faction name: Gur => GUID: userdata: 80002CF1
+Faction name: All => GUID: userdata: 80002CF0
+Faction name: Civ => GUID: userdata: 800056BE
+Faction name: Chi => GUID: userdata: 800056C6"
+<<<END>>>
+
+[disconnected]

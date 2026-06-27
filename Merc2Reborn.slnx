@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Merc2Fix/Merc2Fix.vcxproj" Id="ff88101b-81e4-4f21-9a7a-12d38378aa6b" />
+  <Project Path="Merc2Launcher/Merc2Launcher.csproj" />
+</Solution>

@@ -1,0 +1,26 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[ok]	"=== Constants in _MODULES.mrxguiattractmode.MrxGui.TextWidget.new ===
+  LuaQ
+  mrxguibase
+  BasicData
+  type
+  text
+  bEnabled
+  uId
+  _GuiInternal
+  CreateTextWidget
+  font
+  font_16
+  bTransient
+  CustomData
+  EventHandlers
+  setmetatable
+  __index
+  WidgetIdIndex
+  self
+  NewWidget"
+<<<END>>>

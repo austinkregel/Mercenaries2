@@ -1,0 +1,24 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "----------------------------------------
+Trying VZ template: VZ Jeep (Full)
+  Spawn failed: nil
+----------------------------------------
+Trying VZ template: vz_jeep_hmg
+  Spawn failed: nil
+----------------------------------------
+Trying VZ template: VZ Jeep
+  Spawn failed: nil
+----------------------------------------
+Trying VZ template: VZ Transport
+  Spawn failed: nil
+----------------------------------------
+Trying VZ template: vz_truck
+  Spawn failed: nil
+----------------------------------------
+Trying VZ template: VZ Tank
+  Spawn failed: nil"
+<<<END>>>

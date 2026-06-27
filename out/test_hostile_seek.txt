@@ -1,0 +1,9 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Player Position: 2722.11, -14.01, -714.51
+Spawned hostile heli: userdata: 4001DFF3
+Found 5 crew members. Ejecting and making them hostile..."
+<<<END>>>

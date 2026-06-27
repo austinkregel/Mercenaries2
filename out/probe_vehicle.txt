@@ -1,0 +1,53 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <table> "Character in vehicle: userdata: 40003BD4, seat index: userdata: 0010E18F
+OK[1] Object.IsValid(veh) => boolean=true
+OK[1] Object.GetName(veh) => nil=nil
+OK[1] Object.GetLocalizedName(veh) => string=[0xed59b812]
+OK[1] Object.GetModelName(veh) => nil=nil
+OK[1] Object.GetHealth(veh) => nil=nil
+OK[1] Object.GetMaxHealth(veh) => nil=nil
+OK[1] Object.GetPhysicsType(veh) => boolean=false
+OK[3] Object.GetPosition(veh) => number=3015.4807128906, number=-26.456787109375, number=-1064.5900878906
+OK[1] Vehicle.IsFlipped(veh) => nil=nil
+OK[1] Vehicle.IsFlying(veh) => nil=nil
+OK[1] Vehicle.GetDriver(veh) => nil=nil
+OK[1] Vehicle.GetRiders(veh) => table=(empty)
+
+OK[0] Vehicle.RestoreHealth(veh) => (void)
+OK[0] Vehicle.RestoreAmmo(veh) => (void)
+OK[1] Vehicle.GetSeatParams(veh) => table=IsRiderInvisible - false
+StowSeatGuid - userdata: 3D297A8D
+IsHijackable - true
+IsRiderBashable - false
+IsStowable - true
+IsRiderVulnerable - true
+IsGunner - false
+IsCargo - false
+IsDriver - true
+IsHijackBlocker - false
+
+OK[1] Vehicle.GetSeatParams(veh, 0) => table=IsRiderInvisible - false
+StowSeatGuid - userdata: 3D297A8D
+IsHijackable - true
+IsRiderBashable - false
+IsStowable - true
+IsRiderVulnerable - true
+IsGunner - false
+IsCargo - false
+IsDriver - true
+IsHijackBlocker - false
+
+OK[1] Vehicle.GetSeatByType(veh) => nil=nil
+OK[1] Vehicle.GetSeatByType(veh, 0) => nil=nil
+OK[1] Vehicle.OpenDoor(veh) => nil=nil
+OK[0] Vehicle.OpenDoor(veh, 0) => (void)
+OK[1] Vehicle.CloseDoor(veh) => nil=nil
+OK[0] Vehicle.CloseDoor(veh, 0) => (void)
+OK[1] Vehicle.SetTurretPitch(veh, 0) => nil=nil
+OK[1] Vehicle.SetTurretYaw(veh, 0) => nil=nil
+OK[1] Vehicle.SpinHeli(veh) => nil=nil"
+<<<END>>>

@@ -1,0 +1,70 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[ok]	"char = userdata: 4000563D
+
+=== attached objects (Object.GetAttachedObjects) ===
+--- atts[1] = userdata: 4000575B ---
+  IsValid => [1] boolean=true
+  GetName => [1] nil=nil
+  GetLocalizedName => [1] string=[0x5cb97d23]
+  GetModelName => [1] userdata=userdata: D77E96B9
+  GetPhysicsType => [1] string=prop
+  GetHealth => [1] number=100
+  IsVisible => [1] boolean=true
+  Weapon.IsPrimary => [1] boolean=true
+  Weapon.GetClipAmmo => [1] number=100
+  Weapon.GetReserveAmmo => [1] number=6
+  Weapon.GetMaxClipAmmo => [1] number=100
+  Weapon.IsDesignator => [1] boolean=false
+--- atts[2] = userdata: 4000575D ---
+  IsValid => [1] boolean=true
+  GetName => [1] nil=nil
+  GetLocalizedName => [1] string=[0x6971fea6]
+  GetModelName => [1] userdata=userdata: 0F8A0F17
+  GetPhysicsType => [1] string=prop
+  GetHealth => [1] number=100
+  IsVisible => [1] boolean=true
+  Weapon.IsPrimary => [1] boolean=true
+  Weapon.GetClipAmmo => [1] number=75
+  Weapon.GetReserveAmmo => [1] number=6
+  Weapon.GetMaxClipAmmo => [1] number=75
+  Weapon.IsDesignator => [1] boolean=false
+--- atts[3] = userdata: 4000575F ---
+  IsValid => [1] boolean=true
+  GetName => [1] nil=nil
+  GetLocalizedName => [1] string=[0xe8b3f24d]
+  GetModelName => [1] userdata=userdata: 0847080C
+  GetPhysicsType => [1] string=prop
+  GetHealth => [1] nil=nil
+  IsVisible => [1] boolean=true
+  Weapon.IsPrimary => [1] boolean=false
+  Weapon.GetClipAmmo => [1] nil=nil
+  Weapon.GetReserveAmmo => [1] number=4
+  Weapon.GetMaxClipAmmo => [1] nil=nil
+  Weapon.IsDesignator => [1] boolean=false
+--- atts[4] = userdata: 40005760 ---
+  IsValid => [1] boolean=true
+  GetName => [1] nil=nil
+  GetLocalizedName => [1] string=[0xe3c4ada0]
+  GetModelName => [1] userdata=userdata: 849972EE
+  GetPhysicsType => [1] string=prop
+  GetHealth => [1] nil=nil
+  IsVisible => [1] boolean=true
+  Weapon.IsPrimary => [1] boolean=false
+  Weapon.GetClipAmmo => [1] nil=nil
+  Weapon.GetReserveAmmo => [1] number=5
+  Weapon.GetMaxClipAmmo => [1] nil=nil
+  Weapon.IsDesignator => [1] boolean=false
+
+=== cash mutator test ===
+before:                 1141700
+Player.AddCash(1) returns => (void)
+after AddCash(1):       1141701 (delta 1)
+Player.AddCash(-1) returns => (void)
+after AddCash(-1):      1141700 (delta from start 0)"
+<<<END>>>
+
+[disconnected]

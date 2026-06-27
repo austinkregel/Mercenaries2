@@ -1,0 +1,11 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[runtime] <tt=2 val=40000014> "Player Position: 2981.58, -24.04, -761.29
+Found Oil soldier (userdata: 0010E1CC) at: 3021.49, -7.09, -657.25
+Teleporting Oil soldier to: 2983.58, -24.04, -759.29
+SetPosition status: ok=true, err=true
+New position: 2983.58, -24.04, -759.29"
+<<<END>>>

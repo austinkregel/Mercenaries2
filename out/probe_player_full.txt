@@ -1,0 +1,55 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[ok]	"lp = userdata: 40000014 (userdata)
+char = userdata: 4000563D (userdata)
+OK[1] GetLocalPlayer => userdata=userdata: 40000014
+OK[1] GetLocalCharacter => userdata=userdata: 4000563D
+OK[1] GetPrimaryPlayer => userdata=userdata: 40000014
+OK[1] GetPrimaryCharacter => userdata=userdata: 4000563D
+OK[1] GetSecondaryPlayer => userdata=userdata: 40000015
+OK[1] GetSecondaryCharacter => nil=nil
+OK[1] GetAnyCharacter => userdata=userdata: F0000000
+OK[1] GetCash => number=1141700
+OK[1] GetFuel => number=300
+OK[1] GetFuelCapacity => number=300
+OK[1] GetCurrentPlayers => number=1
+OK[1] GetCurrentLocalPlayers => number=1
+OK[1] GetMaximumPlayers => number=2
+OK[1] GetMaximumLocalPlayers => number=2
+OK[1] GetAllPlayers => table=1 - userdata: 40000014
+
+OK[1] GetAllCharacters => userdata=userdata: F0000001
+OK[1] GetAllBoundaryGuid => nil=nil
+OK[1] GetAllTargetMarkerPos => table=1 - table: 1F355FC0
+
+OK[1] IsCoopMultiplayer => boolean=false
+OK[1] InCinematicMode => nil=nil
+OK[1] GetName(lp) => string=player0
+OK[1] GetCash(lp) => number=1141700
+OK[1] GetFuel(lp) => number=300
+OK[1] GetPlayerId(lp) => number=0
+OK[1] GetLocalId(lp) => nil=nil
+OK[1] GetCharacter(lp) => userdata=userdata: 4000563D
+OK[5] GetViewport(lp) => number=2560, number=1440, number=0, number=0, number=1
+OK[1] GetViewportId(lp) => userdata=userdata: 00000001
+OK[1] GetCamera(lp) => userdata=userdata: 014A2EE0
+OK[1] GetCameraXZHeading(lp) => number=4.3518538475037
+OK[1] GetControlledObject(lp) => userdata=userdata: 4000563D
+OK[1] GetControlBindingType(lp) => string=human
+OK[1] GetPlayerStart(lp) => string=PlayerLocation_Start
+OK[3] GetRetryPosition(lp) => number=0, number=0, number=0
+OK[1] GetSeat(lp) => nil=nil
+OK[4] GetTargetUnderReticle(lp) => number=3794.0029296875, number=453.11337280273, number=-3819.5004882813, userdata=userdata: 000C73AD
+OK[1] GetProfileCharacter(lp) => number=1
+OK[1] GetProfileCostume(lp) => number=1
+OK[1] GetAvailableCostumes(lp) => number=1
+OK[1] IsJoined(lp) => nil=nil
+OK[1] IsLocal(lp) => boolean=true
+OK[1] IsRemote(lp) => nil=nil
+OK[1] IsBoundaryDeath(lp) => nil=nil
+OK[1] GetVehicleDisguise(lp) => boolean=true
+OK[0] GetVehicleDisguiseState(lp) => (void)"
+<<<END>>>

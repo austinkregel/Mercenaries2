@@ -1,0 +1,17 @@
+connected to lua bridge at 127.0.0.1:27050
+type Lua; blank line (or `<<<RUN>>>`) executes the chunk.
+ctrl-d / ctrl-z to quit.
+
+[queued]
+[ok]	"Player Position: 2971.26, -28.86, -803.56
+Spawning helicopter: UH1 Transport (GR) (Full)
+Spawned helicopter handle: userdata: 40017D65
+  Seat 1 crew handle: userdata: 40017D73
+  Seat 2 crew handle: userdata: 40017D78
+  Seat 3 crew handle: userdata: 40017D7D
+  Seat 4 crew handle: userdata: 40017D82
+  Seat 5 crew handle: userdata: 40017D86
+Yanked & recruited: 5"
+<<<END>>>
+
+[disconnected]
