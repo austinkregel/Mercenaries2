@@ -31,7 +31,7 @@ probably is. Pull requests welcome. Just expect rough edges.
 
 | Phase | Status |
 |------|--------|
-| **Phase 1 — Multiplayer revival** (FESL emulation) | ✅ Working (host needs UDP 10000 forwarded; relay update planned — see [Multiplayer hosting](#multiplayer-hosting-current-state--planned-relay)) |
+| **Phase 1 — Multiplayer revival** (FESL emulation + UDP relay) | ✅ Working (no port forwarding required — see [Multiplayer hosting](#multiplayer-hosting)) |
 | **Phase 2 — Lua bridge / cheat menu** | ✅ Working |
 | **Phase 3 — Engine API mapping & mod tooling** | 🚧 In progress |
 
@@ -166,25 +166,28 @@ you care about.
 If you just want to play the game, use `refesl.live` — no server work
 needed.
 
-### Multiplayer hosting (current state + planned relay)
+### Multiplayer hosting
 
-The original game used direct P2P for the actual game traffic — Theater
-just tells each client what IP/port to connect to, then players talk to
-each other directly on UDP `10000`. Right now:
+**No port forwarding required.** The original game used direct P2P
+for the actual game traffic, which historically meant the host had to
+open UDP `10000` on their router. The server now runs a UDP relay
+that proxies player↔player traffic on its own IP: each match gets a
+port from a pool (UDP `10000`–`10100`), Theater hands the relay
+IP+port to both clients, and both sides connect outbound. NAT and
+firewalls on either end shouldn't matter for a normal home setup.
 
-- **Hosts** must forward **UDP 10000** on their network. Without it,
-  joining clients can reach the matchmaking server but their game
-  packets never arrive.
-- **Joining clients** need to do nothing — their NAT handles the
-  outbound connection.
+The relay is live and in light testing. If something breaks for you,
+please post logs — early reports help shake out edge cases.
 
-**Planned (target: weekend after 2026-06-27)**: turn the server into a
-UDP relay that proxies player↔player traffic on its own IP. Each match
-gets a port from a 100-port pool (UDP `10000`–`10099`), Theater hands
-out the relay IP+port to all clients, and nobody has to touch their
-router. Eliminates the unreliable NAT-punching path entirely.
-
-Until that ships, the port-forward requirement above stands.
+**Troubleshooting**: if you can sign into your account and see the
+lobby list but **can't actually connect to a game** (the lobby
+appears but you never land in-session, or you join and immediately
+get dropped), the relay path may not be reaching you cleanly. As a
+fallback the original direct-P2P path still works — the host can
+forward **UDP 10000** on their network and try again. That's the
+single most useful diagnostic step: if the game then works with
+forwarding enabled, it confirms the relay is the layer to look at
+rather than anything client-side.
 
 ## Modding entry points
 
