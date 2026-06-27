@@ -130,11 +130,41 @@ Merc2Reborn/
    ```
 
 ### Run the FESL server emulator
+
+**Most people don't need to do this.** The public server at `refesl.live`
+already handles matchmaking for everyone — the client-side fix
+(`Merc2Fix.asi`) routes you there automatically. Only read on if you
+want to host your own FESL backend.
+
 ```sh
 python2 server.py
 ```
+
 Hosts FESL on `:18710` (SSLv3 + RC4), Theater on `:18715` (plaintext
 TCP), GameSpy availability on UDP `:27900`.
+
+**Standing this up is not trivial.** The original game's handshake
+requires **SSLv3 with an RC4 cipher** — both have been removed from
+essentially every modern OS, language runtime, and OpenSSL build in
+the last decade because they're cryptographically broken (BEAST, POODLE,
+the RC4 biases). You can't just `pip install` your way past this.
+
+What actually works in production right now:
+- An **Ubuntu 14.04 VM** (or similar vintage) that still ships an
+  OpenSSL old enough to negotiate SSLv3+RC4.
+- **Python 2.7** linked against that OpenSSL.
+- The VM kept network-isolated except for the game ports, because
+  exposing legacy TLS to the open internet on a host that also does
+  anything else is a bad idea.
+
+Modern Python 3 + modern OpenSSL will refuse to even compile in the
+needed ciphers. Newer Ubuntu / Debian / RHEL ship OpenSSL builds with
+SSLv3 disabled at the build level. If you go this route, plan on
+running it in a sandboxed VM and don't co-locate it with anything else
+you care about.
+
+If you just want to play the game, use `refesl.live` — no server work
+needed.
 
 ### Multiplayer hosting (current state + planned relay)
 
