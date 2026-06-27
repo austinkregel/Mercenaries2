@@ -20,11 +20,11 @@ Prereqs: game must be running with `Merc2Fix.asi` loaded (deploys to
 # 1. Write a Lua probe
 $EDITOR tools/probe_X.lua
 
-# 2. Run it; raw output goes to out/probe_X.txt
-py tools/lua_repl.py < tools/probe_X.lua > out/probe_X.txt 2>&1
+# 2. Run it; raw output goes to out/runs/ for transient probe output
+py tools/lua_repl.py < tools/probe_X.lua > out/runs/probe_X.txt 2>&1
 
 # 3. Strip transport framing to get just the chunk's return string
-py tools/extract_repl_result.py out/probe_X.txt
+py tools/extract_repl_result.py out/runs/probe_X.txt
 ```
 
 ## Probe methodology (the pattern that works)
@@ -77,8 +77,19 @@ py tools/extract_repl_result.py out/probe_X.txt
   void return, exactly reversible.
 - **Equipment slots** via `Object.GetAttachedObjects(char)`.
 - **The cheat menu opener**: `Cheat.DisplayOptions()`.
-- **8415-entry runtime surface** captured in `out/globals_ingame.txt`
-  (clean) and `out/globals_ingame_raw.txt` (REPL transcript).
+- **8415-entry runtime surface** captured in `out/refs/globals_ingame.txt`
+  (clean) and `out/refs/globals_ingame_raw.txt` (REPL transcript).
+
+## out/ layout
+
+- **`out/refs/`** — canonical artifacts. Static-analysis baselines for
+  the binaries we support (find_*.txt, resolve_*.txt), the runtime
+  globals walk, and the verified probe outputs that back the
+  "VERIFIED" sections of `engine_api.md`. Promote to refs/ once a probe
+  yields data that ends up in docs.
+- **`out/runs/`** — transient probe + experiment output. New probe
+  results land here. Free to delete or accumulate; nothing else
+  references this directory by file name.
 
 ## Suggested next targets (priority order)
 

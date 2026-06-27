@@ -18,7 +18,7 @@ Input (e.g. globals_ingame_raw.txt) looks like:
 Output: just the lines between the opening `"` (after the [runtime]
 prefix) and the closing `"<<<END>>>` pair.
 
-Usage: py tools/extract_repl_result.py out/globals_ingame_raw.txt > out/globals_ingame.txt
+Usage: py tools/extract_repl_result.py out/refs/globals_ingame_raw.txt > out/refs/globals_ingame.txt
 """
 from __future__ import annotations
 

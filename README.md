@@ -130,8 +130,8 @@ Merc2Reborn/
    ```
 4. To pipe a probe in:
    ```sh
-   py tools/lua_repl.py < tools/probe_player_full.lua > out/probe_player_full.txt
-   py tools/extract_repl_result.py out/probe_player_full.txt
+   py tools/lua_repl.py < tools/probe_player_full.lua > out/runs/probe_player_full.txt
+   py tools/extract_repl_result.py out/runs/probe_player_full.txt
    ```
 
 ### Run the FESL server emulator

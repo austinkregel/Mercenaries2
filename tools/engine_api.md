@@ -1,7 +1,7 @@
 # Mercenaries 2 — Engine Lua API Reference
 
 Discovered via runtime walk of `_G` and reachable sub-tables on 2026-06-26
-using `tools/walk_globals.lua` (full dump: `out/globals_ingame.txt`,
+using `tools/walk_globals.lua` (full dump: `out/refs/globals_ingame.txt`,
 8415 entries total). This file lists the engine-side functions
 (everything under named top-level namespaces — i.e. NOT `_MODULES`,
 which is game-script code).
@@ -189,7 +189,7 @@ Signatures are **inferred from names** unless explicitly marked
 ## Per-namespace coverage
 
 Counts are total entries (functions + sub-tables + constants) per
-namespace. See `out/globals_ingame.txt` for the full list.
+namespace. See `out/refs/globals_ingame.txt` for the full list.
 
 | Namespace | Entries | Notes |
 |-----------|---------|-------|
@@ -642,7 +642,7 @@ signature and a working call example.
 
 - **`_MODULES` introspection** — 6837 game-script entries. Useful for
   finding specific mission/behavior implementations but too noisy to
-  list here. Grep `out/globals_ingame.txt` for specific patterns.
+  list here. Grep `out/refs/globals_ingame.txt` for specific patterns.
 - **Sub-table contents** of namespaces like `Hud.*` (subtables only —
   needs another walk one level deeper at those addresses).
 - **Function signatures** — all inferred from names. The "signature

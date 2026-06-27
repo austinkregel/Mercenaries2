@@ -79,7 +79,7 @@ py tools/resolve_lua_api.py "C:\Games\Mercenaries 2 World in Flames\Mercenaries2
 
 A full runtime enumeration via `tools/walk_globals.lua` produced 8415
 string-keyed entries reachable from `_G` (saved to
-`out/globals_ingame.txt`). Notable for cheat-menu / debug work:
+`out/refs/globals_ingame.txt`). Notable for cheat-menu / debug work:
 
 | Lua symbol               | Notes |
 |--------------------------|-------|
