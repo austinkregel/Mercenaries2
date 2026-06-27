@@ -23,9 +23,15 @@ Requires: `py -m pip install capstone` (no other deps).
 
 ## Runtime
 
-- `lua_repl.py` — interactive client for the localhost bridge. Connects
-  to `127.0.0.1:27050` once the game is running with the new ASI loaded.
-  Blank line executes the buffered chunk.
+- `lua_console.py` — **the nice one.** Single-file tkinter IDE
+  (stdlib only, no pip installs). Tabbed editor with Lua syntax
+  highlighting + line numbers, persistent output panel, save/open
+  .lua files, recent files, bridge status indicator. `Ctrl+Enter` or
+  `F5` to execute. Run with `py tools/lua_console.py`.
+- `lua_repl.py` — bare-bones interactive client for the localhost
+  bridge. Connects to `127.0.0.1:27050` once the game is running
+  with the new ASI loaded. Blank line executes the buffered chunk
+  in interactive mode; pipe a `.lua` file for one-shot use.
 - `enum_globals.lua` — dump `_G` as `<type>\t<name>` lines.
 - `find_menu.lua` — pattern-match likely cheat-menu opener names.
 - `probe_namespaces.lua` — enumerate fields of common engine namespaces
