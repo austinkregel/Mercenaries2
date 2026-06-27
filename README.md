@@ -174,6 +174,11 @@ and Localization.
   describing the Lua registration-table patch technique — pointing
   this project at hooking `luaL_register` to intercept `print` is
   what made Phase 2 possible.
+- **Claude** (Anthropic) and **Gemini** (Google) — substantial AI
+  assistance throughout the project: reverse-engineering the Lua
+  bridge, debugging the executor and the non-stock `luaB_pcall`,
+  mapping the engine API surface, and authoring large parts of the
+  probe scripts and documentation under [tools/](tools/).
 - **MinHook** by Tsuda Kageyu (BSD 2-Clause) — bundled in
   [Merc2Fix/include](Merc2Fix/include) and
   [Merc2Fix/src](Merc2Fix/src).
