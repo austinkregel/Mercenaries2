@@ -1,0 +1,29 @@
+{
+  "$comment": [
+    "Companion-tool manifest for any mod manager / launcher that wants",
+    "to surface a 'Launch Tool' button on a mod's page. Shipped alongside",
+    "the mod in the release zip; intentionally minimal and human-readable.",
+    "",
+    "Format proposal — not a standard yet. If the mercs2-modkit team wants",
+    "to define an official schema, this entry should be straightforward to",
+    "adapt. Treat as a starting point for that conversation.",
+    "",
+    "Field semantics:",
+    "  id          : stable machine-readable identifier",
+    "  name        : human-readable label for the button",
+    "  description : tooltip / hover text",
+    "  executable  : path relative to this manifest's directory; the",
+    "                launcher just runs it (no args required)",
+    "  requires    : free-form notes — e.g. another mod that has to be",
+    "                installed for the tool to be useful"
+  ],
+  "tools": [
+    {
+      "id": "lua-console",
+      "name": "Lua Console",
+      "description": "Tabbed Lua IDE with syntax highlighting, persistent output panel, and live bridge status indicator. Connects to 127.0.0.1:27050.",
+      "executable": "lua_console.exe",
+      "requires": "Merc2Fix.asi (full build) or the lua-bridge mod must be installed and the game must be running for the console to do anything useful."
+    }
+  ]
+}

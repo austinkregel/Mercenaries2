@@ -202,7 +202,14 @@ The friendliest way to drive the bridge is [`tools/lua_console.py`](tools/lua_co
 — a single-file tkinter IDE (stdlib only, no `pip install` needed)
 with tabs, Lua syntax highlighting, line numbers, persistent output
 history, save/open `.lua` files, and a bridge-status indicator that
-turns green when the game is running with the ASI loaded.
+turns green when the game is running with the ASI loaded. The
+**full release zip ships a PyInstaller-frozen `lua_console.exe`**
+alongside the ASI so end users don't need Python installed — just
+double-click. A `tools.json` companion manifest is included as a
+proposal for any mod manager that wants to surface a "Launch Tool"
+button on this mod's page (intended for future
+[mercs2-modkit](https://github.com/Mercenaries-Fan-Build/mercs2-modkit)
+integration).
 
 <p align="center">
   <img src="img/lua_console.png" alt="lua_console.py — tabbed editor with Lua syntax highlighting, output panel, bridge status indicator" width="780"><br>

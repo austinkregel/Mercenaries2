@@ -27,7 +27,15 @@ Requires: `py -m pip install capstone` (no other deps).
   (stdlib only, no pip installs). Tabbed editor with Lua syntax
   highlighting + line numbers, persistent output panel, save/open
   .lua files, recent files, bridge status indicator. `Ctrl+Enter` or
-  `F5` to execute. Run with `py tools/lua_console.py`.
+  `F5` to execute. Run with `py tools/lua_console.py`. **Also shipped
+  as a standalone `lua_console.exe`** inside the "full" release zip
+  (PyInstaller-frozen, no Python required) — that's what end users
+  get on download.
+- `tools.json` — companion-tool manifest shipped alongside
+  `lua_console.exe` in the release zip. Proposes a small format so
+  any mod manager (e.g. mercs2-modkit) can surface a "Launch Tool"
+  button on this mod's page. Not a standard yet — starting point
+  for that conversation with the framework devs.
 - `lua_repl.py` — bare-bones interactive client for the localhost
   bridge. Connects to `127.0.0.1:27050` once the game is running
   with the new ASI loaded. Blank line executes the buffered chunk

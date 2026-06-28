@@ -69,3 +69,8 @@ tools/lua_console.json
 
 # --- Local copies of game binaries (copyrighted, never commit) ---
 binaries/
+
+# --- PyInstaller build artifacts (lua_console.exe is rebuilt by build_release.ps1) ---
+build/
+dist/
+*.spec
