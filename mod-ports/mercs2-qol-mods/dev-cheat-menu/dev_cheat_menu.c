@@ -300,19 +300,12 @@ static DWORD WINAPI WorkerThread(LPVOID arg) {
             if (proc_id == GetCurrentProcessId()) {
                 /* Check if configured key is pressed */
                 if (GetAsyncKeyState(g_activation_key) & 0x8000) {
-                    static DWORD last_trigger_time = 0;
-                    DWORD now = GetTickCount();
-                    if (now - last_trigger_time < 5000) {
-                        m2_logf("[*] dev-cheat-menu: Key ignored (5s cooldown active).");
-                    } else {
-                        m2_logf("[*] dev-cheat-menu: Key pressed! Sending menu script to lua-bridge.");
+                    m2_logf("[*] dev-cheat-menu: Key pressed! Sending menu script to lua-bridge.");
 
-                        if (SendLuaCommand(g_bridge_host, g_bridge_port, kCheatMenuScript)) {
-                            m2_logf("[+] dev-cheat-menu: Script successfully sent and queued in lua-bridge.");
-                            last_trigger_time = now;
-                        } else {
-                            m2_logf("[!] dev-cheat-menu: Failed to queue script in lua-bridge.");
-                        }
+                    if (SendLuaCommand(g_bridge_host, g_bridge_port, kCheatMenuScript)) {
+                        m2_logf("[+] dev-cheat-menu: Script successfully sent and queued in lua-bridge.");
+                    } else {
+                        m2_logf("[!] dev-cheat-menu: Failed to queue script in lua-bridge.");
                     }
 
                     /* Debounce: wait until key is released */
