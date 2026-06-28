@@ -53,10 +53,13 @@
 #include <time.h>
 #include <stdint.h>
 
-#include "m2.h"
+#include "m2_log.h"
+#include "m2_hook.h"
+#include "m2_ini.h"
 
-#pragma comment(lib, "ws2_32.lib")
-#pragma comment(lib, "wintrust.lib")
+/* Link with -lws2_32 -lwintrust (see Makefile). On MSVC builds, the
+ * old `#pragma comment(lib, ...)` would do this automatically; we
+ * pass them on the link command line instead so MinGW agrees. */
 
 /* ======================================================================== *
  * Status: PROOF-OF-CONCEPT — this port has NOT been built or test-run
@@ -138,23 +141,25 @@ static HMODULE g_hModule     = NULL;
  * INI config — minimal: server IP + clock spoof on/off.
  * ------------------------------------------------------------------------ */
 
-static int OnIniKV(const char* section, const char* key,
-                   const char* value, void* ud) {
+/* m2_ini_parse's callback signature is (ud, key, value) — the parser
+ * strips section headers internally and never surfaces them, so we
+ * dispatch on the key name alone. Our two keys (`ip` and
+ * `spoof_clock`) are unique across the sections in the INI, so this
+ * is fine. */
+static void OnIniKV(void* ud, const char* key, const char* value) {
     (void)ud;
-    if (!section || !key || !value) return 1;
-    if (_stricmp(section, "server") == 0 && _stricmp(key, "ip") == 0) {
-        strncpy_s(g_server_ip, sizeof(g_server_ip), value, _TRUNCATE);
-    } else if (_stricmp(section, "compat") == 0 && _stricmp(key, "spoof_clock") == 0) {
-        g_spoof_clock = m2_ini_bool(value, 1);
+    if (!key || !value) return;
+    if (_stricmp(key, "ip") == 0) {
+        strncpy(g_server_ip, value, sizeof(g_server_ip) - 1);
+        g_server_ip[sizeof(g_server_ip) - 1] = 0;
+    } else if (_stricmp(key, "spoof_clock") == 0) {
+        g_spoof_clock = m2_ini_bool(value);
     }
-    return 1;
 }
 
 static void LoadConfig(void) {
     char ini_path[MAX_PATH];
-    GetModuleFileNameA(g_hModule, ini_path, sizeof(ini_path));
-    char* dot = strrchr(ini_path, '.');
-    if (dot) strcpy_s(dot, sizeof(ini_path) - (dot - ini_path), ".ini");
+    m2_module_path(g_hModule, "multiplayer_restore.ini", ini_path, sizeof(ini_path));
     m2_ini_parse(ini_path, OnIniKV, NULL);
 }
 
@@ -174,7 +179,7 @@ static void ResolveServer(void) {
     /* If the INI value already looks like a dotted-quad, skip DNS. */
     struct in_addr probe;
     if (inet_pton(AF_INET, g_server_ip, &probe) == 1) {
-        strncpy_s(g_resolved_ip, sizeof(g_resolved_ip), g_server_ip, _TRUNCATE);
+        strncpy(g_resolved_ip, g_server_ip, sizeof(g_resolved_ip) - 1); g_resolved_ip[sizeof(g_resolved_ip) - 1] = 0;
         m2_logf("[*] Using server IP from config: %s", g_resolved_ip);
         WSACleanup();
         return;
@@ -185,7 +190,7 @@ static void ResolveServer(void) {
     if (getaddrinfo(g_server_ip, NULL, &hints, &res) == 0 && res) {
         struct sockaddr_in* a = (struct sockaddr_in*)res->ai_addr;
         const char* dotted = inet_ntoa(a->sin_addr);
-        if (dotted) strncpy_s(g_resolved_ip, sizeof(g_resolved_ip), dotted, _TRUNCATE);
+        if (dotted) { strncpy(g_resolved_ip, dotted, sizeof(g_resolved_ip) - 1); g_resolved_ip[sizeof(g_resolved_ip) - 1] = 0; }
         freeaddrinfo(res);
         m2_logf("[+] Resolved %s -> %s", g_server_ip, g_resolved_ip);
     } else {

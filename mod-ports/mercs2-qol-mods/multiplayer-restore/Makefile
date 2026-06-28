@@ -1,28 +1,36 @@
-# Build the multiplayer-restore mod for the mercs2-qol-mods SDK.
+# Makefile for multiplayer_restore.asi — built against the Mercs2 mod stdlib.
 #
-# Drop this directory (or a copy of its contents) into
-#   mercs2-qol-mods/mods/multiplayer-restore/
-# and the parent project's top-level Makefile will pick it up.
-# Standalone build also works if SDK_DIR points at the SDK folder.
+# Pattern intentionally mirrors mods/quiet-freeplay-vo so any user familiar
+# with one mod can build the other.
+#
+# Prerequisites:
+#   Windows: MSYS2 + mingw-w64-i686-gcc (`pacman -S mingw-w64-i686-gcc mingw-w64-i686-make`)
+#   Linux:   apt install gcc-mingw-w64-i686
+#   macOS:   brew install mingw-w64
 
-MOD := multiplayer_restore
+include ../../sdk/sdk.mk
 
-# Default: assume this directory was placed under
-#   mercs2-qol-mods/mods/multiplayer-restore/
-# If you keep it out-of-tree, override on the command line:
-#   make SDK_DIR=/path/to/mercs2-qol-mods/sdk
-SDK_DIR ?= ../../sdk
+CC_MINGW    = i686-w64-mingw32-gcc
+STRIP_MINGW = i686-w64-mingw32-strip
 
-include $(SDK_DIR)/sdk.mk
+TARGET      = multiplayer_restore.asi
+SRC         = multiplayer_restore.c
+CFLAGS      = -O2 -Wall -Wno-unused-function -shared -Wl,--enable-stdcall-fixup $(M2_CFLAGS) $(EXTRA_CFLAGS)
+LDFLAGS     = -lws2_32 -lwintrust -lkernel32 -luser32
 
-SRC      := $(MOD).c
-TARGET   := $(MOD).asi
-EXTRALIBS := -lws2_32 -lwintrust
+.PHONY: all clean mingw help
 
-$(TARGET): $(SRC) $(SDK_OBJS)
-	$(CC) $(CFLAGS) -shared -o $@ $(SRC) $(SDK_OBJS) $(LDFLAGS) $(EXTRALIBS)
+all: mingw
+
+mingw: $(SRC)
+	$(CC_MINGW) $(CFLAGS) -o $(TARGET) $(SRC) $(M2_SRCS) $(LDFLAGS)
+	$(STRIP_MINGW) $(TARGET)
+	@echo "Built: $(TARGET) ($$(wc -c < $(TARGET)) bytes)"
+	@echo "Copy to: <game>/scripts/  (along with multiplayer_restore.ini)"
 
 clean:
-	$(RM) $(TARGET) *.o
+	rm -f $(TARGET) *.obj *.exp *.lib multiplayer_restore.log
 
-.PHONY: clean
+help:
+	@echo "make mingw   — Cross-compile with MinGW (default)"
+	@echo "make clean   — Remove build artifacts"

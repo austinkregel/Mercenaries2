@@ -60,9 +60,34 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "m2.h"
+#include "m2_log.h"
+#include "m2_hook.h"
+#include "m2_ini.h"
 
-#pragma comment(lib, "ws2_32.lib")
+/* Compatibility shim: the upstream Merc2Fix uses MSVC's safe-string
+ * extensions (_snprintf_s with _TRUNCATE, strncpy_s, strcpy_s).
+ * MinGW doesn't ship those; map them to POSIX snprintf / strncpy
+ * with manual NUL-termination so the same source compiles under both
+ * toolchains. Link with -lws2_32 (see Makefile). */
+#ifdef _MSC_VER
+  /* MSVC: native safe-string, SEH, and TLS extensions. */
+  #define SEH_TRY            __try {
+  #define SEH_CATCH_AV(rv)   } __except (EXCEPTION_EXECUTE_HANDLER) { return (rv); }
+  #define MOD_THREAD         __declspec(thread)
+#else
+  /* MinGW: substitute POSIX where possible, skip SEH (no support on
+   * GCC x86 — if SafeCallLuaCFunction's target AVs, the game crashes
+   * instead of being caught here). _TRUNCATE is already defined by
+   * MinGW's _mingw.h as ((size_t)-1); reuse it. */
+  #define _snprintf_s(buf, sz, _trunc, ...) snprintf((buf), (sz), __VA_ARGS__)
+  #define strncpy_s(dst, dst_sz, src, count) \
+      (strncpy((dst), (src), (count)), (dst)[(dst_sz) - 1] = 0, 0)
+  #define strcpy_s(dst, dst_sz, src) \
+      (strncpy((dst), (src), (dst_sz) - 1), (dst)[(dst_sz) - 1] = 0, 0)
+  #define SEH_TRY            do {
+  #define SEH_CATCH_AV(rv)   } while (0)
+  #define MOD_THREAD         __thread
+#endif
 
 /* ======================================================================== *
  * Status: PROOF OF CONCEPT — this port has NOT been built or test-run
@@ -107,7 +132,7 @@
 
 typedef struct LuaRvaSet {
     const char* label;
-    DWORD noop_stub;         /* shared no-op stub (print/SendEvent_*/...) */
+    DWORD noop_stub;         /* shared no-op stub: print, SendEvent_*, music, etc. */
     DWORD luaB_type;
     DWORD luaB_loadstring;
     DWORD luaB_pcall;
@@ -337,7 +362,7 @@ static volatile LONG g_PendingScripts = 0;
 
 /* Per-thread re-entry guard — prevents the executor from recursing
  * into itself if a capture detour fires mid-LuaDoString. */
-static __declspec(thread) BOOL t_inBridgeExec = FALSE;
+static MOD_THREAD BOOL t_inBridgeExec = FALSE;
 
 /* Configuration (loaded from lua_bridge.ini). */
 static char  g_repl_host[64] = "127.0.0.1";
@@ -411,11 +436,17 @@ static void ChunkNodeFree(ChunkNode* n) {
  * Result-formatting + executor
  * ------------------------------------------------------------------------ */
 static int SafeCallLuaCFunction(lua_CFunction_t fn, void* L) {
+#ifdef _MSC_VER
     __try {
         return fn(L);
     } __except (EXCEPTION_EXECUTE_HANDLER) {
         return -1;
     }
+#else
+    /* MinGW x86 doesn't support MSVC SEH; call unguarded. If the
+     * target AVs, the game crashes. Documented trade-off. */
+    return fn(L);
+#endif
 }
 
 /* Append "<value>" (or "nil" / "true" / a number) representing one
@@ -883,24 +914,25 @@ static DWORD WINAPI BridgeServerThread(LPVOID arg) {
 /* ------------------------------------------------------------------------ *
  * INI config
  * ------------------------------------------------------------------------ */
-static int OnIniKV(const char* section, const char* key, const char* value, void* ud) {
+/* m2_ini_parse's callback signature is (ud, key, value) — the parser
+ * strips section headers internally and never surfaces them, so we
+ * dispatch on the key name alone. Our two keys (`host` and `port`)
+ * are unique across the INI's sections so this is fine. */
+static void OnIniKV(void* ud, const char* key, const char* value) {
     (void)ud;
-    if (!section || !key || !value) return 1;
-    if (_stricmp(section, "repl") == 0 && _stricmp(key, "host") == 0) {
-        strncpy_s(g_repl_host, sizeof(g_repl_host), value, _TRUNCATE);
-    } else if (_stricmp(section, "repl") == 0 && _stricmp(key, "port") == 0) {
+    if (!key || !value) return;
+    if (_stricmp(key, "host") == 0) {
+        strncpy(g_repl_host, value, sizeof(g_repl_host) - 1);
+        g_repl_host[sizeof(g_repl_host) - 1] = 0;
+    } else if (_stricmp(key, "port") == 0) {
         g_repl_port = atoi(value);
         if (g_repl_port <= 0 || g_repl_port > 65535) g_repl_port = 27050;
     }
-    return 1;
 }
 
 static void LoadConfig(void) {
     char ini_path[MAX_PATH];
-    char* dot;
-    GetModuleFileNameA(g_hModule, ini_path, sizeof(ini_path));
-    dot = strrchr(ini_path, '.');
-    if (dot) strcpy_s(dot, sizeof(ini_path) - (dot - ini_path), ".ini");
+    m2_module_path(g_hModule, "lua_bridge.ini", ini_path, sizeof(ini_path));
     m2_ini_parse(ini_path, OnIniKV, NULL);
 }
 
