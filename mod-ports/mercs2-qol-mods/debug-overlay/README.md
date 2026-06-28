@@ -8,6 +8,17 @@ commands to update what the overlay displays — without ever touching
 D3D themselves. Companion to `multiplayer-restore/` and `lua-bridge/`
 in this directory.
 
+## Screenshots
+
+![Default Layout](../../../img/debug_overlay_3.png)
+*Run 1: Default layout showing typical in-game variables.*
+
+![Grid Layout](../../../img/debug_overlay_2.png)
+*Run 2: Top-center grid layout showing compact numeric variables.*
+
+![Diagnostics Dashboard](../../../img/debug_overlay_1.png)
+*Run 3: Large diagnostics dashboard showing custom colors, custom Courier New font, and a custom position.*
+
 ## What it does
 
 - Hooks `IDirect3DDevice9::EndScene` (via `Direct3DCreate9` →
@@ -46,6 +57,8 @@ are cheap.
 | `SHOW` | Enable rendering (default state on load). |
 | `HIDE` | Pause rendering. TCP commands still process; labels just don't draw. |
 | `COLOR <key> <RRGGBB>` | Per-label text color override. 6-digit hex. |
+| `CONFIG <key> <value>` | Globally override an INI configuration parameter in memory (e.g. `CONFIG columns 3` or `CONFIG font_size 18`). The original `.ini` file on disk remains untouched. |
+| `RESET` | Reloads configuration from the original `.ini` file on disk and resets visibility to `SHOW`. |
 | `PING` | Server replies `PONG\n`. Connection-liveness check. |
 
 Unknown commands are logged and ignored.
