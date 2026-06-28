@@ -88,6 +88,8 @@ typedef struct OverlayConfig {
 } OverlayConfig;
 
 static OverlayConfig g_cfg;
+static void LoadConfig(void);
+static volatile BOOL g_font_dirty = FALSE;
 
 static void cfg_set_defaults(void) {
     g_cfg.enabled      = 1;
@@ -286,6 +288,28 @@ static void handle_command_line(const char* line, SOCKET client) {
             label_set_color(key, c);
             LeaveCriticalSection(&g_state_mtx);
         }
+    } else if (strncmp(line, "CONFIG ", 7) == 0) {
+        const char* p = line + 7;
+        const char* sp = strchr(p, ' ');
+        if (sp) {
+            char key[64];
+            size_t klen = (size_t)(sp - p);
+            if (klen >= sizeof(key)) klen = sizeof(key) - 1;
+            memcpy(key, p, klen); key[klen] = 0;
+            const char* value = sp + 1;
+            EnterCriticalSection(&g_state_mtx);
+            OnIniKV(NULL, key, value);
+            if (_stricmp(key, "font_name") == 0 || _stricmp(key, "font_size") == 0) {
+                g_font_dirty = TRUE;
+            }
+            LeaveCriticalSection(&g_state_mtx);
+        }
+    } else if (strcmp(line, "RESET") == 0) {
+        EnterCriticalSection(&g_state_mtx);
+        LoadConfig();
+        g_visible = TRUE;
+        g_font_dirty = TRUE;
+        LeaveCriticalSection(&g_state_mtx);
     } else if (strcmp(line, "PING") == 0) {
         if (client != INVALID_SOCKET) send(client, "PONG\n", 5, 0);
     } else {
@@ -599,6 +623,13 @@ static HRESULT WINAPI hook_EndScene(IDirect3DDevice9* dev) {
         logged_first = TRUE;
     }
     if (!g_device) on_device_captured_lazy(dev);
+    if (g_font_dirty) {
+        EnterCriticalSection(&g_state_mtx);
+        destroy_font();
+        create_font();
+        g_font_dirty = FALSE;
+        LeaveCriticalSection(&g_state_mtx);
+    }
     if (!g_device_lost) render_overlay(dev);
     return orig_EndScene(dev);
 }
