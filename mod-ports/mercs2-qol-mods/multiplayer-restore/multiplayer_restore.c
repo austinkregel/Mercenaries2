@@ -328,9 +328,9 @@ static __time64_t __cdecl d_time64(__time64_t* t) {
  * ------------------------------------------------------------------------ */
 
 static int PatchFeslCAKey(void) {
-    HMODULE mod = GetModuleHandleA("Mercenaries2.exe");
+    HMODULE mod = GetModuleHandleA(NULL);
     if (!mod) {
-        m2_logf("[!] PatchFeslCAKey: Mercenaries2.exe not loaded");
+        m2_logf("[!] PatchFeslCAKey: Host module not loaded");
         return 0;
     }
     BYTE* target = (BYTE*)mod + FESL_CA_KEY_RVA;

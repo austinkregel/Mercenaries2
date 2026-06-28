@@ -980,9 +980,9 @@ static DWORD WINAPI WorkerThread(LPVOID arg) {
     InitializeCriticalSection(&g_outMtx);
     InitChunkSource();
 
-    mod = GetModuleHandleA("Mercenaries2.exe");
+    mod = GetModuleHandleA(NULL);
     if (!mod) {
-        m2_logf("[!] lua_bridge: GetModuleHandle(Mercenaries2.exe) returned NULL");
+        m2_logf("[!] lua_bridge: GetModuleHandle(NULL) returned NULL");
         return 1;
     }
     base = (BYTE*)mod;
