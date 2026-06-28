@@ -10,13 +10,13 @@ in this directory.
 
 ## Screenshots
 
-![Default Layout](../../../img/debug_overlay_3.png)
+![Default Layout](../../../img/debug_overlay_1.png)
 *Run 1: Default layout showing typical in-game variables.*
 
 ![Grid Layout](../../../img/debug_overlay_2.png)
 *Run 2: Top-center grid layout showing compact numeric variables.*
 
-![Diagnostics Dashboard](../../../img/debug_overlay_1.png)
+![Diagnostics Dashboard](../../../img/debug_overlay_3.png)
 *Run 3: Large diagnostics dashboard showing custom colors, custom Courier New font, and a custom position.*
 
 ## What it does
