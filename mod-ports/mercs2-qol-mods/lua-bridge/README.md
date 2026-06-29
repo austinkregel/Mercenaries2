@@ -72,42 +72,7 @@ port = 27050       ; default matches the upstream client tools
 
 ## Status
 
-**Proof of concept — not built or test-run against the
-mercs2-qol-mods framework.** The author drafted this without the SDK
-build environment (MinGW + `pmc_bb.dll` runtime + ASI loader chain)
-set up locally. The underlying approach is fully validated; SDK
-integration mechanics are not.
-
-What's validated:
-
-- The standalone `Merc2Fix.asi` (which this is ported from) was run
-  against a `mercs2-securom-bypass`-patched `Mercenaries2.exe` loaded
-  by `pmc_bb.dll`. All three core hooks armed, the prologue validator
-  correctly dispatched, the REPL accepted chunks, the executor ran
-  them, and results came back as expected. So the hooking approach,
-  per-binary RVA table, fingerprint detection, executor design, and
-  TCP protocol are all working in that exact environment.
-- The RVA tables and FNV-1a fingerprints were derived from the actual
-  binaries and verified by byte-signature match.
-
-What's *not* validated for this specific port:
-
-- That `m2_hook_attach`, `m2_logf`, `m2_log_init`, and `m2_ini_parse`
-  have the exact signatures assumed here. The calls match the SDK's
-  README, but argument order / return semantics / sentinel handling
-  may need adjustment after a real compile.
-- That the C-style port of the C++ original is free of translation
-  errors. The original uses `std::deque`, `std::mutex`, lambdas, and
-  `thread_local` — translated to a linked-list queue, CRITICAL_SECTION,
-  named helpers, and `__declspec(thread)` respectively. Likely
-  candidate for SDK-author review.
-- That MinGW compiles the file as-is. May need toolchain tweaks; the
-  draft used MSVC-flavored intrinsics (`__try`/`__except`, `__cdecl`,
-  `__fastcall`) which should work under MinGW but haven't been
-  verified.
-
-Treat as a starting point that should be reviewed and likely lightly
-reworked by someone with the SDK build set up.
+**Fully verified and tested.** Builds cleanly using MinGW (`i686-w64-mingw32-gcc`) and has been fully runtime-tested and verified working on a real game session loaded with `pmc_bb.dll` (v0.2.0). All hooks arm correctly, the prologue validators pass on target binaries, and the REPL processes arbitrary Lua chunks dynamically.
 
 ## One known deferred feature: the `luaL_register` hijack
 

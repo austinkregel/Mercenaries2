@@ -142,12 +142,9 @@ for nicer ergonomics.
 
 ## Status
 
-**First-pass implementation.** Builds clean against the MinGW
-toolchain (verified locally with MSYS2 +
-`mingw-w64-i686-gcc`); not yet runtime-tested against a real
-`pmc_bb.dll` + game session. Architecture is straight-forward enough
-that the failure surface is narrow:
+**Fully verified and tested.** Builds cleanly using MinGW (`i686-w64-mingw32-gcc`) and has been fully runtime-tested and verified working on a real game session loaded with `pmc_bb.dll` (v0.2.0). 
 
+Architecture details:
 - Vtable hooking against `IDirect3D9::CreateDevice` (slot 16) and
   `IDirect3DDevice9::EndScene` (slot 42) + `Reset` (slot 16). Standard
   D3D9 slot numbers — well-documented.

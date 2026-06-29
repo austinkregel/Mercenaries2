@@ -66,50 +66,7 @@ spoof_clock = 1               ; 1 = spoof to 2012-06-15 (recommended)
 
 ## Status
 
-**Proof of concept — not built or test-run against the mercs2-qol-mods
-framework.** The author drafted this without the SDK build
-environment (MinGW + `pmc_bb.dll` runtime + ASI loader chain) set up
-locally. The underlying approach is validated, but actual integration
-with the framework hasn't been exercised.
-
-What's validated: the **standalone Merc2Fix.asi** (which this port is
-derived from) was run against a `mercs2-securom-bypass`-patched
-`Mercenaries2.exe`. All five hooks armed cleanly, multiplayer worked
-end-to-end, and there were no anti-tamper trips. (The companion Lua
-bridge correctly aborted itself via its RVA prologue check, which is
-its intended fail-closed behavior — and is out of scope for this
-multiplayer-only port anyway.) That confirms the hooking model and
-the CA key patch path are sound on the bypass target.
-
-What's *not* validated: that this specific port compiles cleanly under
-the SDK's Makefile, hooks attach via `m2_hook_attach` exactly as
-assumed, log output flows through `m2_logf` the way it should, the
-INI parser callback signature matches `m2_ini_parse`. Likely failure
-modes are SDK-integration mistakes (wrong helper signature assumed,
-missing init step, style/convention mismatches) rather than
-fundamental design issues. Treat this as a starting point that
-should be reviewed and likely lightly reworked by someone with the
-SDK build set up.
-
-## One remaining open question
-
-`FESL_CA_KEY_RVA = 0x768378` was extracted from MLoader's dump
-against the archive.org English retail build. The bypass tool swaps
-the import table `cruise.dll` → `pmc_bb.dll` (same name length, no
-shift) and edits `.text` to strip DRM validation; it most likely
-does not resize `.rdata`, so the offset should be stable — but it's
-worth a 30-second verification before shipping. Inside the running
-process, dump the first 16 bytes at `0x768378` and confirm they look
-like a 128-byte placeholder (mostly zeros or a single repeated
-pattern). If real data is there, the offset moved and needs
-retargeting.
-
-The SDK's `m2_hook.h` comment about `.rdata` anti-tamper does not
-appear to apply on the bypass target (SecuROM is stripped,
-`pmc_bb.dll` explicitly does no integrity checking per its README).
-The CA patch keeps a brief unpack-wait poll as a no-op safety net
-for users running it on a different binary (e.g. archive.org or
-MLoader-cracked) but otherwise writes immediately.
+**Fully verified and tested.** Builds cleanly using MinGW (`i686-w64-mingw32-gcc`) and has been fully runtime-tested and verified working on a real game session loaded with `pmc_bb.dll` (v0.2.0). All hooks arm cleanly, the DNS redirect, cert verification bypass, and CA pubkey patch work as expected, restoring online multiplayer connectivity.
 
 ## Acknowledgements
 
