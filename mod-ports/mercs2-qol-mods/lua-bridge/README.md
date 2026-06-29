@@ -10,6 +10,9 @@ Pairs with the companion `multiplayer-restore/` mod in this same
 repo but is independent: enable one, the other, or both via the
 modkit.
 
+> [!NOTE]
+> Tested and verified working against **`v0.2.0` of the `pmc_bb.dll` loader** (the Mercenaries Fan Build loader).
+
 ## What it does
 
 The bridge installs three MinHook detours (`noop_stub`, `luaB_type`,

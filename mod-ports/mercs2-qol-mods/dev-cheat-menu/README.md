@@ -2,6 +2,9 @@
 
 A quality-of-life ASI mod for **Mercenaries 2: World in Flames** that opens the developer cheat menu when a configured key (default: `Insert`) is pressed.
 
+> [!NOTE]
+> Tested and verified working against **`v0.2.0` of the `pmc_bb.dll` loader** (the Mercenaries Fan Build loader).
+
 ## How it works
 
 This mod does not interact directly with the game engine's Lua state. Instead, it listens for a key press and sends the cheat menu activation script over TCP to the **[lua-bridge](../lua-bridge/)** REPL server. 

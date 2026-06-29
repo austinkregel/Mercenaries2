@@ -9,6 +9,9 @@ This is a port of the multiplayer layer from
 [loganw234/Mercenaries2](https://github.com/loganw234/Mercenaries2),
 stripped of the Lua bridge so it cleanly fits the QoL mods framework.
 
+> [!NOTE]
+> Tested and verified working against **`v0.2.0` of the `pmc_bb.dll` loader** (the Mercenaries Fan Build loader).
+
 ## What it does
 
 1. **DNS redirect** — hooks `ws2_32` resolvers so `*.ea.com`,

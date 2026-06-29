@@ -8,6 +8,9 @@ commands to update what the overlay displays — without ever touching
 D3D themselves. Companion to `multiplayer-restore/` and `lua-bridge/`
 in this directory.
 
+> [!NOTE]
+> Tested and verified working against **`v0.2.0` of the `pmc_bb.dll` loader** (the Mercenaries Fan Build loader).
+
 ## Screenshots
 
 ![Default Layout](../../../img/debug_overlay_1.png)
